@@ -57,7 +57,7 @@ const NavBar = () => {
                       <div>
                       <div className='flex  items-center '>
                         <img src={navLogo} className='w-[80px] h-[80px] shadow-2xl p-2 border-2 border-primary rounded-full' alt="" />
-                        <p className={` ml-4 text-lg md:text-3xl font-semibold tracking-wide text-[#00A6B2] transition-colors duration-200 `}>
+                        <p className={` ml-4 text-lg md:text-[28px] font-semibold tracking-wide text-[#00A6B2] transition-colors duration-200 `}>
                             Cottage Home Care Services     
                         </p>
                         </div> 
@@ -68,7 +68,7 @@ const NavBar = () => {
                         
                     </NavLink>
 
-                    <ul className="flex items-center hidden space-x-6 lg:flex">
+                    <ul className="flex items-center hidden space-x-5 lg:flex">
                         <li>
                             <NavLink
                                 to='/home'

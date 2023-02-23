@@ -4,7 +4,7 @@ import Route from "../src/Components/Routes/Route/Route";
 
 function App() {
   return (
-    <div >
+    <div className='overflow-hidden'>
       <RouterProvider router={Route}></RouterProvider>
     </div>
   );
