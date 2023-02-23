@@ -5,7 +5,7 @@ import carebg from "../../../../assets/get-care.jpg";
 const Care = () => {
   return (
     <div
-      className="bg-no-repeat bg-cover bg-center text-center"
+      className="bg-no-repeat bg-cover bg-center text-center "
       style={{ backgroundImage: `url(${carebg})` }}
     >
       <div className="pt-40">
