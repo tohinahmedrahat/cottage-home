@@ -45,7 +45,7 @@ const NavBar = () => {
     }
 
     return (
-        <div className=" sticky top-0 z-50 roboto  " id='navBar'>
+        <div className="sticky top-0  roboto z-50 " id='navBar'>
             <div className="px-4 pt-4 pb-6 mx-auto w-[95%]">
                 <div className="relative flex items-center justify-between">
                     <NavLink

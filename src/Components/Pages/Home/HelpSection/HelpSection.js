@@ -5,7 +5,7 @@ import chatting from "../../../../assets/aide-chatting-with-fruit.jpg"
 const HelpSection = () => {
     return (
         <div className='bg-[#EBF8F9]'>
-            <h1 className='text-center text-4xl font-bold text-[#322e51] pt-20'>If you need help, <br /> you're not alone</h1>
+            <h1 className='text-center playrify text-4xl font-bold text-[#322e51] pt-20'>If you need help, <br /> you're not alone</h1>
             <hr className='border-[#00a6b2] border-t-2 w-12 mt-5 mb-36 mx-auto' />
             <div className='md:flex md:w-[90%] mx-auto pb-36'>
                 <div className='bg-[#FFFFFF] pb-12 pt-16 pl-11 w-full'>

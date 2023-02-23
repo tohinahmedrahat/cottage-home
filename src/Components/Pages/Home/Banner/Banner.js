@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../../../../assets/cooking2.png";
+import background from "../../../../assets/MainBanner.jpg";
 import comfort from '../../../../assets/comfort.png'
 import relief from '../../../../assets/relief-1.png'
 import peace from '../../../../assets/peace.png'
@@ -9,7 +9,7 @@ const Banner = () => {
   return (
     <div>
       <div
-        className="bg-no-repeat bg-cover bg-center text-center min-h-[100vh]"
+        className=" bg-no-repeat bg-cover bg-center text-center min-h-[100vh]"
         style={{ backgroundImage: `url(${background})` }}
       >
         <div className="max-w-2xl tracking-[1px] mx-auto pt-40 md:pt-[30vh] ">
@@ -30,7 +30,7 @@ const Banner = () => {
 
                 </div>
       </div>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 ">
         <div className="flex justify-center bg-[#DBF2F4] py-6">
           <div className=" flex items-center gap-5   ">
             <img src={comfort} alt="" className="w-14 h-14" />
