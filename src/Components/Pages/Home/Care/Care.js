@@ -9,11 +9,14 @@ const Care = () => {
       style={{ backgroundImage: `url(${carebg})` }}
     >
       <div className="pt-40">
-        <h1 className="text-[35px] font-bold relative font-[PlayfairDisplay] text-white care">
+        <h1 className="text-[35px] font-bold relative font-[PlayfairDisplay] text-white afterEffect">
           Get Care
         </h1>
         <div className="pt-11 pb-[120px] font-[Roboto] flex justify-center items-center space-y-7 md:space-y-0 md:space-x-7 flex-wrap">
-          <a href="tel:+1516-367-2266" className="flex items-center px-16 py-6 border border-[#00a6b2] rounded-full text-white hover:bg-[#00a6b2] duration-500 bg-hov2">
+          <a
+            href="tel:+1516-367-2266"
+            className="flex items-center px-16 py-6 border border-[#00a6b2] rounded-full text-white hover:bg-[#00a6b2] duration-500 bg-hov2"
+          >
             <FaPhone className="mr-2" />
             Call Us
           </a>

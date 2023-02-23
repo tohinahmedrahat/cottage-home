@@ -19,7 +19,6 @@ const Banner = () => {
             <h4 className="text-2xl font-semibold text-[#dbf2f4] font-[Roboto] mb-8 px-5 md:px-0">
             “PCA CDPAP SERVICES THROUGHOUT NEW YORK CITY”
           </h4>
-         
         </div>
         <div className= ' mt-[10vh] flex justify-center text-white font-semibold gap-8'>
                     <a href="tel:+1516-367-2266" className=' px-8 py-4 rounded-full text-xl bg-primary uppercase  bg-hov2'>
@@ -31,35 +30,29 @@ const Banner = () => {
 
                 </div>
       </div>
-      <div className='grid grid-cols-3'>
-        <div className='flex justify-center bg-[#DBF2F4] py-6'>
-          <div className=' flex items-center gap-5   '>
-            <img src={comfort} alt="" className='w-14 h-14' />
-            <p className='text-2xl font-semibold '>Find comfort</p>
-
+      <div className="grid grid-cols-3">
+        <div className="flex justify-center bg-[#DBF2F4] py-6">
+          <div className=" flex items-center gap-5   ">
+            <img src={comfort} alt="" className="w-14 h-14" />
+            <p className="text-2xl font-semibold ">Find comfort</p>
           </div>
         </div>
-        <div className='flex justify-center bg-[#49A4B0] py-6'>
-          <div className=' flex items-center gap-5   '>
-            <img src={relief} alt="" className='w-14 h-14' />
+        <div className="flex justify-center bg-[#49A4B0] py-6">
+          <div className=" flex items-center gap-5   ">
+            <img src={relief} alt="" className="w-14 h-14" />
 
-            <p className='text-2xl font-semibold text-white'>
-              Find relief
+            <p className="text-2xl font-semibold text-white">Find relief</p>
+          </div>
+        </div>
+        <div className="flex justify-center bg-[#322E51] py-6">
+          <div className=" flex items-center gap-5   ">
+            <img src={peace} alt="" className="w-14 h-14" />
+            <p className="text-2xl font-semibold text-white">
+              Find peace of mind
             </p>
           </div>
         </div>
-        <div className='flex justify-center bg-[#322E51] py-6'>
-          <div className=' flex items-center gap-5   '>
-            <img src={peace} alt="" className='w-14 h-14' />
-            <p className='text-2xl font-semibold text-white'>Find peace of mind</p>
-
-          </div>
-        </div>
-
-
-
       </div>
-
     </div>
   );
 };
