@@ -8,7 +8,7 @@ import Stressed from '../Stressed/Stressed';
 
 const Home = () => {
     return (
-        <div>
+        <div className='pb-20 bg-[#EBF8F9]'>
             <Banner></Banner>
             <HelpSection></HelpSection>
             <Quality></Quality>
