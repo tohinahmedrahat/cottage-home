@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CEO from '../../../../assets/aurthur-nenner6.jpg'
+import CEO from '../../../../assets/ceo-1.jpg'
 
 import icon from '../../../../assets/blue-quote.jpg'
 const Welcome = () => {
@@ -8,12 +8,12 @@ const Welcome = () => {
         <div className='m-[150px] w-[95%] md:w-[80%] mx-auto  '>
             <div className='md:grid grid-cols-7 '>
 
-                <div className='col-span-2 ml-10 md:-mt-[80px] md:-mr-14 '>
-                    <img src={CEO} alt="" className='w-full h-[400px] md:pl-14' />
+                <div className=' col-span-2 md:ml-10 md:-mt-[80px] md:-mr-14 md:pl-14 '>
+                    <img src={CEO} alt="" className='w-full h-[380px] rounded-md' />
 
                 </div>
 
-                <div className='col-span-5 bg-[#EBF8F9] rounded-md -z-50'>
+                <div className='mt-5 p-6 md:p-0 md:mt-0 col-span-5 bg-[#EBF8F9] rounded-md -z-50'>
                     <div className='md:ml-[15%] mx-auto  py-10'>
                         <img src={icon} alt="" />
                         <p className='roboto font-bold text-xl'> “A Message from our CEO & Administrator”</p>
