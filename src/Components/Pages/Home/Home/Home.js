@@ -5,11 +5,13 @@ import EasierLife from '../EasierLife/EasierLife';
 import HelpSection from '../HelpSection/HelpSection';
 import Quality from '../Quality/Quality';
 import Stressed from '../Stressed/Stressed';
+import Welcome from '../Welcome/Welcome';
 
 const Home = () => {
     return (
-        <div>
+        <div className='pb-20'>
             <Banner></Banner>
+            <Welcome></Welcome>
             <HelpSection></HelpSection>
             <Quality></Quality>
             <Care></Care>

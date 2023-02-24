@@ -1,0 +1,30 @@
+.customColor{
+    background-color: rgba(255, 255, 255);
+ 
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 10;
+   
+}
+
+.customColor  .white {
+    color:#49465D;
+
+}
+
+.customWhite{
+    color: white;
+}
+
+.bg-hov2 {
+    /* position: relative; */
+    transition: .5s;
+}
+
+.bg-hov2:hover {
+
+    transform: translateY(-4px);
+    z-index: 2;
+
+}
