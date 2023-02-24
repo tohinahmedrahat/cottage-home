@@ -5,6 +5,7 @@ import EasierLife from '../EasierLife/EasierLife';
 import HelpSection from '../HelpSection/HelpSection';
 import Quality from '../Quality/Quality';
 import Stressed from '../Stressed/Stressed';
+import WeAre from '../WeAre/WeAre';
 import Welcome from '../Welcome/Welcome';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <Banner></Banner>
             <Welcome></Welcome>
             <HelpSection></HelpSection>
+            <WeAre></WeAre>
             <Quality></Quality>
             <Stressed></Stressed>
             <EasierLife></EasierLife>

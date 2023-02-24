@@ -9,7 +9,7 @@ const Welcome = () => {
             <div className='md:grid grid-cols-7 '>
 
                 <div className=' col-span-2 md:ml-10 md:-mt-[80px] md:-mr-14 md:pl-14 '>
-                    <img src={CEO} alt="" className='w-full h-[380px] rounded-md' />
+                    <img src={CEO} alt="" className='w-full h-[380px] rounded-md ' />
 
                 </div>
 

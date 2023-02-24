@@ -24,9 +24,10 @@ const Banner = () => {
                     <a href="tel:+1516-367-2266" className=' px-8 py-4 rounded-full lg:text-xl bg-primary uppercase  bg-hov2'>
                         Contact Us
                     </a>
-                    <button className='px-2 md:px-8 md:py-4 rounded-full lg:text-xl border-2 border-primary bg-hov2'>
+                    <a href="https://mybrooklyninstitute.com/"
+                    target='_blank' className='px-2 md:px-8 md:py-4 rounded-full lg:text-xl border-2 border-primary bg-hov2'>
                         Apply For a HHA Certification
-                    </button>
+                    </a>
 
                 </div>
       </div>
