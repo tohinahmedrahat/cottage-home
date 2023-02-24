@@ -35,9 +35,13 @@ const WeAre = () => {
         <div className='bg-[#F5F5F7] pb-20'>
             <div className=' pt-10 md:w-[80%] w-[95%] mx-auto'>
 
-                <h1 className='playrify text-3xl font-bold text-center' >
+                <h1 className='playrify text-4xl font-bold text-center' >
                     Who We Are
                 </h1>
+               <div className='flex justify-center'>
+               <hr  className='bg-primary px-5 mt-2 py-[1px] w-[220px]'/>
+               </div>
+                
 
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-7 '>
 
@@ -46,7 +50,7 @@ const WeAre = () => {
                             key={index}
                             className='mt-16
                             p-4'
-
+                            data-aos="zoom-in" data-aos-duration="1000"
 
                         >
                             <img src={info?.img} alt="" className='w-14 lg:w-20 lg:h-20 h-14' />
