@@ -45,7 +45,7 @@ const NavBar = () => {
     }
 
     return (
-        <div className="sticky top-0  roboto z-50 " id='navBar'>
+        <div className="sticky top-0  roboto  " id='navBar'>
             <div className="px-4 pt-4 pb-6 mx-auto w-[95%]">
                 <div className="relative flex items-center justify-between">
                     <NavLink
@@ -57,7 +57,7 @@ const NavBar = () => {
                       <div>
                       <div className='flex  items-center '>
                         <img src={navLogo} className='w-[80px] h-[80px] shadow-2xl p-2 border-2 border-primary rounded-full' alt="" />
-                        <p className={` ml-4 text-lg md:text-[28px] font-semibold tracking-wide text-[#00A6B2] transition-colors duration-200 `}>
+                        <p className={` ml-4 text-lg font-semibold tracking-wide text-[#00A6B2] transition-colors duration-200 nav-font`}>
                             Cottage Home Care Services     
                         </p>
                         </div> 
@@ -158,7 +158,7 @@ const NavBar = () => {
                                 className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
-                                <button className='bg-primary px-6 py-3 rounded-full text-white bg-hov2'>
+                                <button className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base text-base rounded-full text-white bg-hov2'>
                                     Get Home Care
                                 </button>
                             </NavLink>
