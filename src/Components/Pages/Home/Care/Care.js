@@ -20,7 +20,7 @@ const Care = () => {
             <FaPhone className="mr-2" />
             Call Us
           </a>
-          <button className="flex items-center px-16 py-6 border border-[#00a6b2] rounded-full text-white bg-[#00a6b2] duration-500 bg-hov2">
+          <button className="flex items-center px-16 py-6 border border-[#00a6b2] rounded-full text-white bg-primary duration-500 bg-hov2">
             Get Care
           </button>
         </div>
