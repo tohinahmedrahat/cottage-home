@@ -16,7 +16,7 @@ const Welcome = () => {
                 <div className='col-span-5 bg-[#EBF8F9] rounded-md -z-50'>
                     <div className='md:ml-[15%] mx-auto  py-10'>
                         <img src={icon} alt="" />
-                        <p className='roboto font-bold text-xl'> “A Message from our CEO & Administrator Navin Shivpal”</p>
+                        <p className='roboto font-bold text-xl'> “A Message from our CEO & Administrator”</p>
                         <p className='mt-3 roboto font-bold text-xl'>
                             “Welcome”
                         </p>
@@ -26,10 +26,12 @@ const Welcome = () => {
                             347-975-2525.
                         </p>
 
-                        
-                        <button className='bg-primary text-white px-5 py-3 rounded-full text-base font-semibold mt-5 uppercase shadow-lg bg-hov2'>
-                        Come Meet Me In Person
-                        </button>
+                        <p className='bg-primary px-5 mt-4 py-[1px] w-[168px]'>
+                        </p>
+                        <p className='roboto mt-1 font-bold text-lg'>
+                            CEO - Navin Shivpal
+                        </p>
+                      
                       
 
                     </div>
