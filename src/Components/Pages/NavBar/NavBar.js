@@ -50,19 +50,25 @@ const NavBar = () => {
                 <div className="relative flex items-center justify-between">
                     <NavLink
                         to='/'
-                        aria-label="Learn With Programming"
-                        title="Learn With Programming"
+                        aria-label="Cottage Home Care Services"
+                        title="Cottage Home Care Services"
                         className="inline-flex items-center"
                     >
                       <div>
-                      <div className='flex  items-center '>
+                      <div className='flex items-center '>
                         <img src={navLogo} className='w-[80px] h-[80px] shadow-2xl p-2 border-2 border-primary rounded-full' alt="" />
-                        <p className={` ml-4 text-lg font-semibold tracking-wide text-[#00A6B2] transition-colors duration-200 nav-font`}>
-                            Cottage Home Care Services     
-                        </p>
+                        <h5 className={` ml-4 text-lg font-semibold tracking-wide text-[#00A6B2] transition-colors duration-200 nav-font`}>
+                            Cottage Home Care Services  
+                            <hr className='mt-2 border-[1px] border-[#49465D]' />
+                        <p className='font-semibold text-base text-center text-[#49465D]'>
+                            
+                      THE RIGHT HOME CARE FOR YOU</p>   
+                        </h5>
+                        
                         </div> 
-                        <hr className='mt-1 border-[1px] border-[#a5a4ad]' />
-                        <p className='font-semibold text-base text-center text-[#49465D]'>We Care</p>
+                        
+                        
+                       
                         
                         </div>   
                         
