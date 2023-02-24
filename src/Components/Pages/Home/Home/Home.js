@@ -5,6 +5,7 @@ import EasierLife from '../EasierLife/EasierLife';
 import HelpSection from '../HelpSection/HelpSection';
 import Quality from '../Quality/Quality';
 import Stressed from '../Stressed/Stressed';
+import Testimonial from '../TestiMonial/Testimonial';
 import WeAre from '../WeAre/WeAre';
 import Welcome from '../Welcome/Welcome';
 
@@ -17,6 +18,7 @@ const Home = () => {
             <WeAre></WeAre>
             <Quality></Quality>
             <Stressed></Stressed>
+            <Testimonial></Testimonial>
             <EasierLife></EasierLife>
         </div>
     );
