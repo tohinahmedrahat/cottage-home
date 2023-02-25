@@ -57,7 +57,7 @@ const NavBar = () => {
                       <div>
                       <div className='flex items-center '>
                         <img src={navLogo} className='w-[80px] h-[80px] shadow-2xl p-2 border-2 border-primary rounded-full' alt="" />
-                        <h5 className={` ml-4 text-lg font-semibold tracking-wide text-[#00A6B2] transition-colors duration-200 nav-font`}>
+                        <h5 className={` ml-4 text-xl font-semibold tracking-wide text-[#00A6B2] transition-colors duration-200 nav-font`}>
                             Cottage Home Care Services  
                             <hr className='mt-2 border-[1px] border-[#49465D]' />
                         <p className='font-semibold text-base text-center text-[#49465D]'>
