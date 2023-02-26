@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Stressed = () => {
+const WhyChoose = () => {
     return (
         <div>
-            
+            Why Choose
         </div>
     );
 };
 
-export default Stressed;
+export default WhyChoose;
