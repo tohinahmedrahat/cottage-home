@@ -11,7 +11,7 @@ const EasierLife = () => {
         <p className="text-[#67637e] text-lg font-[Roboto]">
           Call us now at{" "}
           <a href="tel: +1516-367-2266" className="text-[#00a6b2]">
-          516-367-2266
+            516-367-2266
           </a>
           , or fill out this form and a member of our team will contact you
           within 24 business hours.
