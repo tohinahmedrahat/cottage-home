@@ -18,7 +18,7 @@ const WhyChoose = () => {
         </div>
         <div className="lg:w-1/2 px-5 lg:px-0">
           <h1 className="text-[#322e51] text-[35px] playrify font-bold mb-4">
-            Why choose Preferred Home Care?
+            Why choose Cottage Home Care Service?
           </h1>
           <p className="text-[18px] text-[#67637e] tracking-wide mb-5">
             Founded in 2007, Preferred has grown ― in just 10 years ― into one

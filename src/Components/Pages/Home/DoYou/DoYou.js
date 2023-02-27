@@ -66,6 +66,9 @@ const DoYou = () => {
               <img className="object-cover" src={image1} alt="" />
             </div>
             <div className="w-full lg:w-2/3 absolute -bottom-24 lg:-bottom-9 right-9">
+            {/* <iframe className="object-cover" width="560" height="315" 
+            
+            src="https://www.youtube.com/embed/9YffrCViTVk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
               <img className="object-cover" src={image2} alt="" />
             </div>
           </div>

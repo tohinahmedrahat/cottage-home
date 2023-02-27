@@ -2,7 +2,8 @@ import About from "../../Pages/About/About";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import Home from "../../Pages/Home/Home/Home";
 import Main from "../../Pages/Main/Main";
-import Services from "../../Pages/Services/Services";
+import Services from "../../Pages/Services/Services/Services";
+
 
 const { createBrowserRouter } = require("react-router-dom");
 

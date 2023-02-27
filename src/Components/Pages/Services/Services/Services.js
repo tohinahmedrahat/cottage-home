@@ -1,10 +1,10 @@
 import React from 'react';
-import Care from '../Home/Care/Care';
+import ServiceBanner from '../Banner/ServiceBanner';
 
 const Services = () => {
     return (
-        <div className='mb-20 min-h-screen' >
-            <Care></Care>
+        <div>
+            <ServiceBanner></ServiceBanner>
         </div>
     );
 };
