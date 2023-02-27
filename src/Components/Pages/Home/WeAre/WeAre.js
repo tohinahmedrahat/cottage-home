@@ -54,8 +54,8 @@ const WeAre = () => {
 
                         >
                             <img src={info?.img} alt="" className='w-14 lg:w-20 lg:h-20 h-14' />
-                            <p className='playrify text-2xl font-semibold mt-5'>{info.title}</p>
-                            <p className='mt-3'>
+                            <p className='playrify text-xl font-semibold mt-5'>{info.title}</p>
+                            <p className='mt-3 text-justify'>
                             <p>
                                                 {info?.description.slice(0, 300)}
                                                 <br />

@@ -37,6 +37,7 @@ const Welcome = () => {
                             onLoopDone={handleDone}
                             onType={handleType}
                         />
+                         
                              </p>
                         <p className='mt-3 roboto font-bold text-xl'>
                             “Welcome”
