@@ -15,7 +15,7 @@ const Banner = () => {
   return (
     <div>
       <div
-        className=" bg-no-repeat bg-cover bg-center text-center min-h-[100vh]"
+        className=" relative bg-no-repeat bg-cover bg-center text-center min-h-[100vh]"
         style={{ backgroundImage: `url(${background})` }}
       >
         <div className="max-w-2xl tracking-[1px] mx-auto pt-40 md:pt-[30vh] ">
@@ -32,17 +32,20 @@ const Banner = () => {
               onType={handleType}
             />
           </h1>
-          <h4 className="md:text-xl text-sm font-semibold text-[#dbf2f4] font-[Roboto] mb-8 px-5 md:px-0">
+          <div className="absolute md:top-[55vh]">
+          <h4 className=" md:text-xl text-sm font-semibold text-[#dbf2f4] font-[Roboto] mb-8 px-5 md:px-0">
             “HHA/PCA & CDPAP SERVICES THROUGHOUT NEW YORK CITY”
           </h4>
-        </div>
-        <div className=" mt-[10vh] flex justify-center text-white font-semibold gap-8">
+          <div className=" md:mt-[8vh] flex justify-center text-white font-semibold gap-8">
           <a
             href="tel:+1516-367-2266"
             className=" px-12 py-4 rounded-full lg:text-xl bg-primary uppercase  bg-hov2"
           >
             Contact Us
           </a>
+          </div>
+        </div>
+        
         </div>
       </div>
       <div className="grid grid-cols-3 ">

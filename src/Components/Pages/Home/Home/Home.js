@@ -4,7 +4,8 @@ import DoYou from "../DoYou/DoYou";
 import EasierLife from "../EasierLife/EasierLife";
 import HelpSection from "../HelpSection/HelpSection";
 import Quality from "../Quality/Quality";
-import Testimonial from "../TestiMonial/Testimonial";
+import TestimonialPart from "../TestiMonial/TestimonialPart";
+
 import WeAre from "../WeAre/WeAre";
 import Welcome from "../Welcome/Welcome";
 import WhyChoose from "../WhyChoose/WhyChoose";
@@ -19,7 +20,7 @@ const Home = () => {
       <Quality></Quality>
       <DoYou></DoYou>
       <WhyChoose></WhyChoose>
-      <Testimonial></Testimonial>
+      <TestimonialPart></TestimonialPart>
       <EasierLife></EasierLife>
     </div>
   );
