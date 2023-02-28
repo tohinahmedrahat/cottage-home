@@ -4,6 +4,7 @@ import DoYou from "../DoYou/DoYou";
 import EasierLife from "../EasierLife/EasierLife";
 import HelpSection from "../HelpSection/HelpSection";
 import Quality from "../Quality/Quality";
+import Stressed from "../../Services/Stressed/Stressed";
 import TestimonialPart from "../TestiMonial/TestimonialPart";
 
 import WeAre from "../WeAre/WeAre";
@@ -18,7 +19,7 @@ const Home = () => {
       <HelpSection></HelpSection>
       <WeAre></WeAre>
       <Quality></Quality>
-      {/* <DoYou></DoYou> */}
+      <DoYou></DoYou>
       <WhyChoose></WhyChoose>
       <TestimonialPart></TestimonialPart>
       <EasierLife></EasierLife>
