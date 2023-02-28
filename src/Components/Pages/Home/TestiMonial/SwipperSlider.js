@@ -65,13 +65,15 @@ export default function Slider() {
                     >
                         <div className="carousel-item md:relative w-full pt-[150px]">
                             <div className='md:grid grid-cols-8  '>
-                                <div className='col-span-2 md:-mt-[80px] '>
-                                    <div className='lg:absolute  left-[10%] '>
+                                <div className='col-span-2 md:-mt-[80px] '
+                               >
+                                    <div className='md:absolute  lg:left-[10%] '>
                                         <img src={slide.image} className='w-full h-96 rounded-md' alt="" />
                                     </div>
                                 </div>
-                                <div className='col-span-6 bg-[#EBF8F9] py-6 md:h-[400px] rounded-md  '>
-                                    <div className='w-[60%] mx-auto '>
+                                <div className='col-span-6 bg-[#EBF8F9] py-6 md:h-[400px] rounded-md '
+                                 >
+                                    <div className=' md:w-[60%] lg:mx-auto md:ml-[30%]  '>
                                         <img src={icon} alt="" />
                                         <p className='text-justify italic mt-4 text-[#67637E]'>{'“' + slide.description + '”'} </p>
 

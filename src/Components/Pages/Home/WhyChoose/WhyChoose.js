@@ -6,7 +6,7 @@ const WhyChoose = () => {
   return (
     <div className="pt-10 pb-[100px]">
       <div className="lg:flex max-w-4xl mx-auto items-center">
-        <div className="lg:w-1/2 hidden md:block">
+        <div className="lg:w-1/2 hidden md:block" data-aos="fade-right" data-aos-duration="2000">
           <div className="relative">
             <div>
               <img src={image1} className="w-1/2 lg:w-4/5 mx-auto lg:mx-0" alt="" />
@@ -16,7 +16,7 @@ const WhyChoose = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 px-5 lg:px-0">
+        <div className="lg:w-1/2 px-5 lg:px-0"  data-aos="fade-left" data-aos-duration="2000">
           <h1 className="text-[#322e51] text-[35px] playrify font-bold mb-4">
             Why choose Cottage Home Care Service?
           </h1>
