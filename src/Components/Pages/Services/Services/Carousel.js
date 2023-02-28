@@ -29,7 +29,7 @@ export default function Slider() {
         <>
             <Swiper
                  modules={[Navigation, Pagination, A11y,Autoplay]}
-                 
+                 pagination={ true}
                  slidesPerView="auto"
                  loop={true}
                  autoplay={{

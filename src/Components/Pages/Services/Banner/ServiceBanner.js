@@ -31,7 +31,7 @@ const ServiceBanner = () => {
             />
           </h1>
           <div className="absolute md:top-[52vh]">
-          <h4 className=" md:text-xl text-sm font-semibold text-[#dbf2f4] font-[Roboto] mb-8 px-5 md:px-0">
+          <h4 className=" md:text-xl text-sm font-semibold text-[#dbf2f4] font-[Roboto] mb-4 px-5 md:px-0">
           “I was hopeless and depressed. I couldn’t even clean my own home!”
           </h4>
 
