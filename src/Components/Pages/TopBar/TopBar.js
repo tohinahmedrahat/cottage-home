@@ -5,12 +5,12 @@ import { AiFillInstagram} from 'react-icons/ai';
 import { GrGooglePlus } from 'react-icons/gr';
 import { BsFacebook } from 'react-icons/bs';
 import { TfiEmail} from 'react-icons/tfi';
-import { NavLink, useLocation, Link } from 'react-router-dom';
+
 
 
 const TopBar = () => {
     return (
-       <div className='text-[#2E294E] '>
+       <div className='text-[#2E294E] hidden md:block'>
          <div className='roboto px-8 py-3 flex items-center justify-between'>
             <div className='flex gap-8'>
             <div className='flex gap-4 items-center md:text-lg font-medium'>

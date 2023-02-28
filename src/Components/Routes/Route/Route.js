@@ -1,4 +1,5 @@
 import About from "../../Pages/About/About";
+import Contacts from "../../Pages/Contacts/Contacts/Contacts";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import Home from "../../Pages/Home/Home/Home";
 import Main from "../../Pages/Main/Main";
@@ -26,8 +27,8 @@ const Route = createBrowserRouter([
             element:<Services></Services>
         },
         {
-            path:"about",
-            element:<About></About>
+            path:"/contacts",
+            element:<Contacts></Contacts>
         }
       ]
     },

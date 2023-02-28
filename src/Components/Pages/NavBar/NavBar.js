@@ -6,26 +6,26 @@ import './Nav.css'
 
 
 const NavBar = () => {
-    const { pathname } = useLocation();
+    // const { pathname } = useLocation();
 
     const [navColor, setNavColor] = useState(false)
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        if (pathname === '/contacts') {
-            setNavColor(true)
-
-
-        }
+    //     if (pathname === '/contacts') {
+    //         setNavColor(true)
 
 
-        else {
-            setNavColor(false)
-        }
+    //     }
+
+
+    //     else {
+    //         setNavColor(false)
+    //     }
 
 
 
-    }, [pathname])
+    // }, [pathname])
 
     // #49465D
 
@@ -102,8 +102,8 @@ const NavBar = () => {
                         <li>
                             <NavLink
                                 to='/contacts'
-                                aria-label="Blog"
-                                title="Blog"
+                                aria-label="Contact US"
+                                title="Contact US"
                                 className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
@@ -114,8 +114,8 @@ const NavBar = () => {
                         <li>
                             <NavLink
                                 to='/covid'
-                                aria-label="Blog"
-                                title="Blog"
+                                aria-label="Covid-19"
+                                title="Covid-19"
                                 className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
@@ -126,8 +126,8 @@ const NavBar = () => {
                         <li>
                             <NavLink
                                 to='/hhaCertification'
-                                aria-label="Blog"
-                                title="Blog"
+                                aria-label="HHA Certification"
+                                title="HHA Certification"
                                 className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
@@ -137,8 +137,8 @@ const NavBar = () => {
                         <li>
                             <NavLink
                                 to='/resources'
-                                aria-label="Blog"
-                                title="Blog"
+                                aria-label="Resources"
+                                title="Resources"
                                 className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
