@@ -1,6 +1,7 @@
 import React from "react";
 import image1 from "../../../../assets/preferred-whyus.png";
 import image2 from "../../../../assets/preferred-whyus2.png";
+import { FaStar } from 'react-icons/fa';
 
 const WhyChoose = () => {
   return (
@@ -16,19 +17,25 @@ const WhyChoose = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 px-5 lg:px-0"  data-aos="fade-left" data-aos-duration="2000">
-          <h1 className="text-[#322e51] text-[35px] playrify font-bold mb-4">
-            Why choose Cottage Home Care Service?
+        <div className="lg:w-1/2 px-5 lg:px-0" data-aos="fade-left" data-aos-duration="2000">
+          <h1 className="text-[#322e51] text-[30px] playrify font-bold mb-4">
+            Why choose Cottage Home Care Services?
           </h1>
-          <p className="text-[18px] text-[#67637e] tracking-wide mb-5">
-            Founded in 2007, Preferred has grown ― in just 10 years ― into one
-            of the state’s largest licensed home care agencies.
-          </p>
-          <strong className="text-[#322e51] font-semibold text-lg">
-            Why? Because we’ve earned the trust of doctors & social workers
-            across New York.
-          </strong>
-          <div className=" mt-[10vh] flex justify-start text-white gap-8">
+          <div className='flex items-center'>
+            <FaStar className='mr-3 text-[#00A6B2] text-2xl'></FaStar>
+            <p className='text-[#67637e] text-base w-[95%] mx-auto text-justify '>Cottage Home Care Services has a person-led approach and genuinely cares for the welfare and well-being of our patients, aides, and staff. We're like family.</p>
+          </div>
+          <div className='flex items-center mt-5'>
+            <FaStar className='mr-3 text-[#00A6B2] text-2xl'></FaStar>
+            <p className='text-[#67637e] text-base w-[100%] mx-auto text-justify '>We will ensure your loved ones are safe, comfortable and given the best care bring relief to family members.</p>
+          </div>
+          <div className='flex items-center mt-5'>
+            <FaStar className='mr-3 text-[#00A6B2] text-2xl'></FaStar>
+            <p className='text-[#67637e] text-base w-[95%] mx-auto text-justify '>We provide personalized care. Each of our patients receive one-on-one attention and a care plan that is tailored to their specific. It makes treatment more effective and builds trust.</p>
+          </div>
+
+
+          <div className=" mt-[5vh] flex justify-start text-white gap-8">
             <a
               href="tel:+1516-367-2266"
               className=" px-9 py-4 rounded-full bg-primary capitalize  bg-hov2"
