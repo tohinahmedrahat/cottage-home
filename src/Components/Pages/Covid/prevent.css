@@ -1,0 +1,7 @@
+
+.bg-cover{
+    background-image: url('../../../../src/assets/Covid-19/Prevent/shape-d.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
