@@ -1,9 +1,11 @@
 import React from "react";
+import Care from "../../Home/Care/Care";
 import ServiceBanner from "../Banner/ServiceBanner";
 import Stressed from "../Stressed/Stressed";
 import Carousel from "./Carousel";
 
 const Services = () => {
+  window.scrollTo(0, 0);
   return (
     <div>
       <ServiceBanner></ServiceBanner>
@@ -14,6 +16,7 @@ const Services = () => {
       <Carousel></Carousel>
       </div>
       </div>
+      {/* <Care></Care> */}
       
     </div>
   );

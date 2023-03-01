@@ -1,5 +1,6 @@
 import About from "../../Pages/About/About";
 import Contacts from "../../Pages/Contacts/Contacts/Contacts";
+import Covid from "../../Pages/Covid/Covid";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import Home from "../../Pages/Home/Home/Home";
 import Main from "../../Pages/Main/Main";
@@ -29,6 +30,10 @@ const Route = createBrowserRouter([
         {
             path:"/contacts",
             element:<Contacts></Contacts>
+        },
+        {
+            path:"/covid",
+            element:<Covid></Covid>
         }
       ]
     },
