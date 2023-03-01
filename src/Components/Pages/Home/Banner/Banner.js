@@ -21,7 +21,7 @@ const Banner = () => {
         style={{ backgroundImage: `url(${background})` }}
       >
         <div className=" tracking-[1px] mx-auto pt-40">
-         <div className="h-[150px] max-w-2xl mx-auto md:mt-[10vh]">
+         <div className="h-[150px] max-w-2xl mx-auto mt-[10vh]">
          <h1 className="md:text-6xl text-2xl px-[15px] text-white font-[PlayfairDisplay] ">
             <Typewriter
               words={["RIGHT HOME CARE FOR YOU"]}
@@ -36,9 +36,9 @@ const Banner = () => {
             />
           </h1>
          </div>
-          <div className=" lg:mt-[60px]">
-           <div className=" mx-auto text-start ">
-            <div className="rounded-md bg-contact-2 md:max-w-2xl lg:max-w-3xl mx-auto">
+          <div className="md:mt-[8vh]">
+           <div className=" mx-auto  ">
+            <div className="rounded-md bg-contact-2 md:max-w-3xl mx-auto">
             <div className="bg-simple px-5 py-4 ">
             <p className="text-white text-sm text-justify font-normal">
             Cottage Home Care Services provides care to seniors in need and has taken on some of the most challenging cases in New York City to fulfill its mandate of providing care to everyone who qualifies. 

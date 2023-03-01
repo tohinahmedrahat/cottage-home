@@ -35,3 +35,13 @@
     }
 
 }
+@media only screen and (min-width:2400px) and (max-width:3000px){
+    .nav-font{
+        font-size: 28px;
+    }
+
+    
+
+}
+
+
