@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutCovid from './AboutCovid';
 import Banner from './Banner';
+import CovidSymption from './CovidSymption';
 import PreventSteps from './PreventSteps';
 import Response from './Response';
 
@@ -16,10 +17,10 @@ const Covid = () => {
                 
                 ></Banner>
                 
-
             </div>
             <Response></Response>
             <AboutCovid></AboutCovid>
+            <CovidSymption></CovidSymption>  
             <PreventSteps></PreventSteps>
         </div>
     );

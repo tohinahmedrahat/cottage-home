@@ -1,9 +1,10 @@
 import React from 'react';
 import covidBanner from '../../../assets/Covid-19/gfx-a.png'
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const AboutCovid = () => {
     return (
-        <div className='my-16 w-[80%] mx-auto' id='about-covid'>
+        <div className='my-16 w-[95%] lg:w-[80%] mx-auto' id='about-covid'>
             
             <div className='grid md:grid-cols-2 items-center gap-7'>
                 <div data-aos-duration="2000" data-aos="fade-right">
@@ -34,6 +35,20 @@ const AboutCovid = () => {
                     <p className='text-justify mt-5'>
                     Standard recommendations to prevent infection spread include regular hand washing, covering mouth and nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact with anyone showing symptoms of respiratory illness such as coughing and sneezing.
                     </p>
+
+                    <h4 className='text-2xl font-bold mt-5'>
+                    What you need to know
+                    </h4>
+
+                    <div className='lg:flex items-center gap-10  '>
+                        <a href="#symtom-covid" className='flex gap-3 items-center text-primary mt-3'>
+                        Symptoms of coronavirus <AiOutlineArrowRight/>
+
+                        </a>
+                        <a href="#actions-section" className='flex gap-3 items-center text-primary mt-3'>
+                        How to Prevent & Protect <AiOutlineArrowRight/>
+                        </a>
+                    </div>
 
                 </div>
 

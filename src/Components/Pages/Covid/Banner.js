@@ -10,7 +10,7 @@ const Banner = () => {
 
     
     return (
-        <div className='md:grid grid-cols-2 gap-5 items-center'>
+        <div className='md:grid grid-cols-2 gap-5 items-center flex flex-col-reverse'>
 
             <div className='font-[Roboto]' data-aos="fade-right" data-aos-duration="2000"
            >
@@ -45,7 +45,7 @@ const Banner = () => {
 
             </div>
 
-            <div data-aos="fade-left" data-aos-duration="2000">
+            <div className=' ' data-aos="fade-left" data-aos-duration="2000">
 
                 <img
                     src={covidBanner} className='md:h-[30vh] lg:h-[75vh] mx-auto' alt="" />
