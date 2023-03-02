@@ -69,14 +69,14 @@ const PreventSteps = () => {
     return (
         <div className=' py-10 bg-cover ' id='actions-section'>
             <h1 className='md:text-3xl font-semibold text-center font-[PlayfairDisplay]'>
-                What Actions We Took and so on
+                What Actions We Took And So On
             </h1>
 
             <p className='md:w-[60%] mx-auto w-[95%] text-center mt-5'>The safety of our employees and our clients at Cottage Home Care Services is our priority. As the Coronavirus (COVID-19) pandemic continues, we are monitoring the situation closely and following the guidance from the Centers for Disease Control
 
                 and Prevention and local health authorities.</p>
 
-            <div className='grid lg:grid-cols-2 gap-8 w-[95%]  md:w-[70%] mx-auto'>
+            <div className='grid lg:grid-cols-2 gap-8 w-[95%]  md:w-[70%] mx-auto mt-8'>
 
                 <div>
                     {

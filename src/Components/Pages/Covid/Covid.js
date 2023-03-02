@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutCovid from './AboutCovid';
 import Banner from './Banner';
 import PreventSteps from './PreventSteps';
 import Response from './Response';
@@ -18,6 +19,7 @@ const Covid = () => {
 
             </div>
             <Response></Response>
+            <AboutCovid></AboutCovid>
             <PreventSteps></PreventSteps>
         </div>
     );
