@@ -70,7 +70,7 @@ const Welcome = () => {
                             <img src={CEO} className='lg:w-full md:w-[90%] h-96 lg:h-96 md:h-80 rounded-md w-[80%] mx-auto' alt="" />
                         </div>
                     </div>
-                    <div className='-z-50 col-span-6 bg-[#EBF8F9] py-8  rounded-md lg:h-[380px] 'data-aos="fade-left" data-aos-duration="3000"
+                    <div className='-z-50 col-span-6 bg-[#EBF8F9] py-8 px-4 rounded-md lg:h-[380px] 'data-aos="fade-left" data-aos-duration="3000"
                     >
                         <div>
                         <div className=' md:w-[70%] mx-auto lg:pl-4  md:ml-[18%]  '>

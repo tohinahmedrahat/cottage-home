@@ -12,7 +12,8 @@ const Banner = () => {
     return (
         <div className='md:grid grid-cols-2 gap-5 items-center'>
 
-            <div className='font-[Roboto]'>
+            <div className='font-[Roboto]' data-aos="fade-right" data-aos-duration="2000"
+           >
                 <div className='flex gap-3 items-center'>
                     <p className='bg-[#F86168] font-[Roboto] text-white uppercase px-2 py-[2px] w-[90px] rounded-sm font-semibold'>
                         COVID-19
@@ -36,18 +37,18 @@ const Banner = () => {
                         How to Protect <BsShieldShaded/>
                     </a>
 
-                    <p className='flex gap-2 items-center text-primary font-semibold cursor-pointer bg-hov2 lg:mt-0 mt-3 '>
+                    <a href='#about-covid' className='flex gap-2 items-center text-primary font-semibold cursor-pointer bg-hov2 lg:mt-0 mt-3 '>
                         About COVID-19 <AiOutlineArrowRight/>
-                    </p>
+                    </a>
                 </div>
 
 
             </div>
 
-            <div>
+            <div data-aos="fade-left" data-aos-duration="2000">
 
                 <img
-                    src={covidBanner} className='md:h-[40vh] lg:h-[75vh] mx-auto' alt="" />
+                    src={covidBanner} className='md:h-[30vh] lg:h-[75vh] mx-auto' alt="" />
 
 
             </div>
