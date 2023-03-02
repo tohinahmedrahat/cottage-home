@@ -85,6 +85,8 @@ const PreventSteps = () => {
 
                             className='shadow-md my-5 px-6 py-5 bg-hov2 cursor-pointer hover:bg-primary hover:text-white 
                             top-div rounded-md'
+                            data-aos-duration="2000"
+                            data-aos="zoom-in" 
 
                         >
 
@@ -116,6 +118,8 @@ const PreventSteps = () => {
                         wrongThings.map((wrong, index) => <div
                             key={index}
                             className='shadow-md my-5 px-6 py-5 bg-hov2 cursor-pointer hover:bg-primary hover:text-white top-div rounded-md'
+                            data-aos-duration="2000"
+                            data-aos="zoom-in" 
                         >
                             <div className='flex gap-4 items-center '>
                                 <div className='relative'>

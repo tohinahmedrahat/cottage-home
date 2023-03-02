@@ -3,15 +3,15 @@ import covidBanner from '../../../assets/Covid-19/gfx-a.png'
 
 const AboutCovid = () => {
     return (
-        <div className='my-16 w-[80%] mx-auto'>
+        <div className='my-16 w-[80%] mx-auto' id='about-covid'>
             
             <div className='grid md:grid-cols-2 items-center gap-7'>
-                <div>
+                <div data-aos-duration="2000" data-aos="fade-right">
                     <img src={covidBanner} alt="" className='h-96 md:h-[450px] md:ml-auto mr-10 ' />
 
                 </div>
 
-                <div className='font-[Roboto]'>
+                <div className='font-[Roboto]'data-aos-duration="2000" data-aos="fade-left">
 
                     <h5 className='text-[#F65858] text-lg font-semibold'> About the disease</h5>
 
