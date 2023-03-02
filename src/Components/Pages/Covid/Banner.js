@@ -7,6 +7,8 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import covidBanner from '../../../../src/assets/Covid-19/header-b.png'
 
 const Banner = () => {
+
+    
     return (
         <div className='md:grid grid-cols-2 gap-5 items-center'>
 
@@ -30,7 +32,7 @@ const Banner = () => {
                 </p>
 
                 <div className='mt-5 lg:mt-8  lg:flex items-center gap-10'>
-                    <a href="#protect" className='bg-primary px-5 py-3 bg-hov2 text-white shadow-md rounded-md  flex items-center gap-3'>
+                    <a  href="#actions-section" className='bg-primary px-5 py-3 bg-hov2 text-white shadow-md rounded-md  flex items-center gap-3'>
                         How to Protect <BsShieldShaded/>
                     </a>
 
