@@ -63,7 +63,7 @@ export default function Slider() {
                     Slider.map(slide => <SwiperSlide
 
                     >
-                        <div className="carousel-item md:relative w-full pt-[150px]">
+                        <div className=" md:relative w-full pt-[150px]">
                             <div className='md:grid grid-cols-8  '>
                                 <div className='col-span-2 md:-mt-[80px] '
                                >
