@@ -20,7 +20,7 @@ const Stressed = () => {
       </div>
       </div>
       <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-6xl md:px-24 lg:px-8">
-        <div className="flex flex-col items-center justify-between lg:flex-row">
+        <div className="flex flex-col-reverse items-center justify-between lg:flex-row">
           <div className="mb-10  lg:max-w-lg lg:pr-5 lg:mb-0" data-aos="fade-right" data-aos-duration="2000">
             <div className="max-w-xl mb-6 md:px-14">
               <p className="max-w-lg  text-lg md:text-2xl font-semibold tracking-tight text-[#67637e]  ">
@@ -92,7 +92,7 @@ const Stressed = () => {
                     <HiStar className="text-3xl" />
                   </span>
                   <span className="text-[#2f3450] text-[1em] tracking-wide">
-                    Reminders + escorts, so appointments are never missed.
+                    Reminders + escorts, so appointments are never missed you.
                   </span>
                 </p>
                 <p className="flex justify-center items-center mb-5">

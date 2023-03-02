@@ -68,7 +68,7 @@ const PreventSteps = () => {
 
     return (
         <div className=' py-10 bg-cover ' id='actions-section'>
-            <h1 className='md:text-3xl font-semibold text-center font-[PlayfairDisplay]'>
+            <h1 className= ' text-xl md:text-3xl font-semibold text-center font-[PlayfairDisplay]'>
                 What Actions We Took And So On
             </h1>
 
