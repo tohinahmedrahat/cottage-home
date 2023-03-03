@@ -53,6 +53,7 @@ const OfficeLocation = () => {
                     offices.map((office,index)=><div 
                     
                     key={index}
+                    data-aos="zoom-in" data-aos-duration="2000"
                     >
                     <h5 className='text-lg font-semibold text-primary'>{office?.name}</h5>
                     <p className='text-white'>{office?.address1}</p>
