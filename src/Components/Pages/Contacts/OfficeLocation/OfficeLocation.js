@@ -59,7 +59,7 @@ const OfficeLocation = () => {
                     <p className='text-white'>{office?.address2}</p>
 
                     <a href={office?.direction} target='_blank'  className='uppercase text-sm text-white flex  items-center mt-3 justify-center md:justify-start hover:text-primary'> <AiOutlineArrowRight/> Get Direction</a>
-                    <div className='mt-4'>
+                    <div className='mt-5'>
                     <label
                     
                     onClick={()=>officeHandler(office)}
