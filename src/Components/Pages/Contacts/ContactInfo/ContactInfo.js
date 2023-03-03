@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './ContactInfo.css'
+
 import { IoLocationOutline } from 'react-icons/io5';
 import { MdPhoneAndroid } from 'react-icons/md';
 import { AiOutlineMail } from 'react-icons/ai';
@@ -57,7 +59,7 @@ const ContactInfo = () => {
     return (
         <div className='my-16'>
             <div>
-                <div className='w-[95%] lg:w-[50%] mx-auto text-center' >
+                <div className='w-[95%] lg:w-[50%] mx-auto text-center'data-aos="fade-up" data-aos-duration="2000" >
 
                     <h1 className='font-[PlayfairDisplay] my-5 text-3xl font-semibold '>Cottage Home Care Services</h1>
                     <p className='Poppins'> Cottage Home Care Services is open to any feedback. Have questions? Unsure whether you can be covered by your insurance for Home Care Services? Need assessment? We would love to speak to you. Please call or email us! Thank you! </p>
@@ -69,12 +71,13 @@ const ContactInfo = () => {
             <div className='w-[95%] lg:w-[85%] mx-auto md:grid grid-cols-4 mt-[100px] Poppins'>
 
                 <div
-                    className=' mr-1 mt-1 md:mt-0' >
-                    <div className='relative bg-[#EBF8F9]  py-4 px-3 min-h-[24rem] rounded-md' data-aos="zoom-in" data-aos-duration="2000">
+                    className=' mr-1 mt-1 md:mt-0 ' >
+                    <div className='relative bg-[#EBF8F9]  py-4 px-3 min-h-[24rem] rounded-md' data-aos="zoom-in" data-aos-duration="500">
                         <h5 className='text-gray-700 text-lg text-center mt-14  font-bold font-[PlayfairDisplay]'>Visit Us</h5>
 
-                        <p className='absolute bg-primary text-white w-20 h-20 rounded-full flex items-center justify-center text-4xl left-[37%] -top-8'><IoLocationOutline /></p>
+                        <p className='absolute bg-primary text-white w-20 h-20 rounded-full flex items-center justify-center text-4xl left-[37%] -top-8 '><IoLocationOutline /></p>
 
+                       
                         <p className='mt-16 text-sm text-center text-gray-600 '>
                             25 Newbridge Road, Suite 302, Hicksville, New York 11801, United States
 
@@ -104,7 +107,7 @@ const ContactInfo = () => {
                 </div>
                 <div
                     className=' mr-1 mt-1 md:mt-0' >
-                    <div className='relative bg-[#EBF8F9]  py-4 px-3 min-h-[24rem] rounded-md' data-aos="zoom-in" data-aos-duration="2000">
+                    <div className='relative bg-[#EBF8F9]  py-4 px-3 min-h-[24rem] rounded-md' data-aos="zoom-in" data-aos-duration="1000">
                         <h5 className='text-gray-700 text-lg text-center mt-14  font-bold font-[PlayfairDisplay]'>Call Us</h5>
 
                         <p className='absolute bg-primary text-white w-20 h-20 rounded-full flex items-center justify-center text-4xl left-[37%] -top-8'><MdPhoneAndroid /></p>
@@ -135,21 +138,21 @@ const ContactInfo = () => {
 
                 </div>
                 <div
-                    className=' mr-1 mt-1 md:mt-0' >
-                    <div className='relative bg-[#EBF8F9]  py-4 px-3 min-h-[24rem] rounded-md' data-aos="zoom-in" data-aos-duration="2000">
+                    className=' mr-1 mt-1 md:mt-0 cutom-animation' >
+                    <div className='relative bg-[#EBF8F9]  py-4 px-3 min-h-[24rem] rounded-md' data-aos="zoom-in" data-aos-duration="1500">
                         <h5 className='text-gray-700 text-lg text-center mt-14  font-bold font-[PlayfairDisplay]'>Email Us</h5>
 
                         <p className='absolute bg-primary text-white w-20 h-20 rounded-full flex items-center justify-center text-4xl left-[37%] -top-8'><AiOutlineMail /></p>
 
                         <a href="mailto:info@cottagehomecare.com" className='block mt-16 text-base text-center text-gray-600 hover:text-primary'>
-                        info@cottagehomecare.com
+                            info@cottagehomecare.com
 
                         </a>
                         <a href="mailto:info@cottagehomecare.com" className='block mt-3 text-base text-center text-gray-600 hover:text-primary'>
-                        info@cottagehomecare.com
+                            info@cottagehomecare.com
 
                         </a>
-                       
+
 
                         {/* <a href='#' className='text-[#00a6b2b1] flex justify-center items-center text-2xl gap-5 text-gray-600 '>
                             {
@@ -173,25 +176,25 @@ const ContactInfo = () => {
 
                         <p className='absolute bg-primary text-white w-20 h-20 rounded-full flex items-center justify-center text-4xl left-[37%] -top-8'><RiUserFollowLine /></p>
 
-                      
-                       <div className='text-[#00a6b2b1] flex justify-center items-center text-2xl gap-5 mt-20' >
-                       <a href='https://www.facebook.com/CottageHCS' target='_blank'>
-                        
-                       <FaFacebookF/>
-                        </a>
-                        <a href='https://twitter.com/cottagecareny' target='_blank' >
-                        
-                <AiOutlineTwitter />
-              
-                        </a>
-                        <a href='' >
-                       
-               
-                <ImInstagram />
-                        </a>
-                       </div>
 
-                        
+                        <div className='text-[#00a6b2b1] flex justify-center items-center text-2xl gap-5 mt-20' >
+                            <a href='https://www.facebook.com/CottageHCS' target='_blank'>
+
+                                <FaFacebookF />
+                            </a>
+                            <a href='https://twitter.com/cottagecareny' target='_blank' >
+
+                                <AiOutlineTwitter />
+
+                            </a>
+                            <a href='' >
+
+
+                                <ImInstagram />
+                            </a>
+                        </div>
+
+
 
 
 
