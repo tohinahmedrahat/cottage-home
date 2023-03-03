@@ -5,12 +5,12 @@ import carebg from "../../../../assets/get-care.jpg";
 const Care = () => {
   return (
     <div
-      className="bg-no-repeat bg-cover bg-center text-center my-24"
+      className="bg-no-repeat bg-cover bg-center text-center"
       style={{ backgroundImage: `url(${carebg})` }}
     >
       <div className="pt-40">
         <h1 className="text-[35px] font-bold relative font-[PlayfairDisplay] text-white afterEffect">
-          Get Care
+          Contact Us
         </h1>
         <div className="pt-11 pb-[120px] font-[Roboto] flex justify-center items-center gap-8 md:gap-0 md:space-y-0 md:space-x-7 flex-wrap">
           <a
