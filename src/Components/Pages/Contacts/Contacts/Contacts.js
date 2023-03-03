@@ -1,10 +1,12 @@
 import React from 'react';
+import Care from '../../Home/Care/Care';
+import ContactInfo from '../ContactInfo/ContactInfo';
 
 const Contacts = () => {
     return (
         <div>
-            <h1 className='
-            text-center'> Contacts </h1>
+           <Care></Care>
+           <ContactInfo></ContactInfo>
         </div>
     );
 };
