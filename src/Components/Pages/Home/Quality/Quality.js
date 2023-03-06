@@ -8,7 +8,7 @@ const Quality = () => {
     return (
         <div className='bg-white '>
             
-            <h3 className="text-[#322e51] text-4xl font-bold text-center mt-10">The Service We Provide <br /> in-home care</h3>
+            <h3 className="text-[#322e51] text-2xl md:text-3xl lg:text-4xl font-bold text-center mt-10 playrify">The Service We Provide <br /> in-home care</h3>
             <hr className='border-[#00a6b2] border-t-2 w-12 mt-5 mb-8 mx-auto' />
             <h6 className='text-center text-primary'>HHA/PCA CDPAP SERVICES THROUGHOUT NEW YORK CITY </h6>
             <div className='md:grid grid-cols-2  w-[90%] mx-auto pb-14 pt-9'>

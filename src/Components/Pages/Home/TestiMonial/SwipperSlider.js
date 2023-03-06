@@ -63,7 +63,7 @@ export default function Slider() {
                     Slider.map(slide => <SwiperSlide
 
                     >
-                        <div className="carousel-item md:relative w-full pt-[150px]">
+                        <div className=" md:relative w-full pt-[150px]">
                             <div className='md:grid grid-cols-8  '>
                                 <div className='col-span-2 md:-mt-[80px] '
                                >
@@ -71,7 +71,7 @@ export default function Slider() {
                                         <img src={slide.image} className='w-full h-96 rounded-md' alt="" />
                                     </div>
                                 </div>
-                                <div className='col-span-6 bg-[#EBF8F9] py-6 md:h-[400px] rounded-md '
+                                <div className='col-span-6 bg-[#EBF8F9] py-6 md:h-[400px] rounded-md px-4'
                                  >
                                     <div className=' md:w-[60%] lg:mx-auto md:ml-[30%]  '>
                                         <img src={icon} alt="" />
