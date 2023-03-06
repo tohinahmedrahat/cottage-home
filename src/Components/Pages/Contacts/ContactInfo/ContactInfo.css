@@ -1,4 +1,20 @@
+.cart:hover .logo{
+    animation-name: pop;
+    animation-duration: 500ms;
+   animation-iteration-count: 1;
+}
 
-
-
-
+@keyframes pop {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
