@@ -9,10 +9,10 @@ import './Banner.css'
 
 const Banner = () => {
   const handleDone = () => {
-    console.log(`Done after 5 loops!`);
+    // console.log(`Done after 5 loops!`);
   };
   const handleType = () => {
-    console.log(`Done after 5 loops!`);
+    // console.log(`Done after 5 loops!`);
   };
   return (
     <div>

@@ -1,9 +1,18 @@
+import DashBoardLayout from "../../../DashBoardLayout/DashBoardLayout";
+import AllMessages from "../../AllMessages/AllMessages";
 import About from "../../Pages/About/About";
+import AdminRoute from "../../Pages/AdminRoute/AdminRoute";
+import Cdpaps from "../../Pages/CDPAP/Cdpaps";
 import Contacts from "../../Pages/Contacts/Contacts/Contacts";
 import Covid from "../../Pages/Covid/Covid";
+import DashBoard from "../../Pages/DashBoard/DashBoard";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import Home from "../../Pages/Home/Home/Home";
+import Login from "../../Pages/LogIn/Login";
 import Main from "../../Pages/Main/Main";
+import Pca from "../../Pages/PCA/Pca";
+import PrivateRoute from "../../Pages/PrivateRoute/PrivateRoute";
+import Register from "../../Pages/Register/Register";
 import Services from "../../Pages/Services/Services/Services";
 
 
@@ -29,13 +38,45 @@ const Route = createBrowserRouter([
         },
         {
             path:"/contacts",
-            element:<Contacts></Contacts>
+            element:<PrivateRoute><Contacts></Contacts></PrivateRoute>
         },
         {
             path:"/covid",
             element:<Covid></Covid>
+        },
+        {
+            path:"/login",
+            element:<Login></Login>
+        },
+        {
+            path:"/register",
+            element:<Register></Register>
+        },
+        {
+            path:"/register",
+            element:<Register></Register>
         }
+       
       ]
     },
+    {
+        path:'/dashboard',
+        element:<PrivateRoute> <DashBoardLayout></DashBoardLayout></PrivateRoute>,
+        errorElement:<ErrorPage></ErrorPage>,
+        children:[
+            {
+                path:'/dashboard',
+                element:<AdminRoute><AllMessages></AllMessages> </AdminRoute>
+            },
+            {
+                path:'/dashboard/cdpap',
+                element:<AdminRoute><Cdpaps></Cdpaps> </AdminRoute>
+            },
+            {
+                path:'/dashboard/pca',
+                element:<AdminRoute><Pca></Pca> </AdminRoute>
+            },
+        ]
+    }
   ]);
   export default Route;
