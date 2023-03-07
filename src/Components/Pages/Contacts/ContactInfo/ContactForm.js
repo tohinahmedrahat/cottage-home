@@ -26,7 +26,7 @@ const submitHandler = (data)=>{
 
         }
 
-fetch('https://cottage-home-care-services-server-site.vercel.app/messages', {
+fetch('http://localhost:5000/messages', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

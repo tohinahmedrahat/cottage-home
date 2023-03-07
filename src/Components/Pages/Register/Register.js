@@ -77,9 +77,9 @@ const Register = () => {
             
             
     }
-    const saveUser = (name, email, photoUrl,role="",  verify="false") => {
-        const user = { name, email, photoUrl,role, verify };
-        fetch('https://cottage-home-care-services-server-site.vercel.app/users', {
+    const saveUser = (name, email, photoURL,role="",  verify="false") => {
+        const user = { name, email, photoURL,role, verify };
+        fetch('http://localhost:5000/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -191,7 +191,7 @@ const Register = () => {
 
                                     <button
                                         // disabled={!accepted}
-                                        className="block  shadow-md w-full p-3 text-center rounded-lg bg-primary hover:bg-secondary sign-button">Register</button>
+                                        className="block  shadow-md w-full p-3 text-center rounded-lg bg-primary hover:bg-secondary sign-button text-white">Register</button>
                                 </form>
 
 

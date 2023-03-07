@@ -5,6 +5,7 @@ import AdminRoute from "../../Pages/AdminRoute/AdminRoute";
 import Cdpaps from "../../Pages/CDPAP/Cdpaps";
 import Contacts from "../../Pages/Contacts/Contacts/Contacts";
 import Covid from "../../Pages/Covid/Covid";
+import AllUsers from "../../Pages/DashBoard/AllUsers/AllUsers";
 import DashBoard from "../../Pages/DashBoard/DashBoard";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import Home from "../../Pages/Home/Home/Home";
@@ -75,6 +76,10 @@ const Route = createBrowserRouter([
             {
                 path:'/dashboard/pca',
                 element:<AdminRoute><Pca></Pca> </AdminRoute>
+            },
+            {
+                path:'/dashboard/users',
+                element:<AdminRoute><AllUsers> </AllUsers> </AdminRoute>
             },
         ]
     }
