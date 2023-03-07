@@ -136,13 +136,13 @@ const OfficeLocation = () => {
                 {" "}
                 <AiOutlineArrowRight /> Get Direction
               </a>
-              <div className="mt-5">
+              <div className="mt-5 bg-hov2">
                 <label
                   onClick={() => officeHandler(office)}
                   htmlFor="booking-modal"
                   className="bg-primary px-4 py-3 rounded-md shadow-md text-white text-sm  cursor-pointer "
                 >
-                  {" "}
+                  
                   Contact the {office.name}
                 </label>
               </div>
