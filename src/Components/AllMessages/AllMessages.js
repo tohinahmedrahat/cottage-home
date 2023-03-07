@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useQuery } from 'react-query';
 import DashBoardModal from '../Pages/DashBoard/DashBoardModal/DashBoardModal';
+import Loading from '../Shared/Loading/Loading';
 
 const AllMessages = () => {
 
@@ -8,7 +9,7 @@ const AllMessages = () => {
 const [message, setMessage] = useState('')
 
 
-    const url = 'https://cottage-home-care-services-server-site.vercel.app/allmessages'
+    const url = 'http://localhost:5000/allmessages'
 
     const { data: messages = [], isLoading, refetch } = useQuery({
         queryKey: ['allmessages',],
@@ -25,17 +26,21 @@ const [message, setMessage] = useState('')
 
     }
 
-    console.log(messages)
+    // console.log(messages)
+
+    if (isLoading){
+        return <Loading></Loading>
+    }
     return (
-        <div >
-            <h3 className='text-3xl my-5 text-center text-primary mt-5'>Numbers Of Total Messages  {messages.length}</h3>
+        <div>
+            
 
             <div className="overflow-x-auto">
                 <table className="table w-full">
 
-                    <thead>
+                    <thead className=''>
                         <tr>
-                            <th>Serial</th>
+                            <th className=''>Serial</th>
                             <th>Date Time</th>
 
                             <th>Image</th>
@@ -54,7 +59,7 @@ const [message, setMessage] = useState('')
                         {
                             messages?.map((message, index) => <tr className="hover"
                                 key={message._id}>
-                                <th>{index + 1}</th>
+                                <th >{index + 1}</th>
                                 <td className=' '>{new Date(message.time).toLocaleString()} </td>
                                 <td>
                                     <div className="avatar">

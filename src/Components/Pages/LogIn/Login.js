@@ -57,7 +57,7 @@ const Login = () => {
     }
     const saveUser = (name, email, photoURL, role = "", verify = "false") => {
         const user = { name, email, role, photoURL, verify };
-        fetch('https://cottage-home-care-services-server-site.vercel.app/users', {
+        fetch('http://localhost:5000/users', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

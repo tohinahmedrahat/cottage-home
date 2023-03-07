@@ -1,5 +1,6 @@
 import React,{ useState } from 'react';
 import { useQuery } from 'react-query';
+import Loading from '../../Shared/Loading/Loading';
 import DashBoardModal from '../DashBoard/DashBoardModal/DashBoardModal';
 
 const Pca = () => {
@@ -9,7 +10,7 @@ const Pca = () => {
 
     const [message, setMessage] = useState('')
 
-    const url = 'https://cottage-home-care-services-server-site.vercel.app/allmessages/PCA'
+    const url = 'http://localhost:5000/allmessages/PCA'
 
     const { data: messages = [], isLoading, refetch } = useQuery({
         queryKey: ['PCA',],
@@ -25,9 +26,14 @@ const Pca = () => {
         setMessage(message)
 
 }
+
+
+if (isLoading){
+    return <Loading></Loading>
+}
     return (
         <div >
-        <h3 className='text-3xl my-5 text-center text-primary mt-5'>Numbers Of Total PCA Messages   {messages.length}</h3>
+        
 
         <div className="overflow-x-auto">
             <table className="table w-full">
