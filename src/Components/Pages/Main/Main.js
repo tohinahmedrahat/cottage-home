@@ -7,7 +7,7 @@ import TopBar from '../TopBar/TopBar';
 
 const Main = () => {
     return (
-        <div>
+        <div className='overflow-hidden'>
             <TopBar></TopBar>
             <NavBar></NavBar>
             <Outlet></Outlet>
