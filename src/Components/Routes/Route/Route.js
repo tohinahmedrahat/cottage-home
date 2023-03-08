@@ -8,6 +8,7 @@ import Covid from "../../Pages/Covid/Covid";
 import AllUsers from "../../Pages/DashBoard/AllUsers/AllUsers";
 import DashBoard from "../../Pages/DashBoard/DashBoard";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
+import HhhaCertification from "../../Pages/HhhaCertification/HhhaCertification";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/LogIn/Login";
 import Main from "../../Pages/Main/Main";
@@ -56,7 +57,12 @@ const Route = createBrowserRouter([
         {
             path:"/register",
             element:<Register></Register>
-        }
+        },
+        {
+            path:"/hhaCertification",
+            element:<HhhaCertification></HhhaCertification>
+        },
+        
        
       ]
     },
