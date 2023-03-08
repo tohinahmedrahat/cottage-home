@@ -1,51 +1,51 @@
-import React, { useContext } from 'react';
-import { Outlet, Link } from 'react-router-dom';
-import useAdmin from '../Components/Hooks/UseAdmin';
-import { AuthContext } from '../Components/Pages/Context/AuthProvider';
-import NavBar from '../Components/Pages/NavBar/NavBar';
-import Footer from '../Components/Shared/Footer/Footer';
-
-
-
-
+import React, { useContext } from "react";
+import { Outlet, Link } from "react-router-dom";
+import useAdmin from "../Components/Hooks/UseAdmin";
+import { AuthContext } from "../Components/Pages/Context/AuthProvider";
+import NavBar from "../Components/Pages/NavBar/NavBar";
+import Footer from "../Components/Shared/Footer/Footer";
 
 const DashBoardLayout = () => {
-    const { user } = useContext(AuthContext)
-    const [isAdmin] = useAdmin(user?.email)
-    return (
-        <div className='min-h-screen '>
-            <NavBar></NavBar>
-            <div className="drawer drawer-mobile">
-                <input id="dashboard-drawer" type="checkbox" className="drawer-toggle" />
-                <div className="drawer-content">
-                    <Outlet></Outlet>
+  const { user } = useContext(AuthContext);
+  const [isAdmin] = useAdmin(user?.email);
+  return (
+    <div className="min-h-screen ">
+      <div className="sticky top-0 z-50">
+        <NavBar></NavBar>
+      </div>
+      <div className="drawer drawer-mobile">
+        <input
+          id="dashboard-drawer"
+          type="checkbox"
+          className="drawer-toggle"
+        />
+        <div className="drawer-content">
+          <Outlet></Outlet>
+        </div>
+        <div className="drawer-side bg-[#EBF8F9] rounded-md shadow-lg">
+          <label htmlFor="dashboard-drawer" className="drawer-overlay"></label>
+          <ul className="menu p-4 w-80 text-base-content mt-16">
+            <li className="text-primary">
+              <Link to="/dashboard">All Messages </Link>
+            </li>
 
-
-                </div>
-                <div className="drawer-side bg-[#EBF8F9] rounded-md shadow-lg ">
-                    <label htmlFor="dashboard-drawer" className="drawer-overlay"></label>
-                    <ul className="menu p-4 w-80 text-base-content mt-16 ">
-                        
-                    <li className='text-primary'><Link to='/dashboard'>All  Messages </Link></li>
-
-
-                        
-                        {
-                            isAdmin && 
-                            <>
-                                <li className='text-primary'><Link to='/dashboard/cdpap'>All CDPAP Messages </Link></li>
-                                <li className='text-primary'><Link to='/dashboard/pca'>All PCA Messages</Link></li>
-                                <li className='text-primary'><Link to='/dashboard/users'>All Users</Link></li>
-                       
-                               
-                            </>
-
-                        }
-                    </ul>
-
-                </div>
-            </div>
-            {/* <div className='grid grid-cols-5  min-h-screen '>
+            {isAdmin && (
+              <>
+                <li className="text-primary">
+                  <Link to="/dashboard/cdpap">All CDPAP Messages </Link>
+                </li>
+                <li className="text-primary">
+                  <Link to="/dashboard/pca">All PCA Messages</Link>
+                </li>
+                <li className="text-primary">
+                  <Link to="/dashboard/users">All Users</Link>
+                </li>
+              </>
+            )}
+          </ul>
+        </div>
+      </div>
+      {/* <div className='grid grid-cols-5  min-h-screen '>
                 <div className="h-full p-3 space-y-2 w-full bg-[#EBF8F9] dark:text-gray-100 col-span-1 ">
                     <div className="flex items-center p-2 space-x-4">
                         <img src="https://source.unsplash.com/100x100/?portrait" alt="" className="w-12 h-12 rounded-full dark:bg-gray-500" />
@@ -129,10 +129,9 @@ const DashBoardLayout = () => {
                 </div>
             </div> */}
 
-            <Footer></Footer>
-
-        </div>
-    );
+      <Footer></Footer>
+    </div>
+  );
 };
 
 export default DashBoardLayout;
