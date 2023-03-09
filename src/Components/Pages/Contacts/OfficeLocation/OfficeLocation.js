@@ -3,6 +3,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import Modal from "../ContactInfo/Modal/Modal";
 
 const OfficeLocation = () => {
+  
   const now = new Date().toLocaleDateString("en-US", { weekday: "long" });
   //   console.log(now);
 
@@ -59,9 +60,11 @@ const OfficeLocation = () => {
   //   console.log(all);
 
   const [office, setOffice] = useState("");
+  const [modalData, setModalData] = useState(false)
 
   const officeHandler = (office) => {
     setOffice(office);
+    setModalData(true)
   };
 
   const offices = [
@@ -73,7 +76,7 @@ const OfficeLocation = () => {
         "https://www.google.com/maps/dir//25+Newbridge+Rd+Unit+302,+Oyster+Bay,+NY+11801/@40.7680687,-73.5969743,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c280e280b85923:0x6d08773ea58e3908!2m2!1d-73.5269344!2d40.7680899",
     },
     {
-      name: "Queens office",
+      name: "Queens Office",
       address1: "126-01 Liberty Avenue, South Richmond Hill Queens,",
       address2: "New York 11419, United States",
       direction:
@@ -174,7 +177,14 @@ const OfficeLocation = () => {
 
                 </div> */}
         </div>
-        <Modal office={office}></Modal>
+        {
+          modalData && 
+          <Modal office={office}
+
+          setModalData={setModalData}
+          
+          ></Modal>
+        }
       </div>
     </div>
   );
