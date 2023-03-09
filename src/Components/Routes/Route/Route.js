@@ -1,6 +1,6 @@
 import DashBoardLayout from "../../../DashBoardLayout/DashBoardLayout";
 import AllMessages from "../../AllMessages/AllMessages";
-import About from "../../Pages/About/About";
+// import About from "../../Pages/About/About";
 import AdminRoute from "../../Pages/AdminRoute/AdminRoute";
 import Cdpaps from "../../Pages/CDPAP/Cdpaps";
 import Contacts from "../../Pages/Contacts/Contacts/Contacts";
@@ -19,7 +19,6 @@ import Pca from "../../Pages/PCA/Pca";
 import PrivateRoute from "../../Pages/PrivateRoute/PrivateRoute";
 import Register from "../../Pages/Register/Register";
 import Services from "../../Pages/Services/Services/Services";
-
 
 const { createBrowserRouter } = require("react-router-dom");
 
