@@ -14,61 +14,61 @@ const DashBoardLayout = () => {
   const { user } = useContext(AuthContext);
   const [isAdmin] = useAdmin(user?.email);
 
-  const url = 'http://localhost:5000/notifications'
+//   const url = 'http://localhost:5000/notifications'
 
-    const { data: allData = [], isLoading, refetch } = useQuery({
-        queryKey: ['notifications',],
-        queryFn: async () => {
-            const res = await fetch(url);
-            const data = await res.json();
-            return data;
-        }
+//     const { data: allData = [], isLoading, refetch } = useQuery({
+//         queryKey: ['notifications',],
+//         queryFn: async () => {
+//             const res = await fetch(url);
+//             const data = await res.json();
+//             return data;
+//         }
 
-    })
+//     })
 
 
 
-const { users,officeMessages} = allData
+// const { users,officeMessages} = allData
 
-console.log('office message', officeMessages)
+// console.log('office message', officeMessages)
 
-let count = 0
-  if (officeMessages === true)  {
-    for (const offiMsg of officeMessages){
+// let count = 0
+//   if (officeMessages === true)  {
+//     for (const offiMsg of officeMessages){
 
-      if(offiMsg.officeName === 'Long Island Office'){
-        count= count +1
+//       if(offiMsg.officeName === 'Long Island Office'){
+//         count= count +1
 
-        console.log( count)
+//         console.log( count)
         
-      }
+//       }
       
     
     
-    } 
+//     } 
 
-  } 
+//   } 
 
-  console.log('the count is', count)
-
-
-const allUsers = users?.length
-// const allMessages = messages?.length
-// console.log(allUsers, allMessages)
+//   console.log('the count is', count)
 
 
+// const allUsers = users?.length
+// // const allMessages = messages?.length
+// // console.log(allUsers, allMessages)
 
 
-console.log(count)
+
+
+// console.log(count)
 
    
 
-if(isLoading){
+// if(isLoading){
 
-  return <Loading></Loading>
+//   return <Loading></Loading>
 
 
-}
+// }
 
 
 
