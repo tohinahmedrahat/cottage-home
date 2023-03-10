@@ -2,13 +2,12 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import background from "../../../../assets/cooking2.png";
 
-
 const ServiceBanner = () => {
   const handleDone = () => {
-    console.log(`Done after 5 loops!`);
+    // console.log(`Done after 5 loops!`);
   };
   const handleType = () => {
-    console.log(`Done after 5 loops!`);
+    // console.log(`Done after 5 loops!`);
   };
   return (
     <div>
@@ -31,19 +30,16 @@ const ServiceBanner = () => {
             />
           </h1>
           <div className="absolute md:top-[52vh]">
-          <h4 className=" md:text-xl text-sm font-semibold text-[#dbf2f4] font-[Roboto] mb-4 px-5 md:px-0">
-          “I was hopeless and depressed. I couldn’t even clean my own home!”
-          </h4>
+            <h4 className=" md:text-xl text-sm font-semibold text-[#dbf2f4] font-[Roboto] mb-4 px-5 md:px-0">
+              “I was hopeless and depressed. I couldn’t even clean my own home!”
+            </h4>
 
-          <p className="text-white text-base font-medium w-full">
-          Our in-home Cottage Home Care Services can help.
-          </p>
-         
-        </div>
-        
+            <p className="text-white text-base font-medium w-full">
+              Our in-home Cottage Home Care Services can help.
+            </p>
+          </div>
         </div>
       </div>
-     
     </div>
   );
 };

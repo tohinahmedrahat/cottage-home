@@ -8,10 +8,10 @@ import CEO from '../../../../assets/ceo-1.jpg'
 import icon from '../../../../assets/blue-quote.jpg'
 const Welcome = () => {
     const handleDone = () => {
-        console.log(`Done after 5 loops!`)
+        // console.log(`Done after 5 loops!`)
     }
     const handleType = () => {
-        console.log(`Done after 5 loops!`)
+        // console.log(`Done after 5 loops!`)
     }
     return (
         <div className='w-[95%] md:w-[90%] mx-auto py-5 mb-20 '>

@@ -8,7 +8,7 @@ const LongIsland = () => {
     const [message, setMessage] = useState('')
 
 
-    const url = 'http://localhost:5000/office/Long Island Office'
+    const url = 'https://cottage-home-care-services-server-site.vercel.app/office/Long Island Office'
 
     const { data: messages = [], isLoading, refetch } = useQuery({
         queryKey: ['allmessages',],
@@ -25,7 +25,7 @@ const LongIsland = () => {
 
     }
 
-    console.log(messages)
+    // console.log(messages)
 
     if (isLoading) {
         return <Loading></Loading>

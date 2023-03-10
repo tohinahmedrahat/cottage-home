@@ -4,7 +4,7 @@ const DashBoardModal = ({message}) => {
 
     const {firstName,subject} = message
 
-    console.log(message)
+    // console.log(message)
     
     return (
         <div>

@@ -11,10 +11,10 @@ const NavBar = () => {
     // const { pathname } = useLocation();
 
     const { user, logOut } = useContext(AuthContext)
-    console.log(user)
+    // console.log(user)
     const [isAdmin] = useAdmin(user?.email)
 
-    console.log(isAdmin)
+    // console.log(isAdmin)
 
     const handleLogOut = () => {
         logOut()

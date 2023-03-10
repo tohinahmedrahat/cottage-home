@@ -7,7 +7,7 @@ const BronxOffice = () => {
     const [message, setMessage] = useState('')
 
 
-    const url = 'http://localhost:5000/office/Bronx Office'
+    const url = 'https://cottage-home-care-services-server-site.vercel.app/office/Bronx Office'
 
     const { data: messages = [], isLoading, refetch } = useQuery({
         queryKey: ['allmessages',],
@@ -24,7 +24,7 @@ const BronxOffice = () => {
 
     }
 
-    console.log(messages)
+    // console.log(messages)
 
     if (isLoading){
         return <Loading></Loading>

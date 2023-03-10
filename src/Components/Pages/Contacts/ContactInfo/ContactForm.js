@@ -6,13 +6,13 @@ import { AuthContext } from '../../Context/AuthProvider';
 const ContactForm = () => {
     const { user } = useContext(AuthContext)
 
-    console.log(user)
+    // console.log(user)
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm() 
     const date = Date.now();    
     
 const submitHandler = (data)=>{
-    console.log(data)
+    // console.log(data)
 
         const message ={
             firstName:data.firstName,
@@ -26,7 +26,7 @@ const submitHandler = (data)=>{
 
         }
 
-fetch('http://localhost:5000/messages', {
+fetch('https://cottage-home-care-services-server-site.vercel.app/messages', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -35,7 +35,7 @@ fetch('http://localhost:5000/messages', {
         })
             .then(res => res.json())
             .then(data => {
-               console.log(data)
+            //    console.log(data)
                 if (data.acknowledged) {
                     toast.success('Messange Send Successfully')
                    reset()
