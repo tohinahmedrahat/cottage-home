@@ -6,6 +6,7 @@ import NavBar from "../Components/Pages/NavBar/NavBar";
 import Footer from "../Components/Shared/Footer/Footer";
 import { BiMessageRoundedDots } from "react-icons/bi";
 import { HiUsers } from "react-icons/hi";
+import { IoNotifications } from "react-icons/io5";
 import { FaHome } from "react-icons/fa";
 import { useQuery } from "react-query";
 import Loading from "../Components/Shared/Loading/Loading";
@@ -29,26 +30,66 @@ const DashBoardLayout = () => {
       return data;
     },
   });
-  if (allData.length === 0) {
+
+  const { officeMessages, messages,users  } = allData;
+
+  const totalMessage = messages?.length;
+  const totalUsers = users?.length;
+
+
+  let pca = 0;
+  let cdpap =0;
+  let longIsland =0;
+  let queens =0;
+  let bronx =0;
+
+
+
+  if (allData.length <= 0) {
     return <Loading></Loading>;
   } else {
-    console.log(allData);
-    const { officeMessages, messages } = allData;
-
-    // console.log("office message", officeMessages);
-
-    let count = 0;
+  // console.log("office message", officeMessages);
+    
     // if (officeMessages === true) {
-    for (const offiMsg of messages) {
-      if (offiMsg.service === "PCA") {
-        count = count + 1;
+    for (const service of messages) {
+      if (service?.service === "PCA") {
+        pca = pca + 1;
 
-        console.log(count);
+        
+      } else if( service?.service === "CDPAP"){
+
+        cdpap = cdpap +1;             
+
+
+
       }
+      
+      
     }
+
+
+    for( const office of officeMessages){
+
+      if( office?.officeName === "Long Island Office"){
+
+        longIsland = longIsland + 1;
+      }
+      else if( office?.officeName === "Queens Office"){
+
+        queens = queens + 1;
+      }
+      else if( office?.officeName === "Bronx Office"){
+
+        bronx = bronx + 1;
+      }
+
+    }
+
+    
     // }
   }
 
+  console.log('the pca Message are:',pca);
   // const { users,officeMessages} = allData
 
   // console.log('office message', officeMessages)
@@ -100,7 +141,9 @@ const DashBoardLayout = () => {
             <li className="text-primary ">
               <Link to="/dashboard">
                 {" "}
-                <BiMessageRoundedDots className="w-6 h-6 " /> All Messages{" "}
+                <BiMessageRoundedDots className="w-6 h-6 relative mr-2" /> All Messages 
+
+                <p className="absolute  top-0 left-9 font-semibold text-xs">{totalMessage}</p>
               </Link>
             </li>
 
@@ -109,38 +152,56 @@ const DashBoardLayout = () => {
                 <li className="text-primary">
                   <Link to="/dashboard/cdpap">
                     {" "}
-                    <BiMessageRoundedDots className="w-6 h-6 " /> All CDPAP
-                    Messages{" "}
+                    <BiMessageRoundedDots className="w-6 h-6 relative mr-2" /> All CDPAP
+                    Messages
+                    <p className="absolute  top-0 left-9 font-semibold text-xs">{cdpap}</p>
                   </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/pca">
-                    <BiMessageRoundedDots className="w-6 h-6 " /> All PCA
-                    Messages
+
+                    
+                    <BiMessageRoundedDots className="w-6 h-6 relative mr-2" /> All PCA
+                    Messages 
+                  <p className="absolute  top-0 left-9 font-semibold text-xs">{pca}</p>
+                    
                   </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/users">
-                    <HiUsers className="w-6 h-6 " />
+                    <HiUsers className="w-6 h-6  mr-2" />
                     All Users
+
+                    <p className="absolute  top-0 left-9 font-semibold text-xs">{totalUsers}</p>
+
+
                   </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/longIsland">
-                    <FaHome className="w-6 h-6 " />
+                    <FaHome className="w-6 h-6  mr-2" />
                     Long Island Office
+
+                    <p className="absolute  top-0 left-9 font-semibold text-xs">{longIsland}</p>
+
                   </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/Queens">
-                    <FaHome className="w-6 h-6 " />
+                    <FaHome className="w-6 h-6  mr-2" />
                     Queens office
+
+                    <p className="absolute  top-0 left-9 font-semibold text-xs">{queens}</p>
+                    
                   </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/Bronx">
-                    <FaHome className="w-6 h-6 " />
+                    <FaHome className="w-6 h-6 mr-2 mr-2" />
                     Bronx Office
+
+                    <p className="absolute  top-0 left-9 font-semibold text-xs">{bronx}</p>
+
                   </Link>
                 </li>
               </>
