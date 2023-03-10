@@ -3,28 +3,37 @@ import image1 from "../../../assets/hhaBanner.jpg";
 
 const HhhaCertification = () => {
   return (
-    <div>
-      <div className="relative">
-        <img src={image1} className="w-full" alt="" />
-        <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-black/50  h-full flex flex-col justify-center items-center">
-          <h1 className="text-white text-6xl mb-5 font-bold text-center">
-            Welcome to HHCA
-            <br />
-            Training Institute
+    <section
+      style={{ backgroundImage: `url(${image1})` }}
+      className="relative bg-cover bg-center bg-no-repeat"
+    >
+      <div className="absolute inset-0 bg-[#0000006b] sm:bg-transparent sm:bg-gradient-to-r sm:from-[#0000008a] sm:to-[#0202026b]"></div>
+
+      <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-5/6 lg:items-center lg:px-8">
+        <div className="max-w-xl text-center sm:text-left">
+          <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
+            Let us find your
+            <strong className="block font-extrabold text-white/60">
+              Forever Home.
+            </strong>
           </h1>
-          <p className="text-white max-w-xl text-center mx-auto text-lg">
-            Get Certified & Launch Your Career at HHCA Training Institute -
-            We're Offering Day, Evening & Weekend Classes. Call Now ENGLISH
-            (718) 298-5010,
+
+          <p className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed text-white">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+            illo tenetur fuga ducimus numquam ea!
           </p>
-          <button className="px-5 py-3 bg-gray-700 hover:bg-gray-800 duration-300 text-white mt-5">Learn More</button>
+
+          <div className="mt-8 flex flex-wrap gap-4 text-center">
+            <a
+              href="/"
+              className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+            >
+              Learn More
+            </a>
+          </div>
         </div>
       </div>
-
-      <div>class card</div>
-
-      <div></div>
-    </div>
+    </section>
   );
 };
 

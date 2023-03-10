@@ -4,9 +4,9 @@ import useAdmin from "../Components/Hooks/UseAdmin";
 import { AuthContext } from "../Components/Pages/Context/AuthProvider";
 import NavBar from "../Components/Pages/NavBar/NavBar";
 import Footer from "../Components/Shared/Footer/Footer";
-import { BiMessageRoundedDots } from 'react-icons/bi';
-import { HiUsers } from 'react-icons/hi';
-import { FaHome } from 'react-icons/fa';
+import { BiMessageRoundedDots } from "react-icons/bi";
+import { HiUsers } from "react-icons/hi";
+import { FaHome } from "react-icons/fa";
 
 const DashBoardLayout = () => {
   const { user } = useContext(AuthContext);
@@ -29,36 +29,50 @@ const DashBoardLayout = () => {
           <label htmlFor="dashboard-drawer" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80 text-base-content mt-16">
             <li className="text-primary ">
-              <Link to="/dashboard"> <BiMessageRoundedDots className="w-6 h-6 "/> All Messages </Link>
+              <Link to="/dashboard">
+                {" "}
+                <BiMessageRoundedDots className="w-6 h-6 " /> All Messages{" "}
+              </Link>
             </li>
 
             {isAdmin && (
               <>
                 <li className="text-primary">
-                  <Link to="/dashboard/cdpap"> <BiMessageRoundedDots className="w-6 h-6 "/> All CDPAP Messages </Link>
+                  <Link to="/dashboard/cdpap">
+                    {" "}
+                    <BiMessageRoundedDots className="w-6 h-6 " /> All CDPAP
+                    Messages{" "}
+                  </Link>
                 </li>
                 <li className="text-primary">
-                  <Link to="/dashboard/pca"><BiMessageRoundedDots className="w-6 h-6 "/> All PCA Messages</Link>
+                  <Link to="/dashboard/pca">
+                    <BiMessageRoundedDots className="w-6 h-6 " /> All PCA
+                    Messages
+                  </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/users">
-                  <HiUsers className="w-6 h-6 "/>
-                    All Users</Link>
+                    <HiUsers className="w-6 h-6 " />
+                    All Users
+                  </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/longIsland">
-                  <FaHome className="w-6 h-6 "/>
-                    Long Island Office</Link>
+                    <FaHome className="w-6 h-6 " />
+                    Long Island Office
+                  </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/Queens">
-                  <FaHome className="w-6 h-6 "/>
-                    Queens office</Link>
+                    <FaHome className="w-6 h-6 " />
+                    Queens office
+                  </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/Bronx">
-                  <FaHome className="w-6 h-6 "/>
-                    Bronx Office</Link>
+                    <FaHome className="w-6 h-6 " />
+                    Bronx Office
+                  </Link>
                 </li>
               </>
             )}
