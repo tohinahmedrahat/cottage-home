@@ -79,7 +79,7 @@ const Register = () => {
     }
     const saveUser = (name, email, photoURL,role="",  verify="false") => {
         const user = { name, email, photoURL,role, verify };
-        fetch('https://cottage-home-care-services-server-site.vercel.app/users', {
+        fetch('http://localhost:5000/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
