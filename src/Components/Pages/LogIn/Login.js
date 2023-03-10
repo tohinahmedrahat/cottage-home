@@ -21,13 +21,13 @@ const Login = () => {
    
 
     const handelLogin = data => {
-        console.log(data)
+        // console.log(data)
 
         setLoginError('')
         signIn(data.email, data.password)
             .then(result => {
                 const user = result.user
-                console.log(user)
+                // console.log(user)
                 toast.success('User Login Successfully')
                 reset()
                 navigate(from, { replace: true });
@@ -45,7 +45,7 @@ const Login = () => {
         providerLogin(googleProvider)
             .then(result => {
                 const user = result.user
-                console.log(user)
+                // console.log(user)
                 // toast.success('User Login SuccessFully')
                 saveUser(user?.displayName, user?.email, user?.photoURL)
                 navigate(from, { replace: true });
@@ -57,7 +57,7 @@ const Login = () => {
     }
     const saveUser = (name, email, photoURL, role = "", verify = "false") => {
         const user = { name, email, role, photoURL, verify };
-        fetch('http://localhost:5000/users', {
+        fetch('https://cottage-home-care-services-server-site.vercel.app/users', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -66,7 +66,7 @@ const Login = () => {
         })
             .then(res => res.json())
             .then(data => {
-               console.log(data)
+            //    console.log(data)
                 if (data.acknowledged) {
                     toast.success('User Login Successfully')
                     

@@ -6,7 +6,7 @@ import ContactInfo from '../ContactInfo';
 const Modal = ({office,setModalData}) => {
     const { user } = useContext(AuthContext)
 
-    console.log(user)
+    // console.log(user)
 
     const date = Date.now(); 
 
@@ -29,7 +29,7 @@ const Modal = ({office,setModalData}) => {
             }
 
             // console.log(contactInfo)
-            fetch('http://localhost:5000/officeMessages', {
+            fetch('https://cottage-home-care-services-server-site.vercel.app/officeMessages', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -38,7 +38,7 @@ const Modal = ({office,setModalData}) => {
         })
             .then(res => res.json())
             .then(data => {
-               console.log(data)
+            //    console.log(data)
                 if (data.acknowledged) {
                     toast.success(`Message Send to the ${office?.name} Successfully`)
                    form.reset()

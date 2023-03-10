@@ -36,14 +36,14 @@ const Register = () => {
         })
             .then(res => res.json())
             .then(imgData => {
-                console.log(imgData.data.url)
+                // console.log(imgData.data.url)
                 if (imgData.success) {
                    
 
                     createUser(data.email, data.password)
                         .then(result => {
                             const user = result.user
-                            console.log(user)
+                            // console.log(user)
                             toast.success('user create successfully')
                             setLoading(false)
 
@@ -53,7 +53,7 @@ const Register = () => {
                             }
                             updateUser(userInfo)
                                 .then(() => {
-                                    console.log('update successfully')
+                                    // console.log('update successfully')
                                     saveUser(data.name, data.email, imgData.data.url)
 
                                     reset();
@@ -79,7 +79,7 @@ const Register = () => {
     }
     const saveUser = (name, email, photoURL,role="",  verify="false") => {
         const user = { name, email, photoURL,role, verify };
-        fetch('http://localhost:5000/users', {
+        fetch('https://cottage-home-care-services-server-site.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

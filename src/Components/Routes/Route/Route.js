@@ -23,85 +23,120 @@ import Services from "../../Pages/Services/Services/Services";
 const { createBrowserRouter } = require("react-router-dom");
 
 const Route = createBrowserRouter([
-    {
-      path: "/",
-      element: <Main></Main>,
-      errorElement: <ErrorPage></ErrorPage>,
-      children:[
-        {
-            path:"/",
-            element:<Home></Home>
-        },
-        {
-            path:"/home",
-            element:<Home></Home>
-        },
-        {
-            path:"/services",
-            element:<Services></Services>
-        },
-        {
-            path:"/contacts",
-            element:<PrivateRoute><Contacts></Contacts></PrivateRoute>
-        },
-        {
-            path:"/covid",
-            element:<Covid></Covid>
-        },
-        {
-            path:"/login",
-            element:<Login></Login>
-        },
-        {
-            path:"/register",
-            element:<Register></Register>
-        },
-        {
-            path:"/register",
-            element:<Register></Register>
-        },
-        {
-            path:"/hhaCertification",
-            element:<HhhaCertification></HhhaCertification>
-        },
-        
-       
-      ]
-    },
-    {
-        path:'/dashboard',
-        element:<PrivateRoute> <DashBoardLayout></DashBoardLayout></PrivateRoute>,
-        errorElement:<ErrorPage></ErrorPage>,
-        children:[
-            {
-                path:'/dashboard',
-                element:<AdminRoute><AllMessages></AllMessages> </AdminRoute>
-            },
-            {
-                path:'/dashboard/cdpap',
-                element:<AdminRoute><Cdpaps></Cdpaps> </AdminRoute>
-            },
-            {
-                path:'/dashboard/pca',
-                element:<AdminRoute><Pca></Pca> </AdminRoute>
-            },
-            {
-                path:'/dashboard/users',
-                element:<AdminRoute><AllUsers> </AllUsers> </AdminRoute>
-            },
-            {
-                path:'/dashboard/longIsland',
-                element:<AdminRoute><LongIsland></LongIsland> </AdminRoute>
-            },
-            {
-                path:'/dashboard/Queens',
-                element:<AdminRoute><QueensOffice></QueensOffice> </AdminRoute>
-            },
-            {
-                path:'/dashboard/Bronx',
-                element:<AdminRoute><BronxOffice></BronxOffice> </AdminRoute>
-            },
-        ]
-    }
-  ]);
-  export default Route;
+  {
+    path: "/",
+    element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/home",
+        element: <Home></Home>,
+      },
+      {
+        path: "/services",
+        element: <Services></Services>,
+      },
+      {
+        path: "/contacts",
+        element: (
+          <PrivateRoute>
+            <Contacts></Contacts>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/covid",
+        element: <Covid></Covid>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
+      {
+        path: "/hhaCertification",
+        element: <HhhaCertification></HhhaCertification>,
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: (
+      <PrivateRoute>
+        {" "}
+        <DashBoardLayout></DashBoardLayout>
+      </PrivateRoute>
+    ),
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        path: "/dashboard",
+        element: (
+          <AdminRoute>
+            <AllMessages></AllMessages>{" "}
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "/dashboard/cdpap",
+        element: (
+          <AdminRoute>
+            <Cdpaps></Cdpaps>{" "}
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "/dashboard/pca",
+        element: (
+          <AdminRoute>
+            <Pca></Pca>{" "}
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "/dashboard/users",
+        element: (
+          <AdminRoute>
+            <AllUsers> </AllUsers>{" "}
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "/dashboard/longIsland",
+        element: (
+          <AdminRoute>
+            <LongIsland></LongIsland>{" "}
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "/dashboard/Queens",
+        element: (
+          <AdminRoute>
+            <QueensOffice></QueensOffice>{" "}
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "/dashboard/Bronx",
+        element: (
+          <AdminRoute>
+            <BronxOffice></BronxOffice>{" "}
+          </AdminRoute>
+        ),
+      },
+    ],
+  },
+]);
+export default Route;
