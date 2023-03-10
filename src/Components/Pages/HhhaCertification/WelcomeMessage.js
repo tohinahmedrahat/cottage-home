@@ -12,7 +12,7 @@ const WelcomeMessage = () => {
 
     return (
         <div>
-            <div className="bg-primary  py-14 mb-5">
+            <div className="bg-primary  py-8 mb-5">
 
 <div className="md:w-[80%] mx-auto  w-[95%]  text-white p-4 ">
 <h1 className="md:text-2xl font-semibold "> Join Our Institute </h1>
@@ -37,6 +37,18 @@ const WelcomeMessage = () => {
    We created this institution in order to not only give back but give power to our community. That is why we prefer to stay connected with the community, so please call us if you have any questions or concerns. As we like to believe,
    "Changing Lives, One Student at a Time".
  </p>
+
+ <p className='mt-1  font-semibold'>
+ Navin - <a href="tel:+1347-975-2525" className='hover:text-[#2E2A4D]'>347-975-2525 </a>
+ </p>
+ <p className='  font-semibold'>
+ Arvin -  <a href="tel:+1347-969-1626" className='hover:text-[#2E2A4D]'>347-969-1626 </a>
+
+ </p>
+
+ <div className='flex justify-center '>
+ <a href='https://mybrooklyninstitute.com/classes' target='_blank' className=' bg-hov2 bg-[#EBF8F9] px-4 py-3 rounded-md shadow-md bg-hov2 text-gray-600 shadow-md font-semibold'>FIND OUT MORE</a>
+ </div>
  
 
 </div>
