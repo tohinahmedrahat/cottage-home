@@ -4,16 +4,21 @@
 
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.roboto{
- 
-    font-family: 'Roboto', sans-serif;
-    
+/* .roboto {
+  font-family: "Roboto", sans-serif;
+} */
+body {
+  font-family: "Roboto", sans-serif;
+}
+.playrify {
+  font-family: "Playfair Display", serif;
 }
 
-.playrify{
-    font-family: 'Playfair Display', serif;
+.Poppins{
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Custom style */

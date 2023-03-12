@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 
-import benifit from '../../../../assets/benefits.png'
-import day from '../../../../assets/day.png'
-import match from '../../../../assets/match.png'
+
 import Modal from './Modal/Modal';
 
 const WeAre = () => {

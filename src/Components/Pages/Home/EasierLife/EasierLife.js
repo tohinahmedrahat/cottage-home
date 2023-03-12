@@ -11,7 +11,7 @@ const EasierLife = () => {
         <p className="text-[#67637e] text-lg font-[Roboto]">
           Call us now at{" "}
           <a href="tel: +1516-367-2266" className="text-[#00a6b2]">
-          516-367-2266
+            516-367-2266
           </a>
           , or fill out this form and a member of our team will contact you
           within 24 business hours.
@@ -20,7 +20,11 @@ const EasierLife = () => {
       <div>
         <div className="max-w-6xl mx-auto">
           <div className="bg-white lg:flex justify-start gap-16 py-[68px]">
-            <div className="md:-ml-10 flex lg:block justify-center items-center px-5">
+            <div
+              className="md:-ml-10 flex lg:block justify-center items-center px-5"
+              // data-aos="fade-right"
+              // data-aos-duration="2000"
+            >
               <img
                 src={contactImage}
                 width="495"
@@ -30,7 +34,11 @@ const EasierLife = () => {
               />
             </div>
             <div>
-              <form className="flex justify-center items-center">
+              <form
+                className="flex justify-center items-center"
+                // data-aos="fade-left"
+                // data-aos-duration="2000"
+              >
                 <div className="max-w-2xl mx-auto">
                   <div className="flex flex-wrap mt-10 lg:mt-0 justify-center md:justify-start gap-5">
                     <div className="w-[250px]">

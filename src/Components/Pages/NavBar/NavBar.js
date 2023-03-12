@@ -1,31 +1,45 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
 import navLogo from '../../../assets/Cottage Home.png'
+import useAdmin from '../../Hooks/UseAdmin';
+import { AuthContext } from '../Context/AuthProvider';
 import './Nav.css'
 
 
 const NavBar = () => {
-    const { pathname } = useLocation();
+    // const { pathname } = useLocation();
+
+    const { user, logOut } = useContext(AuthContext)
+    // console.log(user)
+    const [isAdmin] = useAdmin(user?.email)
+
+    // console.log(isAdmin)
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(err => console.log(err));
+    }
 
     const [navColor, setNavColor] = useState(false)
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        if (pathname === '/contacts') {
-            setNavColor(true)
-
-
-        }
+    //     if (pathname === '/contacts') {
+    //         setNavColor(true)
 
 
-        else {
-            setNavColor(false)
-        }
+    //     }
+
+
+    //     else {
+    //         setNavColor(false)
+    //     }
 
 
 
-    }, [pathname])
+    // }, [pathname])
 
     // #49465D
 
@@ -45,8 +59,8 @@ const NavBar = () => {
     }
 
     return (
-        <div className="sticky top-0  roboto  " id='navBar'>
-            <div className="px-4 pt-4 pb-6 mx-auto w-[95%]">
+        <div className="sticky top-0  roboto  z-50" id='navBar'>
+            <div className="px-4 pt-4 pb-6 mx-auto w-[95%] ">
                 <div className="relative flex items-center justify-between">
                     <NavLink
                         to='/'
@@ -54,24 +68,24 @@ const NavBar = () => {
                         title="Cottage Home Care Services"
                         className="inline-flex items-center"
                     >
-                      <div>
-                      <div className='flex items-center '>
-                        <img src={navLogo} className='w-[80px] h-[80px] shadow-2xl p-2 border-2 border-primary rounded-full' alt="" />
-                        <h5 className={` ml-4 text-xl font-semibold tracking-wide text-[#00A6B2] transition-colors duration-200 nav-font`}>
-                            Cottage Home Care Services  
-                            <hr className='mt-2 border-[1px] border-[#49465D]' />
-                        <p className='font-semibold text-base text-center text-[#49465D]'>
-                            
-                      THE RIGHT HOME CARE FOR YOU</p>   
-                        </h5>
-                        
-                        </div> 
-                        
-                        
-                       
-                        
-                        </div>   
-                        
+                        <div>
+                            <div className='flex items-center '>
+                                <img src={navLogo} className='w-[80px] h-[80px] shadow-2xl p-2 border-2 border-primary rounded-full' alt="" />
+                                <h5 className={` ml-4 text-xl font-semibold tracking-wide text-[#00A6B2] transition-colors duration-200 nav-font`}>
+                                    Cottage Home Care Services
+                                    <hr className='mt-2 border-[1px] border-[#49465D]' />
+                                    <p className='font-semibold text-sm text-center text-[#49465D]'>
+
+                                        THE RIGHT HOME CARE FOR YOU</p>
+                                </h5>
+
+                            </div>
+
+
+
+
+                        </div>
+
                     </NavLink>
 
                     <ul className="flex items-center hidden space-x-5 lg:flex">
@@ -102,8 +116,8 @@ const NavBar = () => {
                         <li>
                             <NavLink
                                 to='/contacts'
-                                aria-label="Blog"
-                                title="Blog"
+                                aria-label="Contact US"
+                                title="Contact US"
                                 className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
@@ -114,8 +128,8 @@ const NavBar = () => {
                         <li>
                             <NavLink
                                 to='/covid'
-                                aria-label="Blog"
-                                title="Blog"
+                                aria-label="Covid-19"
+                                title="Covid-19"
                                 className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
@@ -126,8 +140,8 @@ const NavBar = () => {
                         <li>
                             <NavLink
                                 to='/hhaCertification'
-                                aria-label="Blog"
-                                title="Blog"
+                                aria-label="HHA Certification"
+                                title="HHA Certification"
                                 className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
@@ -137,28 +151,81 @@ const NavBar = () => {
                         <li>
                             <NavLink
                                 to='/resources'
-                                aria-label="Blog"
-                                title="Blog"
+                                aria-label="Resources"
+                                title="Resources"
                                 className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
                                 Resources
                             </NavLink>
                         </li>
-                        
-                        <li>
-                            <NavLink
-                                to='/blog'
-                                aria-label="Blog"
-                                title="Blog"
-                                className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
+                        {
+                            user?.uid && <>
+                                {
+                                    isAdmin && <>
+
+<li>
+                                                    <NavLink
+                                                        to='/dashBoard'
+                                                        aria-label="Dash Board"
+                                                        title="Dash Board"
+                                                        className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
-                            >
-                                <button className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base text-base rounded-full text-white bg-hov2'>
-                                    Get Home Care
-                                </button>
-                            </NavLink>
-                        </li>
+                                                    >
+                                                        Dash Board
+                                                    </NavLink>
+                                                </li>
+
+
+                                    </>
+                                }
+
+                            </>
+                        }
+                        {
+                            user?.uid ? <>
+
+                                <li>
+
+                                    <img src={user?.photoURL}
+                                        title={user?.displayName}
+                                        className='rounded-full h-12 w-12 border-primary border-[2px]' alt="" />
+                                </li>
+
+                                <li>
+
+                                    <button
+                                        onClick={handleLogOut}
+                                        className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base text-base rounded-full text-white bg-hov2'>
+                                        Sign Out
+                                    </button>
+
+                                </li>
+
+                            </>
+
+
+
+                                :
+                                <>
+                                    <li>
+                                        <NavLink
+                                            to='/login'
+                                            aria-label="Sign Up"
+                                            title="Sign Up"
+                                            className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white `}
+                                        >
+                                            <button className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base text-base rounded-full text-white bg-hov2'>
+                                                Sign In
+                                            </button>
+                                        </NavLink>
+                                    </li>
+
+                                </>
+                        }
+
+
                     </ul>
 
                     <div className="lg:hidden">
@@ -287,6 +354,26 @@ const NavBar = () => {
                                                     Resources
                                                 </NavLink>
                                             </li>
+
+
+
+                                            {
+                                                isAdmin && <>
+
+                                                    <li>
+                                                        <NavLink
+                                                            to='/dashBoard'
+                                                            aria-label="Dash Board"
+                                                            title="DashBoard"
+                                                            className="font-medium tracking-wide text-[#49465D] transition-colors duration-200 hover:text-teal-accent-400 hover:text-blue-900"
+                                                        >
+                                                            Dash Board
+                                                        </NavLink>
+                                                    </li>
+
+                                                </>
+                                            }
+
                                             <li>
                                                 <NavLink
                                                     to='/blog'

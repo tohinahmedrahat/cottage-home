@@ -1,0 +1,15 @@
+
+.bg-cover{
+    background-image: url('../../../../src/assets/Covid-19/Prevent/shape-d.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top-div:hover .circle{
+    border-color: white;
+}
+
+.custom-shadow{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
