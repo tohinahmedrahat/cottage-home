@@ -14,8 +14,8 @@ const HhhaCertificationAbout = () => {
             Our classes are
           </span>
           <br />
-          <span className="text-[40px] text-3xl font-medium text-[#f26528]">
-            taught by dedicated and experienced educators
+          <span className="text-[40px] text-3xl font-medium text-primary ">
+            Taught By Dedicated And Experienced Educators
           </span>
         </h1>
         <p className="mt-6 mb-8 text-sm text-[#777777] sm:mb-12">
