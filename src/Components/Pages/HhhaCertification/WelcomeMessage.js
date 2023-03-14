@@ -12,7 +12,7 @@ const WelcomeMessage = () => {
 
     return (
         <div>
-            <div className="bg-primary  py-8 mb-5">
+            <div className="bg-primary  py-10 mb-5">
 
 <div className="md:w-[80%] mx-auto  w-[95%]  text-white p-4 ">
 <h1 className="md:text-2xl font-semibold "> Join Our Institute </h1>
@@ -46,9 +46,9 @@ const WelcomeMessage = () => {
 
  </p>
 
- <div className='flex justify-center '>
+ {/* <div className='flex justify-center '>
  <a href='https://mybrooklyninstitute.com/classes' target='_blank' className=' bg-hov2 bg-[#EBF8F9] px-4 py-3 rounded-md shadow-md bg-hov2 text-gray-600 shadow-md font-semibold'>FIND OUT MORE</a>
- </div>
+ </div> */}
  
 
 </div>
