@@ -14,14 +14,16 @@ const WelcomeMessage = () => {
         <div>
             <div className="bg-primary  py-10 mb-5">
 
-<div className="md:w-[80%] mx-auto  w-[95%]  text-white p-4 ">
+<div className="md:w-[80%] mx-auto  w-[95%]  text-white p-4"
+data-aos="fade-up" data-aos-duration="2000"
+>
 <h1 className="md:text-2xl font-semibold "> Join Our Institute </h1>
 <h4 className="mt-1 text-xl font-semibold">
 <Typewriter
                      words={['“A Message from our Directors, Navin and Arvin Shivpal”']}
                      loop={1000}
                      cursor
-                     cursorStyle='।'
+                     cursorStyle='|'
                      typeSpeed={70}
                      deleteSpeed={50}
                      delaySpeed={1000}
