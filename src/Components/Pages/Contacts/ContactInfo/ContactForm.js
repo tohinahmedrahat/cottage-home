@@ -37,7 +37,7 @@ fetch('https://cottage-home-care-services-server-site.vercel.app/messages', {
             .then(data => {
             //    console.log(data)
                 if (data.acknowledged) {
-                    toast.success('Messange Send Successfully')
+                    toast.success('Message Send Successfully')
                    reset()
                     
                 }
