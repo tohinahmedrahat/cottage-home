@@ -7,6 +7,7 @@ import Contacts from "../../Pages/Contacts/Contacts/Contacts";
 import Covid from "../../Pages/Covid/Covid";
 import AllUsers from "../../Pages/DashBoard/AllUsers/AllUsers";
 import BronxOffice from "../../Pages/DashBoard/BronxOffice/BronxOffice";
+import Brooklyn from "../../Pages/DashBoard/Brooklyn/Brooklyn";
 import DashBoard from "../../Pages/DashBoard/DashBoard";
 import LongIsland from "../../Pages/DashBoard/LongIsland/LongIsland";
 import QueensOffice from "../../Pages/DashBoard/QueensOffice/QueensOffice";
@@ -84,7 +85,7 @@ const Route = createBrowserRouter([
         path: "/dashboard",
         element: (
           <AdminRoute>
-            <AllMessages></AllMessages>{" "}
+            <AllMessages></AllMessages>
           </AdminRoute>
         ),
       },
@@ -92,7 +93,7 @@ const Route = createBrowserRouter([
         path: "/dashboard/cdpap",
         element: (
           <AdminRoute>
-            <Cdpaps></Cdpaps>{" "}
+            <Cdpaps></Cdpaps>
           </AdminRoute>
         ),
       },
@@ -100,7 +101,7 @@ const Route = createBrowserRouter([
         path: "/dashboard/pca",
         element: (
           <AdminRoute>
-            <Pca></Pca>{" "}
+            <Pca></Pca>
           </AdminRoute>
         ),
       },
@@ -108,7 +109,7 @@ const Route = createBrowserRouter([
         path: "/dashboard/users",
         element: (
           <AdminRoute>
-            <AllUsers> </AllUsers>{" "}
+            <AllUsers> </AllUsers>
           </AdminRoute>
         ),
       },
@@ -116,7 +117,7 @@ const Route = createBrowserRouter([
         path: "/dashboard/longIsland",
         element: (
           <AdminRoute>
-            <LongIsland></LongIsland>{" "}
+            <LongIsland></LongIsland>
           </AdminRoute>
         ),
       },
@@ -124,7 +125,7 @@ const Route = createBrowserRouter([
         path: "/dashboard/Queens",
         element: (
           <AdminRoute>
-            <QueensOffice></QueensOffice>{" "}
+            <QueensOffice></QueensOffice>
           </AdminRoute>
         ),
       },
@@ -132,10 +133,19 @@ const Route = createBrowserRouter([
         path: "/dashboard/Bronx",
         element: (
           <AdminRoute>
-            <BronxOffice></BronxOffice>{" "}
+            <BronxOffice></BronxOffice>
           </AdminRoute>
         ),
       },
+      {
+        path: "/dashboard/brooklyn",
+        element: (
+          <AdminRoute>
+            <Brooklyn></Brooklyn>
+          </AdminRoute>
+        ),
+      },
+
     ],
   },
 ]);

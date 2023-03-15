@@ -4,7 +4,7 @@ import hhhaImage from "../../../assets/hhaimage.png";
 
 const HhhaCertificationAbout = () => {
   return (
-    <div className="flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between max-w-7xl">
+    <div className="flex flex-col justify-center p-6 mx-auto sm:py-12 lg:pt-24 lg:flex-row lg:justify-between max-w-7xl items-center">
       <div className="flex flex-col justify-center p-6 text-start rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
 
         <div className='flex items-center ' data-aos="fade-up" data-aos-duration="500">
@@ -43,7 +43,7 @@ const HhhaCertificationAbout = () => {
         <img
           src={hhhaImage}
           alt=""
-          className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+          className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 "
           data-aos="fade-left"
           data-aos-duration="2000"
 
