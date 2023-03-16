@@ -9,22 +9,24 @@ const HhhaSchoolMap = () => {
         <div className='md:w-[80%] w-[90%] mx-auto mb-16'>
 
             <div className='grid lg:grid-cols-2 gap-7 items-center'>
-                <div className='  bg-[#DBF2F4] rounded-md shadow-lg  h-[420px]'
-                    data-aos="flip-right"
-                    data-aos-duration="2000" >
+                <div className='  bg-[#DBF2F4] rounded-md shadow-lg  h-[420px]' 
+                data-aos="fade-right"
+                data-aos-duration="2000"
+
+                >
                     <div className='py-[10px]'>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.51270996487!2d-73.8339175847323!3d40.6847045472221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26750729d3653%3A0x592e70afeb742348!2s110-05%20Liberty%20Ave%2C%20Queens%2C%20NY%2011419!5e0!3m2!1sbn!2sus!4v1678975156839!5m2!1sbn!2sus" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" className=' rounded-md  w-[95%] mx-auto h-[400px] rounded-md border-4 border-[#F1F3F4]'></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.51270996487!2d-73.8339175847323!3d40.6847045472221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26750729d3653%3A0x592e70afeb742348!2s110-05%20Liberty%20Ave%2C%20Queens%2C%20NY%2011419!5e0!3m2!1sbn!2sus!4v1678975156839!5m2!1sbn!2sus" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade" className=' rounded-md  w-[95%] mx-auto h-[400px] rounded-md border-4 border-[#F1F3F4]'></iframe>
                     </div>
 
                 </div>
                 <div className='ml-5 '>
-                    <h3 className='text-2xl font-semibold text-primary ' data-aos="fade-up"
-                        data-aos-duration="500">
+                    <h3 className='text-2xl font-semibold text-primary 'data-aos="fade-up"
+     data-aos-duration="500">
                         Better yet, see us in person!
                     </h3>
                     <div className='mt-4 flex items-center gap-2'
-                        data-aos="fade-up"
-                        data-aos-duration="1000">
+                    data-aos="fade-up"
+                    data-aos-duration="1000">
                         <IoLocationOutline className='text-primary text-2xl font-bold' />
 
                         <p className='text-lg text-gray-600'>
@@ -33,8 +35,8 @@ const HhhaSchoolMap = () => {
 
                     </div>
                     <div className='mt-4 flex items-center gap-2'
-                        data-aos="fade-up"
-                        data-aos-duration="1000">
+                    data-aos="fade-up"
+                    data-aos-duration="1000">
                         <IoSchool className='text-primary text-2xl font-bold' />
 
                         <p className='text-2xl font-semibold text-primary'>
@@ -44,8 +46,8 @@ const HhhaSchoolMap = () => {
                     </div>
 
                     <div className='mt-4 flex items-center gap-2'
-                        data-aos="fade-up"
-                        data-aos-duration="1500"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
                     >
                         <IoLocationOutline className='text-primary text-2xl font-bold' />
 
@@ -55,17 +57,17 @@ const HhhaSchoolMap = () => {
 
                     </div>
                     <div className='mt-4 flex items-center gap-2'
-                        data-aos="fade-up"
-                        data-aos-duration="2000">
+                    data-aos="fade-up"
+                    data-aos-duration="2000">
                         <FiPhone className='text-primary text-2xl font-bold' />
 
-
+                           
                         <a href="tel:929-386-0092" className='text-lg text-gray-600 hover:text-primary'>
                             (929) 386-0092
                         </a>
 
                     </div>
-
+                   
                 </div>
 
             </div>

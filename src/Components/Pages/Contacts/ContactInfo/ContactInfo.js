@@ -41,7 +41,7 @@ const ContactInfo = () => {
   ];
 
   return (
-    <div className="my-16">
+    <div className="mt-16 mb-8">
       <div>
         <div
           className="w-[95%] lg:w-[50%] mx-auto text-center"
@@ -146,16 +146,16 @@ const ContactInfo = () => {
 
             <a
               href="mailto:info@cottagehomecare.com"
-              className="block mt-16 text-base text-center text-gray-600 hover:text-primary"
+              className="block mt-20 text-base text-center text-gray-600 hover:text-primary"
             >
               info@cottagehomecare.com
             </a>
-            <a
+            {/* <a
               href="mailto:info@cottagehomecare.com"
               className="block mt-3 text-base text-center text-gray-600 hover:text-primary"
             >
               info@cottagehomecare.com
-            </a>
+            </a> */}
 
             {/* <a href='#' className='text-[#00a6b2b1] flex justify-center items-center text-2xl gap-5 text-gray-600 '>
                             {
