@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { IoLocationOutline, IoSchool } from "react-icons/io5";
-import { BsFillTelephoneFill } from 'react-icons/bs';
 import { FiPhone } from 'react-icons/fi';
 
 const HhhaSchoolMap = () => {
@@ -15,7 +14,7 @@ const HhhaSchoolMap = () => {
 
                 >
                     <div className='py-[10px]'>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.51270996487!2d-73.8339175847323!3d40.6847045472221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26750729d3653%3A0x592e70afeb742348!2s110-05%20Liberty%20Ave%2C%20Queens%2C%20NY%2011419!5e0!3m2!1sbn!2sus!4v1678975156839!5m2!1sbn!2sus" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade" className=' rounded-md  w-[95%] mx-auto h-[400px] rounded-md border-4 border-[#F1F3F4]'></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.51270996487!2d-73.8339175847323!3d40.6847045472221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26750729d3653%3A0x592e70afeb742348!2s110-05%20Liberty%20Ave%2C%20Queens%2C%20NY%2011419!5e0!3m2!1sen!2sus!4v1678997264123!5m2!1sen!2sus" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade" className=' rounded-md  w-[95%] mx-auto h-[400px] rounded-md border-4 border-[#F1F3F4]'></iframe>
                     </div>
 
                 </div>

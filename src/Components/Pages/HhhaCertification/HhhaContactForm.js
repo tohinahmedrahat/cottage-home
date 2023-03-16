@@ -46,10 +46,11 @@ const HhhaContactForm = () => {
   return (
     <div className="contact-container border-t-2 border-white">
       <div
-        className="w-[90%] md:w-[80%] mx-auto bg-[#F4F4F4] opacity-90    
-            lg:my-[50px] contact-adjustment lg rounded-md shadow-lg my-10"
+        className="w-[90%] md:w-[75%] mx-auto bg-[#F4F4F4] opacity-90    
+            lg:my-[50px] contact-adjustment lg:pb-3 rounded-md shadow-lg my-10"
+            data-aos="fade-up" data-aos-duration="2000" 
       >
-        <div>
+        <div >
           <div>
             <h1 className="text-3xl font-bold playrify text-center pt-10">
               Brooklyn Institute Of Vocational Training

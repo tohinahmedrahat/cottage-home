@@ -19,6 +19,7 @@ import Main from "../../Pages/Main/Main";
 import Pca from "../../Pages/PCA/Pca";
 import PrivateRoute from "../../Pages/PrivateRoute/PrivateRoute";
 import Register from "../../Pages/Register/Register";
+import Resources from "../../Pages/Resources/Resources";
 import Services from "../../Pages/Services/Services/Services";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -68,6 +69,10 @@ const Route = createBrowserRouter([
       {
         path: "/hhaCertification",
         element: <HhhaCertification></HhhaCertification>,
+      },
+      {
+        path: "/resources",
+        element: <Resources></Resources>
       },
     ],
   },
