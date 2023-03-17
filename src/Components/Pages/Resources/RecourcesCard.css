@@ -1,0 +1,6 @@
+.main-card :hover .custom-ancor{
+
+    background-color: #EBF8F9;
+    color: rgb(63, 62, 62);
+    transition: width 2s, height 4s;
+}

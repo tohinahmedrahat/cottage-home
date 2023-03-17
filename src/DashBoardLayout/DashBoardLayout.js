@@ -10,8 +10,10 @@ import { IoSchool } from "react-icons/io5";
 import { FaHome } from "react-icons/fa";
 import { useQuery } from "react-query";
 import Loading from "../Components/Shared/Loading/Loading";
+import useTitle from "../Components/Hooks/useTitle";
 
 const DashBoardLayout = () => {
+  useTitle('Dash Board');
   const { user } = useContext(AuthContext);
   const [isAdmin] = useAdmin(user?.email);
 

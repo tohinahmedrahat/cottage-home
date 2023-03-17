@@ -1,0 +1,10 @@
+
+.resource-Banner{
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.529) 0%, rgba(0, 0, 0, 0.515) 100%), url('../../../../src/assets/resources-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+
+}

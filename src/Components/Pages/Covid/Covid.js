@@ -1,4 +1,5 @@
 import React from 'react';
+import useTitle from '../../Hooks/useTitle';
 import AboutCovid from './AboutCovid';
 import Banner from './Banner';
 import CovidSymption from './CovidSymption';
@@ -6,6 +7,7 @@ import PreventSteps from './PreventSteps';
 import Response from './Response';
 
 const Covid = () => {
+    useTitle('Covid-19');
     document.documentElement.style.scrollBehavior = "smooth";
     
     return (
