@@ -1,0 +1,15 @@
+[debug] [2023-03-16T20:56:45.127Z] ----------------------------------------------------------------------
+[debug] [2023-03-16T20:56:45.129Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-03-16T20:56:45.130Z] CLI Version:   11.24.0
+[debug] [2023-03-16T20:56:45.130Z] Platform:      win32
+[debug] [2023-03-16T20:56:45.130Z] Node Version:  v18.14.0
+[debug] [2023-03-16T20:56:45.133Z] Time:          Fri Mar 17 2023 02:56:45 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-03-16T20:56:45.133Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-16T20:56:45.137Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-03-16T20:56:45.250Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-16T20:56:45.250Z] > authorizing via signed-in user (rakibkst16@gmail.com)
+[debug] [2023-03-16T20:56:45.250Z] [iam] checking project cottage-home-b5300 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-03-16T20:56:45.251Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cottage-home-b5300:testIamPermissions [none]
+[debug] [2023-03-16T20:56:45.251Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cottage-home-b5300:testIamPermissions x-goog-quota-user=projects/cottage-home-b5300
+[debug] [2023-03-16T20:56:45.251Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cottage-home-b5300:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
