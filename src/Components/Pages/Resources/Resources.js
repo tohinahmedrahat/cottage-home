@@ -1,15 +1,19 @@
 import React from 'react';
+import useTitle from '../../Hooks/useTitle';
+import ResourceBanner from './ResourceBanner';
+import ResourcesCard from './ResourcesCard';
 
 const Resources = () => {
+    useTitle('Resources');
     return (
         <div>
-            <div>
-                Banner
-            </div>
+            <ResourceBanner>
 
-            <div>
-                Resources Card
-            </div>
+            </ResourceBanner>
+
+            <ResourcesCard>
+
+            </ResourcesCard>
         </div>
     );
 };

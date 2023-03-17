@@ -1,4 +1,5 @@
 import React from "react";
+import useTitle from "../../Hooks/useTitle";
 import HhhaBanner from "./HhhaBanner";
 import HhhaCertificationAbout from "./HhhaCertificationAbout";
 import HhhaContactForm from "./HhhaContactForm";
@@ -6,6 +7,7 @@ import HhhaSchoolMap from "./HhhaSchoolMap";
 import WelcomeMessage from "./WelcomeMessage";
 
 const HhhaCertification = () => {
+  useTitle('HHA Certifications');
   return (
     <div>
       <HhhaBanner></HhhaBanner>

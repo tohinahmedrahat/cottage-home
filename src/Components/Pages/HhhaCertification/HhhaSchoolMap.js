@@ -57,7 +57,7 @@ const HhhaSchoolMap = () => {
                     </div>
                     <div className='mt-4 flex items-center gap-2'
                     data-aos="fade-up"
-                    data-aos-duration="2000">
+                    data-aos-duration="1700">
                         <FiPhone className='text-primary text-2xl font-bold' />
 
                            

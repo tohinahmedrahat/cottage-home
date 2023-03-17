@@ -1,10 +1,12 @@
 import React from "react";
+import useTitle from "../../../Hooks/useTitle";
 import Care from "../../Home/Care/Care";
 import ServiceBanner from "../Banner/ServiceBanner";
 import Stressed from "../Stressed/Stressed";
 import Carousel from "./Carousel";
 
 const Services = () => {
+  useTitle('Services');
   window.scrollTo(0, 0);
   return (
     <div>

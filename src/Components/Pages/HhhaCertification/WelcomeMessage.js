@@ -54,10 +54,6 @@ const WelcomeMessage = () => {
     </div>
  </div>
  
-
- 
-
-
     </div>
     <div className='lg:flex flex justify-center md:justify-end col-span-1 mt-1 md:mt-0 md:hidden ' data-aos="fade-up" data-aos-duration="1500">
     <div >
