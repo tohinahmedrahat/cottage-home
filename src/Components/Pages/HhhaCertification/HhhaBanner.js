@@ -49,7 +49,7 @@ const HhhaBanner = () => {
             Brooklyn Institute of Vocational Training <br /> Home Health Aide Certification
             </p>
 
-            <p className="mt-4 flex items-center gap-2 font-semibold max-w-lg sm:text-xl md:text-2xl sm:leading-relaxed text-white">
+            <p className="mt-4 flex justify-center md:justify-start  items-center gap-2 font-semibold max-w-lg sm:text-xl md:text-2xl sm:leading-relaxed text-white">
             <FiPhone/>
             516-367-2266
               
