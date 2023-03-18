@@ -44,15 +44,16 @@ const HhhaContactForm = () => {
   };
 
   return (
-    <div className="contact-container border-t-2 border-white">
+    <div className="contact-container border-t-2 border-white py-5">
       <div
         className="w-[90%] md:w-[75%] mx-auto bg-[#F4F4F4] opacity-90    
-            lg:my-[50px] contact-adjustment lg:pb-3 rounded-md shadow-lg my-10"
-            data-aos="fade-up" data-aos-duration="2000" 
+            lg:my-[50px] contact-adjustment lg:pb-3 rounded-md shadow-lg my-10 "
+        data-aos="fade-up"
+        data-aos-duration="2000"
       >
-        <div >
+        <div>
           <div>
-            <h1 className="text-3xl font-bold playrify text-center pt-10">
+            <h1 className="text-3xl font-bold playrify text-center pt-10 px-3">
               Brooklyn Institute Of Vocational Training
             </h1>
             <hr className="border-[#00a6b2] border-t-2 w-12 mt-3  mx-auto" />
@@ -77,8 +78,7 @@ const HhhaContactForm = () => {
                       })}
                       id="fullName"
                       placeholder="Full Name"
-                      className="w-full px-4 py-4 placeholder-gray-600 rounded-md border border-[#00a6b265] text-gray-700 outline-[#00a6b265] bg-white
-                                        focus:bg-white"
+                      className="w-full px-4 py-4 placeholder-gray-600 rounded-md border border-[#00a6b265] text-gray-700 outline-[#00a6b265] bg-white focus:bg-white"
                     />
 
                     {errors.fullName && (

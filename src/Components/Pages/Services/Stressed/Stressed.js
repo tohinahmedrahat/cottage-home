@@ -35,7 +35,11 @@ const Stressed = () => {
       </div>
       <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-6xl md:px-24 lg:px-8">
         <div className="flex flex-col-reverse items-center justify-between lg:flex-row">
-          <div className="mb-10  lg:max-w-lg lg:pr-5 lg:mb-0" data-aos="fade-right" data-aos-duration="2000">
+          <div
+            className="mb-10  lg:max-w-lg lg:pr-5 lg:mb-0"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <div className="max-w-xl mb-6 md:px-14">
               <p className="max-w-lg  text-lg md:text-2xl font-semibold tracking-tight text-[#67637e]  ">
                 HHA / PCA
@@ -49,7 +53,7 @@ const Stressed = () => {
                   <span className="text-[#00a6b2] bg-[#ebf8f9] rounded-full mr-3">
                     <HiStar className="text-3xl" />
                   </span>
-                  <span className="text-[#2f3450] text-[1em] tracking-wide">
+                  <span className="text-[#2f3450] text-[1em] md:tracking-wide">
                     Reliable medication reminders, so a dose is never forgotten.
                   </span>
                 </p>
@@ -57,7 +61,7 @@ const Stressed = () => {
                   <span className="text-[#00a6b2] bg-[#ebf8f9] rounded-full mr-3">
                     <HiStar className="text-3xl" />
                   </span>
-                  <span className="text-[#2f3450] text-[1em] tracking-wide">
+                  <span className="text-[#2f3450] text-[1em] md:tracking-wide">
                     Healthy, delicious meals, so your loved one gets the
                     nutrition they need.
                   </span>
@@ -66,7 +70,7 @@ const Stressed = () => {
                   <span className="text-[#00a6b2] bg-[#ebf8f9] rounded-full mr-3">
                     <HiStar className="text-3xl" />
                   </span>
-                  <span className="text-[#2f3450] text-[1em] tracking-wide">
+                  <span className="text-[#2f3450] text-[1em] md:tracking-wide">
                     Patient daily care with tasks like bathing, dressing and
                     grooming.
                   </span>
@@ -116,7 +120,7 @@ const Stressed = () => {
                   <span className="text-[#00a6b2] bg-[#ebf8f9] rounded-full mr-3">
                     <HiStar className="text-3xl" />
                   </span>
-                  <span className="text-[#2f3450] text-[1em] tracking-wide">
+                  <span className="text-[#2f3450] text-[1em] md:tracking-wide">
                     Reminders + escorts, so appointments are never missed you.
                   </span>
                 </p>
@@ -124,7 +128,7 @@ const Stressed = () => {
                   <span className="text-[#00a6b2] bg-[#ebf8f9] rounded-full mr-3">
                     <HiStar className="text-3xl" />
                   </span>
-                  <span className="text-[#2f3450] text-[1em] tracking-wide">
+                  <span className="text-[#2f3450] text-[1em] md:tracking-wide">
                     Warm companionship, so your loved one is never lonely - even
                     on the most confusion-filled days
                   </span>
@@ -133,7 +137,7 @@ const Stressed = () => {
                   <span className="text-[#00a6b2] bg-[#ebf8f9] rounded-full mr-3">
                     <HiStar className="text-3xl" />
                   </span>
-                  <span className="text-[#2f3450] text-[1em] tracking-wide">
+                  <span className="text-[#2f3450] text-[1em] md:tracking-wide">
                     A calming, steady presence that helps prevent power
                     struggles and flare-ups.
                   </span>
@@ -142,7 +146,7 @@ const Stressed = () => {
                   <span className="text-[#00a6b2] bg-[#ebf8f9] rounded-full mr-3">
                     <HiStar className="text-3xl" />
                   </span>
-                  <span className="text-[#2f3450] text-[1em] tracking-wide">
+                  <span className="text-[#2f3450] text-[1em] md:tracking-wide">
                     Unparalleled protection from frightening, dangerous
                     wandering.
                   </span>
