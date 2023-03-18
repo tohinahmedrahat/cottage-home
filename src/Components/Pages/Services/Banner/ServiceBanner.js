@@ -34,7 +34,7 @@ const ServiceBanner = () => {
               “I was hopeless and depressed. I couldn’t even clean my own home!”
             </h4>
 
-            <p className="text-white text-base font-medium w-full">
+            <p className="text-white text-base font-medium w-full px-5 md:px-0">
               Our in-home Cottage Home Care Services can help.
             </p>
           </div>

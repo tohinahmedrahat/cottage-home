@@ -7,7 +7,7 @@ import HhhaSchoolMap from "./HhhaSchoolMap";
 import WelcomeMessage from "./WelcomeMessage";
 
 const HhhaCertification = () => {
-  useTitle('HHA Certifications');
+  useTitle("HHA Certifications");
   return (
     <div>
       <HhhaBanner></HhhaBanner>
