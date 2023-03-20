@@ -94,7 +94,7 @@ const NavBar = () => {
                                 to='/home'
                                 aria-label="Home"
                                 title="Home"
-                                className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
+                                className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
                                 Home
@@ -105,7 +105,7 @@ const NavBar = () => {
                                 to='/services'
                                 aria-label="services"
                                 title="services"
-                                className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
+                                className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
                                 Services
@@ -118,7 +118,7 @@ const NavBar = () => {
                                 to='/contacts'
                                 aria-label="Contact US"
                                 title="Contact US"
-                                className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
+                                className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
                                 Contact US
@@ -130,7 +130,7 @@ const NavBar = () => {
                                 to='/covid'
                                 aria-label="Covid-19"
                                 title="Covid-19"
-                                className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
+                                className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
                                 Covid-19
@@ -142,7 +142,7 @@ const NavBar = () => {
                                 to='/hhaCertification'
                                 aria-label="HHA Certification"
                                 title="HHA Certification"
-                                className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
+                                className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
                                 HHA Certification
@@ -153,7 +153,7 @@ const NavBar = () => {
                                 to='/resources'
                                 aria-label="Resources"
                                 title="Resources"
-                                className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
+                                className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
                                 Resources
@@ -164,7 +164,7 @@ const NavBar = () => {
                                 to='/blog'
                                 aria-label="Blog"
                                 title="Blog"
-                                className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
+                                className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                             >
                                 Blog
@@ -180,7 +180,7 @@ const NavBar = () => {
                                                         to='/dashBoard'
                                                         aria-label="Dash Board"
                                                         title="Dash Board"
-                                                        className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
+                                                        className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
                                 ${navColor && 'customWhite'} white `}
                                                     >
                                                         Dash Board

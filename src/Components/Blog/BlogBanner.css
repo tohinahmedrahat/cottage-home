@@ -1,0 +1,8 @@
+
+.blog-cover{
+    background-image: url('../../../src/assets/blog.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
