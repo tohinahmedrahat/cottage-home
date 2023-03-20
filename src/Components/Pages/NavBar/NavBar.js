@@ -159,6 +159,17 @@ const NavBar = () => {
                                 Resources
                             </NavLink>
                         </li>
+                        <li>
+                            <NavLink
+                                to='/blog'
+                                aria-label="Blog"
+                                title="Blog"
+                                className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white `}
+                            >
+                                Blog
+                            </NavLink>
+                        </li>
                         {
                             user?.uid && <>
                                 {
