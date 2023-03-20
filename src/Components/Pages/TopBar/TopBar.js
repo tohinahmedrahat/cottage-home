@@ -30,7 +30,7 @@ const TopBar = () => {
                     </div>
                 </div>
                 <div className='flex items-center gap-5 md:text-lg font-medium md:mr-[5%] text-primary'>
-                    <div className="dropdown mr-[10%] ">
+                    {/* <div className="dropdown mr-[10%] ">
                         <label tabIndex={0} className=" cursor-pointer text-base ">Language</label>
                         <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-24 text-sm text-center">
                             <li className='mt-2 cursor-pointer'> 
@@ -44,7 +44,7 @@ const TopBar = () => {
                             </li>
                             
                         </ul>
-                    </div>
+                    </div> */}
                     <a href="https://www.facebook.com/CottageHCS" target='_blank'><BsFacebook className='md:text-2xl ' /></a>
 
 

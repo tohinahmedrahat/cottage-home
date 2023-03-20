@@ -1,6 +1,7 @@
 import DashBoardLayout from "../../../DashBoardLayout/DashBoardLayout";
 import AllMessages from "../../AllMessages/AllMessages";
 import Blog from "../../Blog/Blog";
+import SingleBlog from "../../Blog/SingleBlog";
 // import About from "../../Pages/About/About";
 import AdminRoute from "../../Pages/AdminRoute/AdminRoute";
 import Cdpaps from "../../Pages/CDPAP/Cdpaps";
@@ -51,10 +52,7 @@ const Route = createBrowserRouter([
           </PrivateRoute>
         ),
       },
-      {
-        path: "/blog",
-       element:<Blog></Blog>
-      },
+     
       {
         path: "/covid",
         element: <Covid></Covid>,
@@ -79,6 +77,15 @@ const Route = createBrowserRouter([
         path: "/resources",
         element: <Resources></Resources>
       },
+      {
+        path: "/blog",
+       element:<Blog></Blog>
+      },
+      {
+        path: '/blogs/:id',
+        loader: ({ params }) => fetch(`https://cottage-home-care-services-server-site.vercel.app/blogs/${params.id}`),
+        element:<SingleBlog></SingleBlog>
+    }
     ],
   },
   {
