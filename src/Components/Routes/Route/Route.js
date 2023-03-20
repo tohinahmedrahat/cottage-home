@@ -1,5 +1,6 @@
 import DashBoardLayout from "../../../DashBoardLayout/DashBoardLayout";
 import AllMessages from "../../AllMessages/AllMessages";
+import Blog from "../../Blog/Blog";
 // import About from "../../Pages/About/About";
 import AdminRoute from "../../Pages/AdminRoute/AdminRoute";
 import Cdpaps from "../../Pages/CDPAP/Cdpaps";
@@ -49,6 +50,10 @@ const Route = createBrowserRouter([
             <Contacts></Contacts>
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/blog",
+       element:<Blog></Blog>
       },
       {
         path: "/covid",
