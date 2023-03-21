@@ -8,7 +8,7 @@ const LongIsland = () => {
     const [message, setMessage] = useState('')
 
 
-    const url = 'https://cottage-home-care-services-server-site.vercel.app/office/Long Island Office'
+    const url = 'https://cottage-home-updated-server.vercel.app/office/Long Island Office'
 
     const { data: messages = [], isLoading, refetch } = useQuery({
         queryKey: ['allmessages',],

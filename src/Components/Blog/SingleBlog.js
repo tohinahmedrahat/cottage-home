@@ -6,8 +6,8 @@ const SingleBlog = () => {
     const data = useLoaderData()
     console.log(data)
     return (
-        <div>
-            
+        <div className='min-h-screen'>
+            <h1 className='mt-[40vh] text-4xl font-semibold text-center'> { data?.title}</h1>
         </div>
     );
 };

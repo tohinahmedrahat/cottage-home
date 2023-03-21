@@ -9,7 +9,7 @@ const AllMessages = () => {
 const [message, setMessage] = useState('')
 
 
-    const url = 'https://cottage-home-care-services-server-site.vercel.app/allmessages'
+    const url = 'https://cottage-home-updated-server.vercel.app/allmessages'
 
     const { data: messages = [], isLoading, refetch } = useQuery({
         queryKey: ['allmessages',],

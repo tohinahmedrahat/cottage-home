@@ -83,7 +83,7 @@ const Route = createBrowserRouter([
       },
       {
         path: '/blogs/:id',
-        loader: ({ params }) => fetch(`https://cottage-home-care-services-server-site.vercel.app/blogs/${params.id}`),
+        loader: ({ params }) => fetch(`https://cottage-home-updated-server.vercel.app/blogs/${params.id}`),
         element:<SingleBlog></SingleBlog>
     }
     ],
@@ -92,7 +92,6 @@ const Route = createBrowserRouter([
     path: "/dashboard",
     element: (
       <PrivateRoute>
-        {" "}
         <DashBoardLayout></DashBoardLayout>
       </PrivateRoute>
     ),

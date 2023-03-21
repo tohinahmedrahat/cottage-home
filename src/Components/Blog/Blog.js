@@ -1,6 +1,5 @@
 import React from 'react';
 import { useQuery } from 'react-query';
-import Loading from '../Shared/Loading/Loading';
 import AllBlog from './AllBlog';
 import BlogBanner from './BlogBanner';
 
@@ -16,7 +15,7 @@ const Blog = () => {
     //         <p>About Page</p>
     //     </>;
 
-    const url = 'https://cottage-home-care-services-server-site.vercel.app/blogs'
+    const url = 'https://cottage-home-updated-server.vercel.app/blogs'
 
     const { data: blogs = [], isLoading, refetch } = useQuery({
         queryKey: ['blogs',],
