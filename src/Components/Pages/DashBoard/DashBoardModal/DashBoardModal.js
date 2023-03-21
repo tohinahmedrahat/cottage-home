@@ -15,7 +15,7 @@ const DashBoardModal = ({message}) => {
   {
     subject?.length >= 300 ?
      <>
-     <div className="modal-box relative   md:w-11/12 md:max-w-5xl ">
+     <div className="modal-box relative   md:w-11/12 md:max-w-5xl mt-[10vh]">
     <label htmlFor="message-details" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
     <h3 className="text-lg font-bold px-4 mt-4"> Message From {firstName} </h3>
     <p className="text-justify  px-4 mt-2"> 

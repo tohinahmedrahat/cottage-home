@@ -1,5 +1,7 @@
 import DashBoardLayout from "../../../DashBoardLayout/DashBoardLayout";
 import AllMessages from "../../AllMessages/AllMessages";
+import Blog from "../../Blog/Blog";
+import SingleBlog from "../../Blog/SingleBlog";
 // import About from "../../Pages/About/About";
 import AdminRoute from "../../Pages/AdminRoute/AdminRoute";
 import Cdpaps from "../../Pages/CDPAP/Cdpaps";
@@ -7,6 +9,7 @@ import Contacts from "../../Pages/Contacts/Contacts/Contacts";
 import Covid from "../../Pages/Covid/Covid";
 import AllUsers from "../../Pages/DashBoard/AllUsers/AllUsers";
 import BronxOffice from "../../Pages/DashBoard/BronxOffice/BronxOffice";
+import Brooklyn from "../../Pages/DashBoard/Brooklyn/Brooklyn";
 import DashBoard from "../../Pages/DashBoard/DashBoard";
 import LongIsland from "../../Pages/DashBoard/LongIsland/LongIsland";
 import QueensOffice from "../../Pages/DashBoard/QueensOffice/QueensOffice";
@@ -18,6 +21,7 @@ import Main from "../../Pages/Main/Main";
 import Pca from "../../Pages/PCA/Pca";
 import PrivateRoute from "../../Pages/PrivateRoute/PrivateRoute";
 import Register from "../../Pages/Register/Register";
+import Resources from "../../Pages/Resources/Resources";
 import Services from "../../Pages/Services/Services/Services";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -48,6 +52,7 @@ const Route = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+     
       {
         path: "/covid",
         element: <Covid></Covid>,
@@ -68,13 +73,25 @@ const Route = createBrowserRouter([
         path: "/hhaCertification",
         element: <HhhaCertification></HhhaCertification>,
       },
+      {
+        path: "/resources",
+        element: <Resources></Resources>
+      },
+      {
+        path: "/blog",
+       element:<Blog></Blog>
+      },
+      {
+        path: '/blogs/:id',
+        loader: ({ params }) => fetch(`https://cottage-home-updated-server.vercel.app/blogs/${params.id}`),
+        element:<SingleBlog></SingleBlog>
+    }
     ],
   },
   {
     path: "/dashboard",
     element: (
       <PrivateRoute>
-        {" "}
         <DashBoardLayout></DashBoardLayout>
       </PrivateRoute>
     ),
@@ -84,7 +101,7 @@ const Route = createBrowserRouter([
         path: "/dashboard",
         element: (
           <AdminRoute>
-            <AllMessages></AllMessages>{" "}
+            <AllMessages></AllMessages>
           </AdminRoute>
         ),
       },
@@ -92,7 +109,7 @@ const Route = createBrowserRouter([
         path: "/dashboard/cdpap",
         element: (
           <AdminRoute>
-            <Cdpaps></Cdpaps>{" "}
+            <Cdpaps></Cdpaps>
           </AdminRoute>
         ),
       },
@@ -100,7 +117,7 @@ const Route = createBrowserRouter([
         path: "/dashboard/pca",
         element: (
           <AdminRoute>
-            <Pca></Pca>{" "}
+            <Pca></Pca>
           </AdminRoute>
         ),
       },
@@ -108,7 +125,7 @@ const Route = createBrowserRouter([
         path: "/dashboard/users",
         element: (
           <AdminRoute>
-            <AllUsers> </AllUsers>{" "}
+            <AllUsers> </AllUsers>
           </AdminRoute>
         ),
       },
@@ -116,7 +133,7 @@ const Route = createBrowserRouter([
         path: "/dashboard/longIsland",
         element: (
           <AdminRoute>
-            <LongIsland></LongIsland>{" "}
+            <LongIsland></LongIsland>
           </AdminRoute>
         ),
       },
@@ -124,7 +141,7 @@ const Route = createBrowserRouter([
         path: "/dashboard/Queens",
         element: (
           <AdminRoute>
-            <QueensOffice></QueensOffice>{" "}
+            <QueensOffice></QueensOffice>
           </AdminRoute>
         ),
       },
@@ -132,10 +149,19 @@ const Route = createBrowserRouter([
         path: "/dashboard/Bronx",
         element: (
           <AdminRoute>
-            <BronxOffice></BronxOffice>{" "}
+            <BronxOffice></BronxOffice>
           </AdminRoute>
         ),
       },
+      {
+        path: "/dashboard/brooklyn",
+        element: (
+          <AdminRoute>
+            <Brooklyn></Brooklyn>
+          </AdminRoute>
+        ),
+      },
+
     ],
   },
 ]);

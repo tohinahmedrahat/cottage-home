@@ -57,7 +57,7 @@ const Login = () => {
     }
     const saveUser = (name, email, photoURL, role = "", verify = "false") => {
         const user = { name, email, role, photoURL, verify };
-        fetch('https://cottage-home-care-services-server-site.vercel.app/users', {
+        fetch('https://cottage-home-updated-server.vercel.app/users', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -109,7 +109,7 @@ const Login = () => {
                                     <input type={showPass ? 'text' : "password"}
                                         {...register("password",
                                             { required: "password is required" })}
-                                        id="password" placeholder="*****" className="w-full px-8 py-2 relative font-semibold rounded-md bg-white shadow-2xl dark:text-gray-900 placeholder:text-gray-500 focus:outline-none" required />
+                                        id="password" placeholder="*****" className="w-full px-8 py-2 relative  rounded-md bg-white shadow-2xl dark:text-gray-900 placeholder:text-gray-500 focus:outline-none" required />
                                     {errors.email && <p className='text-red-600'>{errors.email.message}</p>}
                                     <div className="absolute right-3 top-7 text-gray-700" onClick={() => setShowPass(!showPass)}>
                                         {showPass ? <AiFillEyeInvisible className='h-6 w-6' /> : <AiFillEye className='h-6 w-6' />}

@@ -4,7 +4,7 @@ import Loading from '../../../Shared/Loading/Loading';
 
 const AllUsers = () => {
 
-    const url = 'https://cottage-home-care-services-server-site.vercel.app/users'
+    const url = 'https://cottage-home-updated-server.vercel.app/users'
 
     const { data: users = [], isLoading, refetch } = useQuery({
         queryKey: ['users',],

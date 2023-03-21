@@ -46,18 +46,37 @@ export default function Slider() {
     ]
     return (
         <>
-        {/* Autoplay */}
-            <Swiper
+            {/* <Swiper
                 modules={[Navigation, Pagination, A11y, ]}
-
+                pagination={ true}
                 slidesPerView="auto"
                 loop={true}
                 autoplay={{
                     delay: 4000,
                     disableOnInteraction: false,
-                }}
+                }} */}
+                <Swiper
+                modules={[Navigation, Pagination, A11y,Autoplay]}
+                pagination={ true}
+                slidesPerView="auto"
+                loop={true}
+                autoplay={{
+                   delay: 3500,
+                   disableOnInteraction: false,
+               }}
+             
+               className="mySwiper relative "
+          
 
-                className="mySwiper relative "
+               
+            //     slidesPerView="auto"
+            //     loop={true}
+            //     autoplay={{
+            //        delay: 3500,
+            //        disableOnInteraction: false,
+            //    }}
+
+                
             >
                 {
                     Slider.map(slide => <SwiperSlide
