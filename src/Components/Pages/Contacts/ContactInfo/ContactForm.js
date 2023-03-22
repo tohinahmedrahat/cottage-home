@@ -27,7 +27,7 @@ const ContactForm = () => {
 
         }
 
-        fetch('https://cottage-home-updated-server.vercel.app/messages', {
+        fetch('http://localhost:5000/messages', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

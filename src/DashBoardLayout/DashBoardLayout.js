@@ -18,7 +18,7 @@ const DashBoardLayout = () => {
   const [isAdmin] = useAdmin(user?.email);
 
   const url =
-    "https://cottage-home-updated-server.vercel.app/notifications";
+    "http://localhost:5000/notifications";
 
   const {
     data: allData = [],

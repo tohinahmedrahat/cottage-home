@@ -64,7 +64,7 @@ const ContactInfo = () => {
       <div className="w-[95%] lg:w-[85%] mx-auto md:grid grid-cols-4 mt-[100px] Poppins">
         <div className=" mr-1 mt-1 md:mt-0 ">
           <div
-            className="relative bg-[#EBF8F9]  py-4 px-5 min-h-[24rem] rounded-md cart"
+            className="relative bg-[#EBF8F9]  py-4 px-5 min-h-[27rem] rounded-md cart"
             data-aos="zoom-in"
             data-aos-duration="500"
           >
@@ -87,6 +87,10 @@ const ContactInfo = () => {
             <p className="mt-4 text-sm text-justify text-gray-600 ">
               391 East 149th Street, Bronx, New York 10455, United States
             </p>
+            <p className="mt-4 text-sm text-justify text-gray-600 ">
+            130 WASHINGTON AVENUE
+ALBANY, NEW YORK 3rd floor unit G
+            </p>
             {/* <a href='#' className='text-[#00a6b2b1] flex justify-center items-center text-2xl gap-5 text-gray-600 '>
                             {
                                 contact?.icons
@@ -96,7 +100,7 @@ const ContactInfo = () => {
         </div>
         <div className=" mr-1 mt-1 md:mt-0">
           <div
-            className="relative bg-[#EBF8F9]  py-4 px-3 min-h-[24rem] rounded-md  cart"
+            className="relative bg-[#EBF8F9]  py-4 px-3 min-h-[27rem] rounded-md  cart"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
@@ -132,7 +136,7 @@ const ContactInfo = () => {
         </div>
         <div className=" mr-1 mt-1 md:mt-0 cutom-animation">
           <div
-            className="relative bg-[#EBF8F9]  py-4 px-3 min-h-[24rem] rounded-md cart"
+            className="relative bg-[#EBF8F9]  py-4 px-3 min-h-[27rem] rounded-md cart"
             data-aos="zoom-in"
             data-aos-duration="1500"
           >
@@ -166,7 +170,7 @@ const ContactInfo = () => {
         </div>
         <div className=" mr-1 mt-1 md:mt-0">
           <div
-            className="relative bg-[#EBF8F9]  py-4 px-3 min-h-[24rem] rounded-md cart"
+            className="relative bg-[#EBF8F9]  py-4 px-3 min-h-[27rem] rounded-md cart"
             data-aos="zoom-in"
             data-aos-duration="2000"
           >

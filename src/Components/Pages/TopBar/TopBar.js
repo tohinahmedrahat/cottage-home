@@ -48,7 +48,7 @@ const TopBar = () => {
                     <a href="https://www.facebook.com/CottageHCS" target='_blank'><BsFacebook className='md:text-2xl ' /></a>
 
 
-                    <a href="" target='_blank'>
+                    <a href="https://www.instagram.com/cottagehcs/" target='_blank'>
                         <BsInstagram className='md:text-2xl ' />
                     </a>
                     <a href="https://twitter.com/cottagecareny" target='_blank'>

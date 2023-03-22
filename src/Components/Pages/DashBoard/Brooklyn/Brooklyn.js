@@ -7,7 +7,7 @@ const Brooklyn = () => {
     const [message, setMessage] = useState('')
 
 
-    const url = 'https://cottage-home-updated-server.vercel.app/brooklyn'
+    const url = 'http://localhost:5000/brooklyn'
 
     const { data: messages = [], isLoading, refetch } = useQuery({
         queryKey: ['brooklyn',],

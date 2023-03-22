@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 /* .roboto {
   font-family: "Roboto", sans-serif;
@@ -23,6 +24,11 @@ body {
 }
 .open-sans{
   font-family: 'Open Sans', sans-serif;
+}
+
+.source-sans{
+  font-family: 'Source Sans Pro', sans-serif;
+
 }
 
 /* Custom style */

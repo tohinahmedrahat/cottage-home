@@ -24,7 +24,7 @@ const HhhaContactForm = () => {
     console.log(brooklynMessage);
 
     fetch(
-      "https://cottage-home-updated-server.vercel.app/brooklyn",
+      "http://localhost:5000/brooklyn",
       {
         method: "POST",
         headers: {
