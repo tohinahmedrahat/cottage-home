@@ -8,12 +8,12 @@ import peace from "../../../../assets/peace.png";
 import "./Banner.css";
 
 const Banner = () => {
-  const handleDone = () => {
-    // console.log(`Done after 5 loops!`);
-  };
-  const handleType = () => {
-    // console.log(`Done after 5 loops!`);
-  };
+  // const handleDone = () => {
+  //   // console.log(`Done after 5 loops!`);
+  // };
+  // const handleType = () => {
+  //   // console.log(`Done after 5 loops!`);
+  // };
   return (
     <div>
       <div
@@ -23,8 +23,8 @@ const Banner = () => {
         <div className=" tracking-[1px] mx-auto pt-40">
           <div className="h-[150px] max-w-2xl mx-auto mt-[10vh]">
             <h1 className="md:text-6xl text-2xl px-[15px] text-white font-[PlayfairDisplay] ">
-              <Typewriter
-                words={["RIGHT HOME CARE FOR YOU"]}
+              {/* <Typewriter
+                words={[""]}
                 loop={1000}
                 cursor
                 cursorStyle="।"
@@ -33,7 +33,8 @@ const Banner = () => {
                 delaySpeed={1000}
                 onLoopDone={handleDone}
                 onType={handleType}
-              />
+              /> */}
+              RIGHT HOME CARE FOR YOU
             </h1>
           </div>
           <div className="md:mt-[8vh]">

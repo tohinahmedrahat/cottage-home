@@ -6,40 +6,48 @@ const ServiceBanner = () => {
   const handleDone = () => {
     // console.log(`Done after 5 loops!`);
   };
-  
+
   const handleType = () => {
     // console.log(`Done after 5 loops!`);
   };
   return (
     <div>
       <div
-        className=" relative bg-no-repeat bg-cover bg-center text-center min-h-[100vh]"
+        className=" relative bg-no-repeat bg-cover bg-center text-center min-h-[80vh]"
         style={{ backgroundImage: `url(${background})` }}
       >
-        <div className="max-w-2xl tracking-[1px] mx-auto pt-40 md:pt-[30vh] ">
-          <h1 className="md:text-6xl text-2xl px-[15px] text-white font-[PlayfairDisplay] mb-[45px]">
-            <Typewriter
-              words={["You don’t have to struggle."]}
-              loop={1000}
-              cursor
-              cursorStyle="।"
-              typeSpeed={70}
-              deleteSpeed={50}
-              delaySpeed={1000}
-              onLoopDone={handleDone}
-              onType={handleType}
-            />
+        <h1 className=" pt-[20vh] text-3xl lg:text-5xl relative font-bold font-[PlayfairDisplay] afterEffect mb-5 text-center px-5 text-white">
+            Services
           </h1>
-          <div className="absolute md:top-[52vh]">
-            <h4 className=" md:text-xl text-sm font-semibold text-[#dbf2f4] font-[Roboto] mb-4 px-5 md:px-0">
-              “I was hopeless and depressed. I couldn’t even clean my own home!”
-            </h4>
-
-            <p className="text-white text-base font-medium w-full px-5 md:px-0">
-              Our in-home Cottage Home Care Services can help.
-            </p>
+        <div className="md:pt-[10vh]">
+        
+            <div className=" mx-auto  ">
+              <div className="rounded-md bg-contact-2 md:max-w-3xl lg:max-w-4xl mx-auto text-white">
+                <div className="bg-simple px-5 py-5 ">
+                  
+           
+          <p className="text-center tracking-wide text-lg md:text-xl  px-5 font-bold">
+            A Little About What We Do
+          </p>
+          <p className=" mt-5 w-[95%]  mx-auto  text-justify text-base ">
+            Our experienced and highly trained caregivers provide the highest
+            quality of care to both patients and their families. Our goal is to
+            help individuals and their loved ones live happy and fulfilling
+            lives. Arthritis, physical disabilities, and age-related conditions
+            are some of the few circumstances that prevent patients from caring
+            for themselves. Our caregivers can assist you with daily tasks such
+            as mobility, eating, exercising, and grooming. We even offer
+            Post-Surgical Assistance, recovering from home after surgery can
+            limit your daily activities. Whether you are recovering from major
+            surgery, childbirth, or plastic surgery, our compassionate
+            caregivers can assist you to a healthy and complete recovery.
+          </p>
+                  
+                  
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   );

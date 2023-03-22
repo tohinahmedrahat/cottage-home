@@ -17,44 +17,38 @@ const Footer = () => {
 				</div>
 				<div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
 					<div className="space-y-3">
-						<h3 className="tracking-wide uppercase dark:text-gray-50">Product</h3>
+						<h3 className="tracking-wide uppercase dark:text-gray-50">Term & Condition</h3>
 						<ul className="space-y-1">
 							<li>
-								<a rel="noopener noreferrer" href="#">Features</a>
+								<a rel="noopener noreferrer" href="#">Mission</a>
 							</li>
 							<li>
-								<a rel="noopener noreferrer" href="#">Integrations</a>
+								<a rel="noopener noreferrer" href="#">Vision & Values</a>
+							</li>
+							
+							
+						</ul>
+					</div>
+					<div className="space-y-3">
+						<h3 className="tracking-wide uppercase dark:text-gray-50">Service Area</h3>
+						<ul className="space-y-1">
+							<li>
+								<a rel="noopener noreferrer" href="#">Team Members</a>
 							</li>
 							<li>
-								<a rel="noopener noreferrer" href="#">Pricing</a>
-							</li>
-							<li>
-								<a rel="noopener noreferrer" href="#">FAQ</a>
+								<a rel="noopener noreferrer" href="#">History</a>
 							</li>
 						</ul>
 					</div>
 					<div className="space-y-3">
-						<h3 className="tracking-wide uppercase dark:text-gray-50">Company</h3>
+						<h3 className="uppercase dark:text-gray-50">Contact Info</h3>
 						<ul className="space-y-1">
+							
 							<li>
-								<a rel="noopener noreferrer" href="#">Privacy</a>
+							<a href="mailto:info@cottagehomecare.com" className='hover:text-primary '> info@cottagehomecare.com</a>
 							</li>
 							<li>
-								<a rel="noopener noreferrer" href="#">Terms of Service</a>
-							</li>
-						</ul>
-					</div>
-					<div className="space-y-3">
-						<h3 className="uppercase dark:text-gray-50">Developers</h3>
-						<ul className="space-y-1">
-							<li>
-								<a rel="noopener noreferrer" href="#">Public API</a>
-							</li>
-							<li>
-								<a rel="noopener noreferrer" href="#">Documentation</a>
-							</li>
-							<li>
-								<a rel="noopener noreferrer" href="#">Guides</a>
+							<a href="tel:+1516-367-2266">Phone: <span className='hover:text-primary '> 516-367-2266</span></a>
 							</li>
 						</ul>
 					</div>
