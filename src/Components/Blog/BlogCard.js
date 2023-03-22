@@ -2,9 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const BlogCard = ({blog}) => {
-    const {title,img,description} = blog;
+    const {title,img,description,_id} = blog;
     return (
-        <div class="flex justify-center">
+        <div class="flex justify-center"
+         data-aos="zoom-in"
+         data-aos-duration="2000">
                         <div
                             class="block max-w-sm rounded-lg bg-white shadow-lg ">
                             <a href="#!">
@@ -35,8 +37,7 @@ const BlogCard = ({blog}) => {
                                     }
                                 
                                <Link
-                               to={`/blogs/${blog?._id}`}
-
+                               to={`/blogs/${_id}`}
                                >
 
                                <button

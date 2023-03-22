@@ -77,8 +77,8 @@ const OfficeLocation = () => {
     },
     {
       name: "Queens Office",
-      address1: "126-01 Liberty Avenue, South Richmond Hill Queens,",
-      address2: "New York 11419, United States",
+      address1: "126-01 Liberty Avenue, South Richmond Hill",
+      address2: " Queens, New York 11419, United States.",
       direction:
         "https://www.google.com/maps?daddr=126-01+Liberty+Avenue,+South+Richmond+Hill+Queens,+New+York+11419,+United+States",
     },
@@ -89,11 +89,18 @@ const OfficeLocation = () => {
       direction:
         "https://www.google.com/maps?daddr=391+East+149th+Street,+Bronx,+New+York+10455,+United+States",
     },
+    {
+      name: "Albany Office",
+      address1: "130 Washington Avenue Albany ,",
+      address2: "New York 12210, United States.",
+      direction:
+        "https://www.google.com/maps/dir//130+Washington+Ave,+Albany,+NY+12210,+USA/@42.6548809,-73.795538,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89de0a3aa4c10641:0xaf8dd4ae670e2237!2m2!1d-73.7605185!2d42.6548231?hl=en",
+    },
   ];
 
   return (
     <div className="bg-[#322E51] py-24 ">
-      <div className="w-[95%] lg:w-[80%] mx-auto">
+      <div className="w-[95%] lg:w-[90%] mx-auto">
         <h1 className="text-lg md:text-2xl lg:text-4xl playrify text-white  font-semibold">
           Call today or come visit — at a location near you.
         </h1>
@@ -104,7 +111,7 @@ const OfficeLocation = () => {
           Cottage Home Care Services of New York Office Locations{" "}
         </h5>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7 mt-16 text-center md:text-start">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-16 text-center md:text-start">
           {offices.map((office, index) => (
             <div key={index} data-aos="zoom-in" data-aos-duration="2000">
               <h5 className="text-lg font-semibold text-primary">

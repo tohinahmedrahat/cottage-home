@@ -6,13 +6,14 @@ const ServiceBanner = () => {
   const handleDone = () => {
     // console.log(`Done after 5 loops!`);
   };
+  
   const handleType = () => {
     // console.log(`Done after 5 loops!`);
   };
   return (
     <div>
       <div
-        className=" relative bg-no-repeat bg-cover bg-center text-center min-h-[100vh] mb-20"
+        className=" relative bg-no-repeat bg-cover bg-center text-center min-h-[100vh]"
         style={{ backgroundImage: `url(${background})` }}
       >
         <div className="max-w-2xl tracking-[1px] mx-auto pt-40 md:pt-[30vh] ">

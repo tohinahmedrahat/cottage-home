@@ -1,11 +1,9 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter'
 
-
-
 import CEO from '../../../../assets/ceo-1.jpg'
-
 import icon from '../../../../assets/blue-quote.jpg'
+
 const Welcome = () => {
     const handleDone = () => {
         // console.log(`Done after 5 loops!`)

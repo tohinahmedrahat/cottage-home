@@ -29,7 +29,7 @@ const Modal = ({office,setModalData}) => {
             }
 
             // console.log(contactInfo)
-            fetch('https://cottage-home-updated-server.vercel.app/officeMessages', {
+            fetch('https://cottage-home-care-services-server-site.vercel.app/officeMessages', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
