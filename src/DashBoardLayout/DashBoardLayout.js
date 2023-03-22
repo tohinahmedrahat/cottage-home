@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Outlet, Link } from "react-router-dom";
 import useAdmin from "../Components/Hooks/UseAdmin";
 import { AuthContext } from "../Components/Pages/Context/AuthProvider";
@@ -13,18 +13,13 @@ import Loading from "../Components/Shared/Loading/Loading";
 import useTitle from "../Components/Hooks/useTitle";
 
 const DashBoardLayout = () => {
-  useTitle('Dash Board');
+  useTitle("Dash Board");
   const { user } = useContext(AuthContext);
   const [isAdmin] = useAdmin(user?.email);
 
-  const url =
-    "https://cottage-home-updated-server.vercel.app/notifications";
+  const url = "https://cottage-home-updated-server.vercel.app/notifications";
 
-  const {
-    data: allData = [],
-    isLoading,
-    refetch,
-  } = useQuery({
+  const { data: allData = [], isLoading } = useQuery({
     queryKey: ["notifications"],
     queryFn: async () => {
       const res = await fetch(url);
@@ -33,67 +28,43 @@ const DashBoardLayout = () => {
     },
   });
 
-  const { officeMessages, messages,users,brooklynMessages  } = allData;
+  const { officeMessages, messages, users, brooklynMessages } = allData;
 
   const totalMessage = messages?.length;
   const totalUsers = users?.length;
   const totalBrooklinMessages = brooklynMessages?.length;
 
-
   let pca = 0;
-  let cdpap =0;
-  let longIsland =0;
-  let queens =0;
-  let bronx =0;
-
-
+  let cdpap = 0;
+  let longIsland = 0;
+  let queens = 0;
+  let bronx = 0;
 
   if (allData.length <= 0) {
     return <Loading></Loading>;
   } else {
-  // console.log("office message", officeMessages);
-    
-    // if (officeMessages === true) {
     for (const service of messages) {
       if (service?.service === "PCA") {
         pca = pca + 1;
-
-        
-      } else if( service?.service === "CDPAP"){
-
-        cdpap = cdpap +1;             
-
-
-
+      } else if (service?.service === "CDPAP") {
+        cdpap = cdpap + 1;
       }
-      
-      
     }
 
-
-    for( const office of officeMessages){
-
-      if( office?.officeName === "Long Island Office"){
-
+    for (const office of officeMessages) {
+      if (office?.officeName === "Long Island Office") {
         longIsland = longIsland + 1;
-      }
-      else if( office?.officeName === "Queens Office"){
-
+      } else if (office?.officeName === "Queens Office") {
         queens = queens + 1;
-      }
-      else if( office?.officeName === "Bronx Office"){
-
+      } else if (office?.officeName === "Bronx Office") {
         bronx = bronx + 1;
       }
-
     }
 
-    
     // }
   }
 
-  console.log('the pca Message are:',pca);
-
+  console.log("the pca Message are:", pca);
 
   if (isLoading) {
     return <Loading></Loading>;
@@ -119,9 +90,11 @@ const DashBoardLayout = () => {
             <li className="text-primary ">
               <Link to="/dashboard">
                 {" "}
-                <BiMessageRoundedDots className="w-6 h-6 relative mr-2" /> All Messages 
-
-                <p className="absolute  top-0 left-9 font-semibold text-xs">{totalMessage}</p>
+                <BiMessageRoundedDots className="w-6 h-6 relative mr-2" /> All
+                Messages
+                <p className="absolute  top-0 left-9 font-semibold text-xs">
+                  {totalMessage}
+                </p>
               </Link>
             </li>
 
@@ -130,65 +103,65 @@ const DashBoardLayout = () => {
                 <li className="text-primary">
                   <Link to="/dashboard/cdpap">
                     {" "}
-                    <BiMessageRoundedDots className="w-6 h-6 relative mr-2" /> All CDPAP
-                    Messages
-                    <p className="absolute  top-0 left-9 font-semibold text-xs">{cdpap}</p>
+                    <BiMessageRoundedDots className="w-6 h-6 relative mr-2" />{" "}
+                    All CDPAP Messages
+                    <p className="absolute  top-0 left-9 font-semibold text-xs">
+                      {cdpap}
+                    </p>
                   </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/pca">
-
-                    
-                    <BiMessageRoundedDots className="w-6 h-6 relative mr-2" /> All PCA
-                    Messages 
-                  <p className="absolute  top-0 left-9 font-semibold text-xs">{pca}</p>
-                    
+                    <BiMessageRoundedDots className="w-6 h-6 relative mr-2" />{" "}
+                    All PCA Messages
+                    <p className="absolute  top-0 left-9 font-semibold text-xs">
+                      {pca}
+                    </p>
                   </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/users">
                     <HiUsers className="w-6 h-6  mr-2" />
                     All Users
-
-                    <p className="absolute  top-0 left-9 font-semibold text-xs">{totalUsers}</p>
-
-
+                    <p className="absolute  top-0 left-9 font-semibold text-xs">
+                      {totalUsers}
+                    </p>
                   </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/longIsland">
                     <FaHome className="w-6 h-6  mr-2" />
                     Long Island Office
-
-                    <p className="absolute  top-0 left-9 font-semibold text-xs">{longIsland}</p>
-
+                    <p className="absolute  top-0 left-9 font-semibold text-xs">
+                      {longIsland}
+                    </p>
                   </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/Queens">
                     <FaHome className="w-6 h-6  mr-2" />
                     Queens office
-
-                    <p className="absolute  top-0 left-9 font-semibold text-xs">{queens}</p>
-                    
+                    <p className="absolute  top-0 left-9 font-semibold text-xs">
+                      {queens}
+                    </p>
                   </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/Bronx">
-                    <FaHome className="w-6 h-6 mr-2 mr-2" />
+                    <FaHome className="w-6 h-6 mr-2" />
                     Bronx Office
-
-                    <p className="absolute  top-0 left-9 font-semibold text-xs">{bronx}</p>
-
+                    <p className="absolute  top-0 left-9 font-semibold text-xs">
+                      {bronx}
+                    </p>
                   </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/brooklyn">
-                    <IoSchool className="w-6 h-6 mr-2 mr-2" />
+                    <IoSchool className="w-6 h-6 mr-2" />
                     Brooklyn Institute
-
-                    <p className="absolute  top-0 left-9 font-semibold text-xs">{totalBrooklinMessages}</p>
-
+                    <p className="absolute  top-0 left-9 font-semibold text-xs">
+                      {totalBrooklinMessages}
+                    </p>
                   </Link>
                 </li>
               </>
