@@ -8,7 +8,7 @@ const Cdpaps = () => {
     const [message, setMessage] = useState('')
 
 
-    const url = 'http://localhost:5000/allmessages/CDPAP'
+    const url = 'https://cottage-home-care-services-server-site.vercel.app/allmessages/CDPAP'
 
     const { data: messages = [], isLoading, refetch } = useQuery({
         queryKey: ['allmessages',],

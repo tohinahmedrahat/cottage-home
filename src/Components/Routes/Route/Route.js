@@ -83,7 +83,7 @@ const Route = createBrowserRouter([
       },
       {
         path: '/blogs/:id',
-        loader: ({ params }) => fetch(`http://localhost:5000/blogs/${params.id}`),
+        loader: ({ params }) => fetch(`https://cottage-home-care-services-server-site.vercel.app/blogs/${params.id}`),
         element:<SingleBlog></SingleBlog>
     }
     ],
