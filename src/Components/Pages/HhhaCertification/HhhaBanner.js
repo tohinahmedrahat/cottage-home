@@ -1,6 +1,6 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import image1 from "../../../assets/MedicalJobPlacement.jpg";
+import image1 from "../../../assets/MedicalJobPlacement1.jpg";
 import hhaLogo from '../../../assets/hhalogo.png'
 
 import { FiPhone } from "react-icons/fi";
@@ -25,7 +25,7 @@ const HhhaBanner = () => {
           }}
           className="relative bg-cover bg-center bg-no-repeat h-[80vh]"
         >
-          <div className="absolute inset-0 bg-[#00000028] sm:bg-transparent sm:bg-gradient-to-r sm:from-[#0000007c] sm:to-[#0202021b]"></div>
+          <div className="absolute inset-0 bg-[#00000028] sm:bg-transparent sm:bg-gradient-to-r sm:from-[#0000006d] sm:to-[#02020217]"></div>
 
           <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-5/6 lg:items-center lg:px-8">
             <div className="max-w-2xl text-center sm:text-left mt-[12vh]">
