@@ -13,7 +13,7 @@ import Welcome from "../Welcome/Welcome";
 import WhyChoose from "../WhyChoose/WhyChoose";
 
 const Home = () => {
-  useTitle('Home');
+  useTitle("Home");
   return (
     <div className="pb-20">
       <Banner></Banner>
