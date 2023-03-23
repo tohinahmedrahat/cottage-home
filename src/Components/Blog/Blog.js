@@ -15,7 +15,7 @@ const Blog = () => {
     //         <p>About Page</p>
     //     </>;
 
-    const url = 'https://cottage-home-updated-server.vercel.app/blogs'
+    const url = 'https://cottage-home-care-services-server-site.vercel.app/blogs'
 
     const { data: blogs = [], isLoading, refetch } = useQuery({
         queryKey: ['blogs',],
