@@ -1,6 +1,7 @@
 import React from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../../../Shared/Loading/Loading';
+import { FaUser } from 'react-icons/fa';
 
 const AllUsers = () => {
 
@@ -49,13 +50,35 @@ const AllUsers = () => {
                                 key={user._id}>
                                 <th >{index + 1}</th>
                                 <td>{user?.name}</td>
-                                <td>
+                                {
+                                    user?.photoURL == null ? 
+                                        
+                                    <>
+
+<td>
+                                    <div className="avatar">
+                                        <div className="avatar  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                            <FaUser className='w-10 h-10'/>
+                                        </div>
+                                    </div>
+                                </td>
+                                    
+                                    
+                                    </>
+                                    :
+                                    <>
+                                    <td>
                                     <div className="avatar">
                                         <div className="avatar w-10 h-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                             <img src={user?.photoURL} alt='' />
                                         </div>
                                     </div>
                                 </td>
+                                    </>
+
+                                    
+                                }
+                                
                                 
                                 
                                 <td>{user?.email}</td>

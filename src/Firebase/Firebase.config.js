@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyANIB-DKnxz5Uo_fDFlrTEQvq0mpH5s09M",
-  authDomain: "cottage-home-b5300.firebaseapp.com",
-  projectId: "cottage-home-b5300",
-  storageBucket: "cottage-home-b5300.appspot.com",
-  messagingSenderId: "936438623599",
-  appId: "1:936438623599:web:1baa2f4e877d4690634c9a"
+  apiKey: "AIzaSyC73n9GKVxsaj2XSheC5J9XjwxYziTmLcE",
+  authDomain: "cottage-home-care-4f1a5.firebaseapp.com",
+  projectId: "cottage-home-care-4f1a5",
+  storageBucket: "cottage-home-care-4f1a5.appspot.com",
+  messagingSenderId: "1038075022406",
+  appId: "1:1038075022406:web:50e2a45da0b3919e8f8e47"
 };
 
 // Initialize Firebase

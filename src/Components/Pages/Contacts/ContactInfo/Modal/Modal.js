@@ -69,8 +69,8 @@ const Modal = ({office,setModalData}) => {
                     className='grid grid-cols-1 gap-3 mt-10'>
                         
 
-                        <input defaultValue={user?.displayName} readOnly name='name'  type="text" placeholder="Your name" className="input w-full  input-bordered" required />
-                        <input defaultValue={user?.email} readOnly name='email' type="email" placeholder="Email Address" className="input w-full  input-bordered" required />
+                        <input  name='name'  type="text" placeholder="Your name" className="input w-full  input-bordered" required />
+                        <input  name='email' type="email" placeholder="Email Address" className="input w-full  input-bordered" required />
                         <textarea name="message" className="textarea textarea-bordered" placeholder="Message" required></textarea>
                        <br />
                         <input disabled={""} type="submit" value="submit" className="input w-full  input-bordered btn bg-primary hover:bg-[#2E2A4D] text-white" required />

@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "daisyui": "^2.50.2",
-    "firebase": "^9.17.1",
+    "firebase": "^9.18.0",
     "i18next": "^22.4.12",
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",

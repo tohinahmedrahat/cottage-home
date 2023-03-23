@@ -23,7 +23,7 @@ const EasierLife = () => {
     const message = {
       firstName: data.firstName,
       photoURL: user?.photoURL,
-      email: user?.email,
+      email: data?.email,
       phone: data.phone,
       service: data.service,
       inquiry: data.inquiry,
@@ -202,8 +202,7 @@ const EasierLife = () => {
 
             <div
               className="w-full "
-              data-aos="fade-up"
-              data-aos-duration="2000"
+              
             >
               <form
                 // onSubmit={submitHandler}
@@ -226,8 +225,6 @@ const EasierLife = () => {
                     </label>
                     <input
                       type="text"
-                      defaultValue={user?.displayName}
-                      readOnly
                       {...register("firstName", {
                         required: "Name is required",
                       })}
@@ -268,15 +265,15 @@ const EasierLife = () => {
                     <input
                       type="email"
                       {...register("email", { required: "email is required" })}
-                      defaultValue={user?.email}
+                      
                       id="email"
-                      readOnly
+                     
                       placeholder="E-mail "
                       className="w-full px-4 py-3 rounded-md border text-gray-700 focus:outline-[#00a6b265] bg-[#EBF8F9]
                                         focus:bg-white shadow-md"
                     />
                     {errors.email && (
-                      <p className="text-red-600">{errors.phone.email}</p>
+                      <p className="text-red-600">{errors.email.message}</p>
                     )}
                   </div>
 

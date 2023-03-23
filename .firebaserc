@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "cottage-home-b5300"
-  }
+    "default": "cottage-home-care-4f1a5",
+    "new": "cottage-home-care-4f1a5"
+  },
+  "targets": {},
+  "etags": {}
 }
