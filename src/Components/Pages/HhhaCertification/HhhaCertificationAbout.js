@@ -1,6 +1,6 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
-import hhhaImage from "../../../assets/hhaimage.png";
+import hhhaImage from "../../../assets/hha cover.jpg";
 
 const HhhaCertificationAbout = () => {
   return (
@@ -62,8 +62,8 @@ const HhhaCertificationAbout = () => {
       </div>
       <div
         className="mx-auto p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
-        // data-aos="fade-up"
-        // data-aos-duration=""
+        data-aos="fade-left"
+        data-aos-duration="2000"
       >
         <img
           src={hhhaImage}
