@@ -1,6 +1,6 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
-import hhhaImage from "../../../assets/hha cover.jpg";
+import hhhaImage from "../../../assets/hha cover .jpg";
 
 const HhhaCertificationAbout = () => {
   return (

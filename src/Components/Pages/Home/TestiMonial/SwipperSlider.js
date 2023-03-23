@@ -4,9 +4,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay, A11y } from "swiper";
-import img1 from '../../../../assets/cottage-bg.png';
-import img2 from '../../../../../src/assets/cottage-bg.png';
-import img3 from '../../../../../src/assets/cottage-bg.png';
+import img1 from '../../../../assets/Sherry_Ann_Fiedtkou.jpg';
+import img2 from '../../../../../src/assets/Cinthya_Almendarez.jpg';
+import img3 from '../../../../../src/assets/Natividad_Mateo_Fernandes.jpg';
 import icon from '../../../../../src/assets/blue-quote.jpg'
 import { SwiperNavButtons } from "../../Services/Services/SwiperNavButtons";
 
@@ -20,26 +20,26 @@ export default function Slider() {
 
         {
             image: img2,
-            name: "Jaswinder",
+            name: "Cinthya Almendarez",
             prev: 1,
             id: 2,
-            description: "I didn’t know what to do about my health issues. I found that this team was just who I was looking for. They are friendly, professional, and they really care. I love my home care services with them. Best home health care in the area!",
+            description: " Cottage home care is a spectacular agency with a great work environment. I can call any hour and there is always someone on the phone who will answer me and provide the help I need. The staff is friendly and they will go above and beyond to help you with whatever you need. I highly recommend that everyone joins the Cottage home care family.",
             next: 3
         },
         {
             image: img1,
-            name: "Rahul",
+            name: "Sherry Fiedtkou",
             prev: 3,
             id: 1,
-            description: "“I do CDPAP with this agency. Amazing care, response, and commitment towards keeping my father happy, healthy, and safe!.",
+            description: "I'm having the best experience working with Cottage Home Care. The staff and management is exceptional because I've been working in the Home care for 17 years and this is one of the best agencies. My pay is always on time so I'm never worried and I'm able to reach all my obligations.",
             next: 2
         },
         {
             image: img3,
-            name: "Murry",
+            name: "Natividad Mateo",
             prev: 2,
             id: 3,
-            description: "If you are looking for some compassionate, caring people, this is the team I highly recommend. They took great care of my mom with Dementia, the aide they sent was a blessing! Cottage Home Care Services were a life saver! Now I do CDPAP for my mother still with this agency as I have more time.",
+            description: "Excellent customer service and employee service, always with a smile.Staff is caring and loving and receptive to your needs. Great home care agency to sign up with for work, or to receive Homecare services at home.",
             next: 1
         }
 
@@ -87,7 +87,7 @@ export default function Slider() {
                                 <div className='col-span-2 md:-mt-[80px] '
                                >
                                     <div className='md:absolute  lg:left-[10%] '>
-                                        <img src={slide.image} className='w-full h-96 rounded-md' alt="" />
+                                        <img src={slide.image} className='w-full h-96 rounded-md border-2 border-primary' alt="" />
                                     </div>
                                 </div>
                                 <div className='col-span-6 bg-[#EBF8F9] py-6 md:h-[400px] rounded-md px-4'
