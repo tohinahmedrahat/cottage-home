@@ -40,6 +40,7 @@ const DashBoardLayout = () => {
   let longIsland = 0;
   let queens = 0;
   let bronx = 0;
+  let albany = 0;
 
   if (allData.length <= 0) {
     return <Loading></Loading>;
@@ -59,6 +60,9 @@ const DashBoardLayout = () => {
         queens = queens + 1;
       } else if (office?.officeName === "Bronx Office") {
         bronx = bronx + 1;
+      }
+       else if (office?.officeName === "Albany Office") {
+        albany = albany + 1;
       }
     }
 
@@ -153,6 +157,15 @@ const DashBoardLayout = () => {
                     Bronx Office
                     <p className="absolute  top-0 left-9 font-semibold text-xs">
                       {bronx}
+                    </p>
+                  </Link>
+                </li>
+                <li className="text-primary">
+                  <Link to="/dashboard/Albany">
+                    <FaHome className="w-6 h-6 mr-2" />
+                    Albany Office
+                    <p className="absolute  top-0 left-9 font-semibold text-xs">
+                      {albany}
                     </p>
                   </Link>
                 </li>

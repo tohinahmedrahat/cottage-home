@@ -1,4 +1,5 @@
-import React,{ useState } from 'react';
+import React, { useState } from 'react';
+import { FaUser } from 'react-icons/fa';
 import { useQuery } from 'react-query';
 import Loading from '../../Shared/Loading/Loading';
 import DashBoardModal from '../DashBoard/DashBoardModal/DashBoardModal';
@@ -21,17 +22,17 @@ const Cdpaps = () => {
     })
 
 
-    const messageHandler = (message)=>{
+    const messageHandler = (message) => {
         setMessage(message)
 
-}
+    }
 
-if (isLoading){
-    return <Loading></Loading>
-}
+    if (isLoading) {
+        return <Loading></Loading>
+    }
     return (
         <div >
-            
+
 
             <div className="overflow-x-auto">
                 <table className="table w-full">
@@ -48,10 +49,10 @@ if (isLoading){
                             <th>Service Type</th>
                             <th>Inquire Type</th>
                             <th>
-                                
-                            Subject
-                         </th>
-                        
+
+                                Subject
+                            </th>
+
 
                         </tr>
                     </thead>
@@ -62,32 +63,60 @@ if (isLoading){
                                 key={message._id}>
                                 <th>{index + 1}</th>
                                 <td className=' '>{new Date(message.time).toLocaleString()} </td>
-                                <td>
+                                {
+                                    message?.photoURL == null ?
+
+                                        <>
+
+                                            <td>
+                                                <div className="avatar">
+                                                    <div className="avatar  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                                        <FaUser className='w-10 h-10' />
+                                                    </div>
+                                                </div>
+                                            </td>
+
+
+                                        </>
+                                        :
+                                        <>
+                                            <td>
+                                                <div className="avatar">
+                                                    <div className="avatar w-10 h-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                                        <img src={message?.photoURL} alt='' />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </>
+
+
+                                }
+                                {/* <td>
                                     <div className="avatar">
                                         <div className="avatar w-10 h-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                             <img src={message?.photoURL} alt='' />
                                         </div>
                                     </div>
-                                </td>
+                                </td> */}
                                 <td>{message?.firstName}</td>
-                                
+
                                 <td>{message?.email}</td>
-                                
+
                                 <td>{message?.phone}</td>
                                 <td>{message?.service}</td>
                                 <td>{message?.inquiry}</td>
                                 <td>
 
                                     <label
-                                onClick={()=>messageHandler(message)}
+                                        onClick={() => messageHandler(message)}
 
-                                    htmlFor="message-details" className="text-sm bg-primary py-2 px-2 rounded-md text-white shadow-lg">
+                                        htmlFor="message-details" className="text-sm bg-primary py-2 px-2 rounded-md text-white shadow-lg">
                                         See Message</label>
 
                                 </td>
-                                
-                                
-                                
+
+
+
 
 
 
@@ -101,8 +130,8 @@ if (isLoading){
             </div>
 
             <DashBoardModal
-            
-            message={message}
+
+                message={message}
 
             ></DashBoardModal>
         </div>

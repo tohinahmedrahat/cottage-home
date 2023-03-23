@@ -7,6 +7,7 @@ import AdminRoute from "../../Pages/AdminRoute/AdminRoute";
 import Cdpaps from "../../Pages/CDPAP/Cdpaps";
 import Contacts from "../../Pages/Contacts/Contacts/Contacts";
 import Covid from "../../Pages/Covid/Covid";
+import Albany from "../../Pages/DashBoard/Albany/Albany";
 import AllUsers from "../../Pages/DashBoard/AllUsers/AllUsers";
 import BronxOffice from "../../Pages/DashBoard/BronxOffice/BronxOffice";
 import Brooklyn from "../../Pages/DashBoard/Brooklyn/Brooklyn";
@@ -47,9 +48,7 @@ const Route = createBrowserRouter([
       {
         path: "/contacts",
         element: (
-          <PrivateRoute>
-            <Contacts></Contacts>
-          </PrivateRoute>
+          <Contacts></Contacts>
         ),
       },
      
@@ -150,6 +149,14 @@ const Route = createBrowserRouter([
         element: (
           <AdminRoute>
             <BronxOffice></BronxOffice>
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "/dashboard/Albany",
+        element: (
+          <AdminRoute>
+            <Albany></Albany>
           </AdminRoute>
         ),
       },
