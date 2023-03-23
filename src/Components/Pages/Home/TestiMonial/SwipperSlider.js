@@ -4,9 +4,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay, A11y } from "swiper";
-import img1 from '../../../../assets/david-arristia.png';
-import img2 from '../../../../../src/assets/about3.jpg';
-import img3 from '../../../../../src/assets/JuanMiranda.png';
+import img1 from '../../../../assets/cottage-bg.png';
+import img2 from '../../../../../src/assets/cottage-bg.png';
+import img3 from '../../../../../src/assets/cottage-bg.png';
 import icon from '../../../../../src/assets/blue-quote.jpg'
 import { SwiperNavButtons } from "../../Services/Services/SwiperNavButtons";
 
