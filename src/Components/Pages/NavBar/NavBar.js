@@ -96,7 +96,7 @@ const NavBar = () => {
                                 aria-label="Home"
                                 title="Home"
                                 className={`font-medium    tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white   uppercase nav-text`}
+                                ${navColor && 'customWhite'} white   uppercase nav-text hover-underline-animation `}
                             >
                                 Home
                             </NavLink>
@@ -107,7 +107,7 @@ const NavBar = () => {
                                 aria-label="services"
                                 title="services"
                                 className={`font-medium    tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white   uppercase nav-text`}
+                                ${navColor && 'customWhite'} white   uppercase nav-text hover-underline-animation`}
                             >
                                 Services
                             </NavLink>
@@ -120,7 +120,7 @@ const NavBar = () => {
                                 aria-label="Contact US"
                                 title="Contact US"
                                 className={`font-medium    tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white   uppercase nav-text`}
+                                ${navColor && 'customWhite'} white   uppercase nav-text hover-underline-animation`}
                             >
                                 Contact US
                             </NavLink>
@@ -132,7 +132,7 @@ const NavBar = () => {
                                 aria-label="HHA Certification"
                                 title="HHA Certification"
                                 className={`font-medium    tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white   uppercase nav-text`}
+                                ${navColor && 'customWhite'} white   uppercase nav-text hover-underline-animation`}
                             >
                                 HHA Certification
                             </NavLink>
@@ -144,7 +144,7 @@ const NavBar = () => {
                                 aria-label="Covid-19"
                                 title="Covid-19"
                                 className={`font-medium    tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white   uppercase nav-text`}
+                                ${navColor && 'customWhite'} white   uppercase nav-text hover-underline-animation`}
                             >
                                 Covid-19
                             </NavLink>
@@ -157,7 +157,7 @@ const NavBar = () => {
                                 aria-label="Resources"
                                 title="Resources"
                                 className={`font-medium    tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white   uppercase nav-text`}
+                                ${navColor && 'customWhite'} white   uppercase nav-text hover-underline-animation`}
                             >
                                 Resources
                             </NavLink>
@@ -168,7 +168,7 @@ const NavBar = () => {
                                 aria-label="Blog"
                                 title="Blog"
                                 className={`font-medium    tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white   uppercase nav-text`}
+                                ${navColor && 'customWhite'} white   uppercase nav-text hover-underline-animation`}
                             >
                                 Blog
                             </NavLink>
@@ -184,7 +184,7 @@ const NavBar = () => {
                                                 aria-label="Dash Board"
                                                 title="Dash Board"
                                                 className={`fo font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white   uppercase nav-text`}
+                                ${navColor && 'customWhite'} white   uppercase nav-text hover-underline-animation`}
                                             >
                                                 Dash Board
                                             </NavLink>
@@ -228,9 +228,9 @@ const NavBar = () => {
                                             aria-label="Sign Up"
                                             title="Sign Up"
                                             className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white  nav-text`}
+                                ${navColor && 'customWhite'} white  nav-text `}
                                         >
-                                            <button className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base  rounded-full text-white bg-hov2 uppercase nav-text'>
+                                            <button className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base  rounded-full text-white bg-hov2 uppercase nav-text '>
                                                 Sign In
                                             </button>
                                         </NavLink>

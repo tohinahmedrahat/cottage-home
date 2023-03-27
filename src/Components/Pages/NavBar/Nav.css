@@ -1,3 +1,43 @@
+
+ 
+
+ /* Hover underline */
+
+ .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+   
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00A6B2;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+ 
+
+
+
+
+ /* HOVER UNDELINE END */
+
+
+
+
+
 .customColor{
     background-color: rgba(255, 255, 255);
  
@@ -7,6 +47,7 @@
     z-index: 10;
    
 }
+
 
 /* .customColor  .white {
     color:#49465D;
@@ -42,6 +83,14 @@
 
 .nav-text{
     font-size: 14px;
+}
+
+
+
+.nav-text :hover {
+
+    
+
 }
 .nav-img{
 
@@ -99,8 +148,8 @@
     .nav-img{
 
         /* w-[80px] h-[80px] */
-        width: 80px ;
-        height: 80px;
+        width: 70px ;
+        height: 70px;
     }
 
 }
