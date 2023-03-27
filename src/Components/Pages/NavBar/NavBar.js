@@ -57,10 +57,11 @@ const NavBar = () => {
             document.getElementById("navBar").className = "";
         }
     }
+    
 
     return (
         <div className="sticky top-0  roboto  z-50" id='navBar'>
-            <div className="px-4 pt-4 pb-6 mx-auto w-[95%] ">
+            <div className="px-4 pt-4 pb-6 mx-auto nav-size">
                 <div className="relative flex items-center justify-between">
                     <NavLink
                         to='/'
@@ -70,8 +71,8 @@ const NavBar = () => {
                     >
                         <div>
                             <div className='flex items-center '>
-                                <img src={navLogo} className='w-[80px] h-[80px] shadow-2xl p-2 border-2 border-primary rounded-full' alt="" />
-                                <h5 className={` ml-4 text-2xl font-semibold tracking-wide text-[#00A6B2] transition-colors duration-200 nav-font`}>
+                                <img src={navLogo} className='nav-img  shadow-2xl p-2 border-2 border-primary rounded-full' alt="" />
+                                <h5 className={` ml-4  font-semibold tracking-wide text-[#00A6B2] transition-colors duration-200 nav-font`}>
                                     Cottage Home Care Services
                                     <hr className='mt-2 border-[1px] border-[#49465D]' />
                                     <p className='font-semibold text-sm text-center text-[#49465D]'>
@@ -88,14 +89,14 @@ const NavBar = () => {
 
                     </NavLink>
 
-                    <ul className="flex items-center hidden space-x-5 lg:flex">
+                    <ul id='nav-text' className="flex items-center hidden space-x-5 lg:flex">
                         <li>
                             <NavLink
                                 to='/home'
                                 aria-label="Home"
                                 title="Home"
-                                className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                className={`font-medium    tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white   uppercase nav-text`}
                             >
                                 Home
                             </NavLink>
@@ -105,8 +106,8 @@ const NavBar = () => {
                                 to='/services'
                                 aria-label="services"
                                 title="services"
-                                className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                className={`font-medium    tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white   uppercase nav-text`}
                             >
                                 Services
                             </NavLink>
@@ -118,22 +119,10 @@ const NavBar = () => {
                                 to='/contacts'
                                 aria-label="Contact US"
                                 title="Contact US"
-                                className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                className={`font-medium    tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white   uppercase nav-text`}
                             >
                                 Contact US
-                            </NavLink>
-                        </li>
-
-                        <li>
-                            <NavLink
-                                to='/covid'
-                                aria-label="Covid-19"
-                                title="Covid-19"
-                                className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
-                            >
-                                Covid-19
                             </NavLink>
                         </li>
 
@@ -142,19 +131,33 @@ const NavBar = () => {
                                 to='/hhaCertification'
                                 aria-label="HHA Certification"
                                 title="HHA Certification"
-                                className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                className={`font-medium    tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white   uppercase nav-text`}
                             >
                                 HHA Certification
                             </NavLink>
                         </li>
+
+                        <li>
+                            <NavLink
+                                to='/covid'
+                                aria-label="Covid-19"
+                                title="Covid-19"
+                                className={`font-medium    tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white   uppercase nav-text`}
+                            >
+                                Covid-19
+                            </NavLink>
+                        </li>
+
+                       
                         <li>
                             <NavLink
                                 to='/resources'
                                 aria-label="Resources"
                                 title="Resources"
-                                className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                className={`font-medium    tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white   uppercase nav-text`}
                             >
                                 Resources
                             </NavLink>
@@ -164,8 +167,8 @@ const NavBar = () => {
                                 to='/blog'
                                 aria-label="Blog"
                                 title="Blog"
-                                className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                className={`font-medium    tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white   uppercase nav-text`}
                             >
                                 Blog
                             </NavLink>
@@ -175,17 +178,17 @@ const NavBar = () => {
                                 {
                                     isAdmin && <>
 
-<li>
-                                                    <NavLink
-                                                        to='/dashBoard'
-                                                        aria-label="Dash Board"
-                                                        title="Dash Board"
-                                                        className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
-                                                    >
-                                                        Dash Board
-                                                    </NavLink>
-                                                </li>
+                                        <li>
+                                            <NavLink
+                                                to='/dashBoard'
+                                                aria-label="Dash Board"
+                                                title="Dash Board"
+                                                className={`fo font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white   uppercase nav-text`}
+                                            >
+                                                Dash Board
+                                            </NavLink>
+                                        </li>
 
 
                                     </>
@@ -200,14 +203,14 @@ const NavBar = () => {
 
                                     <img src={user?.photoURL}
                                         title={user?.displayName}
-                                        className='rounded-full h-12 w-12 border-primary border-[2px]' alt="" />
+                                        className='rounded-full h-12 w-12 border-primary border-[2px] nav-text' alt="" />
                                 </li>
 
                                 <li>
 
                                     <button
                                         onClick={handleLogOut}
-                                        className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base text-base rounded-full text-white bg-hov2'>
+                                        className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base  rounded-full text-white bg-hov2  uppercase nav-text'>
                                         Sign Out
                                     </button>
 
@@ -225,9 +228,9 @@ const NavBar = () => {
                                             aria-label="Sign Up"
                                             title="Sign Up"
                                             className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                ${navColor && 'customWhite'} white  nav-text`}
                                         >
-                                            <button className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base text-base rounded-full text-white bg-hov2'>
+                                            <button className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base  rounded-full text-white bg-hov2 uppercase nav-text'>
                                                 Sign In
                                             </button>
                                         </NavLink>
@@ -274,7 +277,7 @@ const NavBar = () => {
                                             >
                                                 <img src={navLogo} className='w-12' alt="" />
                                                 <span className="ml-2 text-md  tracking-wide text-[#49465D] hover:text-blue-900">
-                                                    Cottage Home Care Service
+                                                    Cottage Home Care Services
                                                 </span>
                                             </NavLink>
                                         </div>
@@ -300,7 +303,7 @@ const NavBar = () => {
 
 
 
-                                        <ul className="space-y-4">
+                                        {/* <ul className="space-y-4">
                                             <li>
                                                 <NavLink
                                                     to='/home'
@@ -410,7 +413,160 @@ const NavBar = () => {
 
 
 
+                                        </ul> */}
+
+                                        <ul className="space-y-4">
+                                            <li>
+                                                <NavLink
+                                                    to='/home'
+                                                    aria-label="Home"
+                                                    title="Home"
+                                                    className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white `}
+                                                >
+                                                    Home
+                                                </NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink
+                                                    to='/services'
+                                                    aria-label="services"
+                                                    title="services"
+                                                    className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white `}
+                                                >
+                                                    Services
+                                                </NavLink>
+                                            </li>
+
+
+                                            <li>
+                                                <NavLink
+                                                    to='/contacts'
+                                                    aria-label="Contact US"
+                                                    title="Contact US"
+                                                    className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white `}
+                                                >
+                                                    Contact US
+                                                </NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink
+                                                    to='/hhaCertification'
+                                                    aria-label="HHA Certification"
+                                                    title="HHA Certification"
+                                                    className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white `}
+                                                >
+                                                    HHA Certification
+                                                </NavLink>
+                                            </li>
+
+                                            <li>
+                                                <NavLink
+                                                    to='/covid'
+                                                    aria-label="Covid-19"
+                                                    title="Covid-19"
+                                                    className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white `}
+                                                >
+                                                    Covid-19
+                                                </NavLink>
+                                            </li>
+
+                                          
+                                            <li>
+                                                <NavLink
+                                                    to='/resources'
+                                                    aria-label="Resources"
+                                                    title="Resources"
+                                                    className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white `}
+                                                >
+                                                    Resources
+                                                </NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink
+                                                    to='/blog'
+                                                    aria-label="Blog"
+                                                    title="Blog"
+                                                    className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white `}
+                                                >
+                                                    Blog
+                                                </NavLink>
+                                            </li>
+                                            {
+                                                user?.uid && <>
+                                                    {
+                                                        isAdmin && <>
+
+                                                            <li>
+                                                                <NavLink
+                                                                    to='/dashBoard'
+                                                                    aria-label="Dash Board"
+                                                                    title="Dash Board"
+                                                                    className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white `}
+                                                                >
+                                                                    Dash Board
+                                                                </NavLink>
+                                                            </li>
+
+
+                                                        </>
+                                                    }
+
+                                                </>
+                                            }
+                                            {
+                                                user?.uid ? <>
+
+                                                    <li>
+
+                                                        <img src={user?.photoURL}
+                                                            title={user?.displayName}
+                                                            className='rounded-full h-12 w-12 border-primary border-[2px]' alt="" />
+                                                    </li>
+
+                                                    <li>
+
+                                                        <button
+                                                            onClick={handleLogOut}
+                                                            className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base text-base rounded-full text-white bg-hov2'>
+                                                            Sign Out
+                                                        </button>
+
+                                                    </li>
+
+                                                </>
+
+
+
+                                                    :
+                                                    <>
+                                                        <li>
+                                                            <NavLink
+                                                                to='/login'
+                                                                aria-label="Sign Up"
+                                                                title="Sign Up"
+                                                                className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
+                                ${navColor && 'customWhite'} white `}
+                                                            >
+                                                                <button className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base text-base rounded-full text-white bg-hov2'>
+                                                                    Sign In
+                                                                </button>
+                                                            </NavLink>
+                                                        </li>
+
+                                                    </>
+                                            }
+
+
                                         </ul>
+
 
                                     </nav>
                                 </div>

@@ -8,7 +8,7 @@ import { Link, useLoaderData, useNavigate } from 'react-router-dom';
 import logo from '../../../src/assets/Cottage Home.png'
 
 const SingleBlog = () => {
-    // window.scrollTo(0, 0);
+     window.scrollTo(0, 0);
     const blog = useLoaderData();
     const navigate = useNavigate();
     const { title, img, date, description, _id } = blog
@@ -67,7 +67,7 @@ const SingleBlog = () => {
                 }
 
             })
-        console.log(comment)
+        // console.log(comment)
 
 
     }

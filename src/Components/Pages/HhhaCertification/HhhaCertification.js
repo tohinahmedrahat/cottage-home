@@ -11,6 +11,7 @@ import WelcomeMessage from "./WelcomeMessage";
 
 const HhhaCertification = () => {
   useTitle("HHA Certifications");
+  window.scrollTo(0, 0);
   return (
     <div>
       <HhhaBanner></HhhaBanner>

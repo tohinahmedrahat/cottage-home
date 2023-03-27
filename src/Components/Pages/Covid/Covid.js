@@ -9,6 +9,7 @@ import Response from "./Response";
 const Covid = () => {
   useTitle("Covid-19");
   document.documentElement.style.scrollBehavior = "smooth";
+  window.scrollTo(0, 0);
 
   return (
     <div className=" px-5 ">

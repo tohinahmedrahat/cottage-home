@@ -5,6 +5,8 @@ import BlogBanner from './BlogBanner';
 
 const Blog = () => {
 
+    window.scrollTo(0, 0);
+
     // function About() {
     //     const navigate = useNavigate();
     //     const goBack = () => {

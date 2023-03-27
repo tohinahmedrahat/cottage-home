@@ -7,6 +7,7 @@ import OfficeLocation from "../OfficeLocation/OfficeLocation";
 
 const Contacts = () => {
   useTitle('Contact Us');
+  window.scrollTo(0, 0);
   return (
     <div>
       <Care></Care>
