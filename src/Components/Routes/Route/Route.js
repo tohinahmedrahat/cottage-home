@@ -1,6 +1,7 @@
 import DashBoardLayout from "../../../DashBoardLayout/DashBoardLayout";
 import AllMessages from "../../AllMessages/AllMessages";
 import Blog from "../../Blog/Blog";
+import EditBlogForm from "../../Blog/EditBlogForm";
 import SingleBlog from "../../Blog/SingleBlog";
 // import About from "../../Pages/About/About";
 import AdminRoute from "../../Pages/AdminRoute/AdminRoute";
@@ -9,6 +10,7 @@ import Contacts from "../../Pages/Contacts/Contacts/Contacts";
 import Covid from "../../Pages/Covid/Covid";
 import Albany from "../../Pages/DashBoard/Albany/Albany";
 import AllUsers from "../../Pages/DashBoard/AllUsers/AllUsers";
+import BlogForm from "../../Pages/DashBoard/BlogForm/BlogForm";
 import BronxOffice from "../../Pages/DashBoard/BronxOffice/BronxOffice";
 import Brooklyn from "../../Pages/DashBoard/Brooklyn/Brooklyn";
 import DashBoard from "../../Pages/DashBoard/DashBoard";
@@ -84,7 +86,12 @@ const Route = createBrowserRouter([
         path: '/blogs/:id',
         loader: ({ params }) => fetch(`https://cottage-home-care-services-server-site.vercel.app/blogs/${params.id}`),
         element:<SingleBlog></SingleBlog>
-    }
+    },
+    {
+      path: "/singleBlogs/:id",
+      loader: ({ params }) => fetch(`https://cottage-home-care-services-server-site.vercel.app/blogs/${params.id}`),
+      element:<EditBlogForm></EditBlogForm>
+    },
     ],
   },
   {
@@ -168,6 +175,15 @@ const Route = createBrowserRouter([
           </AdminRoute>
         ),
       },
+      {
+        path: "/dashboard/blogForm",
+        element: (
+          <AdminRoute>
+           <BlogForm></BlogForm>
+          </AdminRoute>
+        ),
+      },
+     
 
     ],
   },

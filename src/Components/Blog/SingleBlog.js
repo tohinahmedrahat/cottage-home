@@ -92,6 +92,12 @@ const SingleBlog = () => {
                             {blog?.date}
 
                         </p>
+                        <p className='mt-3 text-center text-sm text-[#8c8a98] open-sans font-medium '>
+
+                        {new Date(blog?.newDate).toLocaleString()}
+
+                        </p>
+
 
                         <div className='mt-10'>
                             <img src={blog?.img} alt="" className='w-full lg:h-[80vh] md:h-[40vh] ' />

@@ -11,6 +11,7 @@ import { ImInstagram } from "react-icons/im";
 import { RiUserFollowLine } from "react-icons/ri";
 
 const ContactInfo = () => {
+  
   const contacts = [
     {
       icon: <IoLocationOutline />,
@@ -41,7 +42,7 @@ const ContactInfo = () => {
   ];
 
   return (
-    <div className="mt-16 mb-8">
+    <div className="mt-16 mb-8" id="contact-info">
       <div>
         <div
           className="w-[95%] lg:w-[50%] mx-auto text-center"

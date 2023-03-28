@@ -1,11 +1,13 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import { useQuery } from 'react-query';
+import useAdmin from '../Hooks/UseAdmin';
+import { AuthContext } from '../Pages/Context/AuthProvider';
 import AllBlog from './AllBlog';
 import BlogBanner from './BlogBanner';
 
 const Blog = () => {
-
-    window.scrollTo(0, 0);
+const { user } = useContext(AuthContext);
+const [isAdmin] = useAdmin(user?.email);
 
     // function About() {
     //     const navigate = useNavigate();
@@ -41,7 +43,9 @@ const Blog = () => {
 
             <AllBlog
             blogs={blogs}
+            isAdmin={isAdmin}
             isLoading={isLoading}
+            refetch={refetch}
             ></AllBlog>
         </div>
     );

@@ -52,7 +52,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="pt-9 contact-bg">
+    <div className="pt-9 contact-bg" id="contact-form">
       <section className="flex justify-center items-center pb-8 mt-3 mb-12 rounded w-11/12  md:w-[80%] mx-auto">
         <div
           className="w-full mt-[10vh] "
