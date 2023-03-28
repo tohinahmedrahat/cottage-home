@@ -14,6 +14,7 @@ import WhyChoose from "../WhyChoose/WhyChoose";
 
 const Home = () => {
   useTitle("Home");
+  window.scrollTo(0, 0);
   return (
     <div className="pb-20">
       <Banner></Banner>

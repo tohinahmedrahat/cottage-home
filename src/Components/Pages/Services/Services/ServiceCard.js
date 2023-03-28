@@ -7,7 +7,7 @@ const ServiceCard = () => {
         <div className='my-20'>
             <div className=' w-[95%] lg:w-[70%] mx-auto md:grid grid-cols-2 gap-10 text-white'>
 
-                <div className='  bg-[#00A6B2]  shadow-xl text-center p-4 bg-hov2'>
+                <div className='  bg-[#00A6B2] mt-5 shadow-xl text-center p-4 bg-hov2'>
                     <div className="mb-6 md:px-4 mt-3">
                         <p className=" text-lg md:text-2xl font-semibold tracking-tight text-white ">
                             HHA / PCA
@@ -60,7 +60,7 @@ const ServiceCard = () => {
                         </div>
                     </div>
                 </div>
-                <div className='  bg-[#00A6B2]  shadow-xl text-center p-4 bg-hov2'>
+                <div className='  bg-[#00A6B2] mt-5 shadow-xl text-center p-4 bg-hov2'>
                     <div className="mb-6 md:px-4 mt-3">
                         <p className=" text-lg md:text-2xl font-semibold tracking-tight text-white ">
                             CDPAP

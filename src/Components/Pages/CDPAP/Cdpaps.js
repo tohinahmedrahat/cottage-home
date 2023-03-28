@@ -100,7 +100,8 @@ const Cdpaps = () => {
                                 </td> */}
                                 <td>{message?.firstName}</td>
 
-                                <td>{message?.email}</td>
+                                {/* <td>{message?.email}</td> */}
+                                <td> <a href={`mailto:${message?.email}`} className='text-primary'>{message?.email} </a> </td>
 
                                 <td>{message?.phone}</td>
                                 <td>{message?.service}</td>
