@@ -3,6 +3,7 @@ import { FaPhone } from "react-icons/fa";
 import carebg from "../../../../assets/contact.jpg";
 
 const Care = () => {
+  document.documentElement.style.scrollBehavior = "smooth";
   return (
     <div
       className="bg-no-repeat bg-cover bg-center text-center min-h-[80vh]"
@@ -20,9 +21,9 @@ const Care = () => {
             <FaPhone className="mr-2" />
             Call Us
           </a>
-          <button className="flex items-center px-6 py-3 md:px-16 md:py-6 border border-[#00a6b2] rounded-full text-white bg-primary duration-500 bg-hov2">
+          <a href="#contact-info" className="flex items-center px-6 py-3 md:px-16 md:py-6 border border-[#00a6b2] rounded-full text-white bg-primary duration-500 bg-hov2">
             Get Care
-          </button>
+          </a>
         </div>
       </div>
     </div>

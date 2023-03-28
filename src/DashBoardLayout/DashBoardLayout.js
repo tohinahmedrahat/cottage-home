@@ -8,6 +8,7 @@ import { BiMessageRoundedDots } from "react-icons/bi";
 import { HiUsers } from "react-icons/hi";
 import { IoSchool } from "react-icons/io5";
 import { FaHome } from "react-icons/fa";
+import { ImBlog } from "react-icons/im";
 import { useQuery } from "react-query";
 import Loading from "../Components/Shared/Loading/Loading";
 import useTitle from "../Components/Hooks/useTitle";
@@ -176,6 +177,13 @@ const DashBoardLayout = () => {
                     <p className="absolute  top-0 left-9 font-semibold text-xs">
                       {totalBrooklinMessages}
                     </p>
+                  </Link>
+                </li>
+                <li className="text-primary">
+                  <Link to="/dashboard/blogForm">
+                    <ImBlog className="w-6 h-6 mr-2" />
+                    Add A Blog
+                    
                   </Link>
                 </li>
               </>

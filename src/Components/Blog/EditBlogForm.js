@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-hot-toast';
-import { useNavigate } from 'react-router-dom';
-import Loading from '../../../Shared/Loading/Loading';
+import { useLoaderData, useNavigate } from 'react-router-dom';
+import Loading from '../Shared/Loading/Loading';
 
-const BlogForm = () => {
+
+const EditBlogForm = () => {
+
+    const blog = useLoaderData()
+    console.log(blog)
 
     const [loading, setLoading] = useState(null);
     const date = Date.now();
@@ -22,68 +26,123 @@ const BlogForm = () => {
 
     const submitHandler = (data) => {
         setLoading(true)
-        console.log(data)
-        // console.log(data)
-        const image = data.url[0]
-        const formData = new FormData();
-        formData.append('image', image);
-        const url = `https://api.imgbb.com/1/upload?key=${imageHostKey}`
+        
+        console.log(data?.url?.length)
 
-        fetch(url, {
-            method: 'POST',
-            body: formData
-        })
-            .then(res => res.json())
-            .then(imgData => {
-                console.log(imgData.data.url)
-                if (imgData.success) {
-
-                    const blog = {
-                        title: data?.title,
-                        newDate: date,
-                        img: imgData.data.url,
-                        description: [
-                            {
-                                sub_title: data?.title1,
-                                content: data?.description1,
-                            },
-                            {
-                                sub_title: data?.title2,
-                                content: data?.description2,
-                            },
-                            {
-                                sub_title: data?.title3,
-                                content: data?.description3,
-                            },
-                        ]
-            
-            
-                    }
-                    
-
-                    fetch("https://cottage-home-care-services-server-site.vercel.app/blogs", {
-                        method: "POST",
-                        headers: {
-                            "content-type": "application/json",
-                        },
-                        body: JSON.stringify(blog),
-                    })
-                        .then((res) => res.json())
-                        .then((data) => {
-                            console.log(data);
-                            setLoading(false)
-                            if (data.acknowledged) {
-                                toast.success("Blog Added SuccessFully")
-                                reset();
-                                navigate('/blog')
-                            }
-                        });
-
-
-                }
-
-
+        if(data?.url?.length > 0){
+            const image = data.url[0]
+            const formData = new FormData();
+            formData.append('image', image);
+            const url = `https://api.imgbb.com/1/upload?key=${imageHostKey}`
+    
+            fetch(url, {
+                method: 'POST',
+                body: formData
             })
+                .then(res => res.json())
+                .then(imgData => {
+                    console.log(imgData.data.url)
+                    if (imgData.success) {
+    
+                        const blog = {
+                            title: data?.title,
+                            newDate: date,
+                            img: imgData.data.url,
+                            description: [
+                                {
+                                    sub_title: data?.title1,
+                                    content: data?.description1,
+                                },
+                                {
+                                    sub_title: data?.title2,
+                                    content: data?.description2,
+                                },
+                                {
+                                    sub_title: data?.title3,
+                                    content: data?.description3,
+                                },
+                            ]
+                
+                
+                        }
+                        
+    
+                        fetch("https://cottage-home-care-services-server-site.vercel.app/blogs", {
+                            method: "PUT",
+                            headers: {
+                                "content-type": "application/json",
+                            },
+                            body: JSON.stringify(blog),
+                        })
+                            .then((res) => res.json())
+                            .then((data) => {
+                                console.log(data);
+                                setLoading(false)
+                                if (data.acknowledged) {
+                                    toast.success("Blog Added SuccessFully")
+                                    reset();
+                                    navigate('/blog')
+                                }
+                            });
+    
+    
+                    }
+    
+    
+                })
+
+        }
+
+        else{
+
+            const blog = {
+                title: data?.title,
+                newDate: date,
+                img: blog?.img,
+                description: [
+                    {
+                        sub_title: data?.title1,
+                        content: data?.description1,
+                    },
+                    {
+                        sub_title: data?.title2,
+                        content: data?.description2,
+                    },
+                    {
+                        sub_title: data?.title3,
+                        content: data?.description3,
+                    },
+                ]
+    
+    
+            };
+
+             fetch("https://cottage-home-care-services-server-site.vercel.app/blogs", {
+                            method: "PUT",
+                            headers: {
+                                "content-type": "application/json",
+                            },
+                            body: JSON.stringify(blog),
+                        })
+                            .then((res) => res.json())
+                            .then((data) => {
+                                console.log(data);
+                                setLoading(false)
+                                if (data.acknowledged) {
+                                    toast.success("Blog Added SuccessFully")
+                                    reset();
+                                    navigate('/blog')
+                                }
+                            });
+        
+    
+    
+                
+
+        }
+        
+        // console.log(data)
+     
 
 
 
@@ -122,6 +181,7 @@ const BlogForm = () => {
                                 </label>
                                 <input
                                     type="text"
+                                    defaultValue={blog?.title}
                                     {...register("title", { required: "Title is required" })}
                                     id="Title"
                                     placeholder="Title"
@@ -158,9 +218,7 @@ const BlogForm = () => {
                                     <h2 className="mx-3 text-gray-400">Select A Picture</h2>
 
                                     <input
-                                        {...register("url", {
-                                            required: "Image is required",
-                                        })}
+                                        {...register("url")}
                                         id="dropzone-file"
                                         type="file"
                                         className="hidden"
@@ -178,6 +236,8 @@ const BlogForm = () => {
 
                         <div className="space-y-0.5   text-sm">
                             <input
+
+                            defaultValue={blog?.description?.[0]?.sub_title}
                                 type="text"
                                 {...register("title1")}
                                 id="Title1"
@@ -194,6 +254,8 @@ const BlogForm = () => {
                         <div className="space-y-0.5 text-sm  mt-5">
 
                             <textarea
+
+defaultValue={blog?.description?.[0]?.content}
                                 type="text"
                                 {...register("description1", { required: "Description is required" })}
                                 // name="subject"
@@ -211,6 +273,7 @@ const BlogForm = () => {
 
                         <div className="space-y-0.5   text-sm">
                             <input
+                            defaultValue={blog?.description?.[1]?.sub_title}
                                 type="text"
                                 {...register("title2")}
                                 id="Title2"
@@ -227,6 +290,7 @@ const BlogForm = () => {
                         <div className="space-y-0.5 text-sm  mt-5">
 
                             <textarea
+                            defaultValue={blog?.description?.[1]?.content}
                                 type="text"
                                 {...register("description2", { required: "Description is required" })}
                                 // name="subject"
@@ -245,6 +309,8 @@ const BlogForm = () => {
 
                         <div className="space-y-0.5   text-sm">
                             <input
+
+defaultValue={blog?.description?.[2]?.sub_title}
                                 type="text"
                                 {...register("title3")}
                                 id="Title3"
@@ -261,6 +327,7 @@ const BlogForm = () => {
                         <div className="space-y-0.5 text-sm  mt-5">
 
                             <textarea
+                            defaultValue={blog?.description?.[2]?.content}
                                 type="text"
                                 {...register("description3", { required: "Description is required" })}
                                 // name="subject"
@@ -285,4 +352,4 @@ const BlogForm = () => {
     );
 };
 
-export default BlogForm;
+export default EditBlogForm;
