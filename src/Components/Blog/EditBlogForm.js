@@ -27,7 +27,7 @@ const EditBlogForm = () => {
     const submitHandler = (data) => {
         setLoading(true)
         
-        console.log(data?.url?.length)
+        // console.log(data?.url?.length)
 
         if(data?.url?.length > 0){
             const image = data.url[0]
@@ -44,7 +44,8 @@ const EditBlogForm = () => {
                     console.log(imgData.data.url)
                     if (imgData.success) {
     
-                        const blog = {
+                        const updateBlog = {
+                            _id: blog?._id,                            
                             title: data?.title,
                             newDate: date,
                             img: imgData.data.url,
@@ -72,7 +73,7 @@ const EditBlogForm = () => {
                             headers: {
                                 "content-type": "application/json",
                             },
-                            body: JSON.stringify(blog),
+                            body: JSON.stringify(updateBlog),
                         })
                             .then((res) => res.json())
                             .then((data) => {
@@ -93,9 +94,11 @@ const EditBlogForm = () => {
 
         }
 
+
         else{
 
-            const blog = {
+            const updateBlog = {
+                _id: blog?._id,
                 title: data?.title,
                 newDate: date,
                 img: blog?.img,
@@ -122,7 +125,7 @@ const EditBlogForm = () => {
                             headers: {
                                 "content-type": "application/json",
                             },
-                            body: JSON.stringify(blog),
+                            body: JSON.stringify(updateBlog),
                         })
                             .then((res) => res.json())
                             .then((data) => {

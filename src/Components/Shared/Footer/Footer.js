@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import footerLogo from '../../../assets/Cottage Home.png'
 
@@ -17,13 +18,13 @@ const Footer = () => {
 				</div>
 				<div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
 					<div className="space-y-3">
-						<h3 className="tracking-wide uppercase text-gray-50">Term & Condition</h3>
+						<Link className="tracking-wide uppercase text-gray-50">Term & Condition</Link>
 						<ul className="space-y-1">
 							<li>
-								<a rel="noopener noreferrer" href="#">Mission</a>
+								<Link rel="noopener noreferrer" href="#">Mission & Vision </Link>
 							</li>
 							<li>
-								<a rel="noopener noreferrer" href="#">Vision & Values</a>
+								<Link rel="noopener noreferrer" href="#">  Values</Link>
 							</li>
 							
 							
@@ -33,10 +34,10 @@ const Footer = () => {
 						<h3 className="tracking-wide uppercase text-gray-50">Service Area</h3>
 						<ul className="space-y-1">
 							<li>
-								<a rel="noopener noreferrer" href="#">Team Members</a>
+								<Link rel="noopener noreferrer" href="#">Team Members</Link>
 							</li>
 							<li>
-								<a rel="noopener noreferrer" href="#">History</a>
+								<Link rel="noopener noreferrer" href="#">History</Link>
 							</li>
 						</ul>
 					</div>

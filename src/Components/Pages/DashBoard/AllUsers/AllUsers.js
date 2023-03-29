@@ -51,7 +51,7 @@ const AllUsers = () => {
                                 <th >{index + 1}</th>
                                 <td>{user?.name}</td>
                                 {
-                                    user?.photoURL == null ? 
+                                    user?.photoURL === null ? 
                                         
                                     <>
 
