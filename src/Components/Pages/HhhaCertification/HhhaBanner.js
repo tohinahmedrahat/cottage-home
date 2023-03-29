@@ -55,13 +55,13 @@ const HhhaBanner = () => {
               
               </div>
 
-              <div className="flex items-center gap-40">
-              <div >
+              <div className="flex items-center md:gap-40 gap-14">
+              <div>
               <p className="mt-4 flex justify-start  items-center gap-2 font-semibold max-w-lg sm:text-xl md:text-2xl sm:leading-relaxed text-white">
                 <FiPhone />
                 929-386-0092
               </p>
-              <div className="mt-8 flex flex-wrap gap-4 text-center  ">
+              <div className="mt-8 flex flex-wrap  text-center">
                 <div>
                 <a
                   href="https://mybrooklyninstitute.com/"

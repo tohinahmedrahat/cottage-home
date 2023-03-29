@@ -1,4 +1,5 @@
 import React,{ useState } from 'react';
+import { FaUser } from 'react-icons/fa';
 import { useQuery } from 'react-query';
 import Loading from '../../Shared/Loading/Loading';
 import DashBoardModal from '../DashBoard/DashBoardModal/DashBoardModal';
@@ -62,11 +63,40 @@ if (isLoading){
                             <th>{index + 1}</th>
                             <td className=' '>{new Date(message.time).toLocaleString()} </td>
                             <td>
-                                <div className="avatar">
+                                {/* <div className="avatar">
                                     <div className="avatar w-10 h-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                         <img src={message?.photoURL} alt='' />
                                     </div>
-                                </div>
+                                </div> */}
+
+{
+                                    message?.photoURL == null ?
+
+                                        <>
+
+                                            <td>
+                                                <div className="avatar">
+                                                    <div className="avatar  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                                        <FaUser className='w-10 h-10' />
+                                                    </div>
+                                                </div>
+                                            </td>
+
+
+                                        </>
+                                        :
+                                        <>
+                                            <td>
+                                                <div className="avatar">
+                                                    <div className="avatar w-10 h-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                                        <img src={message?.photoURL} alt='' />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </>
+
+
+                                }
                             </td>
                             <td>{message?.firstName}</td>
                             
