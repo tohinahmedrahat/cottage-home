@@ -3,6 +3,8 @@ import AllMessages from "../../AllMessages/AllMessages";
 import Blog from "../../Blog/Blog";
 import EditBlogForm from "../../Blog/EditBlogForm";
 import SingleBlog from "../../Blog/SingleBlog";
+import MissionVision from "../../FooterComponents/MissionVision";
+import TeamMembers from "../../FooterComponents/TeamMembers";
 // import About from "../../Pages/About/About";
 import AdminRoute from "../../Pages/AdminRoute/AdminRoute";
 import Cdpaps from "../../Pages/CDPAP/Cdpaps";
@@ -66,10 +68,7 @@ const Route = createBrowserRouter([
         path: "/register",
         element: <Register></Register>,
       },
-      {
-        path: "/register",
-        element: <Register></Register>,
-      },
+     
       {
         path: "/hhaCertification",
         element: <HhhaCertification></HhhaCertification>,
@@ -83,6 +82,10 @@ const Route = createBrowserRouter([
        element:<Blog></Blog>
       },
       {
+        path: "/team",
+       element:<TeamMembers></TeamMembers>
+      },
+      {
         path: '/blogs/:id',
         loader: ({ params }) => fetch(`https://cottage-home-care-services-server-site.vercel.app/blogs/${params.id}`),
         element:<SingleBlog></SingleBlog>
@@ -92,6 +95,10 @@ const Route = createBrowserRouter([
       loader: ({ params }) => fetch(`https://cottage-home-care-services-server-site.vercel.app/blogs/${params.id}`),
       element:<EditBlogForm></EditBlogForm>
     },
+    {
+      path:'/missionVision',
+      element:<MissionVision></MissionVision>
+    }
     ],
   },
   {
