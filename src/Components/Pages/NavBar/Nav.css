@@ -1,6 +1,4 @@
 
- 
-
  /* Hover underline Start */
 
  .hover-underline-animation {
@@ -102,7 +100,8 @@
 }
 @media only screen and (min-width:1600px) and (max-width:3000px){
     .nav-font{
-        font-size: 28px;
+        font-size: 36px;
+       
         
 
         /* font-size: 5em; */
@@ -170,7 +169,7 @@
 
 @media only screen and (min-width:2400px) and (max-width:3000px){
     .nav-font{
-        font-size: 28px;
+        font-size: 36px;
     }
     .nav-text{
         font-size: 15px;

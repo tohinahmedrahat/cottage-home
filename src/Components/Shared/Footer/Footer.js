@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import footerLogo from '../../../assets/Cottage Home.png'
 
 // bg-gradient-to-r from-orange-500 to-blue-600 
+
+
 const Footer = () => {
 	return (
 		<footer className=" bg-[#2E2A4D] px-4 bg- divide-y  text-white">
@@ -18,26 +20,46 @@ const Footer = () => {
 				</div>
 				<div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
 					<div className="space-y-3">
-						<Link className="tracking-wide uppercase text-gray-50">Term & Condition</Link>
+						<Link className="tracking-wide uppercase text-gray-50 hover:text-primary">Term & Condition</Link>
 						<ul className="space-y-1">
 							<li>
-								<Link rel="noopener noreferrer" href="#">Mission & Vision </Link>
+								<Link
+								
+								// to='/missionVision'
+								className=' hover:text-primary'
+								
+								rel="noopener noreferrer">Mission & Vision </Link>
 							</li>
 							<li>
-								<Link rel="noopener noreferrer" href="#">  Values</Link>
+								<Link rel="noopener noreferrer" className=' hover:text-primary'>  Values</Link>
 							</li>
-							
-							
+														
 						</ul>
 					</div>
 					<div className="space-y-3">
-						<h3 className="tracking-wide uppercase text-gray-50">Service Area</h3>
+
+						<Link
+						to='/services'
+
+						className="tracking-wide uppercase text-gray-50 hover:text-primary">
+							Service Area
+							
+							</Link>
 						<ul className="space-y-1">
 							<li>
-								<Link rel="noopener noreferrer" href="#">Team Members</Link>
+								<Link 
+								className='hover:text-primary'
+																
+								rel="noopener noreferrer" >Team Members</Link>
 							</li>
+							
 							<li>
-								<Link rel="noopener noreferrer" href="#">History</Link>
+
+								
+								<Link rel="noopener noreferrer "  
+								className='hover:text-primary'>
+									
+									History</Link>
 							</li>
 						</ul>
 					</div>

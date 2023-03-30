@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const BlogCard = ({blog,isAdmin,refetch}) => {
     const {title,img,description,_id} = blog;
+    const options = {  year: 'numeric', month: 'long', day: 'numeric' };
 
     const deleteHandler = ()=>{
 
@@ -34,13 +35,28 @@ const BlogCard = ({blog,isAdmin,refetch}) => {
          data-aos-duration="2000">
                         <div
                             class="block max-w-sm rounded-lg bg-white shadow-lg  mt-3">
-                            <a href="#!">
+                           {
+                            blog?.newImg == null ? 
+                            <>
+                             <div>
                                 <img
                                     class="rounded-t-lg"
                                     src={img}
                                     alt="" 
                                     className='h-64 w-full'/>
-                            </a>
+                            </div>
+                            </>
+                            :
+                            <>
+                             <div>
+                                <img
+                                    class="rounded-t-lg"
+                                    src={blog?.newImg}
+                                    alt="" 
+                                    className='h-64 w-full'/>
+                            </div>
+                            </>
+                           }
                             <div class="p-6">
                                 {
                                     blog?.date &&
@@ -50,7 +66,7 @@ const BlogCard = ({blog,isAdmin,refetch}) => {
                                     blog?.newDate && 
                                     <p className='mb-2 text-neutral-600'>
 
-                                    {new Date(blog?.newDate).toLocaleString()}
+                                    {new Date(blog?.newDate).toLocaleString(undefined, options)}
     
                                     </p>
 

@@ -10,6 +10,7 @@ import logo from '../../../src/assets/Cottage Home.png'
 const SingleBlog = () => {
      window.scrollTo(0, 0);
     const blog = useLoaderData();
+    const options = {  year: 'numeric', month: 'long', day: 'numeric' };
     const navigate = useNavigate();
     const { title, img, date, description, _id } = blog
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -94,7 +95,7 @@ const SingleBlog = () => {
                         </p>
                         <p className='mt-3 text-center text-sm text-[#8c8a98] open-sans font-medium '>
 
-                        {new Date(blog?.newDate).toLocaleString()}
+                        {new Date(blog?.newDate).toLocaleString(undefined, options)}
 
                         </p>
 
