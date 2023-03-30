@@ -23,7 +23,7 @@ const BlogCard = ({blog,isAdmin,refetch}) => {
                         refetch();
 
                     }
-                    console.log(data)
+                    
 
                 })
             

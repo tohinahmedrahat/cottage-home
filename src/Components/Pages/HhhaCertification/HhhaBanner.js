@@ -55,9 +55,9 @@ const HhhaBanner = () => {
               
               </div>
 
-              <div className="flex items-center md:gap-40 gap-14">
+              <div className="flex items-center md:gap-32 gap-14">
               <div>
-              <p className="mt-4 flex justify-start  items-center gap-2 font-semibold max-w-lg sm:text-xl md:text-2xl sm:leading-relaxed text-white">
+              <p className="mt-4 flex justify-start  items-center gap-2 font-semibold max-w-lg sm:text-xl md:text-3xl sm:leading-relaxed text-white">
                 <FiPhone />
                 929-386-0092
               </p>
@@ -75,7 +75,7 @@ const HhhaBanner = () => {
               </div>
               </div>
               <div className="mt-5">
-                  <img src={hhaLogo} alt="" className="md:w-28 md:h-28 w-20 h-20 "/>
+                  <img src={hhaLogo} alt="" className="md:w-36 md:h-36 w-20 h-20 "/>
                 </div>
               </div>
 

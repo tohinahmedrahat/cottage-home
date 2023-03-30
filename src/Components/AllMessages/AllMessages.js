@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaUser } from 'react-icons/fa';
 import { useQuery } from 'react-query';
 import DashBoardModal from '../Pages/DashBoard/DashBoardModal/DashBoardModal';
+import DeleteButton from '../Shared/DeleteButton/DeleteButton';
 import Loading from '../Shared/Loading/Loading';
 
 const AllMessages = () => {
@@ -51,6 +52,7 @@ const AllMessages = () => {
                             <th>Service Type</th>
                             <th>Inquire Type</th>
                             <th>Subject</th>
+                            <th>Delete</th>
 
 
                         </tr>
@@ -115,6 +117,14 @@ const AllMessages = () => {
 
                                         htmlFor="message-details" className="text-sm bg-primary py-2 px-2 rounded-md text-white shadow-lg">
                                         See Message</label></td>
+
+                                        <td>
+                                            <DeleteButton
+                                            refetch={refetch}
+                                            id={message?._id}
+                                            
+                                            ></DeleteButton>
+                                        </td>
 
 
 
