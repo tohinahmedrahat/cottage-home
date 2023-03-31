@@ -1,11 +1,17 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
-import hhhaImage from "../../../assets/hha cover .jpg";
+
+import HhaCarousel from "./HhaCarousel"
+
+
 
 const HhhaCertificationAbout = () => {
   return (
-    <div className="flex flex-col-reverse justify-center p-6 mx-auto sm:py-12 lg:pt-24 lg:flex-row lg:justify-between max-w-7xl items-start">
-      <div className="flex flex-col justify-center lg:p-6 text-start rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+    <div className="w-[95%] md:w-[90%] lg:w-[85%] mx-auto my-14">
+         
+      <div className="md:grid grid-cols-5 gap-8 items-center">
+        <div className="col-span-2 mt-5 ">
+        <div className="flex flex-col justify-center lg:p-6 text-start rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
         <div
           className="flex items-center "
           data-aos="fade-up"
@@ -60,20 +66,21 @@ const HhhaCertificationAbout = () => {
           </h3>
         </div>
       </div>
-      <div
-        className="mx-auto p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
-        data-aos="fade-left"
-        data-aos-duration="2000"
-      >
-        <img
-          src={hhhaImage}
-          alt=""
-          className="object-contain md:h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 "
-          // data-aos="fade-left"
-          // data-aos-duration=""
-        />
+
+        </div>
+        <div className="col-span-3 mt-5 order-first sm:order-none ">
+          
+         <div>
+          <HhaCarousel></HhaCarousel>
+         </div>
+
+        </div>
+      
+
       </div>
+
     </div>
+    
   );
 };
 

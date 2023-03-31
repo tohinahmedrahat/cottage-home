@@ -15,7 +15,7 @@ const OfficeMessage = ({refetch, id}) => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.deletedCount) {
-                        toast.success('User Delete SuccessFully')
+                        toast.success('Message Delete SuccessFully')
                         refetch();
 
                     }
