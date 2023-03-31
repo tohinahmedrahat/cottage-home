@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../../../Shared/Loading/Loading';
 import { FaUser } from 'react-icons/fa';
+import { toast } from 'react-hot-toast';
 
 const AllUsers = () => {
 
@@ -24,6 +25,33 @@ const AllUsers = () => {
     if (isLoading){
         return <Loading></Loading>
     }
+
+
+    const deleteHandler = (id) =>{
+
+        const proceed = window.confirm(
+            "Are you sure, you want to delete this user ?"
+        );
+        if (proceed) {
+            fetch(`https://cottage-home-care-services-server-site.vercel.app/users/${id}`, {
+                method: 'DELETE',
+
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount) {
+                        toast.success('User Delete SuccessFully')
+                        refetch();
+
+                    }
+                    
+
+                })
+
+    }
+}
+
+
     return (
         <div>
 
@@ -36,6 +64,8 @@ const AllUsers = () => {
                             <th>User Name</th>
                             <th>Image</th>
                             <th>Email</th>
+                            <th>Delete</th>
+
                          
                             
                             
@@ -82,6 +112,17 @@ const AllUsers = () => {
                                 
                                 
                                 <td>{user?.email}</td>
+                                <td>
+                                    <button
+                                    
+                                    onClick={()=>deleteHandler(user?._id)}
+
+                                    className='btn btn-sm bg-red-600 uppercase text-white'>
+                                        delete
+
+                                    </button>
+
+                                </td>
                                 
 
 

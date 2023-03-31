@@ -1,6 +1,7 @@
 import React,{ useState } from 'react';
 import { FaUser } from 'react-icons/fa';
 import { useQuery } from 'react-query';
+import DeleteButton from '../../Shared/DeleteButton/DeleteButton';
 import Loading from '../../Shared/Loading/Loading';
 import DashBoardModal from '../DashBoard/DashBoardModal/DashBoardModal';
 
@@ -51,6 +52,7 @@ if (isLoading){
                         <th>Service Type</th>
                         <th>Inquire Type</th>
                         <th>Subject</th>
+                        <th>Delete</th>
                     
 
                     </tr>
@@ -115,6 +117,14 @@ if (isLoading){
                                         See Message</label>
                                 
                                 </td>
+
+                                <td>
+                                            <DeleteButton
+                                            refetch={refetch}
+                                            id={message?._id}
+                                            
+                                            ></DeleteButton>
+                                        </td>
                             
                             
                             

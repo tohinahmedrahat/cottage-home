@@ -199,7 +199,7 @@ const NavBar = () => {
                         {
                             user?.uid ? <>
 
-                                <li>
+                                <li className='nav-user'>
 
                                     <img src={user?.photoURL}
                                         title={user?.displayName}

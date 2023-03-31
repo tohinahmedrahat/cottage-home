@@ -25,7 +25,7 @@ const Footer = () => {
 							<li>
 								<Link
 								
-								// to='/missionVision'
+								 to='/missionVision'
 								className=' hover:text-primary'
 								
 								rel="noopener noreferrer">Mission & Vision </Link>

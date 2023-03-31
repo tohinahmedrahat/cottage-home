@@ -55,7 +55,7 @@ const Banner = () => {
                     Care is known for lending a helping hand.
                   </p>
                   <h4 className=" md:text-xl text-sm font-semibold text-[#dbf2f4] font-[Roboto] mb-8 px-5 md:px-0 mt-5">
-                    “HHA/PCA & CDPAP SERVICES THROUGHOUT NEW YORK CITY”
+                    “HHA/PCA & CDPAP SERVICES THROUGHOUT NEW YORK CITY, WESTCHESTER, ALBANY,  NASSAU & SUFFOLK COUNTY”
                   </h4>
                   <div className=" md:mt-[4vh] flex justify-center text-white font-semibold gap-8">
                     <a

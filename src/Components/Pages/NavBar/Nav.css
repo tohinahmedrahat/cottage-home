@@ -81,23 +81,75 @@
 
 
 
-.nav-img{
 
-    /* w-[80px] h-[80px] */
-    width: 60px ;
-    height: 60px;
-}
-.nav-font{
-    font-size: 20px;
-    
 
-    /* font-size: 5em; */
-
-}
 
 .nav-size{
     width: 98%;
 }
+@media only screen and (min-width:1000px) and (max-width:1500px){
+    .nav-user{
+        display: none;
+       }
+    
+
+}
+@media only screen and (min-width:699px) and (max-width:999px){
+    .nav-font{
+        font-size: 28px;
+   
+        /* font-size: 5em; */
+    
+    }
+   
+    .nav-img{
+   
+       /* w-[80px] h-[80px] */
+       width: 80px ;
+       height: 80px;
+   }
+
+}
+@media only screen and (min-width:1000px) and (max-width:1366px){
+    .nav-font{
+        font-size: 20px;
+   
+        /* font-size: 5em; */
+    
+    }
+   
+    .nav-img{
+   
+       /* w-[80px] h-[80px] */
+       width: 70px ;
+       height: 70px;
+   }
+
+}
+
+@media only screen and (min-width:1367px) and (max-width:1599px){
+    .nav-size{
+     width: 98%;
+     
+ }
+ .nav-font{
+     font-size: 26px;
+
+     /* font-size: 5em; */
+ 
+ }
+
+ .nav-img{
+
+    /* w-[80px] h-[80px] */
+    width: 80px ;
+    height: 80px;
+}
+ 
+ 
+ 
+ }
+
 @media only screen and (min-width:1600px) and (max-width:3000px){
     .nav-font{
         font-size: 36px;
@@ -122,14 +174,7 @@
 .nav-size{
     width: 97%;
 }
-@media only screen and (min-width:900px) and (max-width:1100px){
-   .nav-size{
-    width: 98%;
-}
 
-
-
-}
 
 @media only screen and (max-width:688px) {
     .nav-font{
@@ -144,13 +189,8 @@
 
 }
 
-@media only screen and (min-width:688px) and (max-width:1100px){
 
-    .nav-font{
-        font-size: 24px;
-    }
-}
-@media only screen and (min-width:1600px) and (max-width:3000px){
+@media only screen and (min-width:1600px) and (max-width:1700px){
     .nav-font{
         font-size: 28px;
     }
@@ -167,7 +207,7 @@
 
 }
 
-@media only screen and (min-width:2400px) and (max-width:3000px){
+@media only screen and (min-width:1700px) and (max-width:10000px){
     .nav-font{
         font-size: 36px;
     }
@@ -177,8 +217,8 @@
     .nav-img{
 
         /* w-[80px] h-[80px] */
-        width: 80px ;
-        height: 80px;
+        width: 100px ;
+        height: 100px;
     }
     
 

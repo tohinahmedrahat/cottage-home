@@ -11,7 +11,6 @@ const EditBlogForm = () => {
     console.log(blog)
 
     const [loading, setLoading] = useState(null);
-    const date = Date.now();
     const imageHostKey = process.env.REACT_APP_imgbb_key;
     const navigate = useNavigate();
 
@@ -47,7 +46,6 @@ const EditBlogForm = () => {
                         const updateBlog = {
                             _id: blog?._id,                            
                             title: data?.title,
-                            newDate: date,
                             img: imgData.data.url,
                             description: [
                                 {
@@ -100,7 +98,6 @@ const EditBlogForm = () => {
             const updateBlog = {
                 _id: blog?._id,
                 title: data?.title,
-                newDate: date,
                 img: blog?.img,
                 description: [
                     {
@@ -172,9 +169,9 @@ const EditBlogForm = () => {
                         onSubmit={handleSubmit(submitHandler)}
                         className="max-w-xl md:max-w-3xl   ml-auto bg-gray-50 p-8 rounded-md shadow-xl "
                     >
-                        <h1 className="text-2xl text-gray-600 text-center Poppins font-semibold">
+                        <h1 className="text-xl text-gray-600 text-center Poppins font-semibold">
                             {" "}
-                            Add A Blog
+                            {blog?.title}
                         </h1>
 
                         <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">

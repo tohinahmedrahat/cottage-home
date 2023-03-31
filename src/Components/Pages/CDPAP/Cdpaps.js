@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaUser } from 'react-icons/fa';
 import { useQuery } from 'react-query';
+import DeleteButton from '../../Shared/DeleteButton/DeleteButton';
 import Loading from '../../Shared/Loading/Loading';
 import DashBoardModal from '../DashBoard/DashBoardModal/DashBoardModal';
 
@@ -51,6 +52,9 @@ const Cdpaps = () => {
                             <th>
 
                                 Subject
+                            </th>
+                            <th>
+                                Delete
                             </th>
 
 
@@ -115,6 +119,14 @@ const Cdpaps = () => {
                                         See Message</label>
 
                                 </td>
+
+                                <td>
+                                            <DeleteButton
+                                            refetch={refetch}
+                                            id={message?._id}
+                                            
+                                            ></DeleteButton>
+                                        </td>
 
 
 
