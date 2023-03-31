@@ -12,6 +12,7 @@ import female from '../../../src/assets/female-icon.png'
 import saleem from '../../../src/assets/employers/saleem.jpg'
 import aumy from '../../../src/assets/employers/Aumy.JPG'
 import tariqul from '../../../src/assets/employers/tariqul.jpg'
+import alIsrak from '../../../src/assets/employers/al-israk.jpg'
 
 const TeamMembers = () => {
     window.scrollTo(0, 0);
@@ -185,7 +186,7 @@ const TeamMembers = () => {
     
     
         },
-        {   img: male,
+        {   img: alIsrak,
             name : "Al Ishraq",
             designation: "HHA Coordinator",
             description: "Contacts agency staffing coordinator to arrange all scheduling of clients, including but not limited to acceptance of assignments, sick or late calls and directions to client home.",

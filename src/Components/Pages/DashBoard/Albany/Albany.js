@@ -3,6 +3,7 @@ import { FaUser } from 'react-icons/fa';
 import { useQuery } from 'react-query';
 import Loading from '../../../Shared/Loading/Loading';
 import OfficeModal from '../OfficeModal/OfficeModal';
+import OfficeMessage from '../../../Shared/DeleteOfOfficeMessage/OfficeMessage';
 
 const Albany = () => {
     const [message, setMessage] = useState('')
@@ -46,6 +47,7 @@ const Albany = () => {
                             <th>Email</th>
                             <th>Contact Office Name</th>
                             <th>Message</th>
+                            <th>Delete</th>
 
 
                         </tr>
@@ -105,6 +107,14 @@ const Albany = () => {
 
                                         htmlFor="office-details" className="text-sm bg-primary py-2 px-2 rounded-md text-white shadow-lg">
                                         See Message</label></td>
+
+                                        <th>
+                                        <OfficeMessage
+                                            refetch={refetch}
+                                            id={message?._id}
+                                            
+                                            ></OfficeMessage>
+                                        </th>
 
 
 

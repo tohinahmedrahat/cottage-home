@@ -7,7 +7,7 @@ import pic4 from '../../../src/assets/mission-vision/vission3.jpeg'
 const MissionVision = () => {
   window.scrollTo(0, 0);
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen '>
 
       <div className='md:w-[85%] w-[95%] mx-auto mt-5 mb-20'>
         <h1 className='text-center my-5 playrify font-semibold text-primary md:text-3xl text-2xl'> Mission And Vision Of Cottage Care </h1>
