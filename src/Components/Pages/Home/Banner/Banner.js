@@ -1,24 +1,19 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import background from "../../../../assets/MainBanner.jpg";
-import comfort from "../../../../assets/comfort.png";
+import comfort from "../../../../assets/comfort .png";
 import relief from "../../../../assets/relief-1.png";
 import peace from "../../../../assets/peace.png";
 
 import "./Banner.css";
 
 const Banner = () => {
-  // const handleDone = () => {
-  //   // console.log(`Done after 5 loops!`);
-  // };
-  // const handleType = () => {
-  //   // console.log(`Done after 5 loops!`);
-  // };
+
   return (
     <div>
       <div
-        className="  bg-no-repeat bg-cover bg-center text-center min-h-[100vh]"
-        style={{ backgroundImage: `url(${background})` }}
+        className="  bg-no-repeat bg-cover bg-center text-center banner "
+        
       >
         <div className=" tracking-[1px] mx-auto pt-40">
           <div className="h-[150px] max-w-2xl mx-auto mt-[10vh]">

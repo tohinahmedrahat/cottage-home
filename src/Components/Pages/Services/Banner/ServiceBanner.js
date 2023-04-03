@@ -1,6 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import background from "../../../../assets/cooking2.png";
+import background from "../../../../assets/services.jpg";
+import './Banner.css'
 
 const ServiceBanner = () => {
   const handleDone = () => {
@@ -13,13 +14,13 @@ const ServiceBanner = () => {
   return (
     <div>
       <div
-        className=" relative bg-no-repeat bg-cover bg-center text-center min-h-[80vh]"
-        style={{ backgroundImage: `url(${background})` }}
+        className=" relative  bg-cover bg-center text-center min-h-[80vh] service-banner"
+        
       >
         <h1 className=" pt-[20vh] text-3xl lg:text-5xl relative font-bold font-[PlayfairDisplay] afterEffect mb-5 text-center px-5 text-white">
             Services
           </h1>
-        <div className="md:pt-[10vh]">
+        <div className="md:pt-[15vh]">
         
             <div className=" mx-auto  ">
               <div className="rounded-md bg-contact-2 md:max-w-3xl lg:max-w-4xl mx-auto text-white">

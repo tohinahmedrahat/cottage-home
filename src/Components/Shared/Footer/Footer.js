@@ -48,6 +48,7 @@ const Footer = () => {
 						<ul className="space-y-1">
 							<li>
 								<Link 
+								to='/team'
 								className='hover:text-primary'
 																
 								rel="noopener noreferrer" >Team Members</Link>

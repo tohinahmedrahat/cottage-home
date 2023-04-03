@@ -1,8 +1,8 @@
 import React from 'react';
 import pic1 from '../../../src/assets/mission-vision/mission-vision.jpg'
-import pic3 from '../../../src/assets/mission-vision/mission-vission-2.jpg'
-import pic2 from '../../../src/assets/mission-vision/vission2.jpeg'
-import pic4 from '../../../src/assets/mission-vision/vission3.jpeg'
+import pic3 from '../../../src/assets/mission-vision/mission-vission-2 .jpg'
+import pic2 from '../../../src/assets/mission-vision/missio-cover-1.jpg'
+import pic4 from '../../../src/assets/mission-vision/cover-2.jpg'
 
 const MissionVision = () => {
   window.scrollTo(0, 0);
@@ -12,7 +12,12 @@ const MissionVision = () => {
       <div className='md:w-[85%] w-[95%] mx-auto mt-5 mb-20'>
         <h1 className='text-center my-5 playrify font-semibold text-primary md:text-3xl text-2xl'> Mission And Vision Of Cottage Care </h1>
         <div className='md:grid grid-cols-8  gap-8 items-center'>
-          <div className='md:col-span-4 lg:col-span-2 text-gray-600 mt-5'>
+          <div className='md:col-span-4 lg:col-span-2 text-gray-600 mt-5'
+
+            data-aos="fade-right"
+            data-aos-duration="2000"
+
+          >
             <p className='text-justify'>
               Our mission is to provide personalized, compassionate, and high-quality home care services that enable our patients to maintain their independence and improve their overall health and well-being.
             </p>
@@ -25,11 +30,20 @@ const MissionVision = () => {
           </div>
           <div className='lg:col-span-2 md:col-span-4  mt-5 '>
 
-            <img src={pic1} alt="" className='w-full md:h-96' />
+            <img src={pic1} alt="" className='w-full md:h-96'
+
+              data-aos="fade-down"
+              data-aos-duration="2000"
+
+
+            />
 
           </div>
           <div className='col-span-4 mt-5 hidden lg:block'>
-            <img src={pic2} alt="" className='w-full md:h-96' />
+            <img src={pic2} alt="" className='w-full md:h-96'
+
+              data-aos="fade-left"
+              data-aos-duration="2000" />
 
           </div>
 
@@ -37,21 +51,35 @@ const MissionVision = () => {
 
         <div className='md:grid grid-cols-8  gap-8 items-center mt-3'>
           <div className='col-span-4 mt-5 hidden lg:block'>
-            <img src={pic4} alt="" className='w-full md:h-96' />
+            <img src={pic4} alt="" className='w-full md:h-96'
+
+              data-aos="fade-right"
+              data-aos-duration="2000"
+
+            />
 
           </div>
           <div className='lg:col-span-2 md:col-span-4  mt-5 '>
 
-            <img src={pic3} alt="" className='w-full md:h-96' />
+            <img src={pic3} alt="" className='w-full md:h-96'
+              data-aos="fade-up"
+              data-aos-duration="2000"
+
+            />
 
           </div>
-          <div className='md:col-span-4 lg:col-span-2 text-gray-600 mt-5'>
+          <div className='md:col-span-4 lg:col-span-2 text-gray-600 mt-5'
+
+            data-aos="fade-left"
+            data-aos-duration="2000"
+
+          >
             <p className='text-justify'>
-            Our team of highly qualified and dedicated caregivers is passionate about improving the lives of those we serve. Cottage Home Care Services is committed to delivering exceptional care with dignity, integrity, and professionalism.
+              Our team of highly qualified and dedicated caregivers is passionate about improving the lives of those we serve. Cottage Home Care Services is committed to delivering exceptional care with dignity, integrity, and professionalism.
             </p>
 
 
-            
+
 
           </div>
 
