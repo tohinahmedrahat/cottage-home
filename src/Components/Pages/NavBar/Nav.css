@@ -230,6 +230,11 @@
         font-size: 18px;
         line-height: 2rem;
     }
+
+    .team-member{
+        width: 85%;
+        margin: auto;
+    }
     
 
 }
