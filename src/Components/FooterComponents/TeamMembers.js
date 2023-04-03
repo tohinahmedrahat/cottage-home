@@ -233,21 +233,23 @@ const TeamMembers = () => {
                 </div>
                 <div className="w-full bg-gray-100 px-10 pt-10">
                     <div className="container mx-auto">
-                        <div className="lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around team-member">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-10 lg:gap-20 team-member">
                         {/* lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around */}
                             {
                                 employers?.map((employer,index)=><div 
                                 
                                 key={index}
-                                className="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
+                                className=" relative mt-16 md:mb-20  mb-16 w-full  bg-white lg:min-h-[18rem] shadow-md rounded-md
+                                
+                                "
                                 data-aos="zoom-in"
                                 data-aos-duration="2000"
                                 >
 
-{/* xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5 */}
 
 
-                                <div className="rounded overflow-hidden shadow-md bg-white"
+
+                                <div className="rounded overflow-hidden  "
                                 
                                 >
                                     <div className="absolute -mt-20 w-full flex justify-center">

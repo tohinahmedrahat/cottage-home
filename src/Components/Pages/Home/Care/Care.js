@@ -1,13 +1,14 @@
 import React from "react";
 import { FaPhone } from "react-icons/fa";
-import carebg from "../../../../assets/contact.jpg";
+ 
+
 
 const Care = () => {
   document.documentElement.style.scrollBehavior = "smooth";
   return (
     <div
-      className="bg-no-repeat bg-cover bg-center text-center min-h-[80vh]"
-      style={{ backgroundImage: `url(${carebg})` }}
+      className="bg-no-repeat bg-cover bg-center text-center min-h-[80vh] another-banner"
+      
     >
       <div className="pt-[40vh]">
         <h1 className="text-[35px] font-bold relative font-[PlayfairDisplay] text-white afterEffect">
