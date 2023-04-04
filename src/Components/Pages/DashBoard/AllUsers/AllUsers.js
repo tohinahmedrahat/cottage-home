@@ -18,22 +18,22 @@ const AllUsers = () => {
 
     })
 
-    
+
 
     // console.log(messages)
 
-    if (isLoading){
+    if (isLoading) {
         return <Loading></Loading>
     }
 
 
-    const deleteHandler = (id) =>{
+    const deleteHandler = (user) => {
 
         const proceed = window.confirm(
-            "Are you sure, you want to delete this user ?"
+            `Are you sure, you want to delete ${user?.name} ?`
         );
         if (proceed) {
-            fetch(`https://cottage-home-care-services-server-site.vercel.app/users/${id}`, {
+            fetch(`https://cottage-home-care-services-server-site.vercel.app/users/${user?._id}`, {
                 method: 'DELETE',
 
             })
@@ -44,18 +44,18 @@ const AllUsers = () => {
                         refetch();
 
                     }
-                    
+
 
                 })
 
+        }
     }
-}
 
 
     return (
         <div>
 
-<div className="overflow-x-auto">
+            <div className="overflow-x-auto">
                 <table className="table w-full">
 
                     <thead className=''>
@@ -66,10 +66,10 @@ const AllUsers = () => {
                             <th>Email</th>
                             <th>Delete</th>
 
-                         
-                            
-                            
-                        
+
+
+
+
 
                         </tr>
                     </thead>
@@ -81,49 +81,49 @@ const AllUsers = () => {
                                 <th >{index + 1}</th>
                                 <td>{user?.name}</td>
                                 {
-                                    user?.photoURL === null ? 
-                                        
-                                    <>
+                                    user?.photoURL === null ?
 
-<td>
-                                    <div className="avatar">
-                                        <div className="avatar  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                            <FaUser className='w-10 h-10'/>
-                                        </div>
-                                    </div>
-                                </td>
-                                    
-                                    
-                                    </>
-                                    :
-                                    <>
-                                    <td>
-                                    <div className="avatar">
-                                        <div className="avatar w-10 h-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                            <img src={user?.photoURL} alt='' />
-                                        </div>
-                                    </div>
-                                </td>
-                                    </>
+                                        <>
 
-                                    
+                                            <td>
+                                                <div className="avatar">
+                                                    <div className="avatar  rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                                        <FaUser className='w-10 h-10' />
+                                                    </div>
+                                                </div>
+                                            </td>
+
+
+                                        </>
+                                        :
+                                        <>
+                                            <td>
+                                                <div className="avatar">
+                                                    <div className="avatar w-10 h-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                                        <img src={user?.photoURL} alt='' />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </>
+
+
                                 }
-                                
-                                
-                                
+
+
+
                                 <td>{user?.email}</td>
                                 <td>
                                     <button
-                                    
-                                    onClick={()=>deleteHandler(user?._id)}
 
-                                    className='btn btn-sm bg-red-600 uppercase text-white'>
+                                        onClick={() => deleteHandler(user)}
+
+                                        className='btn btn-sm bg-red-600 uppercase text-white'>
                                         delete
 
                                     </button>
 
                                 </td>
-                                
+
 
 
                             </tr>)
@@ -132,7 +132,7 @@ const AllUsers = () => {
                 </table>
             </div>
 
-            
+
         </div>
     );
 };

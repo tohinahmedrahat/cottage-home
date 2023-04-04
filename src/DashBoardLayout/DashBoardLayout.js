@@ -6,6 +6,7 @@ import NavBar from "../Components/Pages/NavBar/NavBar";
 import Footer from "../Components/Shared/Footer/Footer";
 import { BiMessageRoundedDots } from "react-icons/bi";
 import { HiUsers } from "react-icons/hi";
+import { FaUserTie } from "react-icons/fa";
 import { IoSchool } from "react-icons/io5";
 import { FaHome } from "react-icons/fa";
 import { ImBlog } from "react-icons/im";
@@ -183,6 +184,13 @@ const DashBoardLayout = () => {
                   <Link to="/dashboard/blogForm">
                     <ImBlog className="w-6 h-6 mr-2" />
                     Add A Blog
+                    
+                  </Link>
+                </li>
+                <li className="text-primary">
+                  <Link to="/dashboard/employee">
+                    <FaUserTie className="w-6 h-6 mr-2" />
+                    Add An Employee
                     
                   </Link>
                 </li>

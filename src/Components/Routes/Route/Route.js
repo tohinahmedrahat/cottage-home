@@ -16,6 +16,8 @@ import BlogForm from "../../Pages/DashBoard/BlogForm/BlogForm";
 import BronxOffice from "../../Pages/DashBoard/BronxOffice/BronxOffice";
 import Brooklyn from "../../Pages/DashBoard/Brooklyn/Brooklyn";
 import DashBoard from "../../Pages/DashBoard/DashBoard";
+import EditForm from "../../Pages/DashBoard/Employee/EditForm";
+import EmployeeForm from "../../Pages/DashBoard/Employee/EmployeeForm";
 import LongIsland from "../../Pages/DashBoard/LongIsland/LongIsland";
 import QueensOffice from "../../Pages/DashBoard/QueensOffice/QueensOffice";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
@@ -89,6 +91,11 @@ const Route = createBrowserRouter([
         path: '/blogs/:id',
         loader: ({ params }) => fetch(`https://cottage-home-care-services-server-site.vercel.app/blogs/${params.id}`),
         element:<SingleBlog></SingleBlog>
+    },
+    {
+      path: "/employees/:id",
+      loader: ({ params }) => fetch(`https://cottage-home-care-services-server-site.vercel.app/employees/${params.id}`),
+      element:<EditForm></EditForm>
     },
     {
       path: "/singleBlogs/:id",
@@ -187,6 +194,14 @@ const Route = createBrowserRouter([
         element: (
           <AdminRoute>
            <BlogForm></BlogForm>
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "/dashboard/employee",
+        element: (
+          <AdminRoute>
+           <EmployeeForm></EmployeeForm>
           </AdminRoute>
         ),
       },
