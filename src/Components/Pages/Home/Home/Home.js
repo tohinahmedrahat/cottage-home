@@ -1,8 +1,6 @@
 import React from "react";
 import useTitle from "../../../Hooks/useTitle";
-
 import Banner from "../Banner/Banner";
-import DoYou from "../DoYou/DoYou";
 import EasierLife from "../EasierLife/EasierLife";
 import HelpSection from "../HelpSection/HelpSection";
 import Quality from "../Quality/Quality";
@@ -22,7 +20,7 @@ const Home = () => {
       <HelpSection></HelpSection>
       <WeAre></WeAre>
       <Quality></Quality>
-      {/* <DoYou></DoYou> */}
+      
       <WhyChoose></WhyChoose>
       <TestimonialPart></TestimonialPart>
       <EasierLife></EasierLife>
