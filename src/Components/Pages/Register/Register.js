@@ -123,10 +123,10 @@ const Register = () => {
                                         <input type="text"
                                             {...register("name",
                                                 { required: "name is required" })}
-                                            id="name" placeholder="your name" className="w-full px-4 py-2 shadow-xl rounded-md dark:border-gray-700 bg-white dark:text-gray-700 focus:outline-none" required />
+                                            id="name" placeholder="your name" className="w-full px-4 py-2 shadow-xl rounded-md dark:border-gray-700 bg-white dark:text-gray-700 focus:outline-none" />
                                         {errors.name && <p className='text-red-600'>{errors.name.message}</p>}
                                     </div>
-                                    <div className="space-y-1 text-sm">
+                                    {/* <div className="space-y-1 text-sm">
                                         <label
                                             htmlFor="dropzone-file"
                                             className="flex items-center px-3 py-2 mx-auto mt-6 text-center bg-white border   rounded-md cursor-pointer shadow-xl"
@@ -159,7 +159,28 @@ const Register = () => {
                                             />
                                         </label>
                                         {errors.url && <p className='text-red-600'>{errors.url.message}</p>}
-                                    </div>
+                                    </div> */}
+
+<div className="space-y-0.5 text-sm">
+                            <div className='flex items-center gap-4'>
+                            <label htmlFor="firstName" className="block dark:text-gray-400">
+                                   Image
+                                </label>
+                                
+                            <small className='text-red-500'>[ Image should not be large then 200 KB ] </small>
+                            </div>
+
+                            <input type="file"
+                            
+                            {...register("url", {
+                                required: "Image is required",
+                            })}
+                            className="file-input file-input-secondary border-0  w-full dark:border-gray-700 bg-white dark:text-gray-700 focus:outline-none" />
+                                
+                                {errors.url && <p className='text-red-600'>{errors.url.message}</p>}
+                            </div>
+
+                                    
                                   
 
                                     <div className="space-y-1 text-sm">

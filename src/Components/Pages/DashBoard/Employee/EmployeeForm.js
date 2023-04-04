@@ -129,8 +129,21 @@ const EmployeeForm = () => {
                             </div>
 
                             <div className="space-y-0.5 text-sm">
-                            <small className='text-red-500'>Image should not be large then 200 KB </small>
-                                <label
+                            <div className='flex items-center gap-4'>
+                            <label htmlFor="firstName" className="block dark:text-gray-400">
+                                   Image
+                                </label>
+                                
+                            <small className='text-red-500'>[ Image should not be large then 200 KB ] </small>
+                            </div>
+
+                            <input type="file"
+                            
+                            {...register("url", {
+                                required: "Image is required",
+                            })}
+                            className="file-input file-input-secondary border-0  w-full  text-gray-700 focus:outline-[#00a6b265] bg-[#EBF8F9] focus:bg-white shadow-md" />
+                                {/* <label
                                     htmlFor="dropzone-file"
                                     className="flex items-center px-3 py-2 mx-auto mt-6 text-center border text-gray-700 focus:outline-[#00a6b265] bg-[#EBF8F9]
                                             focus:bg-white shadow-md cursor-pointer "
@@ -161,7 +174,7 @@ const EmployeeForm = () => {
                                         className="hidden"
 
                                     />
-                                </label>
+                                </label> */}
                                 {errors.url && <p className='text-red-600'>{errors.url.message}</p>}
                             </div>
 
