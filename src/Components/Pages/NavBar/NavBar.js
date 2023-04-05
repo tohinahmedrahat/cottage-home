@@ -275,8 +275,8 @@ const NavBar = () => {
                                                 title="Learn With Programming"
                                                 className="inline-flex items-center"
                                             >
-                                                <img src={navLogo} className='w-12' alt="" />
-                                                <span className="ml-2 text-md  tracking-wide text-[#49465D] hover:text-blue-900">
+                                                <img src={navLogo} className='w-14 h-14 rounded-full border-2 border-primary p-1' alt="" />
+                                                <span className="ml-2 text-lg font-medium  tracking-wide text-[#49465D] hover:text-blue-900">
                                                     Cottage Home Care Services
                                                 </span>
                                             </NavLink>

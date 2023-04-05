@@ -113,26 +113,30 @@ const OfficeLocation = () => {
 
   return (
     <div className="bg-[#322E51] py-24 ">
-      <div className="w-[95%] lg:w-[90%] mx-auto">
+      <div className="w-[95%] lg:w-[90%] mx-auto ">
         <h1 className="text-lg md:text-2xl lg:text-4xl playrify text-white  font-semibold">
           Call today or come visit — at a location near you.
         </h1>
         <hr className="border-t-[.5px] border-primary mt-5 w-[80px]" />
 
-        <h5 className="md:text-xl text-lg text-primary mt-5 font-semibold">
+        <h5 className=" text-xl md:text-2xl text-primary mt-5 font-semibold">
           {" "}
           Cottage Home Care Services of New York Office Locations{" "}
         </h5>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-16 text-center md:text-start">
-          <div data-aos="zoom-in" data-aos-duration="2000">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-14  text-center md:text-start">
+          <div
+          
+          className="md:mt-0 border-2 py-8 md:py-0 border-primary rounded-md md:border-0"
+
+          data-aos="zoom-in" data-aos-duration="2000">
             <h5 className="text-lg font-semibold text-primary">
               {queens?.name}
             </h5>
             <p className="text-white">{queens?.address1}</p>
             <p className="text-white">{queens?.address2}</p>
 
-            <div className="mt-1">
+            <div className="mt-1 ">
               {/* <p className="text-2xl text-[#1b1b1b] mb-6">Hours</p> */}
               <select className="focus:outline-none text-lg rounded-md py-2 bg-[#322E51] text-primary">
                 {all.map((al, index) => (
@@ -169,8 +173,14 @@ const OfficeLocation = () => {
             </div>
           </div>
           {offices.map((office, index) => (
-            <div key={index} data-aos="zoom-in" data-aos-duration="2000">
-              <h5 className="text-lg font-semibold text-primary">
+            <div key={index}
+            
+            className="mt-5 md:mt-0 border-2 py-8 md:py-0 border-primary rounded-md md:border-0"
+            data-aos="zoom-in" data-aos-duration="2000">
+              <h5 className="text-lg font-semibold text-primary  
+              
+             
+              ">
                 {office?.name}
               </h5>
               <p className="text-white">{office?.address1}</p>

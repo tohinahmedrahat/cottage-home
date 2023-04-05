@@ -21,9 +21,32 @@
 }
 
 .another-banner {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url('../../../../assets/contact.jpg');
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.344) 0%, rgba(0, 0, 0, 0.396) 100%), url('../../../../assets/contact.jpg');
     background-repeat: no-repeat;
    background-size: cover;
+
+
+}
+
+@media only screen and (max-width:688px){
+    .banner{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url('../../../../assets/Home-care.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    background-position: center;
+    }
+
+    .another-banner {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.332) 0%, rgba(0, 0, 0, 0.401) 100%), url('../../../../assets/contact-cover.jpg');
+        background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+    
+    
+    }
+
+    
 
 
 }

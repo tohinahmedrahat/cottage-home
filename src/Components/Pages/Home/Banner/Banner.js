@@ -12,12 +12,12 @@ const Banner = () => {
   return (
     <div>
       <div
-        className="  bg-no-repeat bg-cover bg-center text-center banner "
+        className="  bg-no-repeat bg-cover bg-center text-center banner"
         
       >
         <div className=" tracking-[1px] mx-auto pt-40">
           <div className="h-[150px] max-w-2xl mx-auto mt-[10vh]">
-            <h1 className="md:text-6xl text-2xl px-[15px] text-white font-[PlayfairDisplay] ">
+            <h1 className="md:text-6xl text-4xl px-[15px] text-white font-[PlayfairDisplay] ">
               {/* <Typewriter
                 words={[""]}
                 loop={1000}
@@ -66,7 +66,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-3">
         <div className="flex justify-center bg-[#DBF2F4] py-6">
           <div className=" flex items-center gap-3 lg:gap-5   ">
             <img src={comfort} alt="" className="lg:w-14 w-8 h-8 lg:h-14" />

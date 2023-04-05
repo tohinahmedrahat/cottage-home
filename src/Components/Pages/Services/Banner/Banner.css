@@ -5,3 +5,17 @@
     
 
 }
+
+@media only screen and (max-width:688px){
+    .service-banner {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url('../../../../assets/services-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    
+    }
+    
+
+    
+}

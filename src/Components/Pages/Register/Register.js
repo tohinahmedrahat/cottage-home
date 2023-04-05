@@ -126,40 +126,7 @@ const Register = () => {
                                             id="name" placeholder="your name" className="w-full px-4 py-2 shadow-xl rounded-md dark:border-gray-700 bg-white dark:text-gray-700 focus:outline-none" />
                                         {errors.name && <p className='text-red-600'>{errors.name.message}</p>}
                                     </div>
-                                    {/* <div className="space-y-1 text-sm">
-                                        <label
-                                            htmlFor="dropzone-file"
-                                            className="flex items-center px-3 py-2 mx-auto mt-6 text-center bg-white border   rounded-md cursor-pointer shadow-xl"
-                                        >
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                className="w-6 h-6 text-gray-300 dark:text-gray-500"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                                strokeWidth="2"
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"
-                                                />
-                                            </svg>
-
-                                            <h2 className="mx-3 text-gray-400">Select Your Photo</h2>
-
-                                            <input
-                                                {...register("url", {
-                                                    required: "Image is required",
-                                                })}
-                                                id="dropzone-file"
-                                                type="file"
-                                                className="hidden"
-                                               
-                                            />
-                                        </label>
-                                        {errors.url && <p className='text-red-600'>{errors.url.message}</p>}
-                                    </div> */}
+                                 
 
 <div className="space-y-0.5 text-sm">
                             <div className='flex items-center gap-4'>
@@ -175,7 +142,7 @@ const Register = () => {
                             {...register("url", {
                                 required: "Image is required",
                             })}
-                            className="file-input file-input-secondary border-0  w-full dark:border-gray-700 bg-white dark:text-gray-700 focus:outline-none" />
+                            className=" px-4  py-2 shadow-xl file-input-secondary border-0  w-full dark:border-gray-700 bg-white dark:text-gray-700 focus:outline-none rounded-md" />
                                 
                                 {errors.url && <p className='text-red-600'>{errors.url.message}</p>}
                             </div>

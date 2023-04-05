@@ -8,6 +8,10 @@ import img1 from '../../../../assets/Sherry_Ann_Fiedtkou.jpg';
 import img2 from '../../../../../src/assets/Cinthya_Almendarez.jpg';
 import img3 from '../../../../../src/assets/Natividad_Mateo_Fernandes.jpg';
 import icon from '../../../../../src/assets/blue-quote.jpg'
+import icon1 from '../../../../../src/assets/blue-quote-removebg-preview.png'
+import person1 from '../../../../../src/assets/testimonial/Cinthyaz.jpg'
+import person2 from '../../../../../src/assets/testimonial/Natividad.jpg'
+import person3 from '../../../../../src/assets/testimonial/Sherry.jpg'
 import { SwiperNavButtons } from "../../Services/Services/SwiperNavButtons";
 
 
@@ -20,6 +24,7 @@ export default function Slider() {
 
         {
             image: img2,
+            img2: person1,
             name: "Cinthya Almendarez",
             prev: 1,
             id: 2,
@@ -28,6 +33,7 @@ export default function Slider() {
         },
         {
             image: img1,
+            img2: person3,
             name: "Sherry Fiedtkou",
             prev: 3,
             id: 1,
@@ -36,6 +42,7 @@ export default function Slider() {
         },
         {
             image: img3,
+            img2: person2,
             name: "Natividad Mateo",
             prev: 2,
             id: 3,
@@ -81,13 +88,57 @@ export default function Slider() {
                 {
                     Slider.map(slide => <SwiperSlide
 
+                        
+
                     >
-                        <div className=" md:relative w-full pt-[150px]">
+                        
+                        {/* mobile device start  */}
+
+                        <div
+
+                                    
+                                    className=" relative mt-16 md:mb-10  mb-10   bg-white lg:min-h-[18rem]   rounded-md md:hidden pt-14 md:pt-0 w-[95%] mx-auto
+                                
+                                "
+                                    data-aos="zoom-in"
+                                    data-aos-duration="2000"
+                                >
+
+
+
+
+                                    <div className="rounded overflow-hidden border-[1px] shadow-xl "
+
+                                    >
+                                        <div className="absolute -mt-20 w-full flex justify-center">
+                                            <div className="h-32 w-32">
+                                                <img src={slide?.img2} alt className="rounded-full object-cover h-full w-full shadow-md" loading="lazy" />
+                                            </div>
+                                        </div>
+                                        <div className="px-6 mt-16">
+                                            <div className="font-bold text-2xl text-center pb-1">{slide?.name}</div>
+                                            
+                                            <img src={icon1} alt="" className="w-12 h-12 mt-2" />
+
+                                            <p className="text-justify text-gray-600 text-base pt-1 font-normal">{slide?.description}</p>
+                                            <div className="w-full flex justify-center pt-5 pb-5">                              
+                                            </div>
+
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                        
+
+
+                        {/* mobile device end  */}
+
+                        <div className=" md:relative w-full pt-[150px] hidden md:block">
                             <div className='md:grid grid-cols-8  '>
                                 <div className='col-span-2 md:-mt-[80px] '
                                >
                                     <div className='md:absolute  lg:left-[10%] '>
-                                        <img src={slide.image} className='w-full h-96 rounded-md border-2 border-primary' alt="" />
+                                        <img src={slide.image} className='w-full h-[450px] md:h-96 rounded-md md:border-[1.5px] border-0 border-primary shadow-md' alt="" />
                                     </div>
                                 </div>
                                 <div className='col-span-6 bg-[#EBF8F9] py-6 md:h-[400px] rounded-md px-4'
@@ -113,7 +164,7 @@ export default function Slider() {
 
 
 
-                <div className=" absolute bottom-10 left-1/2  z-50">
+                <div className=" absolute bottom-10 left-1/2  z-50 hidden md:block">
                     <SwiperNavButtons />
                 </div>
             </Swiper>
