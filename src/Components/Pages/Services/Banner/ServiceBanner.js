@@ -17,10 +17,10 @@ const ServiceBanner = () => {
         className=" relative  bg-cover bg-center text-center min-h-[80vh] service-banner"
         
       >
-        <h1 className=" pt-[20vh] text-3xl lg:text-5xl relative font-bold font-[PlayfairDisplay] afterEffect mb-5 text-center px-5 text-white">
+        <h1 className=" pt-[30vh] md:pt-[20vh] text-4xl lg:text-5xl relative font-bold font-[PlayfairDisplay] afterEffect mb-5 text-center px-5 text-white">
             Services
           </h1>
-        <div className="md:pt-[15vh]">
+        <div className="md:pt-[15vh] ">
         
             <div className=" mx-auto  ">
               <div className="rounded-md bg-contact-2 md:max-w-3xl lg:max-w-4xl mx-auto text-white">
@@ -30,7 +30,7 @@ const ServiceBanner = () => {
           <p className="text-center tracking-wide text-lg md:text-xl  px-5 font-bold">
             A Little About What We Do
           </p>
-          <p className=" mt-5 w-[95%]  mx-auto  text-justify text-base ">
+          <p className=" mt-5 w-[95%]  mx-auto  text-justify text-sm md:text-base ">
             Our experienced and highly trained caregivers provide the highest
             quality of care to both patients and their families. Our goal is to
             help individuals and their loved ones live happy and fulfilling

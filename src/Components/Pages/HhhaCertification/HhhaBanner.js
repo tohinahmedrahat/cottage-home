@@ -1,9 +1,8 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import image1 from "../../../assets/MedicalJobPlacement1.jpg";
 import hhaLogo from '../../../assets/hhalogo.png'
-
 import { FiPhone } from "react-icons/fi";
+import './HhhaCertification.css'
 
 const HhhaBanner = () => {
   const handleDone = () => {
@@ -17,13 +16,8 @@ const HhhaBanner = () => {
     <section>
       <div>
         <div
-          style={{
-            backgroundImage: `url(${image1})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-          className="relative bg-cover bg-center bg-no-repeat h-[80vh]"
+          
+          className="relative bg-cover bg-center bg-no-repeat h-[80vh] hha-banner"
         >
           <div className="absolute inset-0 bg-[#00000028] sm:bg-transparent sm:bg-gradient-to-r sm:from-[#0000006d] sm:to-[#02020217]"></div>
 
@@ -46,7 +40,7 @@ const HhhaBanner = () => {
               
               </div>
 
-              <p className="mt-4 text-start sm:text-xl md:text-4xl sm:leading-relaxed text-white font-medium ">
+              <p className="mt-4 text-start text-xl md:text-4xl sm:leading-relaxed text-white font-medium ">
                 Brooklyn Institute of  Vocational Training 
               </p>
 

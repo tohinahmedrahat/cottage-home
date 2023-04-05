@@ -185,7 +185,7 @@ const EditForm = () => {
                                 )}
                             </div>
 
-                            <div className="space-y-0.5 text-sm">
+                            {/* <div className="space-y-0.5 text-sm">
                                 <label
                                     htmlFor="dropzone-file"
                                     className="flex items-center px-3 py-2 mx-auto mt-6 text-center border text-gray-700 focus:outline-[#00a6b265] bg-[#EBF8F9]
@@ -217,6 +217,23 @@ const EditForm = () => {
                                     />
                                 </label>
                                 
+                            </div> */}
+
+<div className="space-y-0.5 text-sm">
+                            <div className='flex items-center gap-4'>
+                            <label htmlFor="firstName" className="block dark:text-gray-400">
+                                   Image
+                                </label>
+                                
+                            <small className='text-red-500'>[ Image should not be large then 200 KB ] </small>
+                            </div>
+
+                            <input type="file"
+                            
+                            {...register("url")}
+                            className="file-input file-input-secondary border-0  w-full  text-gray-700 focus:outline-[#00a6b265] bg-[#EBF8F9] focus:bg-white shadow-md" />
+                               
+                               
                             </div>
 
 

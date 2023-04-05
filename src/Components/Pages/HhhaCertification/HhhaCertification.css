@@ -1,0 +1,27 @@
+
+.hha-banner {
+    background-image: url('../../../../src/assets/MedicalJobPlacement1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    background-position: center;
+
+
+}
+
+@media only screen and (max-width:688px){
+
+    .hha-banner {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.244) 0%, rgba(0, 0, 0, 0.278) 100%), url('../../../../src/assets/hha-cover-for-mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 80vh;
+        background-position: center;
+    
+    
+    }
+
+
+}
+
+
