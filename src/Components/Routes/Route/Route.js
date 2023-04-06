@@ -22,6 +22,7 @@ import LongIsland from "../../Pages/DashBoard/LongIsland/LongIsland";
 import QueensOffice from "../../Pages/DashBoard/QueensOffice/QueensOffice";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import HhhaCertification from "../../Pages/HhhaCertification/HhhaCertification";
+import History from "../../Pages/History/History";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/LogIn/Login";
 import Main from "../../Pages/Main/Main";
@@ -30,6 +31,7 @@ import PrivateRoute from "../../Pages/PrivateRoute/PrivateRoute";
 import Register from "../../Pages/Register/Register";
 import Resources from "../../Pages/Resources/Resources";
 import Services from "../../Pages/Services/Services/Services";
+import TermCondition from "../../Pages/TermCondition/TermCondition";
 import Values from "../../Pages/Values/Values";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -89,8 +91,16 @@ const Route = createBrowserRouter([
        element:<TeamMembers></TeamMembers>
       },
       {
+        path: "/termConditions",
+       element:<TermCondition></TermCondition>
+      },
+      {
         path: "/values",
        element:<Values></Values>
+      },
+      {
+        path: "/history",
+       element:<History></History>
       },
       {
         path: '/blogs/:id',

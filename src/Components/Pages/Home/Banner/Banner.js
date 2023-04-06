@@ -44,13 +44,10 @@ const Banner = () => {
                   </p>
                   <p className="text-white text-xl text-justify">-</p>
                   <p className="text-white text-sm text-justify font-normal">
-                    Our company focuses on enhancing and building its people -
-                    staff, patients, and all others; a principle that has earned
-                    it a reputation for being generous, so much so that Cottage
-                    Care is known for lending a helping hand.
+                  Our company focuses on enhancing and building our people - staff, patients, and all others; a principle that has earned us a reputation for being generous, so much so that Cottage Care is known for lending a helping hand to seniors throughout New York City. 
                   </p>
                   <h4 className=" md:text-xl text-sm font-semibold text-[#dbf2f4] font-[Roboto] mb-8 px-5 md:px-0 mt-5">
-                    “HHA/PCA & CDPAP SERVICES THROUGHOUT NEW YORK CITY, WESTCHESTER, ALBANY,  NASSAU & SUFFOLK COUNTY”
+                    “HHA/PCA & CDPAP SERVICES THROUGHOUT NEW YORK CITY, NASSAU & SUFFOLK COUNTY, WESTCHESTER & ALBANY”
                   </h4>
                   <div className=" md:mt-[4vh] flex justify-center text-white font-semibold gap-8">
                     <a

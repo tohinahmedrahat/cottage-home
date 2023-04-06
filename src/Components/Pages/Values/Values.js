@@ -7,7 +7,7 @@ const Values = () => {
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
 
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-primary sm:text-4xl md:mx-auto">
+          <h2 className="max-w-lg mb-2 font-sans text-3xl font-bold leading-none tracking-tight text-gary-600 sm:text-4xl md:mx-auto">
             <span className="relative inline-block">
               <svg
                 viewBox="0 0 52 24"
@@ -35,8 +35,9 @@ const Values = () => {
             </span>{' '}
             Values, Of Cottage Home Care Services
           </h2>
-          <p className="text-base text-gray-700 md:text-lg font-medium py-2">
-          “HHA/PCA & CDPAP SERVICES THROUGHOUT NEW YORK CITY, WESTCHESTER, ALBANY, NASSAU & SUFFOLK COUNTY”
+          <hr className='mt-3 border-t-[1px] border-primary w-16 mx-auto ' />
+          <p className="text-base text-gray-700 md:text-lg font-medium mt-5 py-2">
+          “HHA/PCA & CDPAP SERVICES THROUGHOUT NEW YORK CITY, NASSAU & SUFFOLK COUNTY, WESTCHESTER & ALBANY”
           </p>
         </div>
         <div className="grid max-w-screen-lg mx-auto space-y-6 lg:grid-cols-2 lg:space-y-0 lg:divide-x">
@@ -209,7 +210,7 @@ const Values = () => {
         </div>
 
         <p className='mt-10 text-center text-gray-900 italic'>
-        Overall, home care services offer a range of values and benefits for individuals who require assistance with daily living activities.
+        Overall, <span className='font-medium'>Cottage Home Care Services</span> offer a range of values and benefits for individuals who require assistance with daily living activities.
         </p>
       </div>
     );

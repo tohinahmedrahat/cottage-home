@@ -64,7 +64,11 @@ const Footer = () => {
 							<li>
 
 								
-								<Link rel="noopener noreferrer "  
+								<Link 
+								
+								to='/history'
+								
+								rel="noopener noreferrer "  
 								className='hover:text-primary'>
 									
 									History</Link>
@@ -74,13 +78,14 @@ const Footer = () => {
 					<div className="space-y-3">
 						<h3 className="uppercase dark:text-gray-50">Contact Info</h3>
 						<ul className="space-y-1">
+						<li>
+							<a href="tel:+1516-367-2266">Phone: <span className='hover:text-primary '> 516-367-2266</span></a>
+							</li>
 							
 							<li>
 							<a href="mailto:info@cottagehomecare.com" className='hover:text-primary '> info@cottagehomecare.com</a>
 							</li>
-							<li>
-							<a href="tel:+1516-367-2266">Phone: <span className='hover:text-primary '> 516-367-2266</span></a>
-							</li>
+							
 						</ul>
 					</div>
 					<div className="space-y-3">

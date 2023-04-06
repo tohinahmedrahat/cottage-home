@@ -12,9 +12,9 @@ const ResourceBanner = () => {
         // console.log(`Done after 5 loops!`);
     };
     return (
-        <div className='resource-Banner '>
+        <div className='resource-Banner h-[80vh]  '>
 
-            <div className='text-center pt-[15vh] flex justify-center'>
+            <div className='text-center pt-[20vh] flex justify-center'>
                 <h1 className="md:text-4xl text-3xl px-4 md:px-0  text-white font-[PlayfairDisplay]  font-semibold w-[440px]  h-[100px]">
                     <Typewriter
                         words={["All Internal Resources You Can Use For Your Needs"]}

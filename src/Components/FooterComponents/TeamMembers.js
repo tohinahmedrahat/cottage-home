@@ -257,13 +257,14 @@ const TeamMembers = () => {
     return (
         <div>
 
-            <div>
+            <div className='min-h-screen'>
                 <div className="container flex justify-center mx-auto pt-10">
                     <div>
 
 
                         <p className="text-gray-500 text-lg text-center font-normal pb-3">Meet our Team</p>
-                        <h1 className="xl:text-3xl text-2xl text-center text-primary font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto playrify">The Talented People Behind the Scenes of the Organization</h1>
+                        <h1 className="xl:text-3xl text-2xl text-center text-gray-700 font-extrabold  sm:w-4/6 w-5/6 mx-auto playrify">The Talented People Behind the Scenes of the Organization</h1>
+                        <hr className='mt-3 border-t-[1px] border-primary w-16 mx-auto pb-6' />
                     </div>
                 </div>
                 <div className="w-full bg-gray-100 px-10 pt-10">
