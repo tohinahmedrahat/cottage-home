@@ -44,7 +44,7 @@ const WeAre = () => {
           {informations.map((info, index) => (
             <div
               key={index}
-              className="mt-16
+              className="md:mt-16
                             p-4"
               data-aos="zoom-in"
               data-aos-duration="1000"

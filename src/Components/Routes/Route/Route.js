@@ -30,6 +30,7 @@ import PrivateRoute from "../../Pages/PrivateRoute/PrivateRoute";
 import Register from "../../Pages/Register/Register";
 import Resources from "../../Pages/Resources/Resources";
 import Services from "../../Pages/Services/Services/Services";
+import Values from "../../Pages/Values/Values";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -86,6 +87,10 @@ const Route = createBrowserRouter([
       {
         path: "/team",
        element:<TeamMembers></TeamMembers>
+      },
+      {
+        path: "/values",
+       element:<Values></Values>
       },
       {
         path: '/blogs/:id',

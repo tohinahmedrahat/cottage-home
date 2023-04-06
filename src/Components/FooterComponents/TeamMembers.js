@@ -277,7 +277,8 @@ const TeamMembers = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-10 lg:gap-20 team-member">
                             {/* lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around */}
                             {
-                                employees?.map((employer, index) => <div
+                                employees?.map((employer, index) => 
+                                <div
 
                                     key={index}
                                     className=" relative mt-16 md:mb-10  mb-10 w-full  bg-white lg:min-h-[18rem] shadow-md rounded-md
@@ -306,7 +307,7 @@ const TeamMembers = () => {
                                                 {
                                                     employer?.facebook == null || employer?.facebook === "" ?
                                                         <>
-                                                            <a href="javascript:void(0)" className="mx-5">
+                                                            <a href="javascript:void(0)" className="mx-5 bg-hov2">
                                                                 <div >
                                                                     <FiFacebook className='text-[#828FA3] text-2xl ' />
 
@@ -317,7 +318,7 @@ const TeamMembers = () => {
                                                         <>
                                                             <a href={employer?.facebook}
                                                                 target='_blank'
-                                                                className="mx-5">
+                                                                className="mx-5 bg-hov2">
                                                                 <div>
                                                                     <FiFacebook className='text-[#828FA3] text-2xl ' />
 
@@ -331,7 +332,7 @@ const TeamMembers = () => {
 
                                                     employer?.twitter == null || employer?.twitter === "" ?
                                                         <>
-                                                            <a href="javascript:void(0)" className="mx-5">
+                                                            <a href="javascript:void(0)" className="mx-5 bg-hov2">
                                                                 <div>
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter">
                                                                         <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
@@ -344,7 +345,7 @@ const TeamMembers = () => {
                                                         <>
                                                             <a href={employer?.twitter}
                                                                 target="_blank"
-                                                                className="mx-5">
+                                                                className="mx-5 bg-hov2">
                                                                 <div>
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter">
                                                                         <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
@@ -359,7 +360,7 @@ const TeamMembers = () => {
                                                 {
                                                     employer?.instagram == null || employer?.instagram === "" ?
                                                         <>
-                                                            <a href="javascript:void(0)" className="mx-5">
+                                                            <a href="javascript:void(0)" className="mx-5 bg-hov2">
                                                                 <div>
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram">
                                                                         <rect x={2} y={2} width={20} height={20} rx={5} ry={5} />
@@ -373,7 +374,7 @@ const TeamMembers = () => {
                                                         <>
                                                             <a href={employer?.instagram}
                                                                 target='_blank'
-                                                                className="mx-5">
+                                                                className="mx-5 bg-hov2">
                                                                 <div>
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram">
                                                                         <rect x={2} y={2} width={20} height={20} rx={5} ry={5} />
