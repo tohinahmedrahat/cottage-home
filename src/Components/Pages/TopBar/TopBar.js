@@ -1,8 +1,6 @@
 import React from 'react';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
-
-import { GrGooglePlus } from 'react-icons/gr';
 import { BsTwitter } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
 import { TfiEmail } from 'react-icons/tfi';
@@ -45,14 +43,14 @@ const TopBar = () => {
                             
                         </ul>
                     </div> */}
-                    <a href="https://www.facebook.com/CottageHCS" target='_blank'><BsFacebook className='md:text-2xl ' /></a>
+                    <a href="https://www.facebook.com/CottageHCS" target='_blank'><BsFacebook className='md:text-2xl bg-hov2' /></a>
 
 
                     <a href="https://www.instagram.com/cottagehcs/" target='_blank'>
-                        <BsInstagram className='md:text-2xl ' />
+                        <BsInstagram className='md:text-2xl bg-hov2' />
                     </a>
                     <a href="https://twitter.com/cottagecareny" target='_blank'>
-                        <BsTwitter className='md:text-2xl ' />
+                        <BsTwitter className='md:text-2xl bg-hov2' />
 
                     </a>
 

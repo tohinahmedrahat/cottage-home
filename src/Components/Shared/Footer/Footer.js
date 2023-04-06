@@ -20,7 +20,11 @@ const Footer = () => {
 				</div>
 				<div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
 					<div className="space-y-3">
-						<Link className="tracking-wide uppercase text-gray-50 hover:text-primary">Term & Condition</Link>
+						<Link
+						
+						to='/termConditions'
+						
+						className="tracking-wide uppercase text-gray-50 hover:text-primary">Term & Condition</Link>
 						<ul className="space-y-1">
 							<li>
 								<Link
@@ -31,7 +35,10 @@ const Footer = () => {
 								rel="noopener noreferrer">Mission & Vision </Link>
 							</li>
 							<li>
-								<Link rel="noopener noreferrer" className=' hover:text-primary'>  Values</Link>
+								<Link
+								
+								to='/values'								
+								rel="noopener noreferrer" className=' hover:text-primary'>  Values</Link>
 							</li>
 														
 						</ul>

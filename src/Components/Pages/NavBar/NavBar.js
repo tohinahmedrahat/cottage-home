@@ -57,7 +57,7 @@ const NavBar = () => {
             document.getElementById("navBar").className = "";
         }
     }
-    
+
 
     return (
         <div className="sticky top-0  roboto  z-50" id='navBar'>
@@ -150,7 +150,7 @@ const NavBar = () => {
                             </NavLink>
                         </li>
 
-                       
+
                         <li>
                             <NavLink
                                 to='/resources'
@@ -275,9 +275,9 @@ const NavBar = () => {
                                                 title="Learn With Programming"
                                                 className="inline-flex items-center"
                                             >
-                                                <img src={navLogo} className='w-14 h-14 rounded-full border-2 border-primary p-1' alt="" />
-                                                <span className="ml-2 text-lg font-medium  tracking-wide text-[#49465D] hover:text-blue-900">
-                                                    Cottage Home Care Services
+                                                <img src={navLogo} className='w-16 h-16 rounded-full border-2 border-primary p-1' alt="" />
+                                                <span className="ml-2 text-2xl text-primary font-medium  tracking-wide hover:text-blue-900">
+                                                    Cottage Home <br /> Care Services
                                                 </span>
                                             </NavLink>
                                         </div>
@@ -422,7 +422,7 @@ const NavBar = () => {
                                                     aria-label="Home"
                                                     title="Home"
                                                     className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                ${navColor && 'customWhite'} white  uppercase`}
                                                 >
                                                     Home
                                                 </NavLink>
@@ -433,7 +433,7 @@ const NavBar = () => {
                                                     aria-label="services"
                                                     title="services"
                                                     className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                ${navColor && 'customWhite'} white  uppercase`}
                                                 >
                                                     Services
                                                 </NavLink>
@@ -446,7 +446,7 @@ const NavBar = () => {
                                                     aria-label="Contact US"
                                                     title="Contact US"
                                                     className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                ${navColor && 'customWhite'} white  uppercase`}
                                                 >
                                                     Contact US
                                                 </NavLink>
@@ -457,7 +457,7 @@ const NavBar = () => {
                                                     aria-label="HHA Certification"
                                                     title="HHA Certification"
                                                     className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                ${navColor && 'customWhite'} white  uppercase`}
                                                 >
                                                     HHA Certification
                                                 </NavLink>
@@ -469,20 +469,20 @@ const NavBar = () => {
                                                     aria-label="Covid-19"
                                                     title="Covid-19"
                                                     className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                ${navColor && 'customWhite'} white  uppercase`}
                                                 >
                                                     Covid-19
                                                 </NavLink>
                                             </li>
 
-                                          
+
                                             <li>
                                                 <NavLink
                                                     to='/resources'
                                                     aria-label="Resources"
                                                     title="Resources"
                                                     className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                ${navColor && 'customWhite'} white  uppercase`}
                                                 >
                                                     Resources
                                                 </NavLink>
@@ -493,7 +493,7 @@ const NavBar = () => {
                                                     aria-label="Blog"
                                                     title="Blog"
                                                     className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                ${navColor && 'customWhite'} white  uppercase`}
                                                 >
                                                     Blog
                                                 </NavLink>
@@ -509,7 +509,7 @@ const NavBar = () => {
                                                                     aria-label="Dash Board"
                                                                     title="Dash Board"
                                                                     className={`font-medium  text-base  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                ${navColor && 'customWhite'} white  uppercase`}
                                                                 >
                                                                     Dash Board
                                                                 </NavLink>
@@ -535,7 +535,7 @@ const NavBar = () => {
 
                                                         <button
                                                             onClick={handleLogOut}
-                                                            className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base text-base rounded-full text-white bg-hov2'>
+                                                            className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base text-base rounded-full text-white bg-hov2 uppercase'>
                                                             Sign Out
                                                         </button>
 
@@ -553,9 +553,9 @@ const NavBar = () => {
                                                                 aria-label="Sign Up"
                                                                 title="Sign Up"
                                                                 className={`font-medium  text-lg  tracking-wide text-[#49465D] transition-colors duration-200  
-                                ${navColor && 'customWhite'} white `}
+                                ${navColor && 'customWhite'} white  uppercase`}
                                                             >
-                                                                <button className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base text-base rounded-full text-white bg-hov2'>
+                                                                <button className='bg-primary  lg:px-6 lg:py-3 px-3 py-2 lg:text-base text-base rounded-full text-white bg-hov2 uppercase'>
                                                                     Sign In
                                                                 </button>
                                                             </NavLink>

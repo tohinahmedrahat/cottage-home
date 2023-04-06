@@ -215,8 +215,8 @@ const EasierLife = () => {
                   CONTACT FORM
                 </h1>
 
-                <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
-                  <div className="space-y-1   text-sm">
+                <div className="grid grid-cols-1 gap-3 md:gap-6 md:mt-4 sm:grid-cols-2">
+                  <div className="md:space-y-1 text-sm ">
                     <label
                       htmlFor="firstName"
                       className="block dark:text-gray-400"
@@ -230,7 +230,7 @@ const EasierLife = () => {
                       })}
                       id="firstName"
                       placeholder="Full Name"
-                      className="w-full px-4 py-3 rounded-md border text-gray-700 focus:outline-[#00a6b265] bg-[#EBF8F9]
+                      className="w-full px-4  py-3 rounded-md border text-gray-700 focus:outline-[#00a6b265] bg-[#EBF8F9]
                                         focus:bg-white shadow-md"
                     />
 
@@ -239,7 +239,7 @@ const EasierLife = () => {
                     )}
                   </div>
 
-                  <div className="space-y-1    text-sm">
+                  <div className="md:space-y-1  text-sm ">
                     <label htmlFor="phone" className="block dark:text-gray-400">
                       Phone
                     </label>
