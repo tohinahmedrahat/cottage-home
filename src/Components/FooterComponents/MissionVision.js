@@ -10,8 +10,9 @@ const MissionVision = () => {
     <div className='min-h-screen '>
 
       <div className='md:w-[85%] w-[95%] mx-auto mt-5 mb-20'>
-        <h1 className='text-center my-5 playrify font-semibold text-primary md:text-3xl text-2xl'> Mission And Vision Of Cottage Care </h1>
-        <div className='md:grid grid-cols-8  gap-8 items-center'>
+        <h1 className='text-center mt-5 playrify font-semibold text-gray-700 md:text-3xl text-2xl'> Mission And Vision Of Cottage Care </h1>
+        <hr className='mt-2 border-t-[1px] border-primary w-16 mx-auto ' />
+        <div className='md:grid grid-cols-8  gap-8 items-center mt-2'>
           <div className='md:col-span-4 lg:col-span-2 text-gray-600 mt-5'
 
             data-aos="fade-right"

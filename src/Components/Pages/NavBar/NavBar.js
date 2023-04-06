@@ -74,7 +74,7 @@ const NavBar = () => {
                                 <img src={navLogo} className='nav-img  shadow-2xl p-2 border-2 border-primary rounded-full' alt="" />
                                 <h5 className={` ml-4  font-semibold tracking-wide text-[#00A6B2] transition-colors duration-200 nav-font`}>
                                     Cottage Home Care Services
-                                    <hr className='mt-2 border-[1px] border-[#49465D]' />
+                                    <hr className='border-[1px] -mt-0.5 border-[#49465D]' />
                                     <p className='font-semibold top-title text-center text-[#49465D]'>
 
                                         THE RIGHT HOME CARE FOR YOU</p>
