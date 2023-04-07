@@ -4,8 +4,13 @@ import img from '../../../../src/assets/blog-1.jpg'
 import HistoryModal from './HistoryModal';
 
 const History = () => {
-
+  window.scrollTo(0, 0);
   const [newHistory, setHistory] = useState("")
+  const historyHandler =(newHis)=>{
+
+    setHistory(newHis)
+
+  }
 
   const history = [
     {
@@ -22,11 +27,7 @@ const History = () => {
     }
   ]
 
-    const historyHandler =(newHis)=>{
-
-      setHistory(newHis)
-
-    }
+    
 
     return (
         <div className="px-4 py-16 mx-auto w-[95%]   md:px-24 lg:px-8 lg:pb-20 lg:pt-10">
@@ -85,7 +86,7 @@ const History = () => {
            
           </div>
         </div>
-        <div className='lg:col-span-2'>
+        <div className='lg:col-span-2 order-first sm:order-none'>
           <img
             className="object-cover w-full h-56 rounded shadow-lg sm:h-80"
             src={img}

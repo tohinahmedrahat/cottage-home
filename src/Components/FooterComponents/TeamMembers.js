@@ -40,7 +40,7 @@ const TeamMembers = () => {
     const deleteHandler = (employer) => {
 
         const proceed = window.confirm(
-            `Are you sure, you want to delete ${employer?.name}`
+            `Are you sure, you want to delete ${employer?.name}?`
         );
         if (proceed) {
             fetch(`https://cottage-home-care-services-server-site.vercel.app/employees/${employer?._id}`, {
@@ -303,7 +303,7 @@ const TeamMembers = () => {
                                         <div className="px-6 mt-16">
                                             <div className="font-bold text-3xl text-center pb-1">{employer?.name}</div>
                                             <p className="text-gray-800 text-sm text-center">{employer?.designation}</p>
-                                            <p className="text-center text-gray-600 text-base pt-3 font-normal">{employer?.description}</p>
+                                            <p className="text-justify text-gray-700 text-base pt-3 font-normal source-sans">{employer?.description}</p>
                                             <div className="w-full flex justify-center pt-5 pb-5">
                                                 {
                                                     employer?.facebook == null || employer?.facebook === "" ?

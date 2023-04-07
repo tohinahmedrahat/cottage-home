@@ -94,10 +94,8 @@ export default function Slider() {
                         
                         {/* mobile device start  */}
 
-                        <div
-
-                                    
-                                    className=" relative mt-16 md:mb-10  mb-10   bg-white lg:min-h-[18rem]   rounded-md md:hidden pt-14 md:pt-0 w-[95%] mx-auto
+                        <div   
+                                    className=" relative mt-16 md:mb-10  mb-10   bg-white lg:min-h-[18rem]   rounded-md  md:hidden pt-14 md:pt-0 w-[95%] mx-auto
                                 
                                 "
                                     data-aos="zoom-in"

@@ -46,7 +46,7 @@ const HhhaContactForm = () => {
   return (
     <div className="contact-container border-t-2 border-white py-5">
       <div
-        className="w-[90%] md:w-[75%] mx-auto bg-[#F4F4F4] opacity-90    
+        className="w-[90%]  lg:w-[75%] mx-auto bg-[#F4F4F4] opacity-90    
             lg:my-[50px] contact-adjustment lg:pb-3 rounded-md shadow-lg my-10 "
         data-aos="fade-up"
         data-aos-duration="2000"

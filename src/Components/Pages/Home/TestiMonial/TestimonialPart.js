@@ -11,7 +11,7 @@ const TestimonialPart = () => {
             <div className='flex justify-center'>
                <hr  className='bg-primary px-5 mt-2 py-[1px] w-[220px]'/>
                </div>
-            <div >
+            <div  >
 
                <Slider></Slider> 
             </div>

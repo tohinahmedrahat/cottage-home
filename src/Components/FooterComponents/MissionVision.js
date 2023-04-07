@@ -12,7 +12,7 @@ const MissionVision = () => {
       <div className='md:w-[85%] w-[95%] mx-auto mt-5 mb-20'>
         <h1 className='text-center mt-5 playrify font-semibold text-gray-700 md:text-3xl text-2xl'> Mission And Vision Of Cottage Care </h1>
         <hr className='mt-2 border-t-[1px] border-primary w-16 mx-auto ' />
-        <div className='md:grid grid-cols-8  gap-8 items-center mt-2'>
+        <div className='grid md:grid-cols-8  gap-8 items-center mt-2'>
           <div className='md:col-span-4 lg:col-span-2 text-gray-600 mt-5'
 
             data-aos="fade-right"
@@ -29,7 +29,7 @@ const MissionVision = () => {
             </p>
 
           </div>
-          <div className='lg:col-span-2 md:col-span-4  mt-5 '>
+          <div className='lg:col-span-2 md:col-span-4  mt-5 order-first sm:order-none '>
 
             <img src={pic1} alt="" className='w-full md:h-96'
 
@@ -40,7 +40,7 @@ const MissionVision = () => {
             />
 
           </div>
-          <div className='col-span-4 mt-5 hidden lg:block'>
+          <div className='lg:col-span-4 mt-5 hidden lg:block'>
             <img src={pic2} alt="" className='w-full md:h-96'
 
               data-aos="fade-left"
@@ -50,8 +50,8 @@ const MissionVision = () => {
 
         </div>
 
-        <div className='md:grid grid-cols-8  gap-8 items-center mt-3'>
-          <div className='col-span-4 mt-5 hidden lg:block'>
+        <div className='grid md:grid-cols-8  gap-8 items-center mt-3'>
+          <div className='lg:col-span-4 mt-5 hidden lg:block'>
             <img src={pic4} alt="" className='w-full md:h-96'
 
               data-aos="fade-right"

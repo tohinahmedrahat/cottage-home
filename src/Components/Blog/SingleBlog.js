@@ -109,13 +109,13 @@ const SingleBlog = () => {
                                 description.map((des, index) => <div
                                     key={index}
 
-                                    className='mt-5'
+                                    className='mt-5 px-2 md:px-0'
                                 >
                                     <h3 className='text-xl playrify  font-medium'>
                                         {des?.sub_title}
                                     </h3>
 
-                                    <p className='text-justify mt-1.5 text-[#6c6262]'>
+                                    <p className='text-justify mt-1.5 text-[#6c6262] '>
                                         {
                                             des?.content
                                         }

@@ -12,7 +12,7 @@ const Footer = () => {
 			<div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
 				<div className="lg:w-1/3">
 					<a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
-						<div className="flex items-center justify-center w-16 h-16 rounded-full bg-white shadow-xl ">
+						<div className="flex items-center justify-center w-16 h-16 rounded-full bg-white shadow-xl border-2 border-primary">
 							<img src={footerLogo} alt="" className='p-2 ' />
 						</div>
 						<span className="self-center text-2xl font-semibold">Cottage Home Care Services</span>

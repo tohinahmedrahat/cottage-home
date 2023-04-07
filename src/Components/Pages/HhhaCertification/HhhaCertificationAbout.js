@@ -9,8 +9,8 @@ const HhhaCertificationAbout = () => {
   return (
     <div className="w-[95%] md:w-[90%] lg:w-[85%] mx-auto my-14">
          
-      <div className="md:grid grid-cols-5 gap-8 items-center">
-        <div className="col-span-2 mt-5 ">
+      <div className="grid lg:grid-cols-5 gap-8 items-center">
+        <div className="lg:col-span-2 mt-5 ">
         <div className="flex flex-col justify-center lg:p-6 text-start rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
         <div
           className="flex items-center "
@@ -68,7 +68,7 @@ const HhhaCertificationAbout = () => {
       </div>
 
         </div>
-        <div className="col-span-3 mt-5 order-first sm:order-none ">
+        <div className="lg:col-span-3 mt-5 order-first lg:order-none ">
           
          <div>
           <HhaCarousel></HhaCarousel>
