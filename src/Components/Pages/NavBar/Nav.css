@@ -138,7 +138,7 @@
 
 @media only screen and (min-width:1000px) and (max-width:1366px){
     .nav-font{
-        font-size: 20px;
+        font-size: 22px;
    
         /* font-size: 5em; */
     
@@ -147,8 +147,8 @@
     .nav-img{
    
        /* w-[80px] h-[80px] */
-       width: 70px ;
-       height: 70px;
+       width: 65px ;
+       height: 65px;
    }
 
    
@@ -161,7 +161,7 @@
      
  }
  .nav-font{
-     font-size: 26px;
+     font-size: 23px;
 
      /* font-size: 5em; */
  
@@ -170,8 +170,8 @@
  .nav-img{
 
     /* w-[80px] h-[80px] */
-    width: 80px ;
-    height: 80px;
+    width: 70px ;
+    height: 70px;
 }
 
 
