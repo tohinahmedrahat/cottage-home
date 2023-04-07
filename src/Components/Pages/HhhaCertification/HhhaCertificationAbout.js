@@ -18,7 +18,7 @@ const HhhaCertificationAbout = () => {
           data-aos-duration="500"
         >
           <FaStar className="mr-3 text-[#00A6B2] text-2xl"></FaStar>
-          <h3 className="font-semibold text-lg lg:w-80 text-justify">
+          <h3 className="font-semibold text-lg lg:w-80 text-justify w-[98%]">
             <h5 className="text-[#00a6b2] font-semibold text-lg">
               Dedicated Educators{" "}
             </h5>
@@ -35,7 +35,7 @@ const HhhaCertificationAbout = () => {
           data-aos-duration="1500"
         >
           <FaStar className="mr-3 text-[#00A6B2] text-2xl"></FaStar>
-          <h3 className="font-semibold text-lg lg:w-80 text-justify">
+          <h3 className="font-semibold text-lg lg:w-80 text-justify w-[98%]">
             <h5 className="text-[#00a6b2] font-semibold text-lg">
               {" "}
               Immediate Job Placement{" "}
@@ -53,7 +53,7 @@ const HhhaCertificationAbout = () => {
           data-aos-duration="2000"
         >
           <FaStar className="mr-3 text-[#00A6B2] text-2xl"></FaStar>
-          <h3 className="font-semibold text-lg lg:w-80 text-justify">
+          <h3 className="font-semibold text-lg lg:w-80 text-justify w-[98%]">
             <h5 className="text-[#00a6b2] font-semibold text-lg">
               {" "}
               First-Rate Course Offerings{" "}
