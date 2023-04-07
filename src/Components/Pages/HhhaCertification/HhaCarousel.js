@@ -67,7 +67,7 @@ export default function Slider() {
                 </SwiperSlide>)
             }
                 
-                <div className=" absolute bottom-5 left-[60%] lg:left-[80%]  z-50">
+                <div className=" absolute bottom-5 left-[60%] lg:left-[80%]  z-50 hidden md:block">
                 <SliderButton></SliderButton>
                 </div>
             </Swiper>

@@ -73,7 +73,7 @@ const Welcome = () => {
                         <div>
                         <div className=' md:w-[70%] mx-auto lg:pl-4  md:ml-[18%]  '>
                             <img src={icon} alt="" />
-                            <p className='roboto font-bold text-xl md:h-[40px] lg:h-[20px]'>
+                            <p className='roboto font-bold text-[17px] md:text-xl md:h-[40px] lg:h-[20px]'>
                         <Typewriter
                             words={['“A Message from our CEO & Administrator”']}
                             loop={1000}
@@ -87,7 +87,7 @@ const Welcome = () => {
                         />
                          
                              </p>
-                        <p className='mt-3 roboto font-bold text-xl'>
+                        <p className='mt-3 roboto font-bold text-[17px] md:text-xl '>
                             “Welcome”
                         </p>
                             <p className='text-justify italic mt-2 text-[#67637E]'>“ My commitment to providing a reliable, professional, caring and utmost friendly service through my agency is my number one priority. That is why if you have any serious inquiries or concerns or looking for an agency that truly cares, I urge you to call me directly. Those interested in Home Health Care and the CDPAP may also contact me at any time!

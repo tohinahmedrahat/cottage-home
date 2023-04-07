@@ -4,10 +4,10 @@ import { IoIosArrowForward } from 'react-icons/io';
 
 const ServiceCard = () => {
     return (
-        <div className='my-20'>
-            <div className=' w-[95%] lg:w-[70%] mx-auto md:grid grid-cols-2 gap-10 text-white'>
+        <div className='lg:my-20 my-10'>
+            <div className=' w-[95%] lg:w-[70%] mx-auto grid md:grid-cols-1 lg:grid-cols-2 lg:gap-10  gap-5 text-white'>
 
-                <div className='  bg-[#00A6B2] mt-5 shadow-xl text-center p-4 bg-hov2'>
+                <div className='  bg-[#00A6B2] mt-5 shadow-xl text-center p-4 bg-hov2 rounded-md'>
                     <div className="mb-6 md:px-4 mt-3">
                         <p className=" text-lg md:text-2xl font-semibold tracking-tight text-white ">
                             HHA / PCA
@@ -27,7 +27,7 @@ const ServiceCard = () => {
                                     Reliable medication reminders, so a dose is never forgotten.
                                 </span>
                             </p>
-                            <p className="flex text-start justify-center items-center mb-5">
+                            <p className="flex text-start lg:justify-center items-center mb-5">
                                 <span className="text-[#00a6b2] bg-[#ebf8f9] rounded-full mr-3">
                                     <HiStar className="text-3xl" />
                                 </span>
@@ -36,7 +36,7 @@ const ServiceCard = () => {
                                     nutrition they need.
                                 </span>
                             </p>
-                            <p className="flex text-start justify-center items-center mb-5">
+                            <p className="flex text-start lg:justify-center items-center mb-5">
                                 <span className="text-[#00a6b2] bg-[#ebf8f9] rounded-full mr-3">
                                     <HiStar className="text-3xl" />
                                 </span>
@@ -60,7 +60,7 @@ const ServiceCard = () => {
                         </div>
                     </div>
                 </div>
-                <div className='  bg-[#00A6B2] mt-5 shadow-xl text-center p-4 bg-hov2'>
+                <div className='  bg-[#00A6B2] mt-5 shadow-xl text-center p-4 bg-hov2 rounded-md'>
                     <div className="mb-6 md:px-4 mt-3">
                         <p className=" text-lg md:text-2xl font-semibold tracking-tight text-white ">
                             CDPAP
@@ -80,7 +80,7 @@ const ServiceCard = () => {
                                     Reminders + escorts, so appointments are never missed you.
                                 </span>
                             </p>
-                            <p className="flex text-start justify-center items-center mb-5">
+                            <p className="flex text-start lg:justify-center items-center mb-5">
                                 <span className="text-[#00a6b2] bg-[#ebf8f9] rounded-full mr-3">
                                     <HiStar className="text-3xl" />
                                 </span>
@@ -88,7 +88,7 @@ const ServiceCard = () => {
                                     Warm companionship, so your loved one is never lonely - even on the most confusion-filled days
                                 </span>
                             </p>
-                            <p className="flex text-start justify-center items-center mb-5">
+                            <p className="flex text-start lg:justify-center items-center mb-5">
                                 <span className="text-[#00a6b2] bg-[#ebf8f9] rounded-full mr-3">
                                     <HiStar className="text-3xl" />
                                 </span>
@@ -96,7 +96,7 @@ const ServiceCard = () => {
                                     A calming, steady presence that helps prevent power struggles and flare-ups.
                                 </span>
                             </p>
-                            <p className="flex text-start justify-center items-center mb-5">
+                            <p className="flex text-start lg:justify-center items-center mb-5">
                                 <span className="text-[#00a6b2] bg-[#ebf8f9] rounded-full mr-3">
                                     <HiStar className="text-3xl" />
                                 </span>

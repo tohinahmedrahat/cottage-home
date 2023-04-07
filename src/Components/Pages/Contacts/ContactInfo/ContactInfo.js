@@ -62,7 +62,7 @@ const ContactInfo = () => {
         </div>
       </div>
 
-      <div className="w-[95%] lg:w-[85%] mx-auto md:grid grid-cols-4 mt-[100px] Poppins">
+      <div className="w-[95%] lg:w-[85%] mx-auto grid md:grid-cols-2 lg:grid-cols-4 mt-[100px] Poppins gap-5 lg:gap-0">
         <div className=" mr-1 mt-1 md:mt-0 ">
           <div
             className="relative bg-[#EBF8F9]  py-4 px-5 min-h-[27rem] rounded-md cart"
@@ -190,7 +190,7 @@ ALBANY, NEW YORK 3rd floor unit G
               <a href="https://twitter.com/cottagecareny" target="_blank">
                 <AiOutlineTwitter />
               </a>
-              <a href="">
+              <a href="https://www.instagram.com/cottagehcs/" target="_blank">
                 <ImInstagram />
               </a>
             </div>

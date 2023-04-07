@@ -5,7 +5,7 @@ import { FaStar } from 'react-icons/fa';
 
 const WhyChoose = () => {
   return (
-    <div className="pt-10 pb-[100px]">
+    <div className="pt-10 lg:pb-[100px] pb-14">
       <div className="lg:flex max-w-4xl mx-auto items-center">
         <div className="lg:w-1/2 hidden md:block" data-aos="fade-right" data-aos-duration="2000">
           <div className="relative">

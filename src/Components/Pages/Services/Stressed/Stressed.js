@@ -15,7 +15,7 @@ const Stressed = () => {
             data-aos-duration="2000"
           >
             <div className="max-w-xl mb-6 md:px-14">
-              <p className="max-w-lg  text-lg md:text-2xl font-semibold tracking-tight text-[#67637e]  ">
+              <p className="max-w-lg  text-lg md:text-2xl font-semibold tracking-tight text-[#67637e] mt-3 ">
                 HHA / PCA
               </p>
               <hr className="border-[1px] border-primary w-[100px] md:w-[120px] mb-4" />
@@ -40,7 +40,7 @@ const Stressed = () => {
         </div>
       </div>
 
-      <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-6xl md:px-24 lg:px-8 lg:py-24 py-16" id="cdpap">
+      <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-6xl md:px-24 lg:px-8  lg:py-16" id="cdpap">
         <div className="flex flex-col items-center justify-between lg:flex-row">
           <div
             className="relative lg:w-1/2 mb-10 lg:mb-0"

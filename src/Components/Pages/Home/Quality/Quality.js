@@ -11,7 +11,7 @@ const Quality = () => {
         The Service We Provide <br /> in-home care
       </h3>
       <hr className="border-[#00a6b2] border-t-2 w-12 mt-5 mb-8 mx-auto" />
-      <h6 className="text-center md:text-2xl text-primary">
+      <h6 className="text-center md:text-2xl text-primary px-4 md:px-0">
         HHA/PCA CDPAP SERVICES THROUGHOUT NEW YORK CITY{" "}
       </h6>
       <div className="md:grid grid-cols-2  w-[90%] mx-auto pb-14 pt-9">
