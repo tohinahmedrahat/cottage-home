@@ -14,7 +14,7 @@ const Home = () => {
   useTitle("Home");
   window.scrollTo(0, 0);
   return (
-    <div className="pb-20">
+    <div>
       <Banner></Banner>
       <Welcome></Welcome>
       <HelpSection></HelpSection>

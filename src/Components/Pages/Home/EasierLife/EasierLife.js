@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
-import contactImage from "../../../../assets/preferred-contact.jpg";
+import contactImage from "../../../../assets/successful-medical-team.jpg";
 import { AuthContext } from "../../Context/AuthProvider";
 
 const EasierLife = () => {
@@ -52,7 +52,7 @@ const EasierLife = () => {
   };
 
   return (
-    <div className="bg-[#F5F5F7]">
+    <div className="bg-[#F5F5F7] pb-20">
       <div className="text-center max-w-xl mx-auto py-[90px]">
         <h1 className="text-[#322e51] pb-3 text-[35px] relative font-bold font-[PlayfairDisplay] afterEffect mb-10">
           You deserve an easier life, too
@@ -79,7 +79,7 @@ const EasierLife = () => {
                 // width="495"
                 // height="627"
                 alt=""
-                className="max-w-[85%]"
+                className="max-w-[85%] shadow-lg"
               />
             </div>
             {/*             

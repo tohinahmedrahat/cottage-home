@@ -8,13 +8,13 @@ const HhhaSchoolMap = () => {
         <div className='md:w-[80%] w-[90%] mx-auto mb-16'>
 
             <div className='grid lg:grid-cols-2 gap-7 items-center'>
-                <div className='  bg-[#DBF2F4] rounded-md shadow-lg  h-[420px]'
+                <div className='  bg-[#DBF2F4] rounded-md shadow-lg  md:h-[420px]'
                     data-aos="fade-right"
                     data-aos-duration="2000"
 
                 >
                     <div className='py-[10px]'>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.51270996487!2d-73.8339175847323!3d40.6847045472221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26750729d3653%3A0x592e70afeb742348!2s110-05%20Liberty%20Ave%2C%20Queens%2C%20NY%2011419!5e0!3m2!1sen!2sus!4v1678997264123!5m2!1sen!2sus" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" className=' rounded-md  w-[95%] mx-auto h-[400px] rounded-md border-4 border-[#F1F3F4]'></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.51270996487!2d-73.8339175847323!3d40.6847045472221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26750729d3653%3A0x592e70afeb742348!2s110-05%20Liberty%20Ave%2C%20Queens%2C%20NY%2011419!5e0!3m2!1sen!2sus!4v1678997264123!5m2!1sen!2sus" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" className=' rounded-md  w-[95%] mx-auto h-[350px] md:h-[400px] rounded-md border-4 border-[#F1F3F4]'></iframe>
                     </div>
 
                 </div>

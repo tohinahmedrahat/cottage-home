@@ -1,23 +1,24 @@
 import React from "react";
-import image1 from "../../../../assets/preferred-whyus.png";
-import image2 from "../../../../assets/preferred-whyus2.png";
+import image1 from "../../../../assets/why-1.png";
+import image2 from "../../../../assets/why-2.png";
+import image3 from "../../../../assets/why-4.png";
 import { FaStar } from 'react-icons/fa';
 
 const WhyChoose = () => {
   return (
-    <div className="pt-10 lg:pb-[100px] pb-14">
+    <div className="pt-16 md:pt-10 lg:pb-[100px] pb-14">
       <div className="lg:flex max-w-4xl mx-auto items-center">
-        <div className="lg:w-1/2 hidden md:block" data-aos="fade-right" data-aos-duration="2000">
-          <div className="relative">
+        <div className="md:w-[80%] lg:w-1/2  mx-auto pl-[15%] md:pl-0 " data-aos="fade-right" data-aos-duration="2000">
+          <div className="relative  w-[90%] md:w-[100%] mx-auto ">
             <div>
-              <img src={image1} className="w-1/2 lg:w-4/5 mx-auto lg:mx-0" alt="" />
+              <img src={image2} className="  w-[65%] md:w-1/2 lg:w-4/5 mx-auto lg:mx-0 border-2 border-primary" alt="" />
             </div>
-            <div className="absolute lg:-top-10 -top-10 lg:-left-48">
-              <img src={image2} className="lg:w-2/5 w-1/3" alt="" />
+            <div className="absolute lg:-top-10 md:-top-10 -top-16 lg:-left-48 -left-12 md:-left-0">
+              <img src={image3} className="lg:w-2/5 md:w-1/3 w-[43%] border-2 border-primary" alt="" />
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 px-5 lg:px-0" data-aos="fade-left" data-aos-duration="2000">
+        <div className="lg:w-1/2 px-5 lg:px-0 mt-5 md:mt-0" data-aos="fade-left" data-aos-duration="2000">
           <h1 className="text-[#322e51] text-[30px] playrify font-bold mb-4">
             Why choose Cottage Home Care Services?
           </h1>

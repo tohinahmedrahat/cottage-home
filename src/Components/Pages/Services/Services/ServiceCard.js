@@ -7,7 +7,10 @@ const ServiceCard = () => {
         <div className='lg:my-20 my-10'>
             <div className=' w-[95%] lg:w-[70%] mx-auto grid md:grid-cols-1 lg:grid-cols-2 lg:gap-10  gap-5 text-white'>
 
-                <div className='  bg-[#00A6B2] mt-5 shadow-xl text-center p-4 bg-hov2 rounded-md'>
+                <div className='  bg-[#00A6B2] mt-5 shadow-xl text-center p-4 bg-hov2 rounded-md'
+                                data-aos="fade-right"
+                                data-aos-duration="1500"
+                >
                     <div className="mb-6 md:px-4 mt-3">
                         <p className=" text-lg md:text-2xl font-semibold tracking-tight text-white ">
                             HHA / PCA
@@ -60,7 +63,10 @@ const ServiceCard = () => {
                         </div>
                     </div>
                 </div>
-                <div className='  bg-[#00A6B2] mt-5 shadow-xl text-center p-4 bg-hov2 rounded-md'>
+                <div className='  bg-[#00A6B2] mt-5 shadow-xl text-center p-4 bg-hov2 rounded-md'
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                >
                     <div className="mb-6 md:px-4 mt-3">
                         <p className=" text-lg md:text-2xl font-semibold tracking-tight text-white ">
                             CDPAP
