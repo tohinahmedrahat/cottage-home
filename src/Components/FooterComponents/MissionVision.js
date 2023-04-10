@@ -1,8 +1,8 @@
 import React from 'react';
-import pic1 from '../../../src/assets/mission-vision/mission-vision.jpg'
-import pic3 from '../../../src/assets/mission-vision/mission-vission-2 .jpg'
-import pic2 from '../../../src/assets/mission-vision/missio-cover-1.jpg'
-import pic4 from '../../../src/assets/mission-vision/cover-2.jpg'
+import pic1 from '../../../src/assets/mission-vision/sova.jpg'
+import pic3 from '../../../src/assets/mission-vision/call-services.jpg'
+import pic2 from '../../../src/assets/mission-vision/group-photo.jpg'
+import pic4 from '../../../src/assets/mission-vision/group-cover2.jpg'
 
 const MissionVision = () => {
   window.scrollTo(0, 0);
@@ -31,7 +31,7 @@ const MissionVision = () => {
           </div>
           <div className='lg:col-span-2 md:col-span-4  mt-5 order-first sm:order-none '>
 
-            <img src={pic1} alt="" className='w-full md:h-96'
+            <img src={pic1} alt="" className='w-full md:h-96 rounded-md'
 
               data-aos="fade-down"
               data-aos-duration="2000"
@@ -41,7 +41,7 @@ const MissionVision = () => {
 
           </div>
           <div className='lg:col-span-4 mt-5 hidden lg:block'>
-            <img src={pic2} alt="" className='w-full md:h-96'
+            <img src={pic2} alt="" className='w-full md:h-96 rounded-md'
 
               data-aos="fade-left"
               data-aos-duration="2000" />
@@ -52,7 +52,7 @@ const MissionVision = () => {
 
         <div className='grid md:grid-cols-8  gap-8 items-center mt-3'>
           <div className='lg:col-span-4 mt-5 hidden lg:block'>
-            <img src={pic4} alt="" className='w-full md:h-96'
+            <img src={pic4} alt="" className='w-full md:h-96 rounded-md'
 
               data-aos="fade-right"
               data-aos-duration="2000"
@@ -62,7 +62,7 @@ const MissionVision = () => {
           </div>
           <div className='lg:col-span-2 md:col-span-4  mt-5 '>
 
-            <img src={pic3} alt="" className='w-full md:h-96'
+            <img src={pic3} alt="" className='w-full md:h-96 rounded-md'
               data-aos="fade-up"
               data-aos-duration="2000"
 

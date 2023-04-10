@@ -1,6 +1,6 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
-import chatting from "../../../../assets/healthier.jpg";
+import chatting from "../../../../assets/new-smile.jpg";
 
 const HelpSection = () => {
   return (
@@ -16,7 +16,7 @@ const HelpSection = () => {
           data-aos="fade-right"
           data-aos-duration="2000"
         >
-          <h3 className="text-[#322e51] pb-12 font-bold text-2xl text-left">
+          <h3 className="text-[#322e51] pb-5 md:pb-12 font-bold text-2xl text-left ">
             We Belive
           </h3>
           <div className="flex items-center pr-5">

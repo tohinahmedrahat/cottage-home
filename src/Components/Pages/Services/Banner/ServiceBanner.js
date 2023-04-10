@@ -14,13 +14,13 @@ const ServiceBanner = () => {
   return (
     <div>
       <div
-        className=" relative  bg-cover bg-center text-center min-h-[80vh] service-banner"
+        className=" relative  bg-cover bg-center text-center min-h-[90vh] service-banner"
         
       >
-        <h1 className=" pt-[30vh] md:pt-[20vh] text-4xl lg:text-5xl relative font-bold font-[PlayfairDisplay] afterEffect mb-5 text-center px-5 text-white">
+        <h1 className=" pt-[30vh] md:pt-[30vh] text-4xl lg:text-5xl relative font-bold font-[PlayfairDisplay] afterEffect mb-5 text-center px-5 text-white">
             Services
           </h1>
-        <div className="md:pt-[15vh] ">
+        <div className="md:pt-[8vh] ">
         
             <div className=" mx-auto  ">
               <div className="rounded-md bg-contact-2 md:max-w-3xl lg:max-w-4xl mx-auto text-white">

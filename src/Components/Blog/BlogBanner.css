@@ -1,9 +1,10 @@
 
 .blog-cover{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.315) 0%, rgba(0, 0, 0, 0.452) 100%), url('../../../src/assets/blog.jpg');
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.315) 0%, rgba(0, 0, 0, 0.452) 100%), url('../../../src/assets/old-man-nursing-home-helped-by-female-doctor-take-his-medicine.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    background-position: center;
     
 }
 
