@@ -14,7 +14,7 @@ const Home = () => {
   useTitle("Home");
   window.scrollTo(0, 0);
   return (
-    <div>
+    <div id="google_translate_element">
       <Banner></Banner>
       <Welcome></Welcome>
       <HelpSection></HelpSection>
@@ -24,6 +24,7 @@ const Home = () => {
       <WhyChoose></WhyChoose>
       <TestimonialPart></TestimonialPart>
       <EasierLife></EasierLife>
+      
     </div>
   );
 };

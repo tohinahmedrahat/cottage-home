@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import { FiFacebook } from 'react-icons/fi';
+import { AiOutlineGlobal } from 'react-icons/ai';
+
 
 
 
@@ -278,146 +280,170 @@ const TeamMembers = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-10 lg:gap-20 team-member">
                             {/* lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around */}
                             {
-                                employees?.map((employer, index) => 
-                                <div
+                                employees?.map((employer, index) =>
+                                    <div
 
-                                    key={index}
-                                    className=" relative mt-16 md:mb-10  mb-10 w-full  bg-white lg:min-h-[18rem] shadow-md rounded-md
+                                        key={index}
+                                        className=" relative mt-16 md:mb-10  mb-10 w-full  bg-white  shadow-md rounded-md lg:min-h-[22rem]
                                 
                                 "
-                                    data-aos="zoom-in"
-                                    data-aos-duration="2000"
-                                >
-
-
-
-
-                                    <div className="rounded overflow-hidden  "
-
+                                        data-aos="zoom-in"
+                                        data-aos-duration="2000"
                                     >
-                                        <div className="absolute -mt-20 w-full flex justify-center">
-                                            <div className="h-32 w-32">
-                                                <img src={employer?.img} alt className="rounded-full object-cover h-full w-full shadow-md" loading="lazy" />
+
+
+
+
+                                        <div className="rounded overflow-hidden  "
+
+                                        >
+                                            <div className="absolute -mt-20 w-full flex justify-center">
+                                                <div className="h-32 w-32">
+                                                    <img src={employer?.img} alt className="rounded-full object-cover h-full w-full shadow-md" loading="lazy" />
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="px-6 mt-16">
-                                            <div className="font-bold text-3xl text-center pb-1">{employer?.name}</div>
-                                            <p className="text-gray-800 text-sm text-center">{employer?.designation}</p>
-                                            <p className="text-justify text-gray-700 text-base pt-3 font-normal source-sans">{employer?.description}</p>
-                                            <div className="w-full flex justify-center pt-5 pb-5">
+                                            <div className="px-6 mt-16">
+                                                <div className="font-bold text-3xl text-center pb-1">{employer?.name}</div>
+                                                <p className="text-gray-800 text-sm text-center">{employer?.designation}</p>
+                                                <p className="text-justify text-gray-700 text-base pt-3 font-normal source-sans pb-8">{employer?.description}</p>
                                                 {
-                                                    employer?.facebook == null || employer?.facebook === "" ?
-                                                        <>
-                                                            <a href="javascript:void(0)" className="mx-5 bg-hov2">
-                                                                <div >
-                                                                    <FiFacebook className='text-[#828FA3] text-2xl ' />
+                                                    isAdmin &&
 
-                                                                </div>
-                                                            </a>
-                                                        </>
-                                                        :
-                                                        <>
-                                                            <a href={employer?.facebook}
-                                                                target='_blank'
-                                                                className="mx-5 bg-hov2">
-                                                                <div>
-                                                                    <FiFacebook className='text-[#828FA3] text-2xl ' />
+                                                    <div className=' mt-16'>
+                                                        <div className='flex items-center justify-evenly  absolute w-full right-0 left-0 bottom-12'>
 
-                                                                </div>
-                                                            </a>
+                                                            <Link
 
-                                                        </>
-                                                }
+                                                                to={`/employees/${employer?._id}`}
 
-                                                {
+                                                            >
+                                                                <button className='btn btn-sm bg-secondary px-4 py-2 rounded-md  my-5 text-white font-semibold uppercase'>
+                                                                    Update
+                                                                </button>
 
-                                                    employer?.twitter == null || employer?.twitter === "" ?
-                                                        <>
-                                                            <a href="javascript:void(0)" className="mx-5 bg-hov2">
-                                                                <div>
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter">
-                                                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                                                                    </svg>
-                                                                </div>
-                                                            </a>
+                                                            </Link>
 
-                                                        </>
-                                                        :
-                                                        <>
-                                                            <a href={employer?.twitter}
-                                                                target="_blank"
-                                                                className="mx-5 bg-hov2">
-                                                                <div>
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter">
-                                                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                                                                    </svg>
-                                                                </div>
-                                                            </a>
+                                                            <button
 
+                                                                onClick={() => deleteHandler(employer)}
+                                                                className='bg-red-500 px-4 py-2 rounded-md  my-5 text-white font-semibold uppercase btn btn-sm'>
+                                                                Delete
 
-                                                        </>
-
-                                                }
-                                                {
-                                                    employer?.instagram == null || employer?.instagram === "" ?
-                                                        <>
-                                                            <a href="javascript:void(0)" className="mx-5 bg-hov2">
-                                                                <div>
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram">
-                                                                        <rect x={2} y={2} width={20} height={20} rx={5} ry={5} />
-                                                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                                                                    </svg>
-                                                                </div>
-                                                            </a>
-                                                        </>
-                                                        :
-                                                        <>
-                                                            <a href={employer?.instagram}
-                                                                target='_blank'
-                                                                className="mx-5 bg-hov2">
-                                                                <div>
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram">
-                                                                        <rect x={2} y={2} width={20} height={20} rx={5} ry={5} />
-                                                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                                                                    </svg>
-                                                                </div>
-                                                            </a>
-
-                                                        </>
-                                                }
-                                            </div>
-
-                                            {
-                                                isAdmin &&
-                                                <>
-                                                    <div className='flex items-center justify-evenly'>
-
-                                                        <Link
-
-                                                            to={`/employees/${employer?._id}`}
-
-                                                        >
-                                                            <button className='bg-secondary px-4 py-2 rounded-md  my-5 text-white font-semibold uppercase'>
-                                                                Update
                                                             </button>
+                                                        </div>
 
-                                                        </Link>
-
-                                                        <button
-
-                                                            onClick={() => deleteHandler(employer)}
-                                                            className='bg-red-500 px-4 py-2 rounded-md  my-5 text-white font-semibold uppercase'>
-                                                            Delete
-
-                                                        </button>
                                                     </div>
-                                                </>
-                                            }
+
+
+                                                }
+                                                <div className='pb-6'>
+                                                    <div className="w-full flex justify-center   absolute bottom-0  right-0 left-0 my-5">
+                                                        {
+                                                            employer?.facebook == null || employer?.facebook === "" ?
+                                                                <>
+                                                                    <a href="javascript:void(0)" className="mx-5 bg-hov2">
+                                                                        <div >
+                                                                            <FiFacebook className='text-[#828FA3] text-2xl ' />
+
+                                                                        </div>
+                                                                    </a>
+                                                                </>
+                                                                :
+                                                                <>
+                                                                    <a href={employer?.facebook}
+                                                                        target='_blank'
+                                                                        className="mx-5 bg-hov2">
+                                                                        <div>
+                                                                            <FiFacebook className='text-[#828FA3] text-2xl ' />
+
+                                                                        </div>
+                                                                    </a>
+
+                                                                </>
+                                                        }
+
+
+
+                                                        {
+
+                                                            employer?.twitter == null || employer?.twitter === "" ?
+                                                                <>
+                                                                    <a href="javascript:void(0)" className="mx-5 bg-hov2">
+                                                                        <div>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter">
+                                                                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                                                            </svg>
+                                                                        </div>
+                                                                    </a>
+
+                                                                </>
+                                                                :
+                                                                <>
+                                                                    <a href={employer?.twitter}
+                                                                        target="_blank"
+                                                                        className="mx-5 bg-hov2">
+                                                                        <div>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter">
+                                                                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                                                            </svg>
+                                                                        </div>
+                                                                    </a>
+
+
+                                                                </>
+
+                                                        }
+                                                        {
+                                                            employer?.instagram == null || employer?.instagram === "" ?
+                                                                <>
+                                                                    <a href="javascript:void(0)" className="mx-5 bg-hov2">
+                                                                        <div>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram">
+                                                                                <rect x={2} y={2} width={20} height={20} rx={5} ry={5} />
+                                                                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                                                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                                                            </svg>
+                                                                        </div>
+                                                                    </a>
+                                                                </>
+                                                                :
+                                                                <>
+                                                                    <a href={employer?.instagram}
+                                                                        target='_blank'
+                                                                        className="mx-5 bg-hov2">
+                                                                        <div>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram">
+                                                                                <rect x={2} y={2} width={20} height={20} rx={5} ry={5} />
+                                                                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                                                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                                                            </svg>
+                                                                        </div>
+                                                                    </a>
+
+                                                                </>
+                                                        }
+                                                        {
+                                                            employer?.web &&
+                                                            <a href={employer?.web}
+                                                                target='_blank'
+                                                                className="mx-5 bg-hov2">
+                                                                <div>
+                                                                    <AiOutlineGlobal
+                                                                        className='text-[#828FA3] text-2xl ' />
+                                                                </div>
+                                                            </a>
+
+
+                                                        }
+                                                    </div>
+
+                                                </div>
+
+
+
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>)
+                                    </div>)
                             }
 
 
