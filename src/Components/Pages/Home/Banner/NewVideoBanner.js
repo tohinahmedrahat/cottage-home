@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import videoBg from '../../../../assets/cottage-new-banner.mp4'
 import { Link } from 'react-router-dom';
 
 
 const NewVideoBanner = () => {
 
+//   useEffect(()=>{
+
+//     const obj = document.getElementById("video");
+//     obj.playbackRate = 0.5;
+// },[])
+
     return (
         <div>
             <div className='main relative'>
                 <div className="overlay"></div>
-                <video src={videoBg} autoPlay loop muted />
+                <video 
+                
+                id='video'
+                
+                src={videoBg} autoPlay loop muted />
                 <div className="content title-section absolute top-0   w-[100%] ">
                     
                 <div className=" tracking-[1px] mx-auto pt-40">
