@@ -161,7 +161,7 @@
 
 }
 
-@media only screen and (min-width:1367px) and (max-width:1599px){
+@media only screen and (min-width:1200px) and (max-width:1599px){
     .nav-size{
      width: 98%;
      
@@ -179,10 +179,19 @@
     width: 70px ;
     height: 70px;
 }
+.cottage-text{
+    font-size: 50px;
+}
+
+.main-text{
+    margin-top:3vh;
+ }
+ 
+.banner-text {
+    margin-top: 0vh;
+   }
 
 
- 
- 
  
  }
 
@@ -279,6 +288,9 @@
        }
        .blog-section{
         width: 70%;
+       }
+       .testimonial-text{
+        width: 50%;
        }
     
 
