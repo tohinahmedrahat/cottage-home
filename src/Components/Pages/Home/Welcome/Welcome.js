@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter'
 
-import CEO from '../../../../assets/ceo-1.jpg'
+import CEO from '../../../../assets/ceo-update-picture.jpg'
 import icon from '../../../../assets/blue-quote.jpg'
 
 const Welcome = () => {

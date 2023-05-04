@@ -1,6 +1,6 @@
 import React from "react";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { Typewriter } from "react-simple-typewriter";
+
 
 const WelcomeMessage = () => {
   return (
@@ -94,9 +94,7 @@ const WelcomeMessage = () => {
             </div>
           </div>
 
-          {/* <div className='flex justify-center '>
- <a href='https://mybrooklyninstitute.com/classes' target='_blank' className=' bg-hov2 bg-[#EBF8F9] px-4 py-3 rounded-md shadow-md bg-hov2 text-gray-600 shadow-md font-semibold'>FIND OUT MORE</a>
- </div> */}
+          
         </div>
       </div>
     </div>

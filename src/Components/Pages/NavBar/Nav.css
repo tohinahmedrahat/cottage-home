@@ -262,7 +262,7 @@
     }
 
     .team-member{
-        width: 85%;
+        width: 95%;
         margin: auto;
     }
 
@@ -270,8 +270,16 @@
         width: 80%;
        }
 
-
-    
+       .banner-text {
+        margin-top: 5vh;
+       }
+       
+       .main-text{
+        margin-top: 35vh;
+       }
+       .blog-section{
+        width: 70%;
+       }
     
 
 }

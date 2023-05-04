@@ -60,7 +60,7 @@ const HhhaBanner = () => {
                 <a
                   href="https://mybrooklyninstitute.com/"
                   target="_blank"
-                  className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-secondary focus:outline-none focus:ring  sm:w-auto bg-hov2 text-xl"
+                  className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-secondary   sm:w-auto bg-hov2 text-xl"
                 >
                   Visit Us
                 </a>

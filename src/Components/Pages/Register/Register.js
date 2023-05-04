@@ -8,7 +8,7 @@ import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import Loading from '../../Shared/Loading/Loading';
 import { AuthContext } from '../Context/AuthProvider';
 
- 
+
 
 
 const Register = () => {
@@ -38,7 +38,7 @@ const Register = () => {
             .then(imgData => {
                 // console.log(imgData.data.url)
                 if (imgData.success) {
-                   
+
 
                     createUser(data.email, data.password)
                         .then(result => {
@@ -73,12 +73,12 @@ const Register = () => {
             })
 
         // console.log(data)
-      
-            
-            
+
+
+
     }
-    const saveUser = (name, email, photoURL,role="",  verify="false") => {
-        const user = { name, email, photoURL,role, verify };
+    const saveUser = (name, email, photoURL, role = "", verify = "false") => {
+        const user = { name, email, photoURL, role, verify };
         fetch('https://cottage-home-care-services-server-site.vercel.app/users', {
             method: 'POST',
             headers: {
@@ -89,14 +89,14 @@ const Register = () => {
             .then(res => res.json())
             .then(data => {
                 // console.log('save-user', data)
-              
+
 
             })
     }
-//     if (loading === true) {
-//     return <Loading></Loading>
-// }
-   
+    //     if (loading === true) {
+    //     return <Loading></Loading>
+    // }
+
     return (
         <div>
             {
@@ -126,29 +126,29 @@ const Register = () => {
                                             id="name" placeholder="your name" className="w-full px-4 py-2 shadow-xl rounded-md dark:border-gray-700 bg-white dark:text-gray-700 focus:outline-none" />
                                         {errors.name && <p className='text-red-600'>{errors.name.message}</p>}
                                     </div>
-                                 
 
-<div className="space-y-0.5 text-sm">
-                            <div className='flex items-center gap-4'>
-                            <label htmlFor="firstName" className="block dark:text-gray-400">
-                                   Image
-                                </label>
-                                
-                            <small className='text-red-500'>[ Image should not be large then 200 KB ] </small>
-                            </div>
 
-                            <input type="file"
-                            
-                            {...register("url", {
-                                required: "Image is required",
-                            })}
-                            className=" px-4  py-2 shadow-xl file-input-secondary border-0  w-full dark:border-gray-700 bg-white dark:text-gray-700 focus:outline-none rounded-md" />
-                                
-                                {errors.url && <p className='text-red-600'>{errors.url.message}</p>}
-                            </div>
+                                    <div className="space-y-0.5 text-sm">
+                                        <div className='flex items-center gap-4'>
+                                            <label htmlFor="firstName" className="block dark:text-gray-400">
+                                                Image
+                                            </label>
 
-                                    
-                                  
+                                            <small className='text-red-500'>[ Image should not be large then 200 KB ] </small>
+                                        </div>
+
+                                        <input type="file"
+
+                                            {...register("url", {
+                                                required: "Image is required",
+                                            })}
+                                            className=" px-4  py-2 shadow-xl file-input-secondary border-0  w-full dark:border-gray-700 bg-white dark:text-gray-700 focus:outline-none rounded-md" />
+
+                                        {errors.url && <p className='text-red-600'>{errors.url.message}</p>}
+                                    </div>
+
+
+
 
                                     <div className="space-y-1 text-sm">
                                         <label htmlFor="username" className="block text-gray-600">Email</label>
@@ -199,7 +199,7 @@ const Register = () => {
 
             </div>
         </div>
-        
+
     );
 };
 
