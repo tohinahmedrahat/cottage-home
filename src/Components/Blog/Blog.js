@@ -4,8 +4,10 @@ import useAdmin from '../Hooks/UseAdmin';
 import { AuthContext } from '../Pages/Context/AuthProvider';
 import AllBlog from './AllBlog';
 import BlogBanner from './BlogBanner';
+import useTitle from '../Hooks/useTitle';
 
 const Blog = () => {
+    useTitle('Blog');
 const { user } = useContext(AuthContext);
 const [isAdmin] = useAdmin(user?.email);
 

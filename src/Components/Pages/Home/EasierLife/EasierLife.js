@@ -79,7 +79,7 @@ const EasierLife = () => {
                 // width="495"
                 // height="627"
                 alt=""
-                className="max-w-[85%] shadow-lg"
+                className="max-w-[85%] shadow-lg  border-primary"
               />
             </div>
             {/*             

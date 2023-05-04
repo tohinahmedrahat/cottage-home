@@ -4,6 +4,7 @@ import { BsInstagram } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
 import { TfiEmail } from 'react-icons/tfi';
+import { FaTiktok } from 'react-icons/fa';
 
 
 
@@ -51,6 +52,10 @@ const TopBar = () => {
                     </a>
                     <a href="https://twitter.com/cottagecareny" target='_blank'>
                         <BsTwitter className='md:text-2xl bg-hov2' />
+
+                    </a>
+                    <a href="https://www.tiktok.com/@cottagehomecare" target='_blank'>
+                        <FaTiktok className='md:text-2xl bg-hov2' />
 
                     </a>
 
