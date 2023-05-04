@@ -1,25 +1,35 @@
-import React from 'react';
-import videoBg from '../../../../assets/cottage-new-banner.mp4'
+import React, { useEffect } from 'react';
+import videoBg from '../../../../assets/new-cottage-crop-banner.mp4'
 import { Link } from 'react-router-dom';
 
 
 const NewVideoBanner = () => {
 
+//   useEffect(()=>{
+
+//     const obj = document.getElementById("video");
+//     obj.playbackRate = 0.5;
+// },[])
+
     return (
         <div>
-            <div className='main relative'>
+            <div className='main relative md:block hidden'>
                 <div className="overlay"></div>
-                <video src={videoBg} autoPlay loop muted />
+                <video 
+                
+                id='video'
+                
+                src={videoBg} autoPlay loop muted />
                 <div className="content title-section absolute top-0   w-[100%] ">
                     
                 <div className=" tracking-[1px] mx-auto pt-40">
-          <div className="h-[150px] max-w-2xl mx-auto main-text mt-[10vh]">
+          <div className="h-[150px] max-w-2xl mx-auto main-text mt-[5vh] md:mt-[18vh]">
             <h1 className="md:text-6xl text-4xl px-[15px] text-white font-[PlayfairDisplay] text-center leading-loose">
               
               RIGHT HOME CARE FOR YOU
             </h1>
           </div>
-          <div className="md:mt-[8vh] banner-text ">
+          <div className="md:mt-[3vh] banner-text ">
             <div className=" mx-auto  ">
               <div className="rounded-md bg-contact-2 md:max-w-3xl lg:max-w-4xl mx-auto">
                 <div className="bg-simple px-5 py-4 ">
