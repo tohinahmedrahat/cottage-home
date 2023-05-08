@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaTiktok } from 'react-icons/fa';
 
 import footerLogo from '../../../assets/Cottage Home.png'
+import GoogleTranslate from '../../Pages/GoogleTranslator/GoogleTranslate';
 
 // bg-gradient-to-r from-orange-500 to-blue-600 
 
@@ -116,6 +117,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
+			
 			<div className="py-6 text-sm text-center text-gray-50">Copyright © 2022 Cottage Home Care - All Rights Reserved. </div>
 		</footer>
 	);
