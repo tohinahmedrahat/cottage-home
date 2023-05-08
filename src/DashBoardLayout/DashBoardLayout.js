@@ -7,6 +7,7 @@ import Footer from "../Components/Shared/Footer/Footer";
 import { BiMessageRoundedDots } from "react-icons/bi";
 import { HiUsers } from "react-icons/hi";
 import { FaUserTie } from "react-icons/fa";
+import { CgMenuGridR } from "react-icons/cg";
 import { IoSchool } from "react-icons/io5";
 import { FaHome } from "react-icons/fa";
 import { ImBlog } from "react-icons/im";
@@ -79,9 +80,16 @@ const DashBoardLayout = () => {
 
   return (
     <div className="min-h-screen ">
-      <div className="sticky top-0 z-50">
+      {/* <div className="sticky top-0 z-50">
         <NavBar></NavBar>
-      </div>
+      </div> */}
+
+<div className="sticky top-0 z-50">
+                <NavBar></NavBar>
+                <div className="my-3 block lg:hidden ">
+                    <label htmlFor="dashboard-drawer" className=" drawer-button text-4xl text-primary"><CgMenuGridR/></label>
+                    </div>
+            </div>
       <div className="drawer drawer-mobile">
         <input
           id="dashboard-drawer"
@@ -91,7 +99,7 @@ const DashBoardLayout = () => {
         <div className="drawer-content">
           <Outlet></Outlet>
         </div>
-        <div className="drawer-side bg-[#EBF8F9] rounded-md shadow-lg">
+        <div className="drawer-side lg:bg-[#EBF8F9] rounded-md shadow-lg">
           <label htmlFor="dashboard-drawer" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80 text-base-content mt-16">
             <li className="text-primary ">

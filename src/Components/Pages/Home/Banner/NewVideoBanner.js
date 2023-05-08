@@ -24,7 +24,7 @@ const NewVideoBanner = () => {
                     
                 <div className=" tracking-[1px] mx-auto pt-40">
           <div className="h-[150px] max-w-2xl mx-auto main-text mt-[5vh] md:mt-[18vh]">
-            <h1 className="md:text-6xl text-4xl px-[15px] text-white font-[PlayfairDisplay] text-center leading-loose">
+            <h1 className="md:text-6xl cottage-text text-4xl px-[15px] text-white font-[PlayfairDisplay] text-center leading-loose">
               
               RIGHT HOME CARE FOR YOU
             </h1>

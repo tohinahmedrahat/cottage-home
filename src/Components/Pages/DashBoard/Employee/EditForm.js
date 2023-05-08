@@ -91,14 +91,14 @@ const EditForm = () => {
         else {
 
             const updateEmployee = {
-                         _id: employee?._id,
-                            name: data?.name,
-                            img: employee?.img,
-                            designation: data?.designation,
-                            description: data?.description,
-                            facebook: data?.facebook,
-                            instagram: data?.instagram,
-                            twitter: data?.twitter
+                _id: employee?._id,
+                name: data?.name,
+                img: employee?.img,
+                designation: data?.designation,
+                description: data?.description,
+                facebook: data?.facebook,
+                instagram: data?.instagram,
+                twitter: data?.twitter
 
 
 
@@ -219,21 +219,21 @@ const EditForm = () => {
                                 
                             </div> */}
 
-<div className="space-y-0.5 text-sm">
-                            <div className='flex items-center gap-4'>
-                            <label htmlFor="firstName" className="block dark:text-gray-400">
-                                   Image
-                                </label>
-                                
-                            <small className='text-red-500'>[ Image should not be large then 200 KB ] </small>
-                            </div>
+                            <div className="space-y-0.5 text-sm">
+                                <div className='flex items-center gap-4'>
+                                    <label htmlFor="firstName" className="block dark:text-gray-400">
+                                        Image
+                                    </label>
 
-                            <input type="file"
-                            
-                            {...register("url")}
-                            className="file-input file-input-secondary border-0  w-full  text-gray-700 focus:outline-[#00a6b265] bg-[#EBF8F9] focus:bg-white shadow-md" />
-                               
-                               
+                                    <small className='text-red-500'>[ Image should not be large then 200 KB ] </small>
+                                </div>
+
+                                <input type="file"
+
+                                    {...register("url")}
+                                    className="file-input file-input-secondary border-0  w-full  text-gray-700 focus:outline-[#00a6b265] bg-[#EBF8F9] focus:bg-white shadow-md" />
+
+
                             </div>
 
 

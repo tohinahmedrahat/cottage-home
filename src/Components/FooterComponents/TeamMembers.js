@@ -6,15 +6,6 @@ import { AiOutlineGlobal } from 'react-icons/ai';
 
 
 // import CEO from '../../../src/assets/ceo-1.jpg'
-import CEO from '../../../src/assets/employers/ceo.jpg'
-import COO from '../../../src/assets/coo.jpg'
-import MEDIA from '../../../src/assets/tracey.JPG'
-import male from '../../../src/assets/male-icons.png'
-import female from '../../../src/assets/female-icon.png'
-import saleem from '../../../src/assets/employers/saleem.jpg'
-import aumy from '../../../src/assets/employers/Aumy.JPG'
-import tariqul from '../../../src/assets/employers/tariqul.jpg'
-import alIsrak from '../../../src/assets/employers/al-israk.jpg'
 import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading/Loading';
 import { AuthContext } from '../Pages/Context/AuthProvider';
