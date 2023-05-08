@@ -1,8 +1,8 @@
 import React from 'react';
 import { toast } from 'react-hot-toast';
 
-const DeleteButton = ({refetch, id}) => {
-    const deleteHandler = (id) =>{
+const DeleteButton = ({ refetch, id }) => {
+    const deleteHandler = (id) => {
 
         const proceed = window.confirm(
             "Are you sure, you want to delete this message ?"
@@ -19,23 +19,23 @@ const DeleteButton = ({refetch, id}) => {
                         refetch();
 
                     }
-                    
+
 
                 })
 
+        }
     }
-}
     return (
         <div>
 
             <button
-            
-            onClick={()=>deleteHandler(id)}
 
-            className='uppercase btn  btn-sm bg-red-600 text-white'>
+                onClick={() => deleteHandler(id)}
+
+                className='uppercase btn  btn-sm bg-red-600 text-white'>
                 delete
             </button>
-            
+
         </div>
     );
 };
