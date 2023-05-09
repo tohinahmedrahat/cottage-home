@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaTiktok } from 'react-icons/fa';
 
 import footerLogo from '../../../assets/Cottage Home.png'
-import GoogleTranslate from '../../Pages/GoogleTranslator/GoogleTranslate';
+
 
 // bg-gradient-to-r from-orange-500 to-blue-600 
 

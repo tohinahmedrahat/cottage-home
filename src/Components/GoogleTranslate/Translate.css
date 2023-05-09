@@ -1,0 +1,36 @@
+
+    .goog-logo-link {display:none !important; } 
+    .goog-te-gadget {font-size:0px !important;}
+    .goog-logo-link,.goog-te-gadget span a{
+        display: none;
+       
+    }
+    .goog-te-gadget{
+    
+      color:#00A6B2!important;
+      display: flex;
+      }
+
+      .goog-te-combo {
+        
+        outline: 2px solid #00A6B2;
+        padding: 2px;
+        border-radius: 3px;   
+      }
+      .VIpgJd-ZVi9od-ORHb-OEVmcd{
+       display: none;}
+
+
+
+       @media only screen and (min-width:1px) and (max-width:999px){
+        .goog-te-gadget{
+    
+            color:#00A6B2!important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+
+       }
+
+
