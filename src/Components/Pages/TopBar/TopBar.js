@@ -5,14 +5,18 @@ import { BsTwitter } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
 import { TfiEmail } from 'react-icons/tfi';
 import { FaTiktok } from 'react-icons/fa';
+import GoogleTranslate from '../../GoogleTranslate/GoogleTranslate';
 
 
 
 const TopBar = () => {
     return (
-        <div className='text-[#2E294E] hidden md:block'>
-            <div className='roboto px-8 py-3 flex items-center justify-between'>
-                <div className='flex gap-8'>
+        <div className=''>
+           
+            <div className='text-[#2E294E] block w-[95%] mx-auto'>
+                <div className='flex justify-center lg:justify-between items-center '>
+                <div className='roboto px-8 py-3 lg:flex items-center lg:justify-between lg:w-[95%]'>
+                <div className='lg:flex gap-8 hidden'>
                     <div className='flex gap-4 items-center md:text-lg '>
                         <BsFillTelephoneFill />
                         <p>
@@ -28,7 +32,8 @@ const TopBar = () => {
 
                     </div>
                 </div>
-                <div className='flex items-center gap-5 md:text-lg font-medium md:mr-[5%] text-primary'>
+
+                <div className='lg:flex items-center gap-5 md:text-lg font-medium  text-primary hidden '>
                     {/* <div className="dropdown mr-[10%] ">
                         <label tabIndex={0} className=" cursor-pointer text-base ">Language</label>
                         <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-24 text-sm text-center">
@@ -66,7 +71,13 @@ const TopBar = () => {
 
 
             </div>
-            <hr />
+            <div>
+                 <GoogleTranslate/>
+            </div>
+                </div>
+            </div>
+
+            <hr className='hidden lg:block' />
         </div>
     );
 };

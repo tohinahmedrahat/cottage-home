@@ -17,6 +17,11 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+.goog-te-banner-frame.skiptranslate {display: none !important;} 
+body { top: 0px !important; }
+
+
 .playrify {
   font-family: "Playfair Display", serif;
 }

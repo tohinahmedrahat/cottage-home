@@ -4,11 +4,17 @@ import Footer from '../../Shared/Footer/Footer';
 import Header from '../../Shared/Header/Header';
 import NavBar from '../NavBar/NavBar';
 import TopBar from '../TopBar/TopBar';
+import GoogleTranslate from '../../GoogleTranslate/GoogleTranslate';
+
+
+
+
 
 const Main = () => {
     return (
         <div >
             <TopBar></TopBar>
+           
             <NavBar></NavBar>
             <div className='overflow-hidden'>
             <Outlet></Outlet>
