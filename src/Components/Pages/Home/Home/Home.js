@@ -9,6 +9,7 @@ import TestimonialPart from "../TestiMonial/TestimonialPart";
 import WeAre from "../WeAre/WeAre";
 import Welcome from "../Welcome/Welcome";
 import WhyChoose from "../WhyChoose/WhyChoose";
+import Benefits from "../../Benefits/Benefits";
 
 const Home = () => {
   useTitle("Home");
@@ -22,6 +23,7 @@ const Home = () => {
       <Quality></Quality>
       
       <WhyChoose></WhyChoose>
+      <Benefits></Benefits>
       <TestimonialPart></TestimonialPart>
       <EasierLife></EasierLife>
       
