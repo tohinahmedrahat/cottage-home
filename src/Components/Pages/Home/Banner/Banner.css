@@ -21,9 +21,10 @@
 } */
 
 .another-banner {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.344) 0%, rgba(0, 0, 0, 0.396) 100%), url('../../../../assets/contact.jpg');
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.344) 0%, rgba(0, 0, 0, 0.396) 100%), url('../../../../assets/another-contact.jpg');
     background-repeat: no-repeat;
    background-size: cover;
+   background-position: center;
 
 
 }
