@@ -5,7 +5,7 @@ import articleIMG from '../../../assets/articels-picture.jpg'
 
 const Benefits = () => {
     return (
-        <div className='w-[95%] lg:w-[70%] mx-auto'>
+        <div className='w-[95%] lg:w-[70%] mx-auto mb-10'>
             <div className='grid md:grid-cols-2 grid-cols-1 gap-7'>
                 <div className='text-black'>
                     <h3 className='text-2xl font-semibold playrify  mb-3'>Bring the Following Items</h3>
