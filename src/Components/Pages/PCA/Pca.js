@@ -12,9 +12,9 @@ const Pca = () => {
 
     const [message, setMessage] = useState('')
 
-    const url = 'https://cottage-home-care-services-server-site.vercel.app/allmessages/PCA'
+    const url = 'http://localhost:5000/allmessages/PCA'
 
-    const { data: messages = [], isLoading, refetch } = useQuery({
+    const { data: {messages} = [], isLoading, refetch } = useQuery({
         queryKey: ['PCA',],
         queryFn: async () => {
             const res = await fetch(url);

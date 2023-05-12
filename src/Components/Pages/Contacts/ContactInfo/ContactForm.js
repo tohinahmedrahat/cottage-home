@@ -32,7 +32,7 @@ const ContactForm = () => {
     };
 
     fetch(
-      "https://cottage-home-care-services-server-site.vercel.app/messages",
+      "http://localhost:5000/messages",
       {
         method: "PUT",
         headers: {

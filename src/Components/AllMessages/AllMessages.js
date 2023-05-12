@@ -7,13 +7,24 @@ import Loading from '../Shared/Loading/Loading';
 
 const AllMessages = () => {
 
+    /*
+
+    count, : loaded
+    per page : 10
+    pages : count / perPage
+    page
+
+    */
+
+    
+
 
     const [message, setMessage] = useState('')
 
 
-    const url = 'https://cottage-home-care-services-server-site.vercel.app/allmessages'
+    const url = 'http://localhost:5000/allmessages'
 
-    const { data: messages = [], isLoading, refetch } = useQuery({
+    const { data: {messages} = [], isLoading, refetch } = useQuery({
         queryKey: ['allmessages',],
         queryFn: async () => {
             const res = await fetch(url);
@@ -21,7 +32,7 @@ const AllMessages = () => {
             return data;
         }
 
-    })
+    }) 
 
     const messageHandler = (message) => {
         setMessage(message)

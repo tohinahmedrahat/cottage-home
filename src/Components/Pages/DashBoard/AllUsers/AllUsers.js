@@ -6,7 +6,7 @@ import { toast } from 'react-hot-toast';
 
 const AllUsers = () => {
 
-    const url = 'https://cottage-home-care-services-server-site.vercel.app/users'
+    const url = 'http://localhost:5000/users'
 
     const { data: users = [], isLoading, refetch } = useQuery({
         queryKey: ['users',],
@@ -33,7 +33,7 @@ const AllUsers = () => {
             `Are you sure, you want to delete ${user?.name} ?`
         );
         if (proceed) {
-            fetch(`https://cottage-home-care-services-server-site.vercel.app/users/${user?._id}`, {
+            fetch(`http://localhost:5000/users/${user?._id}`, {
                 method: 'DELETE',
 
             })
