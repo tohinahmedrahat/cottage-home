@@ -7,6 +7,8 @@ import Loading from '../Shared/Loading/Loading';
 import './Pagination.css'
 
 const AllMessages = () => {
+    const [page, setPage] = useState(0);
+    const [size, setSize] = useState(5);
 
     /*
 
@@ -17,10 +19,10 @@ const AllMessages = () => {
 
     */
 
-    const url = 'http://localhost:5000/allmessages'
+    const url = `http://localhost:5000/allmessages?page=${page}&size=${size}`
 
     const { data: {messages,count} = [], isLoading, refetch } = useQuery({
-        queryKey: ['allmessages',],
+        queryKey: ['allmessages', page , size],
         queryFn: async () => {
             const res = await fetch(url);
             const data = await res.json();
@@ -29,8 +31,7 @@ const AllMessages = () => {
 
     }) 
 
-    const [page, setPage] = useState(0);
-    const [size, setSize] = useState(5);
+   
     const pages = Math.ceil(count / size) ;
 
 
@@ -180,6 +181,17 @@ const AllMessages = () => {
 
                     </button>)
                 }
+
+                <select className='ml-3 bg-primary text-white rounded-md focus:outline-none px-2' onChange={event => setSize(event.target.value)}>
+                    <option selected disabled>{`Page Size ${size}`}</option>
+              
+                    <option value="5" >Page Size 5</option>
+                    <option value="10"  >Page Size 10</option>
+                    <option value="15" >Page Size 15</option>
+                    <option value="20" >Page Size 20</option>
+
+                </select>
+                
 
             </div>
                 </div>
