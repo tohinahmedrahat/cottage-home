@@ -104,17 +104,17 @@ const Route = createBrowserRouter([
       },
       {
         path: '/blogs/:id',
-        loader: ({ params }) => fetch(`https://cottage-home-care-services-server-site.vercel.app/blogs/${params.id}`),
+        loader: ({ params }) => fetch(`http://localhost:5000/blogs/${params.id}`),
         element:<SingleBlog></SingleBlog>
     },
     {
       path: "/employees/:id",
-      loader: ({ params }) => fetch(`https://cottage-home-care-services-server-site.vercel.app/employees/${params.id}`),
+      loader: ({ params }) => fetch(`http://localhost:5000/employees/${params.id}`),
       element:<EditForm></EditForm>
     },
     {
       path: "/singleBlogs/:id",
-      loader: ({ params }) => fetch(`https://cottage-home-care-services-server-site.vercel.app/blogs/${params.id}`),
+      loader: ({ params }) => fetch(`http://localhost:5000/blogs/${params.id}`),
       element:<EditBlogForm></EditBlogForm>
     },
     {

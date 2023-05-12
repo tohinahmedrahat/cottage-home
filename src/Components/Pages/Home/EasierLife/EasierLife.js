@@ -32,7 +32,7 @@ const EasierLife = () => {
     };
 
     fetch(
-      "https://cottage-home-care-services-server-site.vercel.app/messages",
+      "http://localhost:5000/messages",
       {
         method: "PUT",
         headers: {
@@ -71,15 +71,15 @@ const EasierLife = () => {
           <div className="bg-white lg:flex justify-start gap-2 py-[68px]">
             <div
               className="md:-ml-10 flex lg:block justify-center items-center px-5"
-              // data-aos="fade-right"
-              // data-aos-duration="2000"
+            // data-aos="fade-right"
+            // data-aos-duration="2000"
             >
               <img
                 src={contactImage}
                 // width="495"
                 // height="627"
                 alt=""
-                className="max-w-[85%] shadow-lg"
+                className="max-w-[85%] shadow-lg md:md:max-w-2xl lg:max-w-[85%] "
               />
             </div>
             {/*             
@@ -202,13 +202,13 @@ const EasierLife = () => {
 
             <div
               className="w-full "
-              
+
             >
               <form
                 // onSubmit={submitHandler}
 
                 onSubmit={handleSubmit(submitHandler)}
-                className="max-w-xl md:max-w-2xl  bg-gray-50 p-8 rounded-md shadow-xl "
+                className="max-w-xl md:max-w-2xl  bg-gray-50 p-8 rounded-md shadow-xl md:ml-[7%] lg:ml-0"
               >
                 <h1 className="text-2xl text-gray-600 text-center Poppins font-semibold">
                   {" "}
@@ -265,9 +265,9 @@ const EasierLife = () => {
                     <input
                       type="email"
                       {...register("email", { required: "email is required" })}
-                      
+
                       id="email"
-                     
+
                       placeholder="E-mail "
                       className="w-full px-4 py-3 rounded-md border text-gray-700 focus:outline-[#00a6b265] bg-[#EBF8F9]
                                         focus:bg-white shadow-md"

@@ -61,7 +61,7 @@ const BlogForm = () => {
                     }
                     
 
-                    fetch("https://cottage-home-care-services-server-site.vercel.app/blogs", {
+                    fetch("http://localhost:5000/blogs", {
                         method: "POST",
                         headers: {
                             "content-type": "application/json",

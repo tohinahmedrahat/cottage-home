@@ -21,7 +21,7 @@ const DashBoardLayout = () => {
   const [isAdmin] = useAdmin(user?.email);
 
   const url =
-    "https://cottage-home-care-services-server-site.vercel.app/notifications";
+    "http://localhost:5000/notifications";
 
   const { data: allData = [], isLoading } = useQuery({
     queryKey: ["notifications"],

@@ -8,7 +8,7 @@ const DeleteButton = ({ refetch, id }) => {
             "Are you sure, you want to delete this message ?"
         );
         if (proceed) {
-            fetch(`https://cottage-home-care-services-server-site.vercel.app/messages/${id}`, {
+            fetch(`http://localhost:5000/messages/${id}`, {
                 method: 'DELETE',
 
             })

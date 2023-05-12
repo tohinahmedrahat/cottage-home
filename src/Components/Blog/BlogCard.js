@@ -12,7 +12,7 @@ const BlogCard = ({blog,isAdmin,refetch}) => {
             "Are you sure, you want to delete this Blog"
         );
         if (proceed) {
-            fetch(`https://cottage-home-care-services-server-site.vercel.app/blogs/${blog?._id}`, {
+            fetch(`http://localhost:5000/blogs/${blog?._id}`, {
                 method: 'DELETE',
 
             })

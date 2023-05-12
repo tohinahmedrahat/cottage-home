@@ -8,7 +8,7 @@ const OfficeMessage = ({refetch, id}) => {
             "Are you sure, you want to delete this message ?"
         );
         if (proceed) {
-            fetch(`https://cottage-home-care-services-server-site.vercel.app/officeMessages/${id}`, {
+            fetch(`http://localhost:5000/officeMessages/${id}`, {
                 method: 'DELETE',
 
             })

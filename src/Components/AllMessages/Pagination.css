@@ -1,0 +1,5 @@
+.pagination .selected{
+    background-color: #2E2A4D;
+    border: #2E2A4D;
+    font-weight:bold ;
+}

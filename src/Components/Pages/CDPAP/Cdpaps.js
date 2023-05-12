@@ -8,12 +8,14 @@ import DashBoardModal from '../DashBoard/DashBoardModal/DashBoardModal';
 const Cdpaps = () => {
 
     const [message, setMessage] = useState('')
+    const [page, setPage] = useState(0);
+    const [size, setSize] = useState(5);
 
 
-    const url = 'https://cottage-home-care-services-server-site.vercel.app/allmessages/CDPAP'
+    const url = `http://localhost:5000/allmessages/CDPAP?page=${page}&size=${size}`
 
-    const { data: messages = [], isLoading, refetch } = useQuery({
-        queryKey: ['allmessages',],
+    const { data: {messages, count} = [], isLoading, refetch } = useQuery({
+        queryKey: ['CDPAP',page,size],
         queryFn: async () => {
             const res = await fetch(url);
             const data = await res.json();
@@ -21,6 +23,8 @@ const Cdpaps = () => {
         }
 
     })
+    const pages = Math.ceil(count / size) ;
+    console.log(count, pages)
 
 
     const messageHandler = (message) => {
@@ -147,6 +151,38 @@ const Cdpaps = () => {
                 message={message}
 
             ></DashBoardModal>
+              <div>
+                <p className='text-center mt-10 text-lg font-semibold'>Currently Selected page: <span className='text-primary'>{page}</span></p>
+                <div className='pagination my-3 flex justify-center'>
+                {
+                    [...Array(pages).keys()].map(number => <button
+                    key={number}
+                    className={                       
+                        page === number  ? 'selected btn btn-sm text-white ml-3'                     
+                        :
+                        'btn btn-sm btn-primary ml-3 text-white'
+                    
+                    }
+                    onClick={()=>setPage(number)}
+                    >
+                        {number}
+
+
+                    </button>)
+                }
+
+                <select className='ml-3 bg-primary text-white rounded-md focus:outline-none px-2' onChange={event => setSize(event.target.value)}>
+                <option selected disabled>{`Page Size ${size}`}</option>
+                    <option value="5">Page Size 5</option>
+                    <option value="10"  >Page Size 10</option>
+                    <option value="15" >Page Size 15</option>
+                    <option value="20" >Page Size 20</option>
+
+                </select>
+                
+
+            </div>
+                </div>
         </div>
     );
 };
