@@ -4,27 +4,22 @@ import { useQuery } from 'react-query';
 import DashBoardModal from '../Pages/DashBoard/DashBoardModal/DashBoardModal';
 import DeleteButton from '../Shared/DeleteButton/DeleteButton';
 import Loading from '../Shared/Loading/Loading';
+import './Pagination.css'
 
 const AllMessages = () => {
 
     /*
 
     count, : loaded
-    per page : 10
+    perPage (size) : 10
     pages : count / perPage
     page
 
     */
 
-    
-
-
-    const [message, setMessage] = useState('')
-
-
     const url = 'http://localhost:5000/allmessages'
 
-    const { data: {messages} = [], isLoading, refetch } = useQuery({
+    const { data: {messages,count} = [], isLoading, refetch } = useQuery({
         queryKey: ['allmessages',],
         queryFn: async () => {
             const res = await fetch(url);
@@ -33,6 +28,16 @@ const AllMessages = () => {
         }
 
     }) 
+
+    const [page, setPage] = useState(0);
+    const [size, setSize] = useState(5);
+    const pages = Math.ceil(count / size) ;
+
+
+    const [message, setMessage] = useState('')
+
+
+
 
     const messageHandler = (message) => {
         setMessage(message)
@@ -156,6 +161,29 @@ const AllMessages = () => {
                 message={message}
 
             ></DashBoardModal>
+                <div>
+                <p className='text-center mt-10 text-lg font-semibold'>Currently Selected page: <span className='text-primary'>{page}</span></p>
+                <div className='pagination my-3 flex justify-center'>
+                {
+                    [...Array(pages).keys()].map(number => <button
+                    key={number}
+                    className={                       
+                        page === number  ? 'selected btn btn-sm text-white ml-3'                     
+                        :
+                        'btn btn-sm btn-primary ml-3 text-white'
+                    
+                    }
+                    onClick={()=>setPage(number)}
+                    >
+                        {number}
+
+
+                    </button>)
+                }
+
+            </div>
+                </div>
+          
         </div>
     );
 };
