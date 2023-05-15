@@ -61,7 +61,7 @@ const EditForm = () => {
                         }
 
 
-                        fetch("http://localhost:5000/employee", {
+                        fetch("https://cottage-home-care-services-server-site.vercel.app/employee", {
                             method: "PUT",
                             headers: {
                                 "content-type": "application/json",
@@ -104,7 +104,7 @@ const EditForm = () => {
 
             };
 
-            fetch("http://localhost:5000/employee", {
+            fetch("https://cottage-home-care-services-server-site.vercel.app/employee", {
                 method: "PUT",
                 headers: {
                     "content-type": "application/json",

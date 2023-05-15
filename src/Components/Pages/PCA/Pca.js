@@ -4,6 +4,7 @@ import { useQuery } from 'react-query';
 import DeleteButton from '../../Shared/DeleteButton/DeleteButton';
 import Loading from '../../Shared/Loading/Loading';
 import DashBoardModal from '../DashBoard/DashBoardModal/DashBoardModal';
+import ReadButton from '../../AllMessages/ReadButton/ReadButton';
 
 const Pca = () => {
     const [message, setMessage] = useState('')
@@ -11,7 +12,7 @@ const Pca = () => {
     const [size, setSize] = useState(5);
 
 
-    const url = `http://localhost:5000/allmessages/PCA?page=${page}&size=${size}`
+    const url = `https://cottage-home-care-services-server-site.vercel.app/allmessages/PCA?page=${page}&size=${size}`
 
     const { data: {messages,count} = [], isLoading, refetch } = useQuery({
         queryKey: ['PCA',page,size],
@@ -54,6 +55,7 @@ if (isLoading){
                         <th>Inquire Type</th>
                         <th>Subject</th>
                         <th>Delete</th>
+                        <th>Read</th>
                     
 
                     </tr>
@@ -126,6 +128,13 @@ if (isLoading){
                                             
                                             ></DeleteButton>
                                         </td>
+
+                                        <ReadButton
+                                        message={message}
+                                        refetch={refetch}
+                                        >
+
+                                        </ReadButton>
                             
                             
                             
