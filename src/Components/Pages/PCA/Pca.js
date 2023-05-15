@@ -6,16 +6,15 @@ import Loading from '../../Shared/Loading/Loading';
 import DashBoardModal from '../DashBoard/DashBoardModal/DashBoardModal';
 
 const Pca = () => {
-
-
-
-
     const [message, setMessage] = useState('')
+    const [page, setPage] = useState(0);
+    const [size, setSize] = useState(5);
 
-    const url = 'http://localhost:5000/allmessages/PCA'
 
-    const { data: {messages} = [], isLoading, refetch } = useQuery({
-        queryKey: ['PCA',],
+    const url = `http://localhost:5000/allmessages/PCA?page=${page}&size=${size}`
+
+    const { data: {messages,count} = [], isLoading, refetch } = useQuery({
+        queryKey: ['PCA',page,size],
         queryFn: async () => {
             const res = await fetch(url);
             const data = await res.json();
@@ -23,6 +22,8 @@ const Pca = () => {
         }
 
     })
+
+    const pages = Math.ceil(count / size) ;
 
     const messageHandler = (message)=>{
         setMessage(message)
@@ -64,7 +65,7 @@ if (isLoading){
                             key={message._id}>
                             <th>{index + 1}</th>
                             <td className=' '>{new Date(message.time).toLocaleString()} </td>
-                            <td>
+                            
                                 {/* <div className="avatar">
                                     <div className="avatar w-10 h-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                         <img src={message?.photoURL} alt='' />
@@ -89,17 +90,17 @@ if (isLoading){
                                         :
                                         <>
                                             <td>
-                                                <div className="avatar">
+                                               
                                                     <div className="avatar w-10 h-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                                         <img src={message?.photoURL} alt='' />
                                                     </div>
-                                                </div>
+                                               
                                             </td>
                                         </>
 
 
                                 }
-                            </td>
+                            
                             <td>{message?.firstName}</td>
                             
                             {/* <td>{message?.email}</td> */}
@@ -145,6 +146,39 @@ if (isLoading){
             message={message}
 
             ></DashBoardModal>
+
+<div>
+                <p className='text-center mt-10 text-lg font-semibold'>Currently Selected page: <span className='text-primary'>{page + 1}</span></p>
+                <div className='pagination my-3 flex justify-center'>
+                {
+                    [...Array(pages).keys()].map(number => <button
+                    key={number}
+                    className={                       
+                        page === number  ? 'selected btn btn-sm text-white ml-3'                     
+                        :
+                        'btn btn-sm btn-primary ml-3 text-white'
+                    
+                    }
+                    onClick={()=>setPage(number)}
+                    >
+                        {number + 1}
+
+
+                    </button>)
+                }
+
+                <select className='ml-3 bg-primary text-white rounded-md focus:outline-none px-2' onChange={event => setSize(event.target.value)}>
+                <option selected disabled>{`Page Size ${size}`}</option>
+                    <option value="5">Page Size 5</option>
+                    <option value="10"  >Page Size 10</option>
+                    <option value="15" >Page Size 15</option>
+                    <option value="20" >Page Size 20</option>
+
+                </select>
+                
+
+            </div>
+                </div>
     </div>
     );
 };

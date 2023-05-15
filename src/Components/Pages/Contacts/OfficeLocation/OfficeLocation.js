@@ -96,7 +96,7 @@ const OfficeLocation = () => {
 
   const offices = [
     {
-      name: "Long Island Office",
+      name: "LongIsland",
       address1: "25 Newbridge Road, Suite 302 Hicksville,",
       address2: "New York 11801, United States.",
       direction:
