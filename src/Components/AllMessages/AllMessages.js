@@ -34,6 +34,8 @@ const AllMessages = () => {
    
     const pages = Math.ceil(count / size) ;
 
+    console.log(pages,count)
+
 
     const [message, setMessage] = useState('')
 
@@ -163,7 +165,7 @@ const AllMessages = () => {
 
             ></DashBoardModal>
                 <div>
-                <p className='text-center mt-10 text-lg font-semibold'>Currently Selected page: <span className='text-primary'>{page}</span></p>
+                <p className='text-center mt-10 text-lg font-semibold'>Currently Selected page: <span className='text-primary'>{page+1}</span></p>
                 <div className='pagination my-3 flex justify-center'>
                 {
                     [...Array(pages).keys()].map(number => <button
@@ -176,7 +178,7 @@ const AllMessages = () => {
                     }
                     onClick={()=>setPage(number)}
                     >
-                        {number}
+                        {number + 1}
 
 
                     </button>)

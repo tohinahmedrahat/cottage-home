@@ -57,14 +57,14 @@ const DashBoardLayout = () => {
     }
 
     for (const office of officeMessages) {
-      if (office?.officeName === "Long Island Office") {
+      if (office?.officeName === "LongIsland") {
         longIsland = longIsland + 1;
       } else if (office?.officeName === "Queens Office") {
         queens = queens + 1;
       } else if (office?.officeName === "Bronx Office") {
         bronx = bronx + 1;
       }
-       else if (office?.officeName === "Albany Office") {
+      else if (office?.officeName === "Albany Office") {
         albany = albany + 1;
       }
     }
@@ -84,12 +84,12 @@ const DashBoardLayout = () => {
         <NavBar></NavBar>
       </div> */}
 
-<div className="sticky top-0 z-50">
-                <NavBar></NavBar>
-                <div className="my-3 block lg:hidden ">
-                    <label htmlFor="dashboard-drawer" className=" drawer-button text-4xl text-primary"><CgMenuGridR/></label>
-                    </div>
-            </div>
+      <div className="sticky top-0 z-50">
+        <NavBar></NavBar>
+        <div className="my-3 block lg:hidden ">
+          <label htmlFor="dashboard-drawer" className=" drawer-button text-4xl text-primary"><CgMenuGridR /></label>
+        </div>
+      </div>
       <div className="drawer drawer-mobile">
         <input
           id="dashboard-drawer"
@@ -192,14 +192,14 @@ const DashBoardLayout = () => {
                   <Link to="/dashboard/blogForm">
                     <ImBlog className="w-6 h-6 mr-2" />
                     Add A Blog
-                    
+
                   </Link>
                 </li>
                 <li className="text-primary">
                   <Link to="/dashboard/employee">
                     <FaUserTie className="w-6 h-6 mr-2" />
                     Add An Employee
-                    
+
                   </Link>
                 </li>
               </>
