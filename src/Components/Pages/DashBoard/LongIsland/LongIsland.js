@@ -13,7 +13,7 @@ const LongIsland = () => {
 
 
     const url =
-     `https://cottage-home-care-services-server-site.vercel.app/office/LongIsland?page=${page}&size=${size}`
+     `http://localhost:5000/office/LongIsland?page=${page}&size=${size}`
 
     const { data: {messages, count} = [], isLoading, refetch } = useQuery({
         queryKey: ['Long Island Office', page , size],

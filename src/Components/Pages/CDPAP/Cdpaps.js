@@ -12,7 +12,7 @@ const Cdpaps = () => {
     const [size, setSize] = useState(5);
 
 
-    const url = `https://cottage-home-care-services-server-site.vercel.app/allmessages/CDPAP?page=${page}&size=${size}`
+    const url = `http://localhost:5000/allmessages/CDPAP?page=${page}&size=${size}`
 
     const { data: {messages, count} = [], isLoading, refetch } = useQuery({
         queryKey: ['CDPAP', page , size],

@@ -66,7 +66,7 @@ const EditBlogForm = () => {
                         }
                         
     
-                        fetch("https://cottage-home-care-services-server-site.vercel.app/blogs", {
+                        fetch("http://localhost:5000/blogs", {
                             method: "PUT",
                             headers: {
                                 "content-type": "application/json",
@@ -117,7 +117,7 @@ const EditBlogForm = () => {
     
             };
 
-             fetch("https://cottage-home-care-services-server-site.vercel.app/blogs", {
+             fetch("http://localhost:5000/blogs", {
                             method: "PUT",
                             headers: {
                                 "content-type": "application/json",

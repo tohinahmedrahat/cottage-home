@@ -17,7 +17,7 @@ const SingleBlog = () => {
     const newDate = Date.now();
 
 
-    const url = `https://cottage-home-care-services-server-site.vercel.app/comments/${_id}`
+    const url = `http://localhost:5000/comments/${_id}`
 
     const { data: comments = [], isLoading, refetch } = useQuery({
         queryKey: ['users',],
@@ -50,7 +50,7 @@ const SingleBlog = () => {
 
         }
 
-        fetch('https://cottage-home-care-services-server-site.vercel.app/comments', {
+        fetch('http://localhost:5000/comments', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

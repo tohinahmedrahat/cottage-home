@@ -5,6 +5,7 @@ import DashBoardModal from '../Pages/DashBoard/DashBoardModal/DashBoardModal';
 import DeleteButton from '../Shared/DeleteButton/DeleteButton';
 import Loading from '../Shared/Loading/Loading';
 import './Pagination.css'
+import { toast } from 'react-hot-toast';
 
 const AllMessages = () => {
     const [page, setPage] = useState(0);
@@ -19,22 +20,22 @@ const AllMessages = () => {
 
     */
 
-    const url = `https://cottage-home-care-services-server-site.vercel.app/allmessages?page=${page}&size=${size}`
+    const url = `http://localhost:5000/allmessages?page=${page}&size=${size}`
 
-    const { data: {messages,count} = [], isLoading, refetch } = useQuery({
-        queryKey: ['allmessages', page , size],
+    const { data: { messages, count } = [], isLoading, refetch } = useQuery({
+        queryKey: ['allmessages', page, size],
         queryFn: async () => {
             const res = await fetch(url);
             const data = await res.json();
             return data;
         }
 
-    }) 
+    })
 
-   
-    const pages = Math.ceil(count / size) ;
 
-    console.log(pages,count)
+    const pages = Math.ceil(count / size);
+
+    console.log(pages, count)
 
 
     const [message, setMessage] = useState('')
@@ -44,6 +45,22 @@ const AllMessages = () => {
 
     const messageHandler = (message) => {
         setMessage(message)
+
+    }
+
+    const readStatus = (id) => {
+        fetch(`http://localhost:5000/message/read/${id}`, {
+            method: 'PUT',
+
+        })
+            .then(res => res.json())
+            .then(data => {
+                // console.log(data)
+                if (data.modifiedCount > 0) {
+                    toast.success('Read Successfully')
+                    refetch();
+                }
+            })
 
     }
 
@@ -72,6 +89,8 @@ const AllMessages = () => {
                             <th>Inquire Type</th>
                             <th>Subject</th>
                             <th>Delete</th>
+                            <th>Read</th>
+
 
 
                         </tr>
@@ -137,13 +156,46 @@ const AllMessages = () => {
                                         htmlFor="message-details" className="text-sm bg-primary py-2 px-2 rounded-md text-white shadow-lg">
                                         See Message</label></td>
 
-                                        <td>
-                                            <DeleteButton
-                                            refetch={refetch}
-                                            id={message?._id}
-                                            
-                                            ></DeleteButton>
-                                        </td>
+                                <td>
+                                    <DeleteButton
+                                        refetch={refetch}
+                                        id={message?._id}
+
+                                    ></DeleteButton>
+                                </td>
+
+                                {
+                                    message?.read === 'true' ?
+
+                                        <>
+                                            <td>
+                                                <div className="form-control">
+                                                    <label className="cursor-pointer label">
+
+                                                        <input type="checkbox" checked className="checkbox checkbox-success" />
+                                                    </label>
+                                                </div>
+                                            </td>
+
+                                        </>
+                                        :
+                                        <>
+                                            <td>
+                                                <div className="form-control">
+                                                    <label
+
+                                                        onClick={() => readStatus(message._id)}
+
+                                                        className="cursor-pointer label cursor-pointer">
+                                                        <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                                    </label>
+                                                </div>
+                                            </td>
+
+                                        </>
+                                }
+
+
 
 
 
@@ -164,40 +216,40 @@ const AllMessages = () => {
                 message={message}
 
             ></DashBoardModal>
-                <div>
-                <p className='text-center mt-10 text-lg font-semibold'>Currently Selected page: <span className='text-primary'>{page+1}</span></p>
+            <div>
+                <p className='text-center mt-10 text-lg font-semibold'>Currently Selected page: <span className='text-primary'>{page + 1}</span></p>
                 <div className='pagination my-3 flex justify-center'>
-                {
-                    [...Array(pages).keys()].map(number => <button
-                    key={number}
-                    className={                       
-                        page === number  ? 'selected btn btn-sm text-white ml-3'                     
-                        :
-                        'btn btn-sm btn-primary ml-3 text-white'
-                    
+                    {
+                        [...Array(pages).keys()].map(number => <button
+                            key={number}
+                            className={
+                                page === number ? 'selected btn btn-sm text-white ml-3'
+                                    :
+                                    'btn btn-sm btn-primary ml-3 text-white'
+
+                            }
+                            onClick={() => setPage(number)}
+                        >
+                            {number + 1}
+
+
+                        </button>)
                     }
-                    onClick={()=>setPage(number)}
-                    >
-                        {number + 1}
+
+                    <select className='ml-3 bg-primary text-white rounded-md focus:outline-none px-2' onChange={event => setSize(event.target.value)}>
+                        <option selected disabled>{`Page Size ${size}`}</option>
+
+                        <option value="5" >Page Size 5</option>
+                        <option value="10"  >Page Size 10</option>
+                        <option value="15" >Page Size 15</option>
+                        <option value="20" >Page Size 20</option>
+
+                    </select>
 
 
-                    </button>)
-                }
-
-                <select className='ml-3 bg-primary text-white rounded-md focus:outline-none px-2' onChange={event => setSize(event.target.value)}>
-                    <option selected disabled>{`Page Size ${size}`}</option>
-              
-                    <option value="5" >Page Size 5</option>
-                    <option value="10"  >Page Size 10</option>
-                    <option value="15" >Page Size 15</option>
-                    <option value="20" >Page Size 20</option>
-
-                </select>
-                
-
-            </div>
                 </div>
-          
+            </div>
+
         </div>
     );
 };
