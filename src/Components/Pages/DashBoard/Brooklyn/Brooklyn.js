@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Loading from '../../../Shared/Loading/Loading';
 import OfficeModal from '../OfficeModal/OfficeModal';
 import { useQuery } from 'react-query';
+import { toast } from 'react-hot-toast';
 
 const Brooklyn = () => {
     const [message, setMessage] = useState('')
@@ -11,7 +12,7 @@ const Brooklyn = () => {
 
     const url = `https://cottage-home-care-services-server-site.vercel.app/brooklyn?page=${page}&size=${size}`
 
-    const { data: {messages, count} = [], isLoading, refetch } = useQuery({
+    const { data: { messages, count } = [], isLoading, refetch } = useQuery({
         queryKey: ['brooklyn', page, size],
         queryFn: async () => {
             const res = await fetch(url);
@@ -23,14 +24,40 @@ const Brooklyn = () => {
 
     const pages = Math.ceil(count / size);
 
-    const messageHandler = (message)=>{
-            setMessage(message)
+    const messageHandler = (message) => {
+        setMessage(message)
 
+    }
+
+    //delete handler
+
+    const deleteHandler = (id) => {
+
+        const proceed = window.confirm(
+            "Are you sure, you want to delete this message ?"
+        );
+        if (proceed) {
+            fetch(`https://cottage-home-care-services-server-site.vercel.app/brooklyn/${id}`, {
+                method: 'DELETE',
+
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount) {
+                        toast.success('Message Delete SuccessFully')
+                        refetch();
+
+                    }
+
+
+                })
+
+        }
     }
 
     // console.log(messages)
 
-    if (isLoading){
+    if (isLoading) {
         return <Loading></Loading>
     }
     return (
@@ -46,6 +73,7 @@ const Brooklyn = () => {
                             <th>Name</th>
                             <th>Email</th>
                             <th>Subject</th>
+                            <th>Delete</th>
 
 
                         </tr>
@@ -59,7 +87,7 @@ const Brooklyn = () => {
                                 <td className=' '>{new Date(message.time).toLocaleString()} </td>
                                 <td>{message?.name}</td>
                                 <td> <a href={`mailto:${message?.email}`} className='text-primary'>{message?.email} </a> </td>
-                                
+
 
                                 <td>
 
@@ -70,6 +98,16 @@ const Brooklyn = () => {
 
                                         htmlFor="office-details" className="text-sm bg-primary py-2 px-2 rounded-md text-white shadow-lg">
                                         See Message</label></td>
+
+                                <td>
+                                    <button
+
+                                        onClick={() => deleteHandler(message?._id)}
+
+                                        className='uppercase btn  btn-sm bg-red-600 text-white'>
+                                        delete
+                                    </button>
+                                </td>
 
 
 
@@ -107,7 +145,7 @@ const Brooklyn = () => {
                                 }
                                 onClick={() => setPage(number)}
                             >
-                                {number +1}
+                                {number + 1}
 
 
                             </button>)
@@ -147,7 +185,7 @@ const Brooklyn = () => {
             </div>
 
         </div>
-         
+
     );
 };
 
