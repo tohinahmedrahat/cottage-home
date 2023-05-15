@@ -6,21 +6,20 @@ import DeleteButton from '../Shared/DeleteButton/DeleteButton';
 import Loading from '../Shared/Loading/Loading';
 import './Pagination.css'
 import { toast } from 'react-hot-toast';
+import ReadButton from './ReadButton/ReadButton';
 
 const AllMessages = () => {
     const [page, setPage] = useState(0);
     const [size, setSize] = useState(5);
 
     /*
-
     count, : loaded
     perPage (size) : 10
     pages : count / perPage
     page
-
     */
 
-    const url = `http://localhost:5000/allmessages?page=${page}&size=${size}`
+    const url = `https://cottage-home-care-services-server-site.vercel.app/allmessages?page=${page}&size=${size}`
 
     const { data: { messages, count } = [], isLoading, refetch } = useQuery({
         queryKey: ['allmessages', page, size],
@@ -48,21 +47,7 @@ const AllMessages = () => {
 
     }
 
-    const readStatus = (id) => {
-        fetch(`http://localhost:5000/message/read/${id}`, {
-            method: 'PUT',
 
-        })
-            .then(res => res.json())
-            .then(data => {
-                // console.log(data)
-                if (data.modifiedCount > 0) {
-                    toast.success('Read Successfully')
-                    refetch();
-                }
-            })
-
-    }
 
     // console.log(messages)
 
@@ -164,36 +149,13 @@ const AllMessages = () => {
                                     ></DeleteButton>
                                 </td>
 
-                                {
-                                    message?.read === 'true' ?
-
-                                        <>
-                                            <td>
-                                                <div className="form-control">
-                                                    <label className="cursor-pointer label">
-
-                                                        <input type="checkbox" checked className="checkbox checkbox-success" />
-                                                    </label>
-                                                </div>
-                                            </td>
-
-                                        </>
-                                        :
-                                        <>
-                                            <td>
-                                                <div className="form-control">
-                                                    <label
-
-                                                        onClick={() => readStatus(message._id)}
-
-                                                        className="cursor-pointer label cursor-pointer">
-                                                        <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                                    </label>
-                                                </div>
-                                            </td>
-
-                                        </>
-                                }
+                                <ReadButton
+                                
+                                message={message}
+                                refetch={refetch}
+                                
+                                >
+                                </ReadButton>     
 
 
 

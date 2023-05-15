@@ -12,7 +12,7 @@ const Albany = () => {
 
 
 
-    const url = `http://localhost:5000/office/Albany Office?page=${page}&size=${size}`
+    const url = `https://cottage-home-care-services-server-site.vercel.app/office/Albany Office?page=${page}&size=${size}`
 
     const { data: {messages, count} = [], isLoading, refetch } = useQuery({
         queryKey: ['allmessages',],
@@ -157,7 +157,7 @@ const Albany = () => {
                                 }
                                 onClick={() => setPage(number)}
                             >
-                                {number = 1}
+                                {number+1}
 
 
                             </button>)

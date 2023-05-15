@@ -12,7 +12,7 @@ const QueensOffice = () => {
 
 
 
-    const url = `http://localhost:5000/office/Queens Office?page=${page}&size=${size}`
+    const url = `https://cottage-home-care-services-server-site.vercel.app/office/Queens Office?page=${page}&size=${size}`
 
     const { data: { messages, count } = [], isLoading, refetch } = useQuery({
         queryKey: ['allmessages', page, size],
