@@ -19,7 +19,7 @@ const AllMessages = () => {
 
     */
 
-    const url = `http://localhost:5000/allmessages?page=${page}&size=${size}`
+    const url = `https://cottage-home-care-services-server-site.vercel.app/allmessages?page=${page}&size=${size}`
 
     const { data: {messages,count} = [], isLoading, refetch } = useQuery({
         queryKey: ['allmessages', page , size],

@@ -19,7 +19,7 @@ const TeamMembers = () => {
     const { user } = useContext(AuthContext)
     const [isAdmin] = useAdmin(user?.email);
 
-    const url = "http://localhost:5000/employees";
+    const url = "https://cottage-home-care-services-server-site.vercel.app/employees";
 
     const { data: employees = [], isLoading, refetch } = useQuery({
         queryKey: ['users',],
@@ -36,7 +36,7 @@ const TeamMembers = () => {
             `Are you sure, you want to delete ${employer?.name}?`
         );
         if (proceed) {
-            fetch(`http://localhost:5000/employees/${employer?._id}`, {
+            fetch(`https://cottage-home-care-services-server-site.vercel.app/employees/${employer?._id}`, {
                 method: 'DELETE',
 
             })

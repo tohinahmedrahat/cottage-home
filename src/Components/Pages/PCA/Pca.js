@@ -11,7 +11,7 @@ const Pca = () => {
     const [size, setSize] = useState(5);
 
 
-    const url = `http://localhost:5000/allmessages/PCA?page=${page}&size=${size}`
+    const url = `https://cottage-home-care-services-server-site.vercel.app/allmessages/PCA?page=${page}&size=${size}`
 
     const { data: {messages,count} = [], isLoading, refetch } = useQuery({
         queryKey: ['PCA',page,size],
