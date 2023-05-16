@@ -136,13 +136,15 @@ const Cdpaps = () => {
                                     ></DeleteButton>
                                 </td>
 
-                                <ReadButton
+                                <td>
+                                    <ReadButton
 
-                                    message={message}
-                                    refetch={refetch}
+                                        message={message}
+                                        refetch={refetch}
 
-                                >
-                                </ReadButton>
+                                    >
+                                    </ReadButton>
+                                </td>
 
 
 

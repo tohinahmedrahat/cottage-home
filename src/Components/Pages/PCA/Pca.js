@@ -129,12 +129,14 @@ if (isLoading){
                                             ></DeleteButton>
                                         </td>
 
-                                        <ReadButton
+                                    <td>
+                                    <ReadButton
                                         message={message}
                                         refetch={refetch}
                                         >
 
                                         </ReadButton>
+                                    </td>
                             
                             
                             

@@ -34,7 +34,7 @@ const AllMessages = () => {
 
     const pages = Math.ceil(count / size);
 
-    console.log(pages, count)
+    // console.log(pages, count)
 
 
     const [message, setMessage] = useState('')
@@ -148,7 +148,7 @@ const AllMessages = () => {
 
                                     ></DeleteButton>
                                 </td>
-
+                                <td>
                                 <ReadButton
                                 
                                 message={message}
@@ -156,6 +156,9 @@ const AllMessages = () => {
                                 
                                 >
                                 </ReadButton>     
+
+                                </td>
+
 
 
 
