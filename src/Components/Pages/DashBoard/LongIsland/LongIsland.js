@@ -13,10 +13,10 @@ const LongIsland = () => {
 
 
     const url =
-     `https://cottage-home-care-services-server-site.vercel.app/office/LongIsland?page=${page}&size=${size}`
+        `https://cottage-home-care-services-server-site.vercel.app/office/LongIsland?page=${page}&size=${size}`
 
-    const { data: {messages, count} = [], isLoading, refetch } = useQuery({
-        queryKey: ['Long Island Office', page , size],
+    const { data: { messages, count } = [], isLoading, refetch } = useQuery({
+        queryKey: ['Long Island Office', page, size],
         queryFn: async () => {
             const res = await fetch(url);
             const data = await res.json();
@@ -25,8 +25,8 @@ const LongIsland = () => {
 
     })
 
-    const pages = Math.ceil(count / size) ;
-    console.log(count,size)
+    const pages = Math.ceil(count / size);
+    console.log(count, size)
 
     const messageHandler = (message) => {
         setMessage(message)
@@ -77,7 +77,7 @@ const LongIsland = () => {
                                         </div>
                                     </div>
                                 </td> */}
-                                 {
+                                {
                                     message?.photoURL == null ?
 
                                         <>
@@ -119,13 +119,13 @@ const LongIsland = () => {
                                         htmlFor="office-details" className="text-sm bg-primary py-2 px-2 rounded-md text-white shadow-lg">
                                         See Message</label></td>
 
-                                        <th>
-                                        <OfficeMessage
-                                            refetch={refetch}
-                                            id={message?._id}
-                                            
-                                            ></OfficeMessage>
-                                        </th>
+                                <th>
+                                    <OfficeMessage
+                                        refetch={refetch}
+                                        id={message?._id}
+
+                                    ></OfficeMessage>
+                                </th>
 
 
 
@@ -148,57 +148,57 @@ const LongIsland = () => {
 
             ></OfficeModal>
 
-<div>
+            <div>
                 <p className='text-center mt-10 text-lg font-semibold'>Currently Selected page: <span className='text-primary'>{page + 1}</span></p>
                 <div className='pagination my-3 flex justify-center'>
-                {
-                    [...Array(pages).keys()].map(number => <button
-                    key={number}
-                    className={                       
-                        page === number  ? 'selected btn btn-sm text-white ml-3'                     
-                        :
-                        'btn btn-sm btn-primary ml-3 text-white'
-                    
+                    {
+                        [...Array(pages).keys()].map(number => <button
+                            key={number}
+                            className={
+                                page === number ? 'selected px-3 py-1   text-white ml-3 cursor-pointer custom-shadow'
+                                    :
+                                    'px-3 py-1   text-gray-500 ml-3 cursor-pointer border-[1px] border-gray-300 hover:bg-[#444444] hover:text-white custom-shadow'
+
+                            }
+                            onClick={() => setPage(number)}
+                        >
+                            {number + 1}
+
+
+                        </button>)
                     }
-                    onClick={()=>setPage(number)}
-                    >
-                        {number + 1}
 
+                    {
+                        messages?.length <= 0 ? <>
 
-                    </button>)
-                }
+                            <select className='ml-3 bg-white text-gray-500 border-[1px] border-gray-300 rounded-md focus:outline-none px-2 py-2' onChange={event => setSize(event.target.value)}>
+                                <option selected disabled className='hidden'>{`Page Size ${size}`}</option>
 
-{
-                            messages?.length <=0 ? <>
-                            
-                        <select className='ml-3 bg-primary text-white rounded-md focus:outline-none px-2 py-2' onChange={event => setSize(event.target.value)}>
-                            <option selected disabled>{`Page Size ${size}`}</option>
+                                <option value="5" >Page Size 5</option>
+                                <option value="10"  >Page Size 10</option>
+                                <option value="15" >Page Size 15</option>
+                                <option value="20" >Page Size 20</option>
 
-                            <option value="5" >Page Size 5</option>
-                            <option value="10"  >Page Size 10</option>
-                            <option value="15" >Page Size 15</option>
-                            <option value="20" >Page Size 20</option>
-
-                        </select>
-                            </>
+                            </select>
+                        </>
                             :
                             <>
-                            <select className='ml-3 bg-primary text-white rounded-md focus:outline-none px-2 ' onChange={event => setSize(event.target.value)}>
-                            <option selected disabled>{`Page Size ${size}`}</option>
+                                <select className='ml-3 bg-white text-gray-500 border-[1px] border-gray-300 rounded-md focus:outline-none px-2 ' onChange={event => setSize(event.target.value)}>
+                                    <option selected disabled className='hidden'>{`Page Size ${size}`}</option>
 
-                            <option value="5" >Page Size 5</option>
-                            <option value="10"  >Page Size 10</option>
-                            <option value="15" >Page Size 15</option>
-                            <option value="20" >Page Size 20</option>
+                                    <option value="5" >Page Size 5</option>
+                                    <option value="10"  >Page Size 10</option>
+                                    <option value="15" >Page Size 15</option>
+                                    <option value="20" >Page Size 20</option>
 
-                        </select>
-                            
+                                </select>
+
                             </>
-                        }
-                
+                    }
 
-            </div>
+
                 </div>
+            </div>
 
         </div>
     );
