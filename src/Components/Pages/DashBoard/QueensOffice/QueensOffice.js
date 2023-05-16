@@ -140,57 +140,55 @@ const QueensOffice = () => {
                 message={message}
 
             ></OfficeModal>
-            <div>
-                <div>
-                    <p className='text-center mt-10 text-lg font-semibold'>Currently Selected page: <span className='text-primary'>{page + 1}</span></p>
-                    <div className='pagination my-3 flex justify-center'>
-                        {
-                            [...Array(pages).keys()].map(number => <button
-                                key={number}
-                                className={
-                                    page === number ? 'selected btn btn-sm text-white ml-3'
-                                        :
-                                        'btn btn-sm btn-primary ml-3 text-white'
+             <div>
+                <p className='text-center mt-10 text-lg font-semibold'>Currently Selected page: <span className='text-primary'>{page + 1}</span></p>
+                <div className='pagination my-3 flex justify-center'>
+                    {
+                        [...Array(pages).keys()].map(number => <button
+                            key={number}
+                            className={
+                                page === number ? 'selected px-3 py-1   text-white ml-3 cursor-pointer custom-shadow'
+                                    :
+                                    'px-3 py-1   text-gray-500 ml-3 cursor-pointer border-[1px] border-gray-300 hover:bg-[#444444] hover:text-white custom-shadow'
 
-                                }
-                                onClick={() => setPage(number)}
-                            >
-                                {number + 1}
+                            }
+                            onClick={() => setPage(number)}
+                        >
+                            {number + 1}
 
 
-                            </button>)
-                        }
+                        </button>)
+                    }
 
-                        {
-                            messages?.length <=0 ? <>
-                            
-                        <select className='ml-3 bg-primary text-white rounded-md focus:outline-none px-2 py-2' onChange={event => setSize(event.target.value)}>
-                            <option selected disabled>{`Page Size ${size}`}</option>
+                    {
+                        messages?.length <= 0 ? <>
 
-                            <option value="5" >Page Size 5</option>
-                            <option value="10"  >Page Size 10</option>
-                            <option value="15" >Page Size 15</option>
-                            <option value="20" >Page Size 20</option>
+                            <select className='ml-3 bg-white text-gray-500 border-[1px] border-gray-300 rounded-md focus:outline-none px-2 py-2' onChange={event => setSize(event.target.value)}>
+                                <option selected disabled className='hidden'>{`Page Size ${size}`}</option>
 
-                        </select>
-                            </>
+                                <option value="5" >Page Size 5</option>
+                                <option value="10"  >Page Size 10</option>
+                                <option value="15" >Page Size 15</option>
+                                <option value="20" >Page Size 20</option>
+
+                            </select>
+                        </>
                             :
                             <>
-                            <select className='ml-3 bg-primary text-white rounded-md focus:outline-none px-2 ' onChange={event => setSize(event.target.value)}>
-                            <option selected disabled>{`Page Size ${size}`}</option>
+                                <select className='ml-3 bg-white text-gray-500 border-[1px] border-gray-300 rounded-md focus:outline-none px-2 ' onChange={event => setSize(event.target.value)}>
+                                    <option selected disabled className='hidden'>{`Page Size ${size}`}</option>
 
-                            <option value="5" >Page Size 5</option>
-                            <option value="10"  >Page Size 10</option>
-                            <option value="15" >Page Size 15</option>
-                            <option value="20" >Page Size 20</option>
+                                    <option value="5" >Page Size 5</option>
+                                    <option value="10"  >Page Size 10</option>
+                                    <option value="15" >Page Size 15</option>
+                                    <option value="20" >Page Size 20</option>
 
-                        </select>
-                            
+                                </select>
+
                             </>
-                        }
+                    }
 
 
-                    </div>
                 </div>
             </div>
 
