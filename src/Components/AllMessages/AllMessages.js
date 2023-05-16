@@ -34,7 +34,7 @@ const AllMessages = () => {
 
     const pages = Math.ceil(count / size);
 
-    console.log(pages, count)
+    // console.log(pages, count)
 
 
     const [message, setMessage] = useState('')
@@ -148,7 +148,7 @@ const AllMessages = () => {
 
                                     ></DeleteButton>
                                 </td>
-
+                                <td>
                                 <ReadButton
                                 
                                 message={message}
@@ -156,6 +156,9 @@ const AllMessages = () => {
                                 
                                 >
                                 </ReadButton>     
+
+                                </td>
+
 
 
 
@@ -185,9 +188,9 @@ const AllMessages = () => {
                         [...Array(pages).keys()].map(number => <button
                             key={number}
                             className={
-                                page === number ? 'selected btn btn-sm text-white ml-3'
+                                page === number ? 'selected px-3 py-1   text-white ml-3 cursor-pointer custom-shadow'
                                     :
-                                    'btn btn-sm btn-primary ml-3 text-white'
+                                    'px-3 py-1   text-gray-500 ml-3 cursor-pointer border-[1px] border-gray-300 hover:bg-[#444444] hover:text-white custom-shadow'
 
                             }
                             onClick={() => setPage(number)}
@@ -198,8 +201,8 @@ const AllMessages = () => {
                         </button>)
                     }
 
-                    <select className='ml-3 bg-primary text-white rounded-md focus:outline-none px-2' onChange={event => setSize(event.target.value)}>
-                        <option selected disabled>{`Page Size ${size}`}</option>
+                    <select className='ml-3 bg-white text-gray-500 border-[1px] border-gray-300 rounded-md focus:outline-none px-2' onChange={event => setSize(event.target.value)}>
+                        <option selected disabled className='hidden'>{`Page Size ${size}`}</option>
 
                         <option value="5" >Page Size 5</option>
                         <option value="10"  >Page Size 10</option>

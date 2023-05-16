@@ -1,5 +1,9 @@
 .pagination .selected{
-    background-color: #ff847c;
-    border: #ff847c;
-    font-weight:bolder;
+    background-color: #4DB2EC;
+    border: #4DB2EC;
+    
+}
+
+.custom-shadow{
+    box-shadow: 0 3px 9px rgb(0 0 0 / 0.2);
 }

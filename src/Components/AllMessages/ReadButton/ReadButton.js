@@ -24,19 +24,19 @@ const ReadButton = ({message,refetch}) => {
                                     message?.read === 'true' ?
 
                                         <>
-                                            <td>
+                                           
                                                 <div className="form-control">
                                                     <label className="cursor-pointer label">
 
                                                         <input type="checkbox" checked className="checkbox checkbox-success" />
                                                     </label>
                                                 </div>
-                                            </td>
+                                           
 
                                         </>
                                         :
                                         <>
-                                            <td>
+                                           
                                                 <div className="form-control">
                                                     <label
 
@@ -46,7 +46,7 @@ const ReadButton = ({message,refetch}) => {
                                                         <input type="checkbox" checked className="checkbox checkbox-warning" />
                                                     </label>
                                                 </div>
-                                            </td>
+                                           
 
                                         </>
                                 }

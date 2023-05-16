@@ -10,7 +10,6 @@ const DeleteButton = ({ refetch, id }) => {
         if (proceed) {
             fetch(`https://cottage-home-care-services-server-site.vercel.app/messages/${id}`, {
                 method: 'DELETE',
-
             })
                 .then(res => res.json())
                 .then(data => {
